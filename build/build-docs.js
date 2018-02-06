@@ -1849,111 +1849,58 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <link v-if="local" rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
-	
 	//   <link v-else href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
-	
 	//   <div id="wrapper">
-	
 	//     <div class="bs-docs-header">
-	
 	//       <div class="container">
-	
 	//         <h1>VueStrap - MarkBind</h1>
-	
 	//         <p>Bootstrap components built with <a target="_blank" href="http://vuejs.org/">Vue.js</a>.</p>
-	
 	//         <p>No jQuery, bootstrap.js, or any 3rd party plugins required.</p>
-	
 	//         <p>Modified for supported compoennts in MarkBind.</p>
-	
 	//         <br>
-	
 	//         <p><a class="btn btn-outline-inverse btn-lg" href="https://github.com/MarkBind/vue-strap">Code on GitHub</a></p>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//     <container>
-	
 	//       <div v-el:sections class="col-md-9">
-	
 	//         <getting-started></getting-started>
-	
 	//         <accordion-docs></accordion-docs>
-	
 	//         <affix-docs></affix-docs>
-	
 	//         <aside-docs></aside-docs>
-	
 	//         <dynamic-panel-docs></dynamic-panel-docs>
-	
 	//         <image-docs></image-docs>
-	
 	//         <modal-docs></modal-docs>
-	
 	//         <morph-docs></morph-docs>
-	
 	//         <navbar-docs></navbar-docs>
-	
 	//         <question-docs></question-docs>
-	
 	//         <retriever-docs></retriever-docs>
-	
 	//         <tabs-docs></tabs-docs>
-	
 	//         <tip-box-docs></tip-box-docs>
-	
 	//         <tooltip-docs></tooltip-docs>
-	
 	//         <popover-docs></popover-docs>
-	
 	//         <trigger-docs></trigger-docs>
-	
 	//       </div>
-	
 	//       <div class="col-md-3">
-	
 	//         <affix-sidebar></affix-sidebar>
-	
 	//       </div>
-	
 	//     </container>
-	
 	//   </div>
-	
 	//   <footer class="bs-docs-footer">
-	
 	//     <div class="container">
-	
 	//       <p>Designed and built by <a href="https://github.com/yuche/">yuche</a>.</p>
-	
 	//       <p>
-	
 	//         Using <a href="http://twitter.github.com/bootstrap" target="_blank">Twitter Bootstrap</a>
-	
 	//         and the <a href="css/docs.css" target="_blank">Bootstrap's docs styles</a> designed and built by <a href="http://twitter.com/mdo" target="_blank">@mdo</a>
-	
 	//         and <a href="http://twitter.com/fat" target="_blank">@fat</a>.
-	
 	//       </p>
-	
 	//       <p>
-	
 	//         Code licensed under <a href="//github.com/mgcrea/angular-strap/blob/master/LICENSE.md" target="_blank">The MIT License</a>,
-	
 	//         documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-	
 	//       </p>
-	
 	//     </div>
-	
 	//   </footer>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -2033,23 +1980,14 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <affix offset="50">
-	
 	//     <ul class="nav bs-docs-sidenav" id="sidenav">
-	
 	//       <li v-for="s in sections" :class="{active:active==s.id}"><a href="#{{ s.id }}">{{ s.name }}</a></li>
-	
 	//     </ul>
-	
 	//     <a href="#" class="back-to-top">Back to top</a>
-	
 	//     <a href="https://github.com/yuche/vue-strap" class="back-to-top">GitHub</a>
-	
 	//   </affix>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -2140,19 +2078,12 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div class="hidden-print hidden-xs hidden-sm">
-	
 	//     <nav class="bs-docs-sidebar" :class="{affix:affixed}" :style="{marginTop:top}">
-	
 	//       <slot></slot>
-	
 	//     </nav>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -2445,13 +2376,13 @@
 /* 123 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"hidden-print hidden-xs hidden-sm\">\r\n    <nav class=\"bs-docs-sidebar\" :class=\"{affix:affixed}\" :style=\"{marginTop:top}\">\r\n      <slot></slot>\r\n    </nav>\r\n  </div>";
+	module.exports = "<div class=\"hidden-print hidden-xs hidden-sm\">\n    <nav class=\"bs-docs-sidebar\" :class=\"{affix:affixed}\" :style=\"{marginTop:top}\">\n      <slot></slot>\n    </nav>\n  </div>";
 
 /***/ }),
 /* 124 */
 /***/ (function(module, exports) {
 
-	module.exports = "<affix offset=\"50\">\r\n    <ul class=\"nav bs-docs-sidenav\" id=\"sidenav\">\r\n      <li v-for=\"s in sections\" :class=\"{active:active==s.id}\"><a href=\"#{{ s.id }}\">{{ s.name }}</a></li>\r\n    </ul>\r\n    <a href=\"#\" class=\"back-to-top\">Back to top</a>\r\n    <a href=\"https://github.com/yuche/vue-strap\" class=\"back-to-top\">GitHub</a>\r\n  </affix>";
+	module.exports = "<affix offset=\"50\">\n    <ul class=\"nav bs-docs-sidenav\" id=\"sidenav\">\n      <li v-for=\"s in sections\" :class=\"{active:active==s.id}\"><a href=\"#{{ s.id }}\">{{ s.name }}</a></li>\n    </ul>\n    <a href=\"#\" class=\"back-to-top\">Back to top</a>\n    <a href=\"https://github.com/yuche/vue-strap\" class=\"back-to-top\">GitHub</a>\n  </affix>";
 
 /***/ }),
 /* 125 */
@@ -2500,139 +2431,75 @@
 	  // </script>
 	
 	}; // <template>
-	
 	//   <div class="bs-docs-section" id="getting-started">
-	
 	//     <h1 class="page-header"><a href="#getting-started" class="anchor">Getting started</a></h1>
-	
 	//     <div class="bs-callout bs-callout-success">
-	
 	//       <h4>About this project</h4>
-	
 	//       <p>
-	
 	//         This repository contains a set of native Vue.js components based on Bootstrap's markup and CSS.
-	
 	//         As a result no dependency on jQuery or Bootstrap's JavaScript is required.
-	
 	//         The only required dependencies are:
-	
 	//       </p>
-	
 	//       <ul>
-	
 	//         <li><a href="http://vuejs.org/">Vue.js</a>
-	
 	//           (required ^1.0.8, test with 1.0.8).</li>
-	
 	//         <li><a href="http://getbootstrap.com/">Bootstrap CSS</a>
-	
 	//           (required 3.x.x, test with 3.3.5).
-	
 	//           VueStrap doesn't depend on a very precise version of Bootstrap. Just pull the latest.
-	
 	//         </li>
-	
 	//       </ul>
-	
 	//     </div>
-	
 	//     <h2>CommonJS</h2>
-	
 	//     <doc-code language="javascript">
-	
 	//       $ npm install vue-strap
-	
 	
 	//       var VueStrap = require('vue-strap')
-	
 	//       Vue.use(VueStrap)
-	
 	//       var vm = new Vue({
-	
 	//         el: 'body'
-	
 	//       })
 	
-	
 	//       VueStrap.installEvents(vm)
-	
 	//     </doc-code>
-	
 	//     <h2>ES6</h2>
-	
 	//     <doc-code language="javascript">
-	
 	//       $ npm install vue-strap
 	
-	
 	//       import VueStrap from 'vue-strap'
-	
 	//       Vue.use(VueStrap)
-	
 	//       var vm = new Vue({
-	
 	//         el: 'body'
-	
 	//       })
-	
 	//       VueStrap.installEvents(vm)
-	
 	//     </doc-code>
-	
 	
 	//     <h2>AMD</h2>
-	
 	//     <doc-code language="javascript">
-	
 	//       $ bower install vue-strap
 	
-	
 	//       define(['vue-strap'], function(VueStrap) { Vue.use(VueStrap); ... });
-	
 	//     </doc-code>
-	
 	//     <h2>Browser globals</h2>
-	
 	//     <p>
-	
 	//       The <code>dist</code> folder contains <code>vue-strap.js</code> and <code>vue-strap.min.js</code> with
-	
 	//       all components exported in the <code>window.VueStrap</code> object. These bundles are also available on both the
-	
 	//       Bower and NPM packages.
-	
 	//     </p>
-	
 	//     <doc-code language="markup">
-	
 	//       <v-select :options="options"></v-select>
 	
-	
 	//       <script src="path/to/vue.js"></script>
-	
 	//       <script src="path/to/vue-strap.js"></script>
-	
 	//       <script>
-	
 	//         Vue.use(VueStrap)
-	
 	//         var vm = new Vue({
-	
 	//           el: 'body'
-	
 	//         })
-	
 	//         VueStrap.installEvents(vm)
-	
 	//       </script>
-	
 	//     </doc-code>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 
 /***/ }),
@@ -2703,19 +2570,12 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <pre v-if="!language" v-el:container></pre>
-	
 	//   <template v-else>
-	
 	//     <pre v-if="language=='markup'"><code class="language-markup"><script v-el:container type="language-mark-up"></script></code></pre>
-	
 	//     <pre v-else><code class="language-{{language}}"><script v-el:container type="language-{{language}}"></script></code></pre>
-	
 	//   </template>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -2723,13 +2583,13 @@
 /* 129 */
 /***/ (function(module, exports) {
 
-	module.exports = "<pre v-if=\"!language\" v-el:container></pre>\r\n  <template v-else>\r\n    <pre v-if=\"language=='markup'\"><code class=\"language-markup\"><script v-el:container type=\"language-mark-up\"></script></code></pre>\r\n    <pre v-else><code class=\"language-{{language}}\"><script v-el:container type=\"language-{{language}}\"></script></code></pre>\r\n  </template>";
+	module.exports = "<pre v-if=\"!language\" v-el:container></pre>\n  <template v-else>\n    <pre v-if=\"language=='markup'\"><code class=\"language-markup\"><script v-el:container type=\"language-mark-up\"></script></code></pre>\n    <pre v-else><code class=\"language-{{language}}\"><script v-el:container type=\"language-{{language}}\"></script></code></pre>\n  </template>";
 
 /***/ }),
 /* 130 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"getting-started\">\r\n    <h1 class=\"page-header\"><a href=\"#getting-started\" class=\"anchor\">Getting started</a></h1>\r\n    <div class=\"bs-callout bs-callout-success\">\r\n      <h4>About this project</h4>\r\n      <p>\r\n        This repository contains a set of native Vue.js components based on Bootstrap's markup and CSS.\r\n        As a result no dependency on jQuery or Bootstrap's JavaScript is required.\r\n        The only required dependencies are:\r\n      </p>\r\n      <ul>\r\n        <li><a href=\"http://vuejs.org/\">Vue.js</a>\r\n          (required ^1.0.8, test with 1.0.8).</li>\r\n        <li><a href=\"http://getbootstrap.com/\">Bootstrap CSS</a>\r\n          (required 3.x.x, test with 3.3.5).\r\n          VueStrap doesn't depend on a very precise version of Bootstrap. Just pull the latest.\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    <h2>CommonJS</h2>\r\n    <doc-code language=\"javascript\">\r\n      $ npm install vue-strap\r\n\r\n      var VueStrap = require('vue-strap')\r\n      Vue.use(VueStrap)\r\n      var vm = new Vue({\r\n        el: 'body'\r\n      })\r\n\r\n      VueStrap.installEvents(vm)\r\n    </doc-code>\r\n    <h2>ES6</h2>\r\n    <doc-code language=\"javascript\">\r\n      $ npm install vue-strap\r\n\r\n      import VueStrap from 'vue-strap'\r\n      Vue.use(VueStrap)\r\n      var vm = new Vue({\r\n        el: 'body'\r\n      })\r\n      VueStrap.installEvents(vm)\r\n    </doc-code>\r\n\r\n    <h2>AMD</h2>\r\n    <doc-code language=\"javascript\">\r\n      $ bower install vue-strap\r\n\r\n      define(['vue-strap'], function(VueStrap) { Vue.use(VueStrap); ... });\r\n    </doc-code>\r\n    <h2>Browser globals</h2>\r\n    <p>\r\n      The <code>dist</code> folder contains <code>vue-strap.js</code> and <code>vue-strap.min.js</code> with\r\n      all components exported in the <code>window.VueStrap</code> object. These bundles are also available on both the\r\n      Bower and NPM packages.\r\n    </p>\r\n    <doc-code language=\"markup\">\r\n      <v-select :options=\"options\"></v-select>\r\n\r\n      <script src=\"path/to/vue.js\"></script>\r\n      <script src=\"path/to/vue-strap.js\"></script>\r\n      <script>\r\n        Vue.use(VueStrap)\r\n        var vm = new Vue({\r\n          el: 'body'\r\n        })\r\n        VueStrap.installEvents(vm)\r\n      </script>\r\n    </doc-code>\r\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"getting-started\">\n    <h1 class=\"page-header\"><a href=\"#getting-started\" class=\"anchor\">Getting started</a></h1>\n    <div class=\"bs-callout bs-callout-success\">\n      <h4>About this project</h4>\n      <p>\n        This repository contains a set of native Vue.js components based on Bootstrap's markup and CSS.\n        As a result no dependency on jQuery or Bootstrap's JavaScript is required.\n        The only required dependencies are:\n      </p>\n      <ul>\n        <li><a href=\"http://vuejs.org/\">Vue.js</a>\n          (required ^1.0.8, test with 1.0.8).</li>\n        <li><a href=\"http://getbootstrap.com/\">Bootstrap CSS</a>\n          (required 3.x.x, test with 3.3.5).\n          VueStrap doesn't depend on a very precise version of Bootstrap. Just pull the latest.\n        </li>\n      </ul>\n    </div>\n    <h2>CommonJS</h2>\n    <doc-code language=\"javascript\">\n      $ npm install vue-strap\n\n      var VueStrap = require('vue-strap')\n      Vue.use(VueStrap)\n      var vm = new Vue({\n        el: 'body'\n      })\n\n      VueStrap.installEvents(vm)\n    </doc-code>\n    <h2>ES6</h2>\n    <doc-code language=\"javascript\">\n      $ npm install vue-strap\n\n      import VueStrap from 'vue-strap'\n      Vue.use(VueStrap)\n      var vm = new Vue({\n        el: 'body'\n      })\n      VueStrap.installEvents(vm)\n    </doc-code>\n\n    <h2>AMD</h2>\n    <doc-code language=\"javascript\">\n      $ bower install vue-strap\n\n      define(['vue-strap'], function(VueStrap) { Vue.use(VueStrap); ... });\n    </doc-code>\n    <h2>Browser globals</h2>\n    <p>\n      The <code>dist</code> folder contains <code>vue-strap.js</code> and <code>vue-strap.min.js</code> with\n      all components exported in the <code>window.VueStrap</code> object. These bundles are also available on both the\n      Bower and NPM packages.\n    </p>\n    <doc-code language=\"markup\">\n      <v-select :options=\"options\"></v-select>\n\n      <script src=\"path/to/vue.js\"></script>\n      <script src=\"path/to/vue-strap.js\"></script>\n      <script>\n        Vue.use(VueStrap)\n        var vm = new Vue({\n          el: 'body'\n        })\n        VueStrap.installEvents(vm)\n      </script>\n    </doc-code>\n  </div>";
 
 /***/ }),
 /* 131 */
@@ -2800,506 +2660,258 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="accordion" name="Accordion and Panel">
-	
 	//     <h4>Panel is a flexible container that support collapse and expand its content. It is expandable by default</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <panel header="Header" alt="Alternative Header">
-	
 	//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="Header" alt="Alternative Header">
-	
 	//         ...
-	
 	//       </panel>
-	
 	//     </doc-code>
-	
 	//     <br>
-	
 	//     <h4>With <code>minimized</code> attribute, panel is minimized into an inline block element.</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <panel header="Header" alt="Alternative Header" minimized>
-	
 	//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="Header" alt="Alternative Header" minimized>
-	
 	//         ...
-	
 	//       </panel>
-	
 	//     </doc-code>
-	
 	//     <br>
-	
 	//     <h4>With <code>expanded</code> attribute, panel could be expanded by default.</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <panel header="Header" alt="Alternative Header" expanded>
-	
 	//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="Header" alt="Alternative Header" expanded>
-	
 	//         ...
-	
 	//       </panel>
-	
 	//     </doc-code>
-	
 	//     <br>
-	
 	//     <h4>Panel has many types that change its appearance.</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <h5><code>Primary</code> type</h5>
-	
 	//       <panel header="Primary - Click to expand" type="primary">
-	
 	//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos, doloribus dolorum ducimus eius
-	
 	//         eligendi est et excepturi iure iusto laborum, perferendis possimus quod repudiandae sapiente similique tenetur
-	
 	//         ullam voluptates!
-	
 	//       </panel>
-	
 	//       <h5><code>Seamless</code> panel type</h5>
-	
 	//       <panel header="Seamless - Click to expand" type="seamless">
-	
 	//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos, doloribus dolorum ducimus eius
-	
 	//         eligendi est et excepturi iure iusto laborum, perferendis possimus quod repudiandae sapiente similique tenetur
-	
 	//         ullam voluptates!
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="Primary - Click to expand" type="primary">
-	
 	//         ...
-	
 	//       </panel>
-	
 	//       <panel header="Seamless - Click to expand" type="seamless">
-	
 	//         ...
-	
 	//       </panel>
-	
 	//     </doc-code>
-	
 	//     <br>
-	
 	//     <h4>Show/Hide buttons using <code>no-switch</code> or <code>no-close</code></h4>
-	
 	//     <div class="bs-example">
-	
 	//       <panel header="Header" no-switch>
-	
 	//       </panel>
-	
 	//       <panel header="Header" no-close>
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="Header" no-switch>
-	
 	//       </panel>
-	
 	//       <panel header="Header" no-close>
-	
 	//       </panel>
-	
 	//     </doc-code>
-	
 	//     <br>
-	
 	//     <h4>Use markdown in the header (only inline level markdown are supported)</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <panel header="**haha** :rocket: ![](https://vuejs.org/images/logo.png =25x25)" expandable type="seamless">
-	
 	//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur consequuntur culpa enim, explicabo impedit iure maxime omnis quas recusandae sint suscipit? Accusamus cumque facere laboriosam magnam magni numquam reprehenderit.
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="**haha** :rocket: ![](https://vuejs.org/images/logo.png =25x25)" type="seamless">
-	
 	//         ...
-	
 	//       </panel>
 	
-	
 	//     </doc-code>
-	
 	//     <br>
-	
 	//     <h4>If <code>src</code> attribute is provided, the panel content is loaded dynamically from src.</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <panel header="Dynamic Loading" src="/docs/loadContent.html#fragment" minimized></panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <panel header="Dynamic Loading" src="/docs/loadContent.html#fragment" minimized></panel>
-	
 	//     </doc-code>
-	
 	
 	//     <h4>Accordion could group panels together to provide better control</h4>
-	
 	//     <div class="bs-example">
-	
 	//       <checkbox :checked.sync="checked" type="primary">Open only one at a time.</checkbox>
-	
 	//       <p><v-select :options="types" clear-button :value.sync="selected" placeholder="Global type"></v-select></p>
-	
 	//       <p><v-select :options="types" clear-button :value.sync="first" placeholder="First element type"></v-select></p>
-	
 	//       <accordion :one-at-atime="checked" :type="selected">
-	
 	//         <panel is-open :type="first=='panel'?null:first">
-	
 	//           <strong slot="header"><u>[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering</u></strong>
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//         </panel>
-	
 	//         <panel header="Panel #2">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//         </panel>
-	
 	//         <panel header="Panel #3">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//         </panel>
-	
 	//         <panel header="Panel #4">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//         </panel>
-	
 	//         <panel header="[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//         </panel>
-	
 	//       </accordion>
-	
 	
 	//       Panel with Expand Switch
 	
-	
 	//       <panel header="Parent" expandable ctrl-lvl="-1">
-	
 	//         <panel header="Child1" expandable>
-	
 	//           <panel header="Child2">
-	
 	//             <panel header="Child3" expandable>
-	
 	//               Parent 1
-	
 	//             </panel>
-	
 	//           </panel>
-	
 	//         </panel>
-	
 	//       </panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <accordion :one-at-atime="checked" type="info">
-	
 	//         <panel is-open type="primary">
-	
 	//           <strong slot="header"><u>Panel #1</u></strong>
-	
 	//           ...
-	
 	//         </panel>
-	
 	//         <panel header="Panel #2">
-	
 	//           ...
-	
 	//         </panel>
-	
 	//         <panel header="Panel #3">
-	
 	//           ...
-	
 	//         </panel>
-	
 	//         <panel header="Panel #4">
-	
 	//           ...
-	
 	//         </panel>
-	
 	//       </accordion>
-	
 	//     </doc-code>
 	
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>type</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p><code>null</code></p>
-	
 	//         <p>Define the type of color for the tabs (global).</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>one-at-time</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Control whether expanding an item will cause the other items to close.</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//     <doc-table name="Panel">
-	
 	//       <div>
-	
 	//         <p>header</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p></p>
-	
 	//         <p>The clickable text on the group's header. You need one to be able to click on the header for toggling.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>expandable</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>true</code></p>
-	
 	//         <p>Whether Panel is expandable.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>expanded</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Whether Panel is expanded or collapsed.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>minimized</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Whether Panel is minimized.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>no-close</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Whether to show the close button.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>no-switch</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Whether to show the expand switch.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>bottom-switch</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Whether to show an expand switch at the bottom of the panel. Independent of no-switch.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>url</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p></p>
-	
 	//         <p>The url to the remote page to be loaded as the content of the panel.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>type</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p><code>null</code></p>
-	
 	//         <p>
-	
 	//           The type of color for the tab (single).<br>
-	
 	//           Support: <code>default</code>, <code>primary</code>, <code>info</code>, <code>success</code>,
-	
 	//           <code>warning</code>, <code>danger</code>, <code>seamless</code>
-	
 	//         </p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//     <p>If you want to personalize your header with some html, you can use the slot instead of header attribute (panel&nbsp;#1 in the example).</p>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -3358,17 +2970,11 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div class="bs-docs-section" :id="id">
-	
 	//     <h1 class="page-header"><a href="#{{id}}" class="anchor">{{name}}</a></h1>
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  props: {
@@ -3393,7 +2999,7 @@
 /* 135 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" :id=\"id\">\r\n    <h1 class=\"page-header\"><a href=\"#{{id}}\" class=\"anchor\">{{name}}</a></h1>\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" :id=\"id\">\n    <h1 class=\"page-header\"><a href=\"#{{id}}\" class=\"anchor\">{{name}}</a></h1>\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 136 */
@@ -3495,43 +3101,24 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div v-if="permited">
-	
 	//     <h2 v-if="options.length">{{name}} {{ type }}</h2>
-	
 	//     <div class="table-responsive">
-	
 	//       <table v-if="options.length" class="table table-bordered">
-	
 	//         <thead>
-	
 	//             <tr>
-	
 	//               <th v-for="name in setHeaders" v-text="name"></th>
-	
 	//             </tr>
-	
 	//         </thead>
-	
 	//         <tbody>
-	
 	//           <tr v-for="option in options">
-	
 	//             <td v-for="h in setHeaders" v-html="option[$index]"></td>
-	
 	//           </tr>
-	
 	//         </tbody>
-	
 	//       </table>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -3539,7 +3126,7 @@
 /* 138 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div v-if=\"permited\">\r\n    <h2 v-if=\"options.length\">{{name}} {{ type }}</h2>\r\n    <div class=\"table-responsive\">\r\n      <table v-if=\"options.length\" class=\"table table-bordered\">\r\n        <thead>\r\n            <tr>\r\n              <th v-for=\"name in setHeaders\" v-text=\"name\"></th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr v-for=\"option in options\">\r\n            <td v-for=\"h in setHeaders\" v-html=\"option[$index]\"></td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  </div>";
+	module.exports = "<div v-if=\"permited\">\n    <h2 v-if=\"options.length\">{{name}} {{ type }}</h2>\n    <div class=\"table-responsive\">\n      <table v-if=\"options.length\" class=\"table table-bordered\">\n        <thead>\n            <tr>\n              <th v-for=\"name in setHeaders\" v-text=\"name\"></th>\n            </tr>\n        </thead>\n        <tbody>\n          <tr v-for=\"option in options\">\n            <td v-for=\"h in setHeaders\" v-html=\"option[$index]\"></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>";
 
 /***/ }),
 /* 139 */
@@ -3608,15 +3195,10 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div class="panel-group">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -3624,7 +3206,7 @@
 /* 141 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"panel-group\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div class=\"panel-group\">\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 142 */
@@ -3642,10 +3224,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -3667,8 +3249,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3686,7 +3268,7 @@
 	
 	
 	// module
-	exports.push([module.id, "label.checkbox[_v-cb25bde6] {\r\n  position: relative;\r\n  padding-left: 18px;\r\n}\r\nlabel.checkbox > input[_v-cb25bde6] {\r\n  box-sizing: border-box;\r\n  position: absolute;\r\n  z-index: -1;\r\n  padding: 0;\r\n  opacity: 0;\r\n  margin: 0;\r\n}\r\nlabel.checkbox > .icon[_v-cb25bde6] {\r\n  position: absolute;\r\n  top: .2rem;\r\n  left: 0;\r\n  display: block;\r\n  width: 1.4rem;\r\n  height: 1.4rem;\r\n  line-height:1rem;\r\n  text-align: center;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  border-radius: .35rem;\r\n  background-repeat: no-repeat;\r\n  background-position: center center;\r\n  background-size: 50% 50%;\r\n}\r\nlabel.checkbox:not(.active) > .icon[_v-cb25bde6] {\r\n  background-color: #ddd;\r\n  border: 1px solid #bbb;\r\n}\r\nlabel.checkbox > input:focus ~ .icon[_v-cb25bde6] {\r\n  outline: 0;\r\n  border: 1px solid #66afe9;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\nlabel.checkbox.active > .icon[_v-cb25bde6] {\r\n  background-size: 1rem 1rem;\r\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNyIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNS43MywwLjUybC0zLjEyNDIyLDMuMzQxNjFsLTEuMzM4OTUsLTEuNDMyMTJsLTEuMjQ5NjksMS4zMzY2NWwyLjU4ODYzLDIuNzY4NzZsNC4zNzM5LC00LjY3ODI2bC0xLjI0OTY5LC0xLjMzNjY1bDAsMGwwLjAwMDAyLDAuMDAwMDF6Ii8+PC9zdmc+);\r\n}\r\nlabel.checkbox.active .btn-default[_v-cb25bde6] { -webkit-filter: brightness(75%); filter: brightness(75%); }\r\n\r\nlabel.checkbox.disabled[_v-cb25bde6],\r\nlabel.checkbox.readonly[_v-cb25bde6],\r\n.btn.readonly[_v-cb25bde6] {\r\n  filter: alpha(opacity=65);\r\n  box-shadow: none;\r\n  opacity: .65;\r\n}\r\nlabel.btn > input[type=checkbox][_v-cb25bde6] {\r\n  position: absolute;\r\n  clip: rect(0,0,0,0);\r\n  pointer-events: none;\r\n}", ""]);
+	exports.push([module.id, "label.checkbox[_v-5eb1cbe6] {\n  position: relative;\n  padding-left: 18px;\n}\nlabel.checkbox > input[_v-5eb1cbe6] {\n  box-sizing: border-box;\n  position: absolute;\n  z-index: -1;\n  padding: 0;\n  opacity: 0;\n  margin: 0;\n}\nlabel.checkbox > .icon[_v-5eb1cbe6] {\n  position: absolute;\n  top: .2rem;\n  left: 0;\n  display: block;\n  width: 1.4rem;\n  height: 1.4rem;\n  line-height:1rem;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: .35rem;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\nlabel.checkbox:not(.active) > .icon[_v-5eb1cbe6] {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\nlabel.checkbox > input:focus ~ .icon[_v-5eb1cbe6] {\n  outline: 0;\n  border: 1px solid #66afe9;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\n}\nlabel.checkbox.active > .icon[_v-5eb1cbe6] {\n  background-size: 1rem 1rem;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNyIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNS43MywwLjUybC0zLjEyNDIyLDMuMzQxNjFsLTEuMzM4OTUsLTEuNDMyMTJsLTEuMjQ5NjksMS4zMzY2NWwyLjU4ODYzLDIuNzY4NzZsNC4zNzM5LC00LjY3ODI2bC0xLjI0OTY5LC0xLjMzNjY1bDAsMGwwLjAwMDAyLDAuMDAwMDF6Ii8+PC9zdmc+);\n}\nlabel.checkbox.active .btn-default[_v-5eb1cbe6] { -webkit-filter: brightness(75%); filter: brightness(75%); }\n\nlabel.checkbox.disabled[_v-5eb1cbe6],\nlabel.checkbox.readonly[_v-5eb1cbe6],\n.btn.readonly[_v-5eb1cbe6] {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=checkbox][_v-5eb1cbe6] {\n  position: absolute;\n  clip: rect(0,0,0,0);\n  pointer-events: none;\n}", ""]);
 	
 	// exports
 
@@ -4113,148 +3695,78 @@
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  // label.checkbox {
-	
 	  //   position: relative;
-	
 	  //   padding-left: 18px;
-	
 	  // }
-	
 	  // label.checkbox > input {
-	
 	  //   box-sizing: border-box;
-	
 	  //   position: absolute;
-	
 	  //   z-index: -1;
-	
 	  //   padding: 0;
-	
 	  //   opacity: 0;
-	
 	  //   margin: 0;
-	
 	  // }
-	
 	  // label.checkbox > .icon {
-	
 	  //   position: absolute;
-	
 	  //   top: .2rem;
-	
 	  //   left: 0;
-	
 	  //   display: block;
-	
 	  //   width: 1.4rem;
-	
 	  //   height: 1.4rem;
-	
 	  //   line-height:1rem;
-	
 	  //   text-align: center;
-	
 	  //   user-select: none;
-	
 	  //   border-radius: .35rem;
-	
 	  //   background-repeat: no-repeat;
-	
 	  //   background-position: center center;
-	
 	  //   background-size: 50% 50%;
-	
 	  // }
-	
 	  // label.checkbox:not(.active) > .icon {
-	
 	  //   background-color: #ddd;
-	
 	  //   border: 1px solid #bbb;
-	
 	  // }
-	
 	  // label.checkbox > input:focus ~ .icon {
-	
 	  //   outline: 0;
-	
 	  //   border: 1px solid #66afe9;
-	
 	  //   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	
 	  // }
-	
 	  // label.checkbox.active > .icon {
-	
 	  //   background-size: 1rem 1rem;
-	
 	  //   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNyIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNS43MywwLjUybC0zLjEyNDIyLDMuMzQxNjFsLTEuMzM4OTUsLTEuNDMyMTJsLTEuMjQ5NjksMS4zMzY2NWwyLjU4ODYzLDIuNzY4NzZsNC4zNzM5LC00LjY3ODI2bC0xLjI0OTY5LC0xLjMzNjY1bDAsMGwwLjAwMDAyLDAuMDAwMDF6Ii8+PC9zdmc+);
-	
 	  // }
-	
 	  // label.checkbox.active .btn-default { filter: brightness(75%); }
 	
-	
 	  // label.checkbox.disabled,
-	
 	  // label.checkbox.readonly,
-	
 	  // .btn.readonly {
-	
 	  //   filter: alpha(opacity=65);
-	
 	  //   box-shadow: none;
-	
 	  //   opacity: .65;
-	
 	  // }
-	
 	  // label.btn > input[type=checkbox] {
-	
 	  //   position: absolute;
-	
 	  //   clip: rect(0,0,0,0);
-	
 	  //   pointer-events: none;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <label :class="[isButton?'btn btn-'+typeColor:'open checkbox '+typeColor,{active:checked,disabled:disabled,readonly:readonly}]" @click.prevent="toggle">
-	
 	//     <input type="checkbox" autocomplete="off"
-	
 	//       v-el:input
-	
 	//       :checked="active"
-	
 	//       :value="value"
-	
 	//       :name="name"
-	
 	//       :readonly="readonly"
-	
 	//       :disabled="disabled"
-	
 	//     />
-	
 	//     <span v-if="!isButton" class="icon dropdown-toggle" :class="[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]"></span>
-	
 	//     <span v-if="!isButton&active&&typeColor==='default'" class="icon"></span>
-	
 	//     <slot></slot>
-	
 	//   </label>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -4262,7 +3774,7 @@
 /* 148 */
 /***/ (function(module, exports) {
 
-	module.exports = "<label :class=\"[isButton?'btn btn-'+typeColor:'open checkbox '+typeColor,{active:checked,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\" _v-cb25bde6=\"\">\n    <input type=\"checkbox\" autocomplete=\"off\" v-el:input=\"\" :checked=\"active\" :value=\"value\" :name=\"name\" :readonly=\"readonly\" :disabled=\"disabled\" _v-cb25bde6=\"\">\n    <span v-if=\"!isButton\" class=\"icon dropdown-toggle\" :class=\"[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]\" _v-cb25bde6=\"\"></span>\n    <span v-if=\"!isButton&amp;active&amp;&amp;typeColor==='default'\" class=\"icon\" _v-cb25bde6=\"\"></span>\n    <slot _v-cb25bde6=\"\"></slot>\n  </label>";
+	module.exports = "<label :class=\"[isButton?'btn btn-'+typeColor:'open checkbox '+typeColor,{active:checked,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\" _v-5eb1cbe6=\"\">\n    <input type=\"checkbox\" autocomplete=\"off\" v-el:input=\"\" :checked=\"active\" :value=\"value\" :name=\"name\" :readonly=\"readonly\" :disabled=\"disabled\" _v-5eb1cbe6=\"\">\n    <span v-if=\"!isButton\" class=\"icon dropdown-toggle\" :class=\"[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]\" _v-5eb1cbe6=\"\"></span>\n    <span v-if=\"!isButton&amp;active&amp;&amp;typeColor==='default'\" class=\"icon\" _v-5eb1cbe6=\"\"></span>\n    <slot _v-5eb1cbe6=\"\"></slot>\n  </label>";
 
 /***/ }),
 /* 149 */
@@ -4305,8 +3817,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12b5ebaa&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12b5ebaa&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b32daac&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b32daac&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -4324,7 +3836,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".panel-heading {\r\n        width: 100%;\r\n    }\r\n\r\n    .panel-title {\r\n        font-size: 1em;\r\n    }\r\n\r\n    .header-wrapper {\r\n        display: inline-block;\r\n        width: 72%;\r\n    }\r\n\r\n    .button-wrapper {\r\n        float: right;\r\n        display: inline-block;\r\n        width: 28%;\r\n    }\r\n\r\n    .accordion-toggle {\r\n        cursor: pointer;\r\n    }\r\n\r\n    .expandable-panel {\r\n        margin-bottom: 0 !important;\r\n        margin-top: 5px;\r\n    }\r\n\r\n    .panel-group > .panel-container > .expandable-panel {\r\n        margin-top: 0!important;\r\n    }\r\n\r\n    .panel-seamless {\r\n        padding: 0;\r\n    }\r\n\r\n    .caret.caret-collapse {\r\n        border-left: 4px dashed;\r\n        border-top: 4px solid transparent;\r\n        border-bottom: 4px solid transparent;\r\n        border-right: none;\r\n    }\r\n\r\n    .panel.panel-seamless {\r\n        box-shadow: none;\r\n        border: none;\r\n    }\r\n\r\n    .panel-seamless > .panel-heading {\r\n        padding: 0;\r\n    }\r\n\r\n    .panel-seamless > .panel-collapse > .panel-body {\r\n        padding: 10px 0;\r\n    }\r\n\r\n    .panel-body > .collapse-button {\r\n        margin-top: 5px;\r\n        opacity: 0.2;\r\n    }\r\n\r\n    .panel-body > .collapse-button:hover {\r\n        opacity: 1;\r\n    }\r\n\r\n    .close-button {\r\n        font-size: 10px !important;\r\n        float: right;\r\n        padding: 3px 8px !important;\r\n    }\r\n\r\n    .morph {\r\n        display: inline-block;\r\n    }", ""]);
+	exports.push([module.id, ".panel-heading {\n        width: 100%;\n    }\n\n    .panel-title {\n        font-size: 1em;\n    }\n\n    .header-wrapper {\n        display: inline-block;\n        width: 72%;\n    }\n\n    .button-wrapper {\n        float: right;\n        display: inline-block;\n        width: 28%;\n    }\n\n    .accordion-toggle {\n        cursor: pointer;\n    }\n\n    .expandable-panel {\n        margin-bottom: 0 !important;\n        margin-top: 5px;\n    }\n\n    .panel-group > .panel-container > .expandable-panel {\n        margin-top: 0!important;\n    }\n\n    .panel-seamless {\n        padding: 0;\n    }\n\n    .caret.caret-collapse {\n        border-left: 4px dashed;\n        border-top: 4px solid transparent;\n        border-bottom: 4px solid transparent;\n        border-right: none;\n    }\n\n    .panel.panel-seamless {\n        box-shadow: none;\n        border: none;\n    }\n\n    .panel-seamless > .panel-heading {\n        padding: 0;\n    }\n\n    .panel-seamless > .panel-collapse > .panel-body {\n        padding: 10px 0;\n    }\n\n    .panel-body > .collapse-button {\n        margin-top: 5px;\n        opacity: 0.2;\n    }\n\n    .panel-body > .collapse-button:hover {\n        opacity: 1;\n    }\n\n    .close-button {\n        font-size: 10px !important;\n        float: right;\n        padding: 3px 8px !important;\n    }\n\n    .morph {\n        display: inline-block;\n    }", ""]);
 	
 	// exports
 
@@ -4356,110 +3868,58 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <span class="panel-container">
-	
 	//         <div class="morph" v-show="minimized">
-	
 	//             <div class="morph-display-wrapper" v-on:click="open()">
-	
 	//                 <button class="morph-display-button btn btn-default">
-	
 	//                     <template v-if="altContent">
-	
 	//                         <span class="panel-title">{{{altContent}}}</span>
-	
 	//                     </template>
-	
 	//                     <template v-else>
-	
 	//                         <slot name="header">
-	
 	//                             <span class="panel-title">{{{altContent}}}</span>
-	
 	//                         </slot>
-	
 	//                     </template>
-	
 	//                 </button>
-	
 	//             </div>
-	
 	//         </div>
-	
 	
 	//         <div :class="['panel', panelType, {'expandable-panel': isExpandablePanel}]" v-else>
-	
 	//             <div :class="['panel-heading',{'accordion-toggle':canCollapse}]"
-	
 	//                  @click.prevent.stop="canCollapse && toggle()"
-	
 	//                  @mouseover="onHeaderHover = true" @mouseleave="onHeaderHover = false">
-	
 	//                 <div class="header-wrapper">
-	
 	//                     <span :class="['caret', {'caret-collapse': !expanded}]" v-show="showCaret"></span>
-	
 	//                     <slot name="header">
-	
 	//                         <span class="panel-title">{{{headerContent}}}</span>
-	
 	//                     </slot>
-	
 	//                 </div>
-	
 	//                 <div class="button-wrapper">
-	
 	//                     <slot name="button">
-	
 	//                         <panel-switch v-show="canCollapse && !noSwitch && !showCaret" v-bind:is-open="expanded"
-	
 	//                                       @click.stop.prevent="expand()"></panel-switch>
-	
 	//                         <button type="button" class="close-button btn btn-default"
-	
 	//                                 v-show="this.type !== 'seamless' ? (!noClose) : onHeaderHover"
-	
 	//                                 @click.stop="close()">
-	
 	//                             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	
 	//                         </button>
-	
 	//                     </slot>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//             <div class="panel-collapse"
-	
 	//                  v-el:panel
-	
 	//                  v-show="expanded"
-	
 	//             >
-	
 	//                 <div class="panel-body">
-	
 	//                     <slot></slot>
-	
 	//                     <retriever v-if="isDynamic" v-ref:retriever :src="src" :fragment="fragment" delay></retriever>
-	
 	//                     <panel-switch v-show="canCollapse && bottomSwitch" v-bind:is-open="expanded"
-	
 	//                                   @click.stop.prevent="collapseThenScrollIntoViewIfNeeded()"></panel-switch>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//     </span>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -4648,142 +4108,81 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .panel-heading {
-	
 	//         width: 100%;
-	
 	//     }
-	
 	
 	//     .panel-title {
-	
 	//         font-size: 1em;
-	
 	//     }
-	
 	
 	//     .header-wrapper {
-	
 	//         display: inline-block;
-	
 	//         width: 72%;
-	
 	//     }
-	
 	
 	//     .button-wrapper {
-	
 	//         float: right;
-	
 	//         display: inline-block;
-	
 	//         width: 28%;
-	
 	//     }
-	
 	
 	//     .accordion-toggle {
-	
 	//         cursor: pointer;
-	
 	//     }
-	
 	
 	//     .expandable-panel {
-	
 	//         margin-bottom: 0 !important;
-	
 	//         margin-top: 5px;
-	
 	//     }
-	
 	
 	//     .panel-group > .panel-container > .expandable-panel {
-	
 	//         margin-top: 0!important;
-	
 	//     }
-	
 	
 	//     .panel-seamless {
-	
 	//         padding: 0;
-	
 	//     }
-	
 	
 	//     .caret.caret-collapse {
-	
 	//         border-left: 4px dashed;
-	
 	//         border-top: 4px solid transparent;
-	
 	//         border-bottom: 4px solid transparent;
-	
 	//         border-right: none;
-	
 	//     }
-	
 	
 	//     .panel.panel-seamless {
-	
 	//         box-shadow: none;
-	
 	//         border: none;
-	
 	//     }
-	
 	
 	//     .panel-seamless > .panel-heading {
-	
 	//         padding: 0;
-	
 	//     }
-	
 	
 	//     .panel-seamless > .panel-collapse > .panel-body {
-	
 	//         padding: 10px 0;
-	
 	//     }
-	
 	
 	//     .panel-body > .collapse-button {
-	
 	//         margin-top: 5px;
-	
 	//         opacity: 0.2;
-	
 	//     }
-	
 	
 	//     .panel-body > .collapse-button:hover {
-	
 	//         opacity: 1;
-	
 	//     }
-	
 	
 	//     .close-button {
-	
 	//         font-size: 10px !important;
-	
 	//         float: right;
-	
 	//         padding: 3px 8px !important;
-	
 	//     }
-	
 	
 	//     .morph {
-	
 	//         display: inline-block;
-	
 	//     }
-	
 	// </style>
 
 /***/ }),
@@ -13629,7 +13028,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".dimmed {\r\n    color: #777;\r\n}\r\n", ""]);
+	exports.push([module.id, ".dimmed {\n    color: #777;\n}\n", ""]);
 	
 	// exports
 
@@ -17319,8 +16718,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8663a104&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8663a104&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2125967e&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2125967e&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -17338,7 +16737,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".collapse-button {\r\n        font-size: 10px !important;\r\n        float: right;\r\n        padding: 3px 8px !important;\r\n        margin-left: 3px;\r\n    }", ""]);
+	exports.push([module.id, ".collapse-button {\n        font-size: 10px !important;\n        float: right;\n        padding: 3px 8px !important;\n        margin-left: 3px;\n    }", ""]);
 	
 	// exports
 
@@ -17377,34 +16776,20 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .collapse-button {
-	
 	//         font-size: 10px !important;
-	
 	//         float: right;
-	
 	//         padding: 3px 8px !important;
-	
 	//         margin-left: 3px;
-	
 	//     }
-	
 	// </style>
 	// <template>
-	
 	//     <button type="button" class="collapse-button btn btn-default">
-	
 	//         <span :class="['glyphicon', {'glyphicon-menu-down': !isOpen, 'glyphicon-menu-up': isOpen}]"
-	
 	//               aria-hidden="true"></span>
-	
 	//     </button>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -17412,7 +16797,7 @@
 /* 261 */
 /***/ (function(module, exports) {
 
-	module.exports = "<button type=\"button\" class=\"collapse-button btn btn-default\">\r\n        <span :class=\"['glyphicon', {'glyphicon-menu-down': !isOpen, 'glyphicon-menu-up': isOpen}]\"\r\n              aria-hidden=\"true\"></span>\r\n    </button>";
+	module.exports = "<button type=\"button\" class=\"collapse-button btn btn-default\">\n        <span :class=\"['glyphicon', {'glyphicon-menu-down': !isOpen, 'glyphicon-menu-up': isOpen}]\"\n              aria-hidden=\"true\"></span>\n    </button>";
 
 /***/ }),
 /* 262 */
@@ -17517,15 +16902,10 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div>
-	
 	//     Loading...
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(264)))
@@ -27800,13 +27180,13 @@
 /* 266 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div>\r\n    Loading...\r\n  </div>";
+	module.exports = "<div>\n    Loading...\n  </div>";
 
 /***/ }),
 /* 267 */
 /***/ (function(module, exports) {
 
-	module.exports = "<span class=\"panel-container\">\r\n        <div class=\"morph\" v-show=\"minimized\">\r\n            <div class=\"morph-display-wrapper\" v-on:click=\"open()\">\r\n                <button class=\"morph-display-button btn btn-default\">\r\n                    <template v-if=\"altContent\">\r\n                        <span class=\"panel-title\">{{{altContent}}}</span>\r\n                    </template>\r\n                    <template v-else>\r\n                        <slot name=\"header\">\r\n                            <span class=\"panel-title\">{{{altContent}}}</span>\r\n                        </slot>\r\n                    </template>\r\n                </button>\r\n            </div>\r\n        </div>\r\n\r\n        <div :class=\"['panel', panelType, {'expandable-panel': isExpandablePanel}]\" v-else>\r\n            <div :class=\"['panel-heading',{'accordion-toggle':canCollapse}]\"\r\n                 @click.prevent.stop=\"canCollapse && toggle()\"\r\n                 @mouseover=\"onHeaderHover = true\" @mouseleave=\"onHeaderHover = false\">\r\n                <div class=\"header-wrapper\">\r\n                    <span :class=\"['caret', {'caret-collapse': !expanded}]\" v-show=\"showCaret\"></span>\r\n                    <slot name=\"header\">\r\n                        <span class=\"panel-title\">{{{headerContent}}}</span>\r\n                    </slot>\r\n                </div>\r\n                <div class=\"button-wrapper\">\r\n                    <slot name=\"button\">\r\n                        <panel-switch v-show=\"canCollapse && !noSwitch && !showCaret\" v-bind:is-open=\"expanded\"\r\n                                      @click.stop.prevent=\"expand()\"></panel-switch>\r\n                        <button type=\"button\" class=\"close-button btn btn-default\"\r\n                                v-show=\"this.type !== 'seamless' ? (!noClose) : onHeaderHover\"\r\n                                @click.stop=\"close()\">\r\n                            <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </slot>\r\n                </div>\r\n            </div>\r\n            <div class=\"panel-collapse\"\r\n                 v-el:panel\r\n                 v-show=\"expanded\"\r\n            >\r\n                <div class=\"panel-body\">\r\n                    <slot></slot>\r\n                    <retriever v-if=\"isDynamic\" v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\r\n                    <panel-switch v-show=\"canCollapse && bottomSwitch\" v-bind:is-open=\"expanded\"\r\n                                  @click.stop.prevent=\"collapseThenScrollIntoViewIfNeeded()\"></panel-switch>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </span>";
+	module.exports = "<span class=\"panel-container\">\n        <div class=\"morph\" v-show=\"minimized\">\n            <div class=\"morph-display-wrapper\" v-on:click=\"open()\">\n                <button class=\"morph-display-button btn btn-default\">\n                    <template v-if=\"altContent\">\n                        <span class=\"panel-title\">{{{altContent}}}</span>\n                    </template>\n                    <template v-else>\n                        <slot name=\"header\">\n                            <span class=\"panel-title\">{{{altContent}}}</span>\n                        </slot>\n                    </template>\n                </button>\n            </div>\n        </div>\n\n        <div :class=\"['panel', panelType, {'expandable-panel': isExpandablePanel}]\" v-else>\n            <div :class=\"['panel-heading',{'accordion-toggle':canCollapse}]\"\n                 @click.prevent.stop=\"canCollapse && toggle()\"\n                 @mouseover=\"onHeaderHover = true\" @mouseleave=\"onHeaderHover = false\">\n                <div class=\"header-wrapper\">\n                    <span :class=\"['caret', {'caret-collapse': !expanded}]\" v-show=\"showCaret\"></span>\n                    <slot name=\"header\">\n                        <span class=\"panel-title\">{{{headerContent}}}</span>\n                    </slot>\n                </div>\n                <div class=\"button-wrapper\">\n                    <slot name=\"button\">\n                        <panel-switch v-show=\"canCollapse && !noSwitch && !showCaret\" v-bind:is-open=\"expanded\"\n                                      @click.stop.prevent=\"expand()\"></panel-switch>\n                        <button type=\"button\" class=\"close-button btn btn-default\"\n                                v-show=\"this.type !== 'seamless' ? (!noClose) : onHeaderHover\"\n                                @click.stop=\"close()\">\n                            <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n                        </button>\n                    </slot>\n                </div>\n            </div>\n            <div class=\"panel-collapse\"\n                 v-el:panel\n                 v-show=\"expanded\"\n            >\n                <div class=\"panel-body\">\n                    <slot></slot>\n                    <retriever v-if=\"isDynamic\" v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\n                    <panel-switch v-show=\"canCollapse && bottomSwitch\" v-bind:is-open=\"expanded\"\n                                  @click.stop.prevent=\"collapseThenScrollIntoViewIfNeeded()\"></panel-switch>\n                </div>\n            </div>\n        </div>\n    </span>";
 
 /***/ }),
 /* 268 */
@@ -27824,10 +27204,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d2dd4b74&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5614d974&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d2dd4b74&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5614d974&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -27849,8 +27229,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d2dd4b74&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d2dd4b74&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5614d974&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5614d974&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27868,7 +27248,7 @@
 	
 	
 	// module
-	exports.push([module.id, "button.form-control.dropdown-toggle[_v-d2dd4b74]{\r\n  height: auto;\r\n  padding-right: 24px;\r\n}\r\nbutton.form-control.dropdown-toggle[_v-d2dd4b74]:after{\r\n  content: ' ';\r\n  position: absolute;\r\n  right: 13px;\r\n  top: 50%;\r\n  margin: -1px 0 0;\r\n  border-top: 4px dashed;\r\n  border-top: 4px solid \\9;\r\n  border-right: 4px solid transparent;\r\n  border-left: 4px solid transparent;\r\n}\r\n.bs-searchbox[_v-d2dd4b74] {\r\n  position: relative;\r\n  margin: 4px 8px;\r\n}\r\n.bs-searchbox .close[_v-d2dd4b74] {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 34px;\r\n  height: 34px;\r\n  line-height: 34px;\r\n  text-align: center;\r\n}\r\n.bs-searchbox input[_v-d2dd4b74]:focus,\r\n.secret:focus + button[_v-d2dd4b74] {\r\n  outline: 0;\r\n  border-color: #66afe9 !important;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n.secret[_v-d2dd4b74] {\r\n  border: 0;\r\n  clip: rect(0 0 0 0);\r\n  height: 1px;\r\n  margin: -1px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  position: absolute;\r\n  width: 1px;\r\n}\r\nbutton>.close[_v-d2dd4b74] { margin-left: 5px;}\r\n.notify.out[_v-d2dd4b74] { position: relative; }\r\n.notify.in[_v-d2dd4b74],\r\n.notify>div[_v-d2dd4b74] {\r\n  position: absolute;\r\n  width: 96%;\r\n  margin: 0 2%;\r\n  min-height: 26px;\r\n  padding: 3px 5px;\r\n  background: #f5f5f5;\r\n  border: 1px solid #e3e3e3;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);\r\n  pointer-events: none;\r\n}\r\n.notify>div[_v-d2dd4b74] {\r\n  top: 5px;\r\n  z-index: 1;\r\n}\r\n.notify.in[_v-d2dd4b74] {\r\n  opacity: .9;\r\n  bottom: 5px;\r\n}\r\n.btn-group-justified .dropdown-toggle>span[_v-d2dd4b74]:not(.close) {\r\n  width: calc(100% - 18px);\r\n  display: inline-block;\r\n  overflow: hidden;\r\n  white-space: nowrap;\r\n  text-overflow: ellipsis;\r\n  margin-bottom: -4px;\r\n}\r\n.btn-group-justified .dropdown-menu[_v-d2dd4b74] { width: 100%; }", ""]);
+	exports.push([module.id, "div.form-control.dropdown-toggle[_v-5614d974]{\n  height: auto;\n  padding-right: 24px;\n  cursor: pointer;\n}\ndiv.form-control.dropdown-toggle[_v-5614d974]:after{\n  content: ' ';\n  position: absolute;\n  right: 13px;\n  top: 50%;\n  margin: -1px 0 0;\n  border-top: 4px dashed;\n  border-top: 4px solid \\9;\n  border-right: 4px solid transparent;\n  border-left: 4px solid transparent;\n}\n.bs-searchbox[_v-5614d974] {\n  position: relative;\n  margin: 4px 8px;\n}\n.bs-searchbox .close[_v-5614d974] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n}\n.bs-searchbox input[_v-5614d974]:focus,\n.secret:focus + button[_v-5614d974] {\n  outline: 0;\n  border-color: #66afe9 !important;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\n}\n.secret[_v-5614d974] {\n  border: 0;\n  clip: rect(0 0 0 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n}\ndiv>.close[_v-5614d974] { margin-left: 5px; }\n.notify.out[_v-5614d974] { position: relative; }\n.notify.in[_v-5614d974],\n.notify>div[_v-5614d974] {\n  position: absolute;\n  width: 96%;\n  margin: 0 2%;\n  min-height: 26px;\n  padding: 3px 5px;\n  background: #f5f5f5;\n  border: 1px solid #e3e3e3;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);\n  pointer-events: none;\n}\n.notify>div[_v-5614d974] {\n  top: 5px;\n  z-index: 1;\n}\n.notify.in[_v-5614d974] {\n  opacity: .9;\n  bottom: 5px;\n}\n.btn-group-justified .dropdown-toggle>span[_v-5614d974]:not(.close) {\n  width: calc(100% - 18px);\n  display: inline-block;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  margin-bottom: -4px;\n}\n.btn-group-justified .dropdown-menu[_v-5614d974] {\n  width: 100%;\n}\n.open>.dropdown-menu[_v-5614d974] {\n  overflow-y: auto;\n  max-height: 2.5rem;\n}\n.form-control.dropdown-toggle[_v-5614d974]{\n  border-radius: 5px;\n}\n.form-control.dropdown-toggle>.close[_v-5614d974]{\n  float: none;\n  font-size: 20px;\n  line-height: 20px;\n}", ""]);
 	
 	// exports
 
@@ -27896,83 +27276,44 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div v-el:select :class="classes">
-	
-	//     <button type="button" class="form-control dropdown-toggle"
-	
+	//     <div class="form-control dropdown-toggle"
 	//       :disabled="disabled || !hasParent"
-	
 	//       :readonly="readonly"
-	
 	//       @click="toggle()"
-	
 	//       @keyup.esc="show = false"
-	
 	//     >
-	
 	//       <span class="btn-content" v-html="loading ? text.loading : showPlaceholder || selected"></span>
-	
 	//       <span v-if="clearButton&&values.length" class="close" @click="clear()">&times;</span>
-	
-	//     </button>
-	
+	//     </div>
 	//     <select v-el:sel v-model="value" v-show="show" name="{{name}}" class="secret" :multiple="multiple" :required="required" :readonly="readonly" :disabled="disabled">
-	
 	//       <option v-if="required" value=""></option>
-	
 	//       <option v-for="option in options" :value="option[optionsValue]||option">{{ option[optionsLabel]||option }}</option>
-	
 	//     </select>
-	
 	//     <ul class="dropdown-menu">
-	
 	//       <template v-if="options.length">
-	
 	//         <li v-if="canSearch" class="bs-searchbox">
-	
 	//           <input type="text" placeholder="{{searchText||text.search}}" class="form-control" autocomplete="off"
-	
 	//             v-el:search
-	
 	//             v-model="searchValue"
-	
 	//             @keyup.esc="show = false"
-	
 	//           />
-	
 	//           <span v-show="searchValue" class="close" @click="clearSearch">&times;</span>
-	
 	//         </li>
-	
 	//         <li v-if="required&&!clearButton"><a @mousedown.prevent="clear() && blur()">{{ placeholder || text.notSelected }}</a></li>
-	
 	//         <li v-for="option in options | filterBy searchValue" :id="option[optionsValue]||option">
-	
 	//           <a @mousedown.prevent="select(option[optionsValue],option)">
-	
 	//             <span v-html="option[optionsLabel]||option"></span>
-	
 	//             <span class="glyphicon glyphicon-ok check-mark" v-show="isSelected(option[optionsValue])"></span>
-	
 	//           </a>
-	
 	//         </li>
-	
 	//       </template>
-	
 	//       <slot></slot>
-	
 	//       <div v-if="showNotify && !closeOnSelect" class="notify in" transition="fadein">{{limitText}}</div>
-	
 	//     </ul>
-	
 	//     <div v-if="showNotify && closeOnSelect" class="notify out" transition="fadein"><div>{{limitText}}</div></div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	var timeout = {};
@@ -28211,6 +27552,7 @@
 	      return this.values.indexOf(v) > -1;
 	    },
 	    select: function select(v, alt) {
+	      this.$els.search.blur();
 	      if (this.value instanceof Array) {
 	        if (~this.value.indexOf(v)) {
 	          this.value.$remove(v);
@@ -28221,7 +27563,11 @@
 	          this.toggle();
 	        }
 	      } else {
+	        var tmp = this.value;
 	        this.value = !~['', null, undefined].indexOf(v) ? v : alt;
+	        if (this.value === tmp) {
+	          this.value = null;
+	        }
 	        this.toggle();
 	      }
 	    },
@@ -28284,163 +27630,99 @@
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
-	// button.form-control.dropdown-toggle{
-	
+	// div.form-control.dropdown-toggle{
 	//   height: auto;
-	
 	//   padding-right: 24px;
-	
+	//   cursor: pointer;
 	// }
-	
-	// button.form-control.dropdown-toggle:after{
-	
+	// div.form-control.dropdown-toggle:after{
 	//   content: ' ';
-	
 	//   position: absolute;
-	
 	//   right: 13px;
-	
 	//   top: 50%;
-	
 	//   margin: -1px 0 0;
-	
 	//   border-top: 4px dashed;
-	
 	//   border-top: 4px solid \9;
-	
 	//   border-right: 4px solid transparent;
-	
 	//   border-left: 4px solid transparent;
-	
 	// }
-	
 	// .bs-searchbox {
-	
 	//   position: relative;
-	
 	//   margin: 4px 8px;
-	
 	// }
-	
 	// .bs-searchbox .close {
-	
 	//   position: absolute;
-	
 	//   top: 0;
-	
 	//   right: 0;
-	
 	//   z-index: 2;
-	
 	//   display: block;
-	
 	//   width: 34px;
-	
 	//   height: 34px;
-	
 	//   line-height: 34px;
-	
 	//   text-align: center;
-	
 	// }
-	
 	// .bs-searchbox input:focus,
-	
 	// .secret:focus + button {
-	
 	//   outline: 0;
-	
 	//   border-color: #66afe9 !important;
-	
 	//   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	
 	// }
-	
 	// .secret {
-	
 	//   border: 0;
-	
 	//   clip: rect(0 0 0 0);
-	
 	//   height: 1px;
-	
 	//   margin: -1px;
-	
 	//   overflow: hidden;
-	
 	//   padding: 0;
-	
 	//   position: absolute;
-	
 	//   width: 1px;
-	
 	// }
-	
-	// button>.close { margin-left: 5px;}
-	
+	// div>.close { margin-left: 5px; }
 	// .notify.out { position: relative; }
-	
 	// .notify.in,
-	
 	// .notify>div {
-	
 	//   position: absolute;
-	
 	//   width: 96%;
-	
 	//   margin: 0 2%;
-	
 	//   min-height: 26px;
-	
 	//   padding: 3px 5px;
-	
 	//   background: #f5f5f5;
-	
 	//   border: 1px solid #e3e3e3;
-	
 	//   box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-	
 	//   pointer-events: none;
-	
 	// }
-	
 	// .notify>div {
-	
 	//   top: 5px;
-	
 	//   z-index: 1;
-	
 	// }
-	
 	// .notify.in {
-	
 	//   opacity: .9;
-	
 	//   bottom: 5px;
-	
 	// }
-	
 	// .btn-group-justified .dropdown-toggle>span:not(.close) {
-	
 	//   width: calc(100% - 18px);
-	
 	//   display: inline-block;
-	
 	//   overflow: hidden;
-	
 	//   white-space: nowrap;
-	
 	//   text-overflow: ellipsis;
-	
 	//   margin-bottom: -4px;
-	
 	// }
-	
-	// .btn-group-justified .dropdown-menu { width: 100%; }
-	
+	// .btn-group-justified .dropdown-menu {
+	//   width: 100%;
+	// }
+	// .open>.dropdown-menu {
+	//   overflow-y: auto;
+	//   max-height: 2.5rem;
+	// }
+	// .form-control.dropdown-toggle{
+	//   border-radius: 5px;
+	// }
+	// .form-control.dropdown-toggle>.close{
+	//   float: none;
+	//   font-size: 20px;
+	//   line-height: 20px;
+	// }
 	// </style>
 
 /***/ }),
@@ -28892,7 +28174,7 @@
 /* 286 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div v-el:select=\"\" :class=\"classes\" _v-d2dd4b74=\"\">\n    <button type=\"button\" class=\"form-control dropdown-toggle\" :disabled=\"disabled || !hasParent\" :readonly=\"readonly\" @click=\"toggle()\" @keyup.esc=\"show = false\" _v-d2dd4b74=\"\">\n      <span class=\"btn-content\" v-html=\"loading ? text.loading : showPlaceholder || selected\" _v-d2dd4b74=\"\"></span>\n      <span v-if=\"clearButton&amp;&amp;values.length\" class=\"close\" @click=\"clear()\" _v-d2dd4b74=\"\">×</span>\n    </button>\n    <select v-el:sel=\"\" v-model=\"value\" v-show=\"show\" name=\"{{name}}\" class=\"secret\" :multiple=\"multiple\" :required=\"required\" :readonly=\"readonly\" :disabled=\"disabled\" _v-d2dd4b74=\"\">\n      <option v-if=\"required\" value=\"\" _v-d2dd4b74=\"\"></option>\n      <option v-for=\"option in options\" :value=\"option[optionsValue]||option\" _v-d2dd4b74=\"\">{{ option[optionsLabel]||option }}</option>\n    </select>\n    <ul class=\"dropdown-menu\" _v-d2dd4b74=\"\">\n      <template v-if=\"options.length\" _v-d2dd4b74=\"\">\n        <li v-if=\"canSearch\" class=\"bs-searchbox\" _v-d2dd4b74=\"\">\n          <input type=\"text\" placeholder=\"{{searchText||text.search}}\" class=\"form-control\" autocomplete=\"off\" v-el:search=\"\" v-model=\"searchValue\" @keyup.esc=\"show = false\" _v-d2dd4b74=\"\">\n          <span v-show=\"searchValue\" class=\"close\" @click=\"clearSearch\" _v-d2dd4b74=\"\">×</span>\n        </li>\n        <li v-if=\"required&amp;&amp;!clearButton\" _v-d2dd4b74=\"\"><a @mousedown.prevent=\"clear() &amp;&amp; blur()\" _v-d2dd4b74=\"\">{{ placeholder || text.notSelected }}</a></li>\n        <li v-for=\"option in options | filterBy searchValue\" :id=\"option[optionsValue]||option\" _v-d2dd4b74=\"\">\n          <a @mousedown.prevent=\"select(option[optionsValue],option)\" _v-d2dd4b74=\"\">\n            <span v-html=\"option[optionsLabel]||option\" _v-d2dd4b74=\"\"></span>\n            <span class=\"glyphicon glyphicon-ok check-mark\" v-show=\"isSelected(option[optionsValue])\" _v-d2dd4b74=\"\"></span>\n          </a>\n        </li>\n      </template>\n      <slot _v-d2dd4b74=\"\"></slot>\n      <div v-if=\"showNotify &amp;&amp; !closeOnSelect\" class=\"notify in\" transition=\"fadein\" _v-d2dd4b74=\"\">{{limitText}}</div>\n    </ul>\n    <div v-if=\"showNotify &amp;&amp; closeOnSelect\" class=\"notify out\" transition=\"fadein\" _v-d2dd4b74=\"\"><div _v-d2dd4b74=\"\">{{limitText}}</div></div>\n  </div>";
+	module.exports = "<div v-el:select=\"\" :class=\"classes\" _v-5614d974=\"\">\n    <div class=\"form-control dropdown-toggle\" :disabled=\"disabled || !hasParent\" :readonly=\"readonly\" @click=\"toggle()\" @keyup.esc=\"show = false\" _v-5614d974=\"\">\n      <span class=\"btn-content\" v-html=\"loading ? text.loading : showPlaceholder || selected\" _v-5614d974=\"\"></span>\n      <span v-if=\"clearButton&amp;&amp;values.length\" class=\"close\" @click=\"clear()\" _v-5614d974=\"\">×</span>\n    </div>\n    <select v-el:sel=\"\" v-model=\"value\" v-show=\"show\" name=\"{{name}}\" class=\"secret\" :multiple=\"multiple\" :required=\"required\" :readonly=\"readonly\" :disabled=\"disabled\" _v-5614d974=\"\">\n      <option v-if=\"required\" value=\"\" _v-5614d974=\"\"></option>\n      <option v-for=\"option in options\" :value=\"option[optionsValue]||option\" _v-5614d974=\"\">{{ option[optionsLabel]||option }}</option>\n    </select>\n    <ul class=\"dropdown-menu\" _v-5614d974=\"\">\n      <template v-if=\"options.length\" _v-5614d974=\"\">\n        <li v-if=\"canSearch\" class=\"bs-searchbox\" _v-5614d974=\"\">\n          <input type=\"text\" placeholder=\"{{searchText||text.search}}\" class=\"form-control\" autocomplete=\"off\" v-el:search=\"\" v-model=\"searchValue\" @keyup.esc=\"show = false\" _v-5614d974=\"\">\n          <span v-show=\"searchValue\" class=\"close\" @click=\"clearSearch\" _v-5614d974=\"\">×</span>\n        </li>\n        <li v-if=\"required&amp;&amp;!clearButton\" _v-5614d974=\"\"><a @mousedown.prevent=\"clear() &amp;&amp; blur()\" _v-5614d974=\"\">{{ placeholder || text.notSelected }}</a></li>\n        <li v-for=\"option in options | filterBy searchValue\" :id=\"option[optionsValue]||option\" _v-5614d974=\"\">\n          <a @mousedown.prevent=\"select(option[optionsValue],option)\" _v-5614d974=\"\">\n            <span v-html=\"option[optionsLabel]||option\" _v-5614d974=\"\"></span>\n            <span class=\"glyphicon glyphicon-ok check-mark\" v-show=\"isSelected(option[optionsValue])\" _v-5614d974=\"\"></span>\n          </a>\n        </li>\n      </template>\n      <slot _v-5614d974=\"\"></slot>\n      <div v-if=\"showNotify &amp;&amp; !closeOnSelect\" class=\"notify in\" transition=\"fadein\" _v-5614d974=\"\">{{limitText}}</div>\n    </ul>\n    <div v-if=\"showNotify &amp;&amp; closeOnSelect\" class=\"notify out\" transition=\"fadein\" _v-5614d974=\"\"><div _v-5614d974=\"\">{{limitText}}</div></div>\n  </div>";
 
 /***/ }),
 /* 287 */
@@ -28935,8 +28217,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1a9d10a0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1a9d10a0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-28eb70b0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-28eb70b0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -28954,7 +28236,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".body-wrapper {\r\n        padding-bottom: 10px;\r\n    }\r\n    .textarea-container {\r\n        margin: 8px 0;\r\n    }\r\n    .textarea-container > textarea {\r\n        margin: 4px 0;\r\n    }", ""]);
+	exports.push([module.id, ".body-wrapper {\n        padding-bottom: 10px;\n    }\n    .textarea-container {\n        margin: 8px 0;\n    }\n    .textarea-container > textarea {\n        margin: 4px 0;\n    }", ""]);
 	
 	// exports
 
@@ -28986,51 +28268,28 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <div class="question-wrapper">
-	
 	//         <div class="body-wrapper">
-	
 	//             <!-- Default slot is question body -->
-	
 	//             <slot></slot>
-	
 	//             <div v-if="hasInput" class="textarea-container">
-	
 	//                 <textarea class="form-control question-input" rows="3" placeholder="write your answer here..."></textarea>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//         <accordion>
-	
 	//             <div v-show="hasHintSlot">
-	
 	//                 <panel header="Hint" expandable no-close>
-	
 	//                     <slot name="hint">
-	
 	//                         No hint is available for this question.
-	
 	//                     </slot>
-	
 	//                 </panel>
-	
 	//             </div>
-	
 	//             <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
-	
 	//                 <slot name="answer"></slot>
-	
 	//             </panel>
-	
 	//         </accordion>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29061,27 +28320,16 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .body-wrapper {
-	
 	//         padding-bottom: 10px;
-	
 	//     }
-	
 	//     .textarea-container {
-	
 	//         margin: 8px 0;
-	
 	//     }
-	
 	//     .textarea-container > textarea {
-	
 	//         margin: 4px 0;
-	
 	//     }
-	
 	// </style>
 
 /***/ }),
@@ -29125,8 +28373,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b421ea4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b421ea4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bbe0d0a4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bbe0d0a4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29144,7 +28392,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".morph {\r\n        display: inline-block;\r\n    }\r\n\r\n    .morph-expanded {\r\n        display: block;\r\n        margin-top: 10px;\r\n    }\r\n\r\n    .morph-details > .expandable-panel {\r\n        margin-bottom: 20px!important;\r\n    }\r\n\r\n    .close-button {\r\n        font-size: 10px !important;\r\n        float: right;\r\n        padding: 3px 8px !important;\r\n    }", ""]);
+	exports.push([module.id, ".morph {\n        display: inline-block;\n    }\n\n    .morph-expanded {\n        display: block;\n        margin-top: 10px;\n    }\n\n    .morph-details > .expandable-panel {\n        margin-bottom: 20px!important;\n    }\n\n    .close-button {\n        font-size: 10px !important;\n        float: right;\n        padding: 3px 8px !important;\n    }", ""]);
 	
 	// exports
 
@@ -29176,58 +28424,32 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <div :class="['morph', {'morph-expanded': isOpen}]">
-	
 	//         <div class="morph-display-wrapper"
-	
 	//              @click.prevent="expand()"
-	
 	//              v-show="!isOpen">
-	
 	//             <slot name="display">
-	
 	//                 <button class="morph-display-button btn btn-default">{{{titleContent}}}</button>
-	
 	//             </slot>
-	
 	//         </div>
-	
 	
 	//         <div class="morph-details"
-	
 	//              v-el:details
-	
 	//              v-show="isOpen">
-	
 	//             <dynamic-panel :header="title" :src="src" :is-open="isOpen" v-if="isDynamic">
-	
 	//                 <button type="button" class="close-button btn btn-default" slot="button" @click.stop="close()">
-	
 	//                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	
 	//                 </button>
-	
 	//             </dynamic-panel>
-	
 	//             <Panel :header="title" v-else>
-	
 	//                 <button type="button" class="close-button btn btn-default" slot="button" @click.stop="close()">
-	
 	//                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	
 	//                 </button>
-	
 	//                 <slot></slot>
-	
 	//             </Panel>
-	
 	//         </div>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29268,42 +28490,25 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .morph {
-	
 	//         display: inline-block;
-	
 	//     }
-	
 	
 	//     .morph-expanded {
-	
 	//         display: block;
-	
 	//         margin-top: 10px;
-	
 	//     }
-	
 	
 	//     .morph-details > .expandable-panel {
-	
 	//         margin-bottom: 20px!important;
-	
 	//     }
-	
 	
 	//     .close-button {
-	
 	//         font-size: 10px !important;
-	
 	//         float: right;
-	
 	//         padding: 3px 8px !important;
-	
 	//     }
-	
 	// </style>
 
 /***/ }),
@@ -29411,17 +28616,11 @@
 	  // </script>
 	
 	}; // <template>
-	
 	//   <panel :header="header" :is-open="isOpen" :type="type" expandable no-switch>
-	
 	//     <slot name="button" slot="button"></slot>
-	
 	//     <retriever v-ref:retriever :src="src" :fragment="fragment" delay></retriever>
-	
 	//   </panel>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -29429,25 +28628,25 @@
 /* 297 */
 /***/ (function(module, exports) {
 
-	module.exports = "<panel :header=\"header\" :is-open=\"isOpen\" :type=\"type\" expandable no-switch>\r\n    <slot name=\"button\" slot=\"button\"></slot>\r\n    <retriever v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\r\n  </panel>";
+	module.exports = "<panel :header=\"header\" :is-open=\"isOpen\" :type=\"type\" expandable no-switch>\n    <slot name=\"button\" slot=\"button\"></slot>\n    <retriever v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\n  </panel>";
 
 /***/ }),
 /* 298 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div :class=\"['morph', {'morph-expanded': isOpen}]\">\r\n        <div class=\"morph-display-wrapper\"\r\n             @click.prevent=\"expand()\"\r\n             v-show=\"!isOpen\">\r\n            <slot name=\"display\">\r\n                <button class=\"morph-display-button btn btn-default\">{{{titleContent}}}</button>\r\n            </slot>\r\n        </div>\r\n\r\n        <div class=\"morph-details\"\r\n             v-el:details\r\n             v-show=\"isOpen\">\r\n            <dynamic-panel :header=\"title\" :src=\"src\" :is-open=\"isOpen\" v-if=\"isDynamic\">\r\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\r\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                </button>\r\n            </dynamic-panel>\r\n            <Panel :header=\"title\" v-else>\r\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\r\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                </button>\r\n                <slot></slot>\r\n            </Panel>\r\n        </div>\r\n    </div>";
+	module.exports = "<div :class=\"['morph', {'morph-expanded': isOpen}]\">\n        <div class=\"morph-display-wrapper\"\n             @click.prevent=\"expand()\"\n             v-show=\"!isOpen\">\n            <slot name=\"display\">\n                <button class=\"morph-display-button btn btn-default\">{{{titleContent}}}</button>\n            </slot>\n        </div>\n\n        <div class=\"morph-details\"\n             v-el:details\n             v-show=\"isOpen\">\n            <dynamic-panel :header=\"title\" :src=\"src\" :is-open=\"isOpen\" v-if=\"isDynamic\">\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n                </button>\n            </dynamic-panel>\n            <Panel :header=\"title\" v-else>\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n                </button>\n                <slot></slot>\n            </Panel>\n        </div>\n    </div>";
 
 /***/ }),
 /* 299 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"question-wrapper\">\r\n        <div class=\"body-wrapper\">\r\n            <!-- Default slot is question body -->\r\n            <slot></slot>\r\n            <div v-if=\"hasInput\" class=\"textarea-container\">\r\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\r\n            </div>\r\n        </div>\r\n        <accordion>\r\n            <div v-show=\"hasHintSlot\">\r\n                <panel header=\"Hint\" expandable no-close>\r\n                    <slot name=\"hint\">\r\n                        No hint is available for this question.\r\n                    </slot>\r\n                </panel>\r\n            </div>\r\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\r\n                <slot name=\"answer\"></slot>\r\n            </panel>\r\n        </accordion>\r\n    </div>";
+	module.exports = "<div class=\"question-wrapper\">\n        <div class=\"body-wrapper\">\n            <!-- Default slot is question body -->\n            <slot></slot>\n            <div v-if=\"hasInput\" class=\"textarea-container\">\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\n            </div>\n        </div>\n        <accordion>\n            <div v-show=\"hasHintSlot\">\n                <panel header=\"Hint\" expandable no-close>\n                    <slot name=\"hint\">\n                        No hint is available for this question.\n                    </slot>\n                </panel>\n            </div>\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\n                <slot name=\"answer\"></slot>\n            </panel>\n        </accordion>\n    </div>";
 
 /***/ }),
 /* 300 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"accordion\" name=\"Accordion and Panel\">\r\n    <h4>Panel is a flexible container that support collapse and expand its content. It is expandable by default</h4>\r\n    <div class=\"bs-example\">\r\n      <panel header=\"Header\" alt=\"Alternative Header\">\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"Header\" alt=\"Alternative Header\">\r\n        ...\r\n      </panel>\r\n    </doc-code>\r\n    <br>\r\n    <h4>With <code>minimized</code> attribute, panel is minimized into an inline block element.</h4>\r\n    <div class=\"bs-example\">\r\n      <panel header=\"Header\" alt=\"Alternative Header\" minimized>\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"Header\" alt=\"Alternative Header\" minimized>\r\n        ...\r\n      </panel>\r\n    </doc-code>\r\n    <br>\r\n    <h4>With <code>expanded</code> attribute, panel could be expanded by default.</h4>\r\n    <div class=\"bs-example\">\r\n      <panel header=\"Header\" alt=\"Alternative Header\" expanded>\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"Header\" alt=\"Alternative Header\" expanded>\r\n        ...\r\n      </panel>\r\n    </doc-code>\r\n    <br>\r\n    <h4>Panel has many types that change its appearance.</h4>\r\n    <div class=\"bs-example\">\r\n      <h5><code>Primary</code> type</h5>\r\n      <panel header=\"Primary - Click to expand\" type=\"primary\">\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos, doloribus dolorum ducimus eius\r\n        eligendi est et excepturi iure iusto laborum, perferendis possimus quod repudiandae sapiente similique tenetur\r\n        ullam voluptates!\r\n      </panel>\r\n      <h5><code>Seamless</code> panel type</h5>\r\n      <panel header=\"Seamless - Click to expand\" type=\"seamless\">\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos, doloribus dolorum ducimus eius\r\n        eligendi est et excepturi iure iusto laborum, perferendis possimus quod repudiandae sapiente similique tenetur\r\n        ullam voluptates!\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"Primary - Click to expand\" type=\"primary\">\r\n        ...\r\n      </panel>\r\n      <panel header=\"Seamless - Click to expand\" type=\"seamless\">\r\n        ...\r\n      </panel>\r\n    </doc-code>\r\n    <br>\r\n    <h4>Show/Hide buttons using <code>no-switch</code> or <code>no-close</code></h4>\r\n    <div class=\"bs-example\">\r\n      <panel header=\"Header\" no-switch>\r\n      </panel>\r\n      <panel header=\"Header\" no-close>\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"Header\" no-switch>\r\n      </panel>\r\n      <panel header=\"Header\" no-close>\r\n      </panel>\r\n    </doc-code>\r\n    <br>\r\n    <h4>Use markdown in the header (only inline level markdown are supported)</h4>\r\n    <div class=\"bs-example\">\r\n      <panel header=\"**haha** :rocket: ![](https://vuejs.org/images/logo.png =25x25)\" expandable type=\"seamless\">\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur consequuntur culpa enim, explicabo impedit iure maxime omnis quas recusandae sint suscipit? Accusamus cumque facere laboriosam magnam magni numquam reprehenderit.\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"**haha** :rocket: ![](https://vuejs.org/images/logo.png =25x25)\" type=\"seamless\">\r\n        ...\r\n      </panel>\r\n\r\n    </doc-code>\r\n    <br>\r\n    <h4>If <code>src</code> attribute is provided, the panel content is loaded dynamically from src.</h4>\r\n    <div class=\"bs-example\">\r\n      <panel header=\"Dynamic Loading\" src=\"/docs/loadContent.html#fragment\" minimized></panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <panel header=\"Dynamic Loading\" src=\"/docs/loadContent.html#fragment\" minimized></panel>\r\n    </doc-code>\r\n\r\n    <h4>Accordion could group panels together to provide better control</h4>\r\n    <div class=\"bs-example\">\r\n      <checkbox :checked.sync=\"checked\" type=\"primary\">Open only one at a time.</checkbox>\r\n      <p><v-select :options=\"types\" clear-button :value.sync=\"selected\" placeholder=\"Global type\"></v-select></p>\r\n      <p><v-select :options=\"types\" clear-button :value.sync=\"first\" placeholder=\"First element type\"></v-select></p>\r\n      <accordion :one-at-atime=\"checked\" :type=\"selected\">\r\n        <panel is-open :type=\"first=='panel'?null:first\">\r\n          <strong slot=\"header\"><u>[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering</u></strong>\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n        </panel>\r\n        <panel header=\"Panel #2\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n        </panel>\r\n        <panel header=\"Panel #3\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n        </panel>\r\n        <panel header=\"Panel #4\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n        </panel>\r\n        <panel header=\"[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n        </panel>\r\n      </accordion>\r\n\r\n      Panel with Expand Switch\r\n\r\n      <panel header=\"Parent\" expandable ctrl-lvl=\"-1\">\r\n        <panel header=\"Child1\" expandable>\r\n          <panel header=\"Child2\">\r\n            <panel header=\"Child3\" expandable>\r\n              Parent 1\r\n            </panel>\r\n          </panel>\r\n        </panel>\r\n      </panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <accordion :one-at-atime=\"checked\" type=\"info\">\r\n        <panel is-open type=\"primary\">\r\n          <strong slot=\"header\"><u>Panel #1</u></strong>\r\n          ...\r\n        </panel>\r\n        <panel header=\"Panel #2\">\r\n          ...\r\n        </panel>\r\n        <panel header=\"Panel #3\">\r\n          ...\r\n        </panel>\r\n        <panel header=\"Panel #4\">\r\n          ...\r\n        </panel>\r\n      </accordion>\r\n    </doc-code>\r\n\r\n    <doc-table>\r\n      <div>\r\n        <p>type</p>\r\n        <p><code>String</code></p>\r\n        <p><code>null</code></p>\r\n        <p>Define the type of color for the tabs (global).</p>\r\n      </div>\r\n      <div>\r\n        <p>one-at-time</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Control whether expanding an item will cause the other items to close.</p>\r\n      </div>\r\n    </doc-table>\r\n    <doc-table name=\"Panel\">\r\n      <div>\r\n        <p>header</p>\r\n        <p><code>String</code></p>\r\n        <p></p>\r\n        <p>The clickable text on the group's header. You need one to be able to click on the header for toggling.</p>\r\n      </div>\r\n      <div>\r\n        <p>expandable</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>true</code></p>\r\n        <p>Whether Panel is expandable.</p>\r\n      </div>\r\n      <div>\r\n        <p>expanded</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Whether Panel is expanded or collapsed.</p>\r\n      </div>\r\n      <div>\r\n        <p>minimized</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Whether Panel is minimized.</p>\r\n      </div>\r\n      <div>\r\n        <p>no-close</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Whether to show the close button.</p>\r\n      </div>\r\n      <div>\r\n        <p>no-switch</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Whether to show the expand switch.</p>\r\n      </div>\r\n      <div>\r\n        <p>bottom-switch</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Whether to show an expand switch at the bottom of the panel. Independent of no-switch.</p>\r\n      </div>\r\n      <div>\r\n        <p>url</p>\r\n        <p><code>String</code></p>\r\n        <p></p>\r\n        <p>The url to the remote page to be loaded as the content of the panel.</p>\r\n      </div>\r\n      <div>\r\n        <p>type</p>\r\n        <p><code>String</code></p>\r\n        <p><code>null</code></p>\r\n        <p>\r\n          The type of color for the tab (single).<br>\r\n          Support: <code>default</code>, <code>primary</code>, <code>info</code>, <code>success</code>,\r\n          <code>warning</code>, <code>danger</code>, <code>seamless</code>\r\n        </p>\r\n      </div>\r\n    </doc-table>\r\n    <p>If you want to personalize your header with some html, you can use the slot instead of header attribute (panel&nbsp;#1 in the example).</p>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"accordion\" name=\"Accordion and Panel\">\n    <h4>Panel is a flexible container that support collapse and expand its content. It is expandable by default</h4>\n    <div class=\"bs-example\">\n      <panel header=\"Header\" alt=\"Alternative Header\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"Header\" alt=\"Alternative Header\">\n        ...\n      </panel>\n    </doc-code>\n    <br>\n    <h4>With <code>minimized</code> attribute, panel is minimized into an inline block element.</h4>\n    <div class=\"bs-example\">\n      <panel header=\"Header\" alt=\"Alternative Header\" minimized>\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"Header\" alt=\"Alternative Header\" minimized>\n        ...\n      </panel>\n    </doc-code>\n    <br>\n    <h4>With <code>expanded</code> attribute, panel could be expanded by default.</h4>\n    <div class=\"bs-example\">\n      <panel header=\"Header\" alt=\"Alternative Header\" expanded>\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi expedita illum impedit ipsa labore qui veniam. Blanditiis exercitationem id ipsum libero molestiae, necessitatibus unde? Amet fugiat fugit molestias?\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"Header\" alt=\"Alternative Header\" expanded>\n        ...\n      </panel>\n    </doc-code>\n    <br>\n    <h4>Panel has many types that change its appearance.</h4>\n    <div class=\"bs-example\">\n      <h5><code>Primary</code> type</h5>\n      <panel header=\"Primary - Click to expand\" type=\"primary\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos, doloribus dolorum ducimus eius\n        eligendi est et excepturi iure iusto laborum, perferendis possimus quod repudiandae sapiente similique tenetur\n        ullam voluptates!\n      </panel>\n      <h5><code>Seamless</code> panel type</h5>\n      <panel header=\"Seamless - Click to expand\" type=\"seamless\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos, doloribus dolorum ducimus eius\n        eligendi est et excepturi iure iusto laborum, perferendis possimus quod repudiandae sapiente similique tenetur\n        ullam voluptates!\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"Primary - Click to expand\" type=\"primary\">\n        ...\n      </panel>\n      <panel header=\"Seamless - Click to expand\" type=\"seamless\">\n        ...\n      </panel>\n    </doc-code>\n    <br>\n    <h4>Show/Hide buttons using <code>no-switch</code> or <code>no-close</code></h4>\n    <div class=\"bs-example\">\n      <panel header=\"Header\" no-switch>\n      </panel>\n      <panel header=\"Header\" no-close>\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"Header\" no-switch>\n      </panel>\n      <panel header=\"Header\" no-close>\n      </panel>\n    </doc-code>\n    <br>\n    <h4>Use markdown in the header (only inline level markdown are supported)</h4>\n    <div class=\"bs-example\">\n      <panel header=\"**haha** :rocket: ![](https://vuejs.org/images/logo.png =25x25)\" expandable type=\"seamless\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur consequuntur culpa enim, explicabo impedit iure maxime omnis quas recusandae sint suscipit? Accusamus cumque facere laboriosam magnam magni numquam reprehenderit.\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"**haha** :rocket: ![](https://vuejs.org/images/logo.png =25x25)\" type=\"seamless\">\n        ...\n      </panel>\n\n    </doc-code>\n    <br>\n    <h4>If <code>src</code> attribute is provided, the panel content is loaded dynamically from src.</h4>\n    <div class=\"bs-example\">\n      <panel header=\"Dynamic Loading\" src=\"/docs/loadContent.html#fragment\" minimized></panel>\n    </div>\n    <doc-code language=\"markup\">\n      <panel header=\"Dynamic Loading\" src=\"/docs/loadContent.html#fragment\" minimized></panel>\n    </doc-code>\n\n    <h4>Accordion could group panels together to provide better control</h4>\n    <div class=\"bs-example\">\n      <checkbox :checked.sync=\"checked\" type=\"primary\">Open only one at a time.</checkbox>\n      <p><v-select :options=\"types\" clear-button :value.sync=\"selected\" placeholder=\"Global type\"></v-select></p>\n      <p><v-select :options=\"types\" clear-button :value.sync=\"first\" placeholder=\"First element type\"></v-select></p>\n      <accordion :one-at-atime=\"checked\" :type=\"selected\">\n        <panel is-open :type=\"first=='panel'?null:first\">\n          <strong slot=\"header\"><u>[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering</u></strong>\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        </panel>\n        <panel header=\"Panel #2\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        </panel>\n        <panel header=\"Panel #3\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        </panel>\n        <panel header=\"Panel #4\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        </panel>\n        <panel header=\"[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        </panel>\n      </accordion>\n\n      Panel with Expand Switch\n\n      <panel header=\"Parent\" expandable ctrl-lvl=\"-1\">\n        <panel header=\"Child1\" expandable>\n          <panel header=\"Child2\">\n            <panel header=\"Child3\" expandable>\n              Parent 1\n            </panel>\n          </panel>\n        </panel>\n      </panel>\n    </div>\n    <doc-code language=\"markup\">\n      <accordion :one-at-atime=\"checked\" type=\"info\">\n        <panel is-open type=\"primary\">\n          <strong slot=\"header\"><u>Panel #1</u></strong>\n          ...\n        </panel>\n        <panel header=\"Panel #2\">\n          ...\n        </panel>\n        <panel header=\"Panel #3\">\n          ...\n        </panel>\n        <panel header=\"Panel #4\">\n          ...\n        </panel>\n      </accordion>\n    </doc-code>\n\n    <doc-table>\n      <div>\n        <p>type</p>\n        <p><code>String</code></p>\n        <p><code>null</code></p>\n        <p>Define the type of color for the tabs (global).</p>\n      </div>\n      <div>\n        <p>one-at-time</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Control whether expanding an item will cause the other items to close.</p>\n      </div>\n    </doc-table>\n    <doc-table name=\"Panel\">\n      <div>\n        <p>header</p>\n        <p><code>String</code></p>\n        <p></p>\n        <p>The clickable text on the group's header. You need one to be able to click on the header for toggling.</p>\n      </div>\n      <div>\n        <p>expandable</p>\n        <p><code>Boolean</code></p>\n        <p><code>true</code></p>\n        <p>Whether Panel is expandable.</p>\n      </div>\n      <div>\n        <p>expanded</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Whether Panel is expanded or collapsed.</p>\n      </div>\n      <div>\n        <p>minimized</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Whether Panel is minimized.</p>\n      </div>\n      <div>\n        <p>no-close</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Whether to show the close button.</p>\n      </div>\n      <div>\n        <p>no-switch</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Whether to show the expand switch.</p>\n      </div>\n      <div>\n        <p>bottom-switch</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Whether to show an expand switch at the bottom of the panel. Independent of no-switch.</p>\n      </div>\n      <div>\n        <p>url</p>\n        <p><code>String</code></p>\n        <p></p>\n        <p>The url to the remote page to be loaded as the content of the panel.</p>\n      </div>\n      <div>\n        <p>type</p>\n        <p><code>String</code></p>\n        <p><code>null</code></p>\n        <p>\n          The type of color for the tab (single).<br>\n          Support: <code>default</code>, <code>primary</code>, <code>info</code>, <code>success</code>,\n          <code>warning</code>, <code>danger</code>, <code>seamless</code>\n        </p>\n      </div>\n    </doc-table>\n    <p>If you want to personalize your header with some html, you can use the slot instead of header attribute (panel&nbsp;#1 in the example).</p>\n  </doc-section>";
 
 /***/ }),
 /* 301 */
@@ -29490,8 +28689,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-efb0b7ec&file=affixDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./affixDocs.vue", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-efb0b7ec&file=affixDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./affixDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2e380e91&file=affixDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./affixDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2e380e91&file=affixDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./affixDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29509,7 +28708,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".animated {\r\n    -webkit-animation-duration: 3s;\r\n    animation-duration: 3s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n    -webkit-animation-iteration-count: infinite;\r\n            animation-iteration-count: infinite\r\n}\r\n@-webkit-keyframes shake {\r\n    0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}\r\n    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);transform: translateX(-5px);}\r\n    20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);transform: translateX(5px);}\r\n}\r\n@keyframes shake {\r\n    0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}\r\n    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);transform: translateX(-5px);}\r\n    20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);transform: translateX(5px);}\r\n}\r\n.shake {\r\n    -webkit-animation-name: shake;\r\n    animation-name: shake;\r\n}", ""]);
+	exports.push([module.id, ".animated {\n    -webkit-animation-duration: 3s;\n    animation-duration: 3s;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    -webkit-animation-iteration-count: infinite;\n            animation-iteration-count: infinite\n}\n@-webkit-keyframes shake {\n    0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}\n    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);transform: translateX(-5px);}\n    20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);transform: translateX(5px);}\n}\n@keyframes shake {\n    0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}\n    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);transform: translateX(-5px);}\n    20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);transform: translateX(5px);}\n}\n.shake {\n    -webkit-animation-name: shake;\n    animation-name: shake;\n}", ""]);
 	
 	// exports
 
@@ -29543,67 +28742,36 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="affix" name="Affix">
-	
 	//     <div class="bs-example">
-	
 	//       <h3>
-	
 	//         The sub-navigation on the RIGHT is a live demo of the affix.
-	
 	//         <spam class="visible-xs-block visible-sm-block">(The live demo is hidden in small screens)</spam>
-	
 	//         <tooltip trigger="hover" effect="fadein" content="I'm a direction, not jerking off!" placement="left">
-	
 	//           <span class="glyphicon glyphicon-hand-right pull-right animated shake hidden-xs hidden-sm"></span>
-	
 	//         </tooltip>
-	
 	//       </h3>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <affix offset="50">
-	
 	//         <ul>
-	
 	//           <li>...</li>
-	
 	//           <li>...</li>
-	
 	//           <li>...</li>
-	
 	//         </ul>
-	
 	//         <a href="#">...</a>
-	
 	//       </affix>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>offset</p>
-	
 	//         <p><code>Number</code></p>
-	
 	//         <p><code>0</code></p>
-	
 	//         <p>Pixels to offset from top of screen when calculating position of scroll.</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29615,41 +28783,23 @@
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  // .animated {
-	
 	  //     -webkit-animation-duration: 3s;
-	
 	  //     animation-duration: 3s;
-	
 	  //     -webkit-animation-fill-mode: both;
-	
 	  //     animation-fill-mode: both;
-	
 	  //     animation-iteration-count: infinite
-	
 	  // }
-	
 	  // @keyframes shake {
-	
 	  //     0%, 100% {transform: translateX(0);}
-	
 	  //     10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
-	
 	  //     20%, 40%, 60%, 80% {transform: translateX(5px);}
-	
 	  // }
-	
 	  // .shake {
-	
 	  //     -webkit-animation-name: shake;
-	
 	  //     animation-name: shake;
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -29695,8 +28845,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-63588ea9&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-63588ea9&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1d0914ae&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1d0914ae&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29714,7 +28864,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".tooltip.top,\r\n.tooltip.left,\r\n.tooltip.right,\r\n.tooltip.bottom {\r\n  opacity: .9\r\n}\r\n.fadein-enter {\r\n  -webkit-animation:fadein-in 0.3s ease-in;\r\n          animation:fadein-in 0.3s ease-in;\r\n}\r\n.fadein-leave {\r\n  -webkit-animation:fadein-out 0.3s ease-out;\r\n          animation:fadein-out 0.3s ease-out;\r\n}\r\n@-webkit-keyframes fadein-in {\r\n  0% {\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    opacity: .9;\r\n  }\r\n}\r\n@keyframes fadein-in {\r\n  0% {\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    opacity: .9;\r\n  }\r\n}\r\n@-webkit-keyframes fadein-out {\r\n  0% {\r\n    opacity: .9;\r\n  }\r\n  100% {\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes fadein-out {\r\n  0% {\r\n    opacity: .9;\r\n  }\r\n  100% {\r\n    opacity: 0;\r\n  }\r\n}", ""]);
+	exports.push([module.id, ".tooltip.top,\n.tooltip.left,\n.tooltip.right,\n.tooltip.bottom {\n  opacity: .9\n}\n.fadein-enter {\n  -webkit-animation:fadein-in 0.3s ease-in;\n          animation:fadein-in 0.3s ease-in;\n}\n.fadein-leave {\n  -webkit-animation:fadein-out 0.3s ease-out;\n          animation:fadein-out 0.3s ease-out;\n}\n@-webkit-keyframes fadein-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: .9;\n  }\n}\n@keyframes fadein-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: .9;\n  }\n}\n@-webkit-keyframes fadein-out {\n  0% {\n    opacity: .9;\n  }\n  100% {\n    opacity: 0;\n  }\n}\n@keyframes fadein-out {\n  0% {\n    opacity: .9;\n  }\n  100% {\n    opacity: 0;\n  }\n}", ""]);
 	
 	// exports
 
@@ -29740,29 +28890,17 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <span v-el:trigger v-on:click="void(0)"><slot></slot></span><!--
-	
 	//   --><div v-el:popover v-if="show" style="display:block;"
-	
 	//     :class="['tooltip',placement]"
-	
 	//     :transition="effect"
-	
 	//   >
-	
 	//     <div class="tooltip-arrow"></div>
-	
 	//     <div class="tooltip-inner" v-on:click="void(0)">
-	
 	//       <slot name="content">{{{contentRendered}}}</slot>
-	
 	//    </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29800,65 +28938,35 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	// .tooltip.top,
-	
 	// .tooltip.left,
-	
 	// .tooltip.right,
-	
 	// .tooltip.bottom {
-	
 	//   opacity: .9
-	
 	// }
-	
 	// .fadein-enter {
-	
 	//   animation:fadein-in 0.3s ease-in;
-	
 	// }
-	
 	// .fadein-leave {
-	
 	//   animation:fadein-out 0.3s ease-out;
-	
 	// }
-	
 	// @keyframes fadein-in {
-	
 	//   0% {
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	//   100% {
-	
 	//     opacity: .9;
-	
 	//   }
-	
 	// }
-	
 	// @keyframes fadein-out {
-	
 	//   0% {
-	
 	//     opacity: .9;
-	
 	//   }
-	
 	//   100% {
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	// }
-	
 	// </style>
 
 /***/ }),
@@ -30129,13 +29237,13 @@
 /* 314 */
 /***/ (function(module, exports) {
 
-	module.exports = "<span v-el:trigger v-on:click=\"void(0)\"><slot></slot></span><!--\r\n  --><div v-el:popover v-if=\"show\" style=\"display:block;\"\r\n    :class=\"['tooltip',placement]\"\r\n    :transition=\"effect\"\r\n  >\r\n    <div class=\"tooltip-arrow\"></div>\r\n    <div class=\"tooltip-inner\" v-on:click=\"void(0)\">\r\n      <slot name=\"content\">{{{contentRendered}}}</slot>\r\n   </div>\r\n  </div>";
+	module.exports = "<span v-el:trigger v-on:click=\"void(0)\"><slot></slot></span><!--\n  --><div v-el:popover v-if=\"show\" style=\"display:block;\"\n    :class=\"['tooltip',placement]\"\n    :transition=\"effect\"\n  >\n    <div class=\"tooltip-arrow\"></div>\n    <div class=\"tooltip-inner\" v-on:click=\"void(0)\">\n      <slot name=\"content\">{{{contentRendered}}}</slot>\n   </div>\n  </div>";
 
 /***/ }),
 /* 315 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"affix\" name=\"Affix\">\r\n    <div class=\"bs-example\">\r\n      <h3>\r\n        The sub-navigation on the RIGHT is a live demo of the affix.\r\n        <spam class=\"visible-xs-block visible-sm-block\">(The live demo is hidden in small screens)</spam>\r\n        <tooltip trigger=\"hover\" effect=\"fadein\" content=\"I'm a direction, not jerking off!\" placement=\"left\">\r\n          <span class=\"glyphicon glyphicon-hand-right pull-right animated shake hidden-xs hidden-sm\"></span>\r\n        </tooltip>\r\n      </h3>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <affix offset=\"50\">\r\n        <ul>\r\n          <li>...</li>\r\n          <li>...</li>\r\n          <li>...</li>\r\n        </ul>\r\n        <a href=\"#\">...</a>\r\n      </affix>\r\n    </doc-code>\r\n    <doc-table>\r\n      <div>\r\n        <p>offset</p>\r\n        <p><code>Number</code></p>\r\n        <p><code>0</code></p>\r\n        <p>Pixels to offset from top of screen when calculating position of scroll.</p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"affix\" name=\"Affix\">\n    <div class=\"bs-example\">\n      <h3>\n        The sub-navigation on the RIGHT is a live demo of the affix.\n        <spam class=\"visible-xs-block visible-sm-block\">(The live demo is hidden in small screens)</spam>\n        <tooltip trigger=\"hover\" effect=\"fadein\" content=\"I'm a direction, not jerking off!\" placement=\"left\">\n          <span class=\"glyphicon glyphicon-hand-right pull-right animated shake hidden-xs hidden-sm\"></span>\n        </tooltip>\n      </h3>\n    </div>\n    <doc-code language=\"markup\">\n      <affix offset=\"50\">\n        <ul>\n          <li>...</li>\n          <li>...</li>\n          <li>...</li>\n        </ul>\n        <a href=\"#\">...</a>\n      </affix>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>offset</p>\n        <p><code>Number</code></p>\n        <p><code>0</code></p>\n        <p>Pixels to offset from top of screen when calculating position of scroll.</p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 316 */
@@ -30190,154 +29298,80 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="aside" name="Aside">
-	
 	//     <div class="bs-example">
-	
 	//       <button class="btn btn-danger btn-lg" @click="showLeft = true">Show Aside on left</button>
-	
 	//       <button class="btn btn-success btn-lg" @click="showRight = true">Show Aside on right</button>
 	
-	
 	//       <sidebar :show.sync="showLeft" placement="left" header="Title" :width="350">
-	
 	//         <h4>Text in aside</h4>
-	
 	//         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//         tempor incididunt ut labore et dolore magna aliqua.</p>
-	
 	//         <p> Ut enim ad minim veniam,
-	
 	//         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//         consequat.</p>
-	
 	//         <doc-code language="javascript">
-	
 	//           if (talk === cheap){
-	
 	//             code.style.display = 'block'
-	
 	//           }
-	
 	//         </doc-code>
-	
 	//         <div class="aside-footer">
-	
 	//           <button type="button" class="btn btn-default" @click="showLeft=false">Close</button>
-	
 	//         </div>
-	
 	//       </sidebar>
-	
 	//       <sidebar :show.sync="showRight" placement="right" header="Title" :width="350">
-	
 	//         <h4>Text in aside</h4>
-	
 	//         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//         tempor incididunt ut labore et dolore magna aliqua.</p>
-	
 	//         <p> Ut enim ad minim veniam,
-	
 	//         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//         consequat.</p>
-	
 	//         <doc-code language="javascript">
-	
 	//           if (talk === cheap){
-	
 	//             code.style.display = 'block'
-	
 	//           }
-	
 	//         </doc-code>
-	
 	//         <div class="aside-footer">
-	
 	//           <button type="button" class="btn btn-default" @click="showRight=false">Close</button>
-	
 	//         </div>
-	
 	//       </sidebar>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <aside :show.sync="showRight" placement="right" header="Title" width="350">
-	
 	//         ...
-	
 	//       </aside>
-	
 	//       <aside :show.sync="showLeft" placement="left" header="Title" width="350">
-	
 	//         ...
-	
 	//       </aside>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>show</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p></p>
-	
 	//         <p>Whether show the component.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>placement</p>
-	
 	//         <p><code>String</code>, one of <code>left</code>, <code>right</code></p>
-	
 	//         <p><code>right</code></p>
-	
 	//         <p>how to position the component.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>header</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p></p>
-	
 	//         <p>Header text of the aside component.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>width</p>
-	
 	//         <p><code>Number</code></p>
-	
 	//         <p></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -30397,8 +29431,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b41c2644&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b41c2644&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5da293de&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5da293de&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -30416,7 +29450,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".aside-open {\r\n  transition: -webkit-transform 0.3s;\r\n  transition: transform 0.3s;\r\n  transition: transform 0.3s, -webkit-transform 0.3s;\r\n}\r\n.aside-open.has-push-right {\r\n  -webkit-transform: translateX(-300px);\r\n          transform: translateX(-300px);\r\n}\r\n.aside {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: 0;\r\n    z-index: 1049;\r\n    overflow: auto;\r\n    background: #fff;\r\n}\r\n.aside.left {\r\n  left: 0;\r\n  right: auto;\r\n}\r\n.aside.right {\r\n  left: auto;\r\n  right: 0;\r\n}\r\n.slideleft-enter {\r\n  -webkit-animation:slideleft-in .3s;\r\n          animation:slideleft-in .3s;\r\n}\r\n.slideleft-leave {\r\n  -webkit-animation:slideleft-out .3s;\r\n          animation:slideleft-out .3s;\r\n}\r\n@-webkit-keyframes slideleft-in {\r\n  0% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes slideleft-in {\r\n  0% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@-webkit-keyframes slideleft-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes slideleft-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n.slideright-enter {\r\n  -webkit-animation:slideright-in .3s;\r\n          animation:slideright-in .3s;\r\n}\r\n.slideright-leave {\r\n  -webkit-animation:slideright-out .3s;\r\n          animation:slideright-out .3s;\r\n}\r\n@-webkit-keyframes slideright-in {\r\n  0% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes slideright-in {\r\n  0% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@-webkit-keyframes slideright-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes slideright-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n.aside:focus {\r\n    outline: 0\r\n}\r\n@media (max-width: 991px) {\r\n  .aside {\r\n    min-width:240px\r\n  }\r\n}\r\n.aside.left {\r\n  right: auto;\r\n  left: 0\r\n}\r\n.aside.right {\r\n  right: 0;\r\n  left: auto\r\n}\r\n.aside .aside-dialog .aside-header {\r\n  border-bottom: 1px solid #e5e5e5;\r\n  min-height: 16.43px;\r\n  padding: 6px 15px;\r\n  background: #337ab7;\r\n  color: #fff\r\n}\r\n.aside .aside-dialog .aside-header .close {\r\n  margin-right: -8px;\r\n  padding: 4px 8px;\r\n  color: #fff;\r\n  font-size: 25px;\r\n  opacity: .8\r\n}\r\n.aside .aside-dialog .aside-body {\r\n  position: relative;\r\n  padding: 15px\r\n}\r\n.aside .aside-dialog .aside-footer {\r\n  padding: 15px;\r\n  text-align: right;\r\n  border-top: 1px solid #e5e5e5\r\n}\r\n.aside .aside-dialog .aside-footer .btn+.btn {\r\n  margin-left: 5px;\r\n  margin-bottom: 0\r\n}\r\n.aside .aside-dialog .aside-footer .btn-group .btn+.btn {\r\n  margin-left: -1px\r\n}\r\n.aside .aside-dialog .aside-footer .btn-block+.btn-block {\r\n  margin-left: 0\r\n}\r\n.aside-backdrop {\r\n  position: fixed;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1040;\r\n  opacity: 0;\r\n  transition: opacity .3s ease;\r\n  background-color: #000\r\n}\r\n.aside-backdrop.in {\r\n  opacity: .5;\r\n  filter: alpha(opacity=50)\r\n}", ""]);
+	exports.push([module.id, ".aside-open {\n  transition: -webkit-transform 0.3s;\n  transition: transform 0.3s;\n  transition: transform 0.3s, -webkit-transform 0.3s;\n}\n.aside-open.has-push-right {\n  -webkit-transform: translateX(-300px);\n          transform: translateX(-300px);\n}\n.aside {\n    position: fixed;\n    top: 0;\n    bottom: 0;\n    z-index: 1049;\n    overflow: auto;\n    background: #fff;\n}\n.aside.left {\n  left: 0;\n  right: auto;\n}\n.aside.right {\n  left: auto;\n  right: 0;\n}\n.slideleft-enter {\n  -webkit-animation:slideleft-in .3s;\n          animation:slideleft-in .3s;\n}\n.slideleft-leave {\n  -webkit-animation:slideleft-out .3s;\n          animation:slideleft-out .3s;\n}\n@-webkit-keyframes slideleft-in {\n  0% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideleft-in {\n  0% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@-webkit-keyframes slideleft-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n@keyframes slideleft-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n.slideright-enter {\n  -webkit-animation:slideright-in .3s;\n          animation:slideright-in .3s;\n}\n.slideright-leave {\n  -webkit-animation:slideright-out .3s;\n          animation:slideright-out .3s;\n}\n@-webkit-keyframes slideright-in {\n  0% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideright-in {\n  0% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@-webkit-keyframes slideright-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n}\n@keyframes slideright-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n}\n.aside:focus {\n    outline: 0\n}\n@media (max-width: 991px) {\n  .aside {\n    min-width:240px\n  }\n}\n.aside.left {\n  right: auto;\n  left: 0\n}\n.aside.right {\n  right: 0;\n  left: auto\n}\n.aside .aside-dialog .aside-header {\n  border-bottom: 1px solid #e5e5e5;\n  min-height: 16.43px;\n  padding: 6px 15px;\n  background: #337ab7;\n  color: #fff\n}\n.aside .aside-dialog .aside-header .close {\n  margin-right: -8px;\n  padding: 4px 8px;\n  color: #fff;\n  font-size: 25px;\n  opacity: .8\n}\n.aside .aside-dialog .aside-body {\n  position: relative;\n  padding: 15px\n}\n.aside .aside-dialog .aside-footer {\n  padding: 15px;\n  text-align: right;\n  border-top: 1px solid #e5e5e5\n}\n.aside .aside-dialog .aside-footer .btn+.btn {\n  margin-left: 5px;\n  margin-bottom: 0\n}\n.aside .aside-dialog .aside-footer .btn-group .btn+.btn {\n  margin-left: -1px\n}\n.aside .aside-dialog .aside-footer .btn-block+.btn-block {\n  margin-left: 0\n}\n.aside-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  opacity: 0;\n  transition: opacity .3s ease;\n  background-color: #000\n}\n.aside-backdrop.in {\n  opacity: .5;\n  filter: alpha(opacity=50)\n}", ""]);
 	
 	// exports
 
@@ -30440,57 +29474,31 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div class="aside"
-	
 	//     v-bind:style="{width:width + 'px'}"
-	
 	//     v-bind:class="{
-	
 	//     left:placement === 'left',
-	
 	//     right:placement === 'right'
-	
 	//     }"
-	
 	//     v-show="show"
-	
 	//     :transition="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-	
 	//     <div class="aside-dialog">
-	
 	//       <div class="aside-content">
-	
 	//         <div class="aside-header">
-	
 	//           <button type="button" class="close" @click='close'><span>&times;</span></button>
-	
 	//           <h4 class="aside-title">
-	
 	//           <slot name="header">
-	
 	//             {{ header }}
-	
 	//           </slot>
-	
 	//           </h4>
-	
 	//         </div>
-	
 	//         <div class="aside-body">
-	
 	//           <slot></slot>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -30557,285 +29565,145 @@
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  // .aside-open {
-	
 	  //   transition: transform 0.3s;
-	
 	  // }
-	
 	  // .aside-open.has-push-right {
-	
 	  //   transform: translateX(-300px);
-	
 	  // }
-	
 	  // .aside {
-	
 	  //     position: fixed;
-	
 	  //     top: 0;
-	
 	  //     bottom: 0;
-	
 	  //     z-index: 1049;
-	
 	  //     overflow: auto;
-	
 	  //     background: #fff;
-	
 	  // }
-	
 	  // .aside.left {
-	
 	  //   left: 0;
-	
 	  //   right: auto;
-	
 	  // }
-	
 	  // .aside.right {
-	
 	  //   left: auto;
-	
 	  //   right: 0;
-	
 	  // }
-	
 	  // .slideleft-enter {
-	
 	  //   animation:slideleft-in .3s;
-	
 	  // }
-	
 	  // .slideleft-leave {
-	
 	  //   animation:slideleft-out .3s;
-	
 	  // }
-	
 	  // @keyframes slideleft-in {
-	
 	  //   0% {
-	
 	  //     transform: translateX(-100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  // }
-	
 	  // @keyframes slideleft-out {
-	
 	  //   0% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(-100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  // }
-	
 	  // .slideright-enter {
-	
 	  //   animation:slideright-in .3s;
-	
 	  // }
-	
 	  // .slideright-leave {
-	
 	  //   animation:slideright-out .3s;
-	
 	  // }
-	
 	  // @keyframes slideright-in {
-	
 	  //   0% {
-	
 	  //     transform: translateX(100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  // }
-	
 	  // @keyframes slideright-out {
-	
 	  //   0% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  // }
-	
 	  // .aside:focus {
-	
 	  //     outline: 0
-	
 	  // }
-	
 	  // @media (max-width: 991px) {
-	
 	  //   .aside {
-	
 	  //     min-width:240px
-	
 	  //   }
-	
 	  // }
-	
 	  // .aside.left {
-	
 	  //   right: auto;
-	
 	  //   left: 0
-	
 	  // }
-	
 	  // .aside.right {
-	
 	  //   right: 0;
-	
 	  //   left: auto
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-header {
-	
 	  //   border-bottom: 1px solid #e5e5e5;
-	
 	  //   min-height: 16.43px;
-	
 	  //   padding: 6px 15px;
-	
 	  //   background: #337ab7;
-	
 	  //   color: #fff
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-header .close {
-	
 	  //   margin-right: -8px;
-	
 	  //   padding: 4px 8px;
-	
 	  //   color: #fff;
-	
 	  //   font-size: 25px;
-	
 	  //   opacity: .8
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-body {
-	
 	  //   position: relative;
-	
 	  //   padding: 15px
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer {
-	
 	  //   padding: 15px;
-	
 	  //   text-align: right;
-	
 	  //   border-top: 1px solid #e5e5e5
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer .btn+.btn {
-	
 	  //   margin-left: 5px;
-	
 	  //   margin-bottom: 0
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer .btn-group .btn+.btn {
-	
 	  //   margin-left: -1px
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer .btn-block+.btn-block {
-	
 	  //   margin-left: 0
-	
 	  // }
-	
 	  // .aside-backdrop {
-	
 	  //   position: fixed;
-	
 	  //   top: 0;
-	
 	  //   right: 0;
-	
 	  //   bottom: 0;
-	
 	  //   left: 0;
-	
 	  //   z-index: 1040;
-	
 	  //   opacity: 0;
-	
 	  //   transition: opacity .3s ease;
-	
 	  //   background-color: #000
-	
 	  // }
-	
 	  // .aside-backdrop.in {
-	
 	  //   opacity: .5;
-	
 	  //   filter: alpha(opacity=50)
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -30844,13 +29712,13 @@
 /* 322 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"aside\"\r\n    v-bind:style=\"{width:width + 'px'}\"\r\n    v-bind:class=\"{\r\n    left:placement === 'left',\r\n    right:placement === 'right'\r\n    }\"\r\n    v-show=\"show\"\r\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\r\n    <div class=\"aside-dialog\">\r\n      <div class=\"aside-content\">\r\n        <div class=\"aside-header\">\r\n          <button type=\"button\" class=\"close\" @click='close'><span>&times;</span></button>\r\n          <h4 class=\"aside-title\">\r\n          <slot name=\"header\">\r\n            {{ header }}\r\n          </slot>\r\n          </h4>\r\n        </div>\r\n        <div class=\"aside-body\">\r\n          <slot></slot>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div class=\"aside\"\n    v-bind:style=\"{width:width + 'px'}\"\n    v-bind:class=\"{\n    left:placement === 'left',\n    right:placement === 'right'\n    }\"\n    v-show=\"show\"\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\n    <div class=\"aside-dialog\">\n      <div class=\"aside-content\">\n        <div class=\"aside-header\">\n          <button type=\"button\" class=\"close\" @click='close'><span>&times;</span></button>\n          <h4 class=\"aside-title\">\n          <slot name=\"header\">\n            {{ header }}\n          </slot>\n          </h4>\n        </div>\n        <div class=\"aside-body\">\n          <slot></slot>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ }),
 /* 323 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"aside\" name=\"Aside\">\r\n    <div class=\"bs-example\">\r\n      <button class=\"btn btn-danger btn-lg\" @click=\"showLeft = true\">Show Aside on left</button>\r\n      <button class=\"btn btn-success btn-lg\" @click=\"showRight = true\">Show Aside on right</button>\r\n\r\n      <sidebar :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" :width=\"350\">\r\n        <h4>Text in aside</h4>\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n        tempor incididunt ut labore et dolore magna aliqua.</p>\r\n        <p> Ut enim ad minim veniam,\r\n        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n        consequat.</p>\r\n        <doc-code language=\"javascript\">\r\n          if (talk === cheap){\r\n            code.style.display = 'block'\r\n          }\r\n        </doc-code>\r\n        <div class=\"aside-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" @click=\"showLeft=false\">Close</button>\r\n        </div>\r\n      </sidebar>\r\n      <sidebar :show.sync=\"showRight\" placement=\"right\" header=\"Title\" :width=\"350\">\r\n        <h4>Text in aside</h4>\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n        tempor incididunt ut labore et dolore magna aliqua.</p>\r\n        <p> Ut enim ad minim veniam,\r\n        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n        consequat.</p>\r\n        <doc-code language=\"javascript\">\r\n          if (talk === cheap){\r\n            code.style.display = 'block'\r\n          }\r\n        </doc-code>\r\n        <div class=\"aside-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" @click=\"showRight=false\">Close</button>\r\n        </div>\r\n      </sidebar>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <aside :show.sync=\"showRight\" placement=\"right\" header=\"Title\" width=\"350\">\r\n        ...\r\n      </aside>\r\n      <aside :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" width=\"350\">\r\n        ...\r\n      </aside>\r\n    </doc-code>\r\n    <doc-table>\r\n      <div>\r\n        <p>show</p>\r\n        <p><code>Boolean</code></p>\r\n        <p></p>\r\n        <p>Whether show the component.</p>\r\n      </div>\r\n      <div>\r\n        <p>placement</p>\r\n        <p><code>String</code>, one of <code>left</code>, <code>right</code></p>\r\n        <p><code>right</code></p>\r\n        <p>how to position the component.</p>\r\n      </div>\r\n      <div>\r\n        <p>header</p>\r\n        <p><code>String</code></p>\r\n        <p></p>\r\n        <p>Header text of the aside component.</p>\r\n      </div>\r\n      <div>\r\n        <p>width</p>\r\n        <p><code>Number</code></p>\r\n        <p></p>\r\n        <p></p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"aside\" name=\"Aside\">\n    <div class=\"bs-example\">\n      <button class=\"btn btn-danger btn-lg\" @click=\"showLeft = true\">Show Aside on left</button>\n      <button class=\"btn btn-success btn-lg\" @click=\"showRight = true\">Show Aside on right</button>\n\n      <sidebar :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" :width=\"350\">\n        <h4>Text in aside</h4>\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n        tempor incididunt ut labore et dolore magna aliqua.</p>\n        <p> Ut enim ad minim veniam,\n        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n        consequat.</p>\n        <doc-code language=\"javascript\">\n          if (talk === cheap){\n            code.style.display = 'block'\n          }\n        </doc-code>\n        <div class=\"aside-footer\">\n          <button type=\"button\" class=\"btn btn-default\" @click=\"showLeft=false\">Close</button>\n        </div>\n      </sidebar>\n      <sidebar :show.sync=\"showRight\" placement=\"right\" header=\"Title\" :width=\"350\">\n        <h4>Text in aside</h4>\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n        tempor incididunt ut labore et dolore magna aliqua.</p>\n        <p> Ut enim ad minim veniam,\n        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n        consequat.</p>\n        <doc-code language=\"javascript\">\n          if (talk === cheap){\n            code.style.display = 'block'\n          }\n        </doc-code>\n        <div class=\"aside-footer\">\n          <button type=\"button\" class=\"btn btn-default\" @click=\"showRight=false\">Close</button>\n        </div>\n      </sidebar>\n    </div>\n    <doc-code language=\"markup\">\n      <aside :show.sync=\"showRight\" placement=\"right\" header=\"Title\" width=\"350\">\n        ...\n      </aside>\n      <aside :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" width=\"350\">\n        ...\n      </aside>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>show</p>\n        <p><code>Boolean</code></p>\n        <p></p>\n        <p>Whether show the component.</p>\n      </div>\n      <div>\n        <p>placement</p>\n        <p><code>String</code>, one of <code>left</code>, <code>right</code></p>\n        <p><code>right</code></p>\n        <p>how to position the component.</p>\n      </div>\n      <div>\n        <p>header</p>\n        <p><code>String</code></p>\n        <p></p>\n        <p>Header text of the aside component.</p>\n      </div>\n      <div>\n        <p>width</p>\n        <p><code>Number</code></p>\n        <p></p>\n        <p></p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 324 */
@@ -30913,186 +29781,97 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="button-group" name="Button Group">
-	
 	//     <div class="bs-example">
-	
 	//       <h4>Checkbox</h4>
-	
 	//       <button-group :value.sync="checkboxValue">
-	
 	//         <checkbox value="left">Left</checkbox>
-	
 	//         <checkbox value="middle">Middle</checkbox>
-	
 	//         <checkbox value="right">Right</checkbox>
-	
 	//       </button-group>
-	
 	//       <p>
-	
 	//         <pre>Checkbox value: {{checkboxValue | json}}</pre>
-	
 	//       </p>
-	
 	//       <hr>
-	
 	//       <h4>Radio</h4>
-	
 	//       <p>
-	
 	//         <button-group :value.sync="radioValue" type="primary">
-	
 	//           <radio value="left">Left</radio>
-	
 	//           <radio value="middle">Middle</radio>
-	
 	//           <radio value="right">Right</radio>
-	
 	//         </button-group>
-	
 	//       </p>
-	
 	//       <p>
-	
 	//         <button-group :value.sync="radioValue" type="success">
-	
 	//           <radio value="left">Left</radio>
-	
 	//           <radio value="middle">Middle</radio>
-	
 	//           <radio value="right">Right</radio>
-	
 	//         </button-group>
-	
 	//       </p>
-	
 	//       <p>
-	
 	//         <label>Not buttons:</label>
-	
 	//         <button-group :value.sync="radioValue" type="info" buttons="false">
-	
 	//           <radio value="left">Left</radio>
-	
 	//           <radio value="middle">Middle</radio>
-	
 	//           <radio value="right">Right</radio>
-	
 	//         </button-group>
-	
 	//       </p>
-	
 	//       <p>
-	
 	//         <pre>Radio value: {{radioValue}}</pre>
-	
 	//       </p>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <button-group :value.sync="checkboxValue">
-	
 	//         <checkbox value="left">Left</checkbox>
-	
 	//         <checkbox value="middle">Middle</checkbox>
-	
 	//         <checkbox value="right">Right</checkbox>
-	
 	//       </button-group>
-	
 	
 	//       <button-group :value.sync="radioValue" type="primary">
-	
 	//         <radio value="left">Left</radio>
-	
 	//         <radio value="middle">Middle</radio>
-	
 	//         <radio value="right">Right</radio>
-	
 	//       </button-group>
-	
 	
 	//       Not Buttons:
-	
 	//       <button-group :value.sync="radioValue" type="info" buttons="false">
-	
 	//         <radio value="left">Left</radio>
-	
 	//         <radio value="middle">Middle</radio>
-	
 	//         <radio value="right">Right</radio>
-	
 	//       </button-group>
-	
 	//     </doc-code>
 	
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>value</p>
-	
 	//         <p><code>Array</code> or <code>String</code></p>
-	
 	//         <p></p>
-	
 	//         <p>If defined, then the defined values will be checked otherwise the elements with a checked attribute
-	
 	//         will be checked.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>buttons</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>true</code></p>
-	
 	//         <p>
-	
 	//           <p>Can enable/disable button style.</p>
-	
 	//           <p>Group normal checks if you want to set the same type color for all.</p>
-	
 	//         </p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>type</p>
-	
 	//         <p><code>String</code>, one of <code>default</code>
-	
 	//         <code>primary</code>
-	
 	//         <code>danger</code>
-	
 	//         <code>info</code>
-	
 	//         <code>warning</code>
-	
 	//         <code>success</code></p>
-	
 	//         <p><code>default</code></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31188,15 +29967,10 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="{'btn-group':buttons,'btn-group-justified':justified,'btn-group-vertical':vertical}" :data-toggle="buttons&&'buttons'">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -31204,7 +29978,7 @@
 /* 328 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div :class=\"{'btn-group':buttons,'btn-group-justified':justified,'btn-group-vertical':vertical}\" :data-toggle=\"buttons&&'buttons'\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div :class=\"{'btn-group':buttons,'btn-group-justified':justified,'btn-group-vertical':vertical}\" :data-toggle=\"buttons&&'buttons'\">\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 329 */
@@ -31247,8 +30021,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-313e2221&file=Radio.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Radio.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-313e2221&file=Radio.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Radio.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2e226dbe&file=Radio.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Radio.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2e226dbe&file=Radio.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Radio.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -31266,7 +30040,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".radio { position: relative; }\r\n.radio > label > input {\r\n  position: absolute;\r\n  margin: 0;\r\n  padding: 0;\r\n  opacity: 0;\r\n  z-index: -1;\r\n  box-sizing: border-box;\r\n}\r\n.radio > label > .icon {\r\n  position: absolute;\r\n  top: .15rem;\r\n  left: 0;\r\n  display: block;\r\n  width: 1.4rem;\r\n  height: 1.4rem;\r\n  text-align: center;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  border-radius: .7rem;\r\n  background-repeat: no-repeat;\r\n  background-position: center center;\r\n  background-size: 50% 50%;\r\n}\r\n.radio:not(.active) > label > .icon {\r\n  background-color: #ddd;\r\n  border: 1px solid #bbb;\r\n}\r\n.radio > label > input:focus ~ .icon {\r\n  outline: 0;\r\n  border: 1px solid #66afe9;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n.radio.active > label > .icon {\r\n  background-size: 1rem 1rem;\r\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);\r\n}\r\n.radio.active .btn-default { -webkit-filter: brightness(75%); filter: brightness(75%); }\r\n\r\n.radio.disabled > label > .icon,\r\n.radio.readonly > label > .icon,\r\n.btn.readonly {\r\n  filter: alpha(opacity=65);\r\n  box-shadow: none;\r\n  opacity: .65;\r\n}\r\nlabel.btn > input[type=radio] {\r\n  position: absolute;\r\n  clip: rect(0,0,0,0);\r\n  pointer-events: none;\r\n}", ""]);
+	exports.push([module.id, ".radio { position: relative; }\n.radio > label > input {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  opacity: 0;\n  z-index: -1;\n  box-sizing: border-box;\n}\n.radio > label > .icon {\n  position: absolute;\n  top: .15rem;\n  left: 0;\n  display: block;\n  width: 1.4rem;\n  height: 1.4rem;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: .7rem;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\n.radio:not(.active) > label > .icon {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\n.radio > label > input:focus ~ .icon {\n  outline: 0;\n  border: 1px solid #66afe9;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\n}\n.radio.active > label > .icon {\n  background-size: 1rem 1rem;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);\n}\n.radio.active .btn-default { -webkit-filter: brightness(75%); filter: brightness(75%); }\n\n.radio.disabled > label > .icon,\n.radio.readonly > label > .icon,\n.btn.readonly {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=radio] {\n  position: absolute;\n  clip: rect(0,0,0,0);\n  pointer-events: none;\n}", ""]);
 	
 	// exports
 
@@ -31365,168 +30139,88 @@
 	  }
 	  // </script>
 	
-	
 	  // <style scope>
-	
 	  // .radio { position: relative; }
-	
 	  // .radio > label > input {
-	
 	  //   position: absolute;
-	
 	  //   margin: 0;
-	
 	  //   padding: 0;
-	
 	  //   opacity: 0;
-	
 	  //   z-index: -1;
-	
 	  //   box-sizing: border-box;
-	
 	  // }
-	
 	  // .radio > label > .icon {
-	
 	  //   position: absolute;
-	
 	  //   top: .15rem;
-	
 	  //   left: 0;
-	
 	  //   display: block;
-	
 	  //   width: 1.4rem;
-	
 	  //   height: 1.4rem;
-	
 	  //   text-align: center;
-	
 	  //   user-select: none;
-	
 	  //   border-radius: .7rem;
-	
 	  //   background-repeat: no-repeat;
-	
 	  //   background-position: center center;
-	
 	  //   background-size: 50% 50%;
-	
 	  // }
-	
 	  // .radio:not(.active) > label > .icon {
-	
 	  //   background-color: #ddd;
-	
 	  //   border: 1px solid #bbb;
-	
 	  // }
-	
 	  // .radio > label > input:focus ~ .icon {
-	
 	  //   outline: 0;
-	
 	  //   border: 1px solid #66afe9;
-	
 	  //   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	
 	  // }
-	
 	  // .radio.active > label > .icon {
-	
 	  //   background-size: 1rem 1rem;
-	
 	  //   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUiIGN5PSI1IiByPSI0IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
-	
 	  // }
-	
 	  // .radio.active .btn-default { filter: brightness(75%); }
 	
-	
 	  // .radio.disabled > label > .icon,
-	
 	  // .radio.readonly > label > .icon,
-	
 	  // .btn.readonly {
-	
 	  //   filter: alpha(opacity=65);
-	
 	  //   box-shadow: none;
-	
 	  //   opacity: .65;
-	
 	  // }
-	
 	  // label.btn > input[type=radio] {
-	
 	  //   position: absolute;
-	
 	  //   clip: rect(0,0,0,0);
-	
 	  //   pointer-events: none;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <label v-if="buttonStyle" :class="['btn btn-'+typeColor,{active:active,disabled:disabled,readonly:readonly}]" @click.prevent="toggle">
-	
 	//     <input type="radio" autocomplete="off"
-	
 	//       v-el:input
-	
 	//       v-show="!readonly"
-	
 	//       :checked="active"
-	
 	//       :value="value"
-	
 	//       :name="name"
-	
 	//       :readonly="readonly"
-	
 	//       :disabled="disabled"
-	
 	//     />
-	
 	//     <slot></slot>
-	
 	//   </label>
-	
 	//   <div v-else :class="['radio',typeColor,{active:active,disabled:disabled,readonly:readonly}]" @click.prevent="toggle">
-	
 	//     <label class="open">
-	
 	//       <input type="radio" autocomplete="off"
-	
 	//         v-el:input
-	
 	//         :checked="active"
-	
 	//         :value="value"
-	
 	//         :name="name"
-	
 	//         :readonly="readonly"
-	
 	//         :disabled="disabled"
-	
 	//       />
-	
 	//       <span class="icon dropdown-toggle" :class="[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]"></span>
-	
 	//       <span v-if="active&&typeColor==='default'" class="icon"></span>
-	
 	//       <slot></slot>
-	
 	//     </label>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -31534,13 +30228,13 @@
 /* 333 */
 /***/ (function(module, exports) {
 
-	module.exports = "<label v-if=\"buttonStyle\" :class=\"['btn btn-'+typeColor,{active:active,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\">\r\n    <input type=\"radio\" autocomplete=\"off\"\r\n      v-el:input\r\n      v-show=\"!readonly\"\r\n      :checked=\"active\"\r\n      :value=\"value\"\r\n      :name=\"name\"\r\n      :readonly=\"readonly\"\r\n      :disabled=\"disabled\"\r\n    />\r\n    <slot></slot>\r\n  </label>\r\n  <div v-else :class=\"['radio',typeColor,{active:active,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\">\r\n    <label class=\"open\">\r\n      <input type=\"radio\" autocomplete=\"off\"\r\n        v-el:input\r\n        :checked=\"active\"\r\n        :value=\"value\"\r\n        :name=\"name\"\r\n        :readonly=\"readonly\"\r\n        :disabled=\"disabled\"\r\n      />\r\n      <span class=\"icon dropdown-toggle\" :class=\"[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]\"></span>\r\n      <span v-if=\"active&&typeColor==='default'\" class=\"icon\"></span>\r\n      <slot></slot>\r\n    </label>\r\n  </div>";
+	module.exports = "<label v-if=\"buttonStyle\" :class=\"['btn btn-'+typeColor,{active:active,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\">\n    <input type=\"radio\" autocomplete=\"off\"\n      v-el:input\n      v-show=\"!readonly\"\n      :checked=\"active\"\n      :value=\"value\"\n      :name=\"name\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n    />\n    <slot></slot>\n  </label>\n  <div v-else :class=\"['radio',typeColor,{active:active,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\">\n    <label class=\"open\">\n      <input type=\"radio\" autocomplete=\"off\"\n        v-el:input\n        :checked=\"active\"\n        :value=\"value\"\n        :name=\"name\"\n        :readonly=\"readonly\"\n        :disabled=\"disabled\"\n      />\n      <span class=\"icon dropdown-toggle\" :class=\"[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]\"></span>\n      <span v-if=\"active&&typeColor==='default'\" class=\"icon\"></span>\n      <slot></slot>\n    </label>\n  </div>";
 
 /***/ }),
 /* 334 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"button-group\" name=\"Button Group\">\r\n    <div class=\"bs-example\">\r\n      <h4>Checkbox</h4>\r\n      <button-group :value.sync=\"checkboxValue\">\r\n        <checkbox value=\"left\">Left</checkbox>\r\n        <checkbox value=\"middle\">Middle</checkbox>\r\n        <checkbox value=\"right\">Right</checkbox>\r\n      </button-group>\r\n      <p>\r\n        <pre>Checkbox value: {{checkboxValue | json}}</pre>\r\n      </p>\r\n      <hr>\r\n      <h4>Radio</h4>\r\n      <p>\r\n        <button-group :value.sync=\"radioValue\" type=\"primary\">\r\n          <radio value=\"left\">Left</radio>\r\n          <radio value=\"middle\">Middle</radio>\r\n          <radio value=\"right\">Right</radio>\r\n        </button-group>\r\n      </p>\r\n      <p>\r\n        <button-group :value.sync=\"radioValue\" type=\"success\">\r\n          <radio value=\"left\">Left</radio>\r\n          <radio value=\"middle\">Middle</radio>\r\n          <radio value=\"right\">Right</radio>\r\n        </button-group>\r\n      </p>\r\n      <p>\r\n        <label>Not buttons:</label>\r\n        <button-group :value.sync=\"radioValue\" type=\"info\" buttons=\"false\">\r\n          <radio value=\"left\">Left</radio>\r\n          <radio value=\"middle\">Middle</radio>\r\n          <radio value=\"right\">Right</radio>\r\n        </button-group>\r\n      </p>\r\n      <p>\r\n        <pre>Radio value: {{radioValue}}</pre>\r\n      </p>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <button-group :value.sync=\"checkboxValue\">\r\n        <checkbox value=\"left\">Left</checkbox>\r\n        <checkbox value=\"middle\">Middle</checkbox>\r\n        <checkbox value=\"right\">Right</checkbox>\r\n      </button-group>\r\n\r\n      <button-group :value.sync=\"radioValue\" type=\"primary\">\r\n        <radio value=\"left\">Left</radio>\r\n        <radio value=\"middle\">Middle</radio>\r\n        <radio value=\"right\">Right</radio>\r\n      </button-group>\r\n\r\n      Not Buttons:\r\n      <button-group :value.sync=\"radioValue\" type=\"info\" buttons=\"false\">\r\n        <radio value=\"left\">Left</radio>\r\n        <radio value=\"middle\">Middle</radio>\r\n        <radio value=\"right\">Right</radio>\r\n      </button-group>\r\n    </doc-code>\r\n\r\n    <doc-table>\r\n      <div>\r\n        <p>value</p>\r\n        <p><code>Array</code> or <code>String</code></p>\r\n        <p></p>\r\n        <p>If defined, then the defined values will be checked otherwise the elements with a checked attribute\r\n        will be checked.</p>\r\n      </div>\r\n      <div>\r\n        <p>buttons</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>true</code></p>\r\n        <p>\r\n          <p>Can enable/disable button style.</p>\r\n          <p>Group normal checks if you want to set the same type color for all.</p>\r\n        </p>\r\n      </div>\r\n      <div>\r\n        <p>type</p>\r\n        <p><code>String</code>, one of <code>default</code>\r\n        <code>primary</code>\r\n        <code>danger</code>\r\n        <code>info</code>\r\n        <code>warning</code>\r\n        <code>success</code></p>\r\n        <p><code>default</code></p>\r\n        <p></p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"button-group\" name=\"Button Group\">\n    <div class=\"bs-example\">\n      <h4>Checkbox</h4>\n      <button-group :value.sync=\"checkboxValue\">\n        <checkbox value=\"left\">Left</checkbox>\n        <checkbox value=\"middle\">Middle</checkbox>\n        <checkbox value=\"right\">Right</checkbox>\n      </button-group>\n      <p>\n        <pre>Checkbox value: {{checkboxValue | json}}</pre>\n      </p>\n      <hr>\n      <h4>Radio</h4>\n      <p>\n        <button-group :value.sync=\"radioValue\" type=\"primary\">\n          <radio value=\"left\">Left</radio>\n          <radio value=\"middle\">Middle</radio>\n          <radio value=\"right\">Right</radio>\n        </button-group>\n      </p>\n      <p>\n        <button-group :value.sync=\"radioValue\" type=\"success\">\n          <radio value=\"left\">Left</radio>\n          <radio value=\"middle\">Middle</radio>\n          <radio value=\"right\">Right</radio>\n        </button-group>\n      </p>\n      <p>\n        <label>Not buttons:</label>\n        <button-group :value.sync=\"radioValue\" type=\"info\" buttons=\"false\">\n          <radio value=\"left\">Left</radio>\n          <radio value=\"middle\">Middle</radio>\n          <radio value=\"right\">Right</radio>\n        </button-group>\n      </p>\n      <p>\n        <pre>Radio value: {{radioValue}}</pre>\n      </p>\n    </div>\n    <doc-code language=\"markup\">\n      <button-group :value.sync=\"checkboxValue\">\n        <checkbox value=\"left\">Left</checkbox>\n        <checkbox value=\"middle\">Middle</checkbox>\n        <checkbox value=\"right\">Right</checkbox>\n      </button-group>\n\n      <button-group :value.sync=\"radioValue\" type=\"primary\">\n        <radio value=\"left\">Left</radio>\n        <radio value=\"middle\">Middle</radio>\n        <radio value=\"right\">Right</radio>\n      </button-group>\n\n      Not Buttons:\n      <button-group :value.sync=\"radioValue\" type=\"info\" buttons=\"false\">\n        <radio value=\"left\">Left</radio>\n        <radio value=\"middle\">Middle</radio>\n        <radio value=\"right\">Right</radio>\n      </button-group>\n    </doc-code>\n\n    <doc-table>\n      <div>\n        <p>value</p>\n        <p><code>Array</code> or <code>String</code></p>\n        <p></p>\n        <p>If defined, then the defined values will be checked otherwise the elements with a checked attribute\n        will be checked.</p>\n      </div>\n      <div>\n        <p>buttons</p>\n        <p><code>Boolean</code></p>\n        <p><code>true</code></p>\n        <p>\n          <p>Can enable/disable button style.</p>\n          <p>Group normal checks if you want to set the same type color for all.</p>\n        </p>\n      </div>\n      <div>\n        <p>type</p>\n        <p><code>String</code>, one of <code>default</code>\n        <code>primary</code>\n        <code>danger</code>\n        <code>info</code>\n        <code>warning</code>\n        <code>success</code></p>\n        <p><code>default</code></p>\n        <p></p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 335 */
@@ -31595,54 +30289,30 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="dynamicPanel" name="DynamicPanel">
-	
 	//     <div class="bs-example">
-	
 	//       <dynamic-panel src="docs/loadContent.html"
-	
 	//                      header="Load content from 'content.html'"
-	
 	//                      is-open></dynamic-panel>
-	
 	//       <dynamic-panel src="docs/loadContent.html"
-	
 	//                      fragment="fragment"
-	
 	//                      header="Load fragment content from 'content.html'"
-	
 	//                      is-open></dynamic-panel>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <dynamic-panel src="docs/loadContent.html"
-	
 	//                      header="Load content from 'content.html'"
-	
 	//                      is-open></dynamic-panel>
-	
 	//       <dynamic-panel src="docs/loadContent.html"
-	
 	//                      fragment="fragment"
-	
 	//                      header="Load fragment content from 'content.html'"
-	
 	//                      is-open></dynamic-panel>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
 	
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31660,7 +30330,7 @@
 /* 337 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"dynamicPanel\" name=\"DynamicPanel\">\r\n    <div class=\"bs-example\">\r\n      <dynamic-panel src=\"docs/loadContent.html\"\r\n                     header=\"Load content from 'content.html'\"\r\n                     is-open></dynamic-panel>\r\n      <dynamic-panel src=\"docs/loadContent.html\"\r\n                     fragment=\"fragment\"\r\n                     header=\"Load fragment content from 'content.html'\"\r\n                     is-open></dynamic-panel>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <dynamic-panel src=\"docs/loadContent.html\"\r\n                     header=\"Load content from 'content.html'\"\r\n                     is-open></dynamic-panel>\r\n      <dynamic-panel src=\"docs/loadContent.html\"\r\n                     fragment=\"fragment\"\r\n                     header=\"Load fragment content from 'content.html'\"\r\n                     is-open></dynamic-panel>\r\n    </doc-code>\r\n    <doc-table>\r\n\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"dynamicPanel\" name=\"DynamicPanel\">\n    <div class=\"bs-example\">\n      <dynamic-panel src=\"docs/loadContent.html\"\n                     header=\"Load content from 'content.html'\"\n                     is-open></dynamic-panel>\n      <dynamic-panel src=\"docs/loadContent.html\"\n                     fragment=\"fragment\"\n                     header=\"Load fragment content from 'content.html'\"\n                     is-open></dynamic-panel>\n    </div>\n    <doc-code language=\"markup\">\n      <dynamic-panel src=\"docs/loadContent.html\"\n                     header=\"Load content from 'content.html'\"\n                     is-open></dynamic-panel>\n      <dynamic-panel src=\"docs/loadContent.html\"\n                     fragment=\"fragment\"\n                     header=\"Load fragment content from 'content.html'\"\n                     is-open></dynamic-panel>\n    </doc-code>\n    <doc-table>\n\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 338 */
@@ -31687,7 +30357,7 @@
 /* 339 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"container bs-docs-container\">\r\n    <div class=\"row\">\r\n        <slot></slot>\r\n    </div>\r\n  </div>";
+	module.exports = "<div class=\"container bs-docs-container\">\n    <div class=\"row\">\n        <slot></slot>\n    </div>\n  </div>";
 
 /***/ }),
 /* 340 */
@@ -31742,318 +30412,164 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="modal" name="Modal">
-	
 	//     <div class="bs-example">
-	
 	//       <button class="btn btn-default" v-show-modal="modal1">Show modal</button>
-	
 	//       <modal title="==Modal title==" name="modal1">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//       </modal>
-	
 	//       <button class="btn btn-success" @click="fadeModal = true">Fade modal</button>
-	
 	//       <modal title="Fade Modal" :show.sync="fadeModal" effect="fade" width="800">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//       </modal>
-	
 	//       <button class="btn btn-primary" @click="zoomModal = true">Zoom modal</button>
-	
 	//       <modal title="Zoom Modal" :show.sync="zoomModal" effect="zoom" width="400">
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//       </modal>
-	
 	//       <button class="btn btn-default" @click="showCustomModal = true">Show custom modal</button>
-	
 	//       <modal :show.sync="showCustomModal" effect="fade" width="50%">
-	
 	//         <div slot="modal-header" class="modal-header">
-	
 	//           <h4 class="modal-title"><i>Custom</i> <code>Modal</code> <b>Title</b></h4>
-	
 	//         </div>
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//         <div slot="modal-footer" class="modal-footer">
-	
 	//           <button type="button" class="btn btn-default" @click='showCustomModal = false'>Exit</button>
-	
 	//           <button type="button" class="btn btn-success" @click='showCustomModal = false'>Custom Save</button>
-	
 	//         </div>
-	
 	//       </modal>
-	
 	//       <button class="btn btn-warning" @click="largeModal = true">Large modal</button>
-	
 	//       <modal title="Large Modal" :show.sync="largeModal" large>
-	
 	//           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
 	//           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
 	//           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
 	//       </modal>
-	
 	//       <button class="btn btn-danger" @click="smallModal = true">Small modal</button>
-	
 	//       <modal title="Small Modal" :show.sync="smallModal" small>
-	
 	//           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//           consequat.
-	
 	//       </modal>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <modal :show.sync="...">
-	
 	//         <div slot="modal-header" class="modal-header">
-	
 	//           <h4 class="modal-title">Modal title</h4>
-	
 	//         </div>
-	
 	//         ...
-	
 	//       </modal>
-	
 	
 	//       <modal title="Fade Modal" :show.sync="..." effect="fade" width="800">
-	
 	//         ...
-	
 	//       </modal>
-	
 	
 	//       <modal title="Zoom Modal" :show.sync="..." effect="zoom" width="400">
-	
 	//         ...
-	
 	//       </modal>
-	
 	
 	//       <modal :show.sync="showCustomModal" effect="fade" width="400">
-	
 	//         <div slot="modal-header" class="modal-header">
-	
 	//           <h4 class="modal-title">
-	
 	//             <i>Custom</i> <code>Modal</code> <b>Title</b>
-	
 	//           </h4>
-	
 	//         </div>
 	
-	
 	//         ...
-	
 	
 	//         <div slot="modal-footer" class="modal-footer">
-	
 	//           <button type="button" class="btn btn-default" @click='showCustomModal = false'>Exit</button>
-	
 	//           <button type="button" class="btn btn-success" @click='showCustomModal = false'>Custom Save</button>
-	
 	//         </div>
-	
 	//       </modal>
-	
 	//       <modal title="Large Modal" large :show.sync="...">
-	
 	//         ...
-	
 	//       </modal>
-	
 	//       <modal title="Small Modal" small :show.sync="...">
-	
 	//         ...
-	
 	//       </modal>
-	
 	//   </doc-code>
-	
 	//   <doc-table>
-	
 	//     <div>
-	
 	//       <p>title</p>
-	
 	//       <p><code>String</code></p>
-	
 	//       <p></p>
-	
 	//       <p>Title of the modal component.</p>
-	
 	//     </div>
-	
 	//     <div>
-	
 	//       <p>ok-text</p>
-	
 	//       <p><code>String</code></p>
-	
 	//       <p>Save changes</p>
-	
 	//       <p>Text for OK button</p>
-	
 	//     </div>
-	
 	//     <div>
-	
 	//       <p>width</p>
-	
 	//       <p><code>Number, String or null</code></p>
-	
 	//       <p><code>null</code></p>
-	
 	//       <p>Pass a Number in pixels or a String with relational sizes ( e.g. '80%' or '5em' ). If null, the modal will be responsive per bootstrap's default.</p>
-	
 	//     </div>
-	
 	//     <div>
-	
 	//       <p>large</p>
-	
 	//       <p><code>Boolean</code></p>
-	
 	//       <p><code>false</code></p>
-	
 	//       <p>Creates a large modal ( see boostrap's documentation for .modal-lg )</p>
-	
 	//     </div>
-	
 	//     <div>
-	
 	//       <p>small</p>
-	
 	//       <p><code>Boolean</code></p>
-	
 	//       <p><code>false</code></p>
-	
 	//       <p>Creates a small modal ( see boostrap's documentation for .modal-sm )</p>
-	
 	//     </div>
-	
 	//     <div>
-	
 	//       <p>backdrop</p>
-	
 	//       <p><code>Boolean</code></p>
-	
 	//       <p><code>true</code></p>
-	
 	//       <p>Enables/disables closing the modal by clicking on the backdrop.</p>
-	
 	//     </div>
-	
 	//   </doc-table>
-	
 	//   <h2>Usage</h2>
-	
 	//   <p>
-	
 	//     If you just need a simple modal, you can use the <code>title</code> prop and the default footer. However, if you
-	
 	//     need to put custom HTML or a custom footer, you can override the header or footer block by using
-	
 	//     <code>&lt;div slot="modal-title" class="modal-title"&gt;...&lt;/div&gt;</code> and
-	
 	//     <code>&lt;div slot="modal-footer" class="modal-footer"&gt;...&lt;/div&gt;</code>.
-	
 	//   </p>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -32117,8 +30633,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2731405a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2731405a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b7cff25a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b7cff25a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -32136,7 +30652,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".modal {\r\n  transition: all 0.3s ease;\r\n}\r\n.modal.in {\r\n  background-color: rgba(0,0,0,0.5);\r\n}\r\n.modal.zoom .modal-dialog {\r\n  -webkit-transform: scale(0.1);\r\n  transform: scale(0.1);\r\n  top: 300px;\r\n  opacity: 0;\r\n  transition: all 0.3s;\r\n}\r\n.modal.zoom.in .modal-dialog {\r\n  -webkit-transform: scale(1);\r\n  transform: scale(1);\r\n  -webkit-transform: translate3d(0, -300px, 0);\r\n  transform: translate3d(0, -300px, 0);\r\n  opacity: 1;\r\n}", ""]);
+	exports.push([module.id, ".modal {\n  transition: all 0.3s ease;\n}\n.modal.in {\n  background-color: rgba(0,0,0,0.5);\n}\n.modal.zoom .modal-dialog {\n  -webkit-transform: scale(0.1);\n  transform: scale(0.1);\n  top: 300px;\n  opacity: 0;\n  transition: all 0.3s;\n}\n.modal.zoom.in .modal-dialog {\n  -webkit-transform: scale(1);\n  transform: scale(1);\n  -webkit-transform: translate3d(0, -300px, 0);\n  transform: translate3d(0, -300px, 0);\n  opacity: 1;\n}", ""]);
 	
 	// exports
 
@@ -32284,127 +30800,67 @@
 	    }
 	  }
 	  // </script>
-	
 	  // <style>
-	
 	  // .modal {
-	
 	  //   transition: all 0.3s ease;
-	
 	  // }
-	
 	  // .modal.in {
-	
 	  //   background-color: rgba(0,0,0,0.5);
-	
 	  // }
-	
 	  // .modal.zoom .modal-dialog {
-	
 	  //   -webkit-transform: scale(0.1);
-	
 	  //   -moz-transform: scale(0.1);
-	
 	  //   -ms-transform: scale(0.1);
-	
 	  //   transform: scale(0.1);
-	
 	  //   top: 300px;
-	
 	  //   opacity: 0;
-	
 	  //   -webkit-transition: all 0.3s;
-	
 	  //   -moz-transition: all 0.3s;
-	
 	  //   transition: all 0.3s;
-	
 	  // }
-	
 	  // .modal.zoom.in .modal-dialog {
-	
 	  //   -webkit-transform: scale(1);
-	
 	  //   -moz-transform: scale(1);
-	
 	  //   -ms-transform: scale(1);
-	
 	  //   transform: scale(1);
-	
 	  //   -webkit-transform: translate3d(0, -300px, 0);
-	
 	  //   transform: translate3d(0, -300px, 0);
-	
 	  //   opacity: 1;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <div role="dialog"
-	
 	//     v-bind:class="{
-	
 	//     'modal':true,
-	
 	//     'fade':effect === 'fade',
-	
 	//     'zoom':effect === 'zoom'
-	
 	//     }">
-	
 	//     <div v-bind:class="{'modal-dialog':true,'modal-lg':large,'modal-sm':small}" role="document"
-	
 	//       v-bind:style="{width: optionalWidth}">
-	
 	//       <div class="modal-content">
-	
 	//         <slot name="modal-header">
-	
 	//           <div class="modal-header">
-	
 	//             <button type="button" class="close" @click="close"><span>&times;</span></button>
-	
 	//             <h4 class="modal-title">
-	
 	//               <slot name="title">
-	
 	//                 {{{titleRendered}}}
-	
 	//               </slot>
-	
 	//             </h4>
-	
 	//           </div>
-	
 	//         </slot>
-	
 	//           <div class="modal-body">
-	
 	//               <slot></slot>
-	
 	//           </div>
-	
 	//         <slot name="modal-footer">
-	
 	//           <div class="modal-footer" v-if="showOkButton">
-	
 	//             <button type="button" class="btn btn-primary" v-if="showOkButton" @click="close">{{ okText }}</button>
-	
 	//           </div>
-	
 	//         </slot>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(264)))
@@ -32449,13 +30905,13 @@
 /* 350 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div role=\"dialog\"\r\n    v-bind:class=\"{\r\n    'modal':true,\r\n    'fade':effect === 'fade',\r\n    'zoom':effect === 'zoom'\r\n    }\">\r\n    <div v-bind:class=\"{'modal-dialog':true,'modal-lg':large,'modal-sm':small}\" role=\"document\"\r\n      v-bind:style=\"{width: optionalWidth}\">\r\n      <div class=\"modal-content\">\r\n        <slot name=\"modal-header\">\r\n          <div class=\"modal-header\">\r\n            <button type=\"button\" class=\"close\" @click=\"close\"><span>&times;</span></button>\r\n            <h4 class=\"modal-title\">\r\n              <slot name=\"title\">\r\n                {{{titleRendered}}}\r\n              </slot>\r\n            </h4>\r\n          </div>\r\n        </slot>\r\n          <div class=\"modal-body\">\r\n              <slot></slot>\r\n          </div>\r\n        <slot name=\"modal-footer\">\r\n          <div class=\"modal-footer\" v-if=\"showOkButton\">\r\n            <button type=\"button\" class=\"btn btn-primary\" v-if=\"showOkButton\" @click=\"close\">{{ okText }}</button>\r\n          </div>\r\n        </slot>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div role=\"dialog\"\n    v-bind:class=\"{\n    'modal':true,\n    'fade':effect === 'fade',\n    'zoom':effect === 'zoom'\n    }\">\n    <div v-bind:class=\"{'modal-dialog':true,'modal-lg':large,'modal-sm':small}\" role=\"document\"\n      v-bind:style=\"{width: optionalWidth}\">\n      <div class=\"modal-content\">\n        <slot name=\"modal-header\">\n          <div class=\"modal-header\">\n            <button type=\"button\" class=\"close\" @click=\"close\"><span>&times;</span></button>\n            <h4 class=\"modal-title\">\n              <slot name=\"title\">\n                {{{titleRendered}}}\n              </slot>\n            </h4>\n          </div>\n        </slot>\n          <div class=\"modal-body\">\n              <slot></slot>\n          </div>\n        <slot name=\"modal-footer\">\n          <div class=\"modal-footer\" v-if=\"showOkButton\">\n            <button type=\"button\" class=\"btn btn-primary\" v-if=\"showOkButton\" @click=\"close\">{{ okText }}</button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ }),
 /* 351 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"modal\" name=\"Modal\">\r\n    <div class=\"bs-example\">\r\n      <button class=\"btn btn-default\" v-show-modal=\"modal1\">Show modal</button>\r\n      <modal title=\"==Modal title==\" name=\"modal1\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n      </modal>\r\n      <button class=\"btn btn-success\" @click=\"fadeModal = true\">Fade modal</button>\r\n      <modal title=\"Fade Modal\" :show.sync=\"fadeModal\" effect=\"fade\" width=\"800\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n      </modal>\r\n      <button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</button>\r\n      <modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400\">\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n      </modal>\r\n      <button class=\"btn btn-default\" @click=\"showCustomModal = true\">Show custom modal</button>\r\n      <modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"50%\">\r\n        <div slot=\"modal-header\" class=\"modal-header\">\r\n          <h4 class=\"modal-title\"><i>Custom</i> <code>Modal</code> <b>Title</b></h4>\r\n        </div>\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n        <div slot=\"modal-footer\" class=\"modal-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" @click='showCustomModal = false'>Exit</button>\r\n          <button type=\"button\" class=\"btn btn-success\" @click='showCustomModal = false'>Custom Save</button>\r\n        </div>\r\n      </modal>\r\n      <button class=\"btn btn-warning\" @click=\"largeModal = true\">Large modal</button>\r\n      <modal title=\"Large Modal\" :show.sync=\"largeModal\" large>\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n      </modal>\r\n      <button class=\"btn btn-danger\" @click=\"smallModal = true\">Small modal</button>\r\n      <modal title=\"Small Modal\" :show.sync=\"smallModal\" small>\r\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n          consequat.\r\n      </modal>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <modal :show.sync=\"...\">\r\n        <div slot=\"modal-header\" class=\"modal-header\">\r\n          <h4 class=\"modal-title\">Modal title</h4>\r\n        </div>\r\n        ...\r\n      </modal>\r\n\r\n      <modal title=\"Fade Modal\" :show.sync=\"...\" effect=\"fade\" width=\"800\">\r\n        ...\r\n      </modal>\r\n\r\n      <modal title=\"Zoom Modal\" :show.sync=\"...\" effect=\"zoom\" width=\"400\">\r\n        ...\r\n      </modal>\r\n\r\n      <modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400\">\r\n        <div slot=\"modal-header\" class=\"modal-header\">\r\n          <h4 class=\"modal-title\">\r\n            <i>Custom</i> <code>Modal</code> <b>Title</b>\r\n          </h4>\r\n        </div>\r\n\r\n        ...\r\n\r\n        <div slot=\"modal-footer\" class=\"modal-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" @click='showCustomModal = false'>Exit</button>\r\n          <button type=\"button\" class=\"btn btn-success\" @click='showCustomModal = false'>Custom Save</button>\r\n        </div>\r\n      </modal>\r\n      <modal title=\"Large Modal\" large :show.sync=\"...\">\r\n        ...\r\n      </modal>\r\n      <modal title=\"Small Modal\" small :show.sync=\"...\">\r\n        ...\r\n      </modal>\r\n  </doc-code>\r\n  <doc-table>\r\n    <div>\r\n      <p>title</p>\r\n      <p><code>String</code></p>\r\n      <p></p>\r\n      <p>Title of the modal component.</p>\r\n    </div>\r\n    <div>\r\n      <p>ok-text</p>\r\n      <p><code>String</code></p>\r\n      <p>Save changes</p>\r\n      <p>Text for OK button</p>\r\n    </div>\r\n    <div>\r\n      <p>width</p>\r\n      <p><code>Number, String or null</code></p>\r\n      <p><code>null</code></p>\r\n      <p>Pass a Number in pixels or a String with relational sizes ( e.g. '80%' or '5em' ). If null, the modal will be responsive per bootstrap's default.</p>\r\n    </div>\r\n    <div>\r\n      <p>large</p>\r\n      <p><code>Boolean</code></p>\r\n      <p><code>false</code></p>\r\n      <p>Creates a large modal ( see boostrap's documentation for .modal-lg )</p>\r\n    </div>\r\n    <div>\r\n      <p>small</p>\r\n      <p><code>Boolean</code></p>\r\n      <p><code>false</code></p>\r\n      <p>Creates a small modal ( see boostrap's documentation for .modal-sm )</p>\r\n    </div>\r\n    <div>\r\n      <p>backdrop</p>\r\n      <p><code>Boolean</code></p>\r\n      <p><code>true</code></p>\r\n      <p>Enables/disables closing the modal by clicking on the backdrop.</p>\r\n    </div>\r\n  </doc-table>\r\n  <h2>Usage</h2>\r\n  <p>\r\n    If you just need a simple modal, you can use the <code>title</code> prop and the default footer. However, if you\r\n    need to put custom HTML or a custom footer, you can override the header or footer block by using\r\n    <code>&lt;div slot=\"modal-title\" class=\"modal-title\"&gt;...&lt;/div&gt;</code> and\r\n    <code>&lt;div slot=\"modal-footer\" class=\"modal-footer\"&gt;...&lt;/div&gt;</code>.\r\n  </p>\r\n  </div>\r\n</template>";
+	module.exports = "<doc-section id=\"modal\" name=\"Modal\">\n    <div class=\"bs-example\">\n      <button class=\"btn btn-default\" v-show-modal=\"modal1\">Show modal</button>\n      <modal title=\"==Modal title==\" name=\"modal1\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n      </modal>\n      <button class=\"btn btn-success\" @click=\"fadeModal = true\">Fade modal</button>\n      <modal title=\"Fade Modal\" :show.sync=\"fadeModal\" effect=\"fade\" width=\"800\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n      </modal>\n      <button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</button>\n      <modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400\">\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n      </modal>\n      <button class=\"btn btn-default\" @click=\"showCustomModal = true\">Show custom modal</button>\n      <modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"50%\">\n        <div slot=\"modal-header\" class=\"modal-header\">\n          <h4 class=\"modal-title\"><i>Custom</i> <code>Modal</code> <b>Title</b></h4>\n        </div>\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n        <div slot=\"modal-footer\" class=\"modal-footer\">\n          <button type=\"button\" class=\"btn btn-default\" @click='showCustomModal = false'>Exit</button>\n          <button type=\"button\" class=\"btn btn-success\" @click='showCustomModal = false'>Custom Save</button>\n        </div>\n      </modal>\n      <button class=\"btn btn-warning\" @click=\"largeModal = true\">Large modal</button>\n      <modal title=\"Large Modal\" :show.sync=\"largeModal\" large>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n      </modal>\n      <button class=\"btn btn-danger\" @click=\"smallModal = true\">Small modal</button>\n      <modal title=\"Small Modal\" :show.sync=\"smallModal\" small>\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n          consequat.\n      </modal>\n    </div>\n    <doc-code language=\"markup\">\n      <modal :show.sync=\"...\">\n        <div slot=\"modal-header\" class=\"modal-header\">\n          <h4 class=\"modal-title\">Modal title</h4>\n        </div>\n        ...\n      </modal>\n\n      <modal title=\"Fade Modal\" :show.sync=\"...\" effect=\"fade\" width=\"800\">\n        ...\n      </modal>\n\n      <modal title=\"Zoom Modal\" :show.sync=\"...\" effect=\"zoom\" width=\"400\">\n        ...\n      </modal>\n\n      <modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400\">\n        <div slot=\"modal-header\" class=\"modal-header\">\n          <h4 class=\"modal-title\">\n            <i>Custom</i> <code>Modal</code> <b>Title</b>\n          </h4>\n        </div>\n\n        ...\n\n        <div slot=\"modal-footer\" class=\"modal-footer\">\n          <button type=\"button\" class=\"btn btn-default\" @click='showCustomModal = false'>Exit</button>\n          <button type=\"button\" class=\"btn btn-success\" @click='showCustomModal = false'>Custom Save</button>\n        </div>\n      </modal>\n      <modal title=\"Large Modal\" large :show.sync=\"...\">\n        ...\n      </modal>\n      <modal title=\"Small Modal\" small :show.sync=\"...\">\n        ...\n      </modal>\n  </doc-code>\n  <doc-table>\n    <div>\n      <p>title</p>\n      <p><code>String</code></p>\n      <p></p>\n      <p>Title of the modal component.</p>\n    </div>\n    <div>\n      <p>ok-text</p>\n      <p><code>String</code></p>\n      <p>Save changes</p>\n      <p>Text for OK button</p>\n    </div>\n    <div>\n      <p>width</p>\n      <p><code>Number, String or null</code></p>\n      <p><code>null</code></p>\n      <p>Pass a Number in pixels or a String with relational sizes ( e.g. '80%' or '5em' ). If null, the modal will be responsive per bootstrap's default.</p>\n    </div>\n    <div>\n      <p>large</p>\n      <p><code>Boolean</code></p>\n      <p><code>false</code></p>\n      <p>Creates a large modal ( see boostrap's documentation for .modal-lg )</p>\n    </div>\n    <div>\n      <p>small</p>\n      <p><code>Boolean</code></p>\n      <p><code>false</code></p>\n      <p>Creates a small modal ( see boostrap's documentation for .modal-sm )</p>\n    </div>\n    <div>\n      <p>backdrop</p>\n      <p><code>Boolean</code></p>\n      <p><code>true</code></p>\n      <p>Enables/disables closing the modal by clicking on the backdrop.</p>\n    </div>\n  </doc-table>\n  <h2>Usage</h2>\n  <p>\n    If you just need a simple modal, you can use the <code>title</code> prop and the default footer. However, if you\n    need to put custom HTML or a custom footer, you can override the header or footer block by using\n    <code>&lt;div slot=\"modal-title\" class=\"modal-title\"&gt;...&lt;/div&gt;</code> and\n    <code>&lt;div slot=\"modal-footer\" class=\"modal-footer\"&gt;...&lt;/div&gt;</code>.\n  </p>\n  </div>\n</template>";
 
 /***/ }),
 /* 352 */
@@ -32510,78 +30966,42 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <doc-section id="morph" name="Morph">
-	
 	//         <div class="bs-example">
-	
 	//             <morph title="Q1">
-	
 	//                 <div>
-	
 	//                     Content of Q1
-	
 	//                 </div>
-	
 	//             </morph>
-	
 	//             <morph title="Q2">
-	
 	//                 <div>
-	
 	//                     Content of Q2
-	
 	//                 </div>
-	
 	//             </morph>
-	
 	//             <morph title="Q3">
-	
 	//                 <div>
-	
 	//                     Content of Q3
-	
 	//                 </div>
-	
 	//             </morph>
-	
 	//             <morph title="**Q4** :cat:">
-	
 	//                 <div>
-	
 	//                     Content of Q4
-	
 	//                 </div>
-	
 	//             </morph>
-	
 	//         </div>
-	
 	//         <doc-code language="markup">
-	
 	//             Markdown is supported for title.
-	
 	//             <morph title="**Q4** :cat:">
-	
 	//                 <div>
-	
 	//                     Content of Q4
-	
 	//                 </div>
-	
 	//             </morph>
-	
 	//         </doc-code>
-	
 	//         <doc-table>
 	
-	
 	//         </doc-table>
-	
 	//     </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -32599,7 +31019,7 @@
 /* 354 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"morph\" name=\"Morph\">\r\n        <div class=\"bs-example\">\r\n            <morph title=\"Q1\">\r\n                <div>\r\n                    Content of Q1\r\n                </div>\r\n            </morph>\r\n            <morph title=\"Q2\">\r\n                <div>\r\n                    Content of Q2\r\n                </div>\r\n            </morph>\r\n            <morph title=\"Q3\">\r\n                <div>\r\n                    Content of Q3\r\n                </div>\r\n            </morph>\r\n            <morph title=\"**Q4** :cat:\">\r\n                <div>\r\n                    Content of Q4\r\n                </div>\r\n            </morph>\r\n        </div>\r\n        <doc-code language=\"markup\">\r\n            Markdown is supported for title.\r\n            <morph title=\"**Q4** :cat:\">\r\n                <div>\r\n                    Content of Q4\r\n                </div>\r\n            </morph>\r\n        </doc-code>\r\n        <doc-table>\r\n\r\n        </doc-table>\r\n    </doc-section>";
+	module.exports = "<doc-section id=\"morph\" name=\"Morph\">\n        <div class=\"bs-example\">\n            <morph title=\"Q1\">\n                <div>\n                    Content of Q1\n                </div>\n            </morph>\n            <morph title=\"Q2\">\n                <div>\n                    Content of Q2\n                </div>\n            </morph>\n            <morph title=\"Q3\">\n                <div>\n                    Content of Q3\n                </div>\n            </morph>\n            <morph title=\"**Q4** :cat:\">\n                <div>\n                    Content of Q4\n                </div>\n            </morph>\n        </div>\n        <doc-code language=\"markup\">\n            Markdown is supported for title.\n            <morph title=\"**Q4** :cat:\">\n                <div>\n                    Content of Q4\n                </div>\n            </morph>\n        </doc-code>\n        <doc-table>\n\n        </doc-table>\n    </doc-section>";
 
 /***/ }),
 /* 355 */
@@ -32679,6 +31099,7 @@
 	    return {
 	      placement: 'top',
 	      type: 'default',
+	      fluid: false,
 	      sections: []
 	    };
 	  },
@@ -32691,127 +31112,72 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <doc-section id="navbar" name="Navbar">
-	
 	//     <div class="bs-example">
-	
 	//       <navbar :placement="placement" :type="type">
-	
 	//         <a href="/" title="Home" slot="brand" class="navbar-brand">VueStrap</a>
-	
 	//         <dropdown text="Component List" type="primary">
-	
 	//           <li v-for="s in sections"><a :href="'#'+s.id" v-text="s.name"></a></li>
-	
 	//         </dropdown>
-	
 	//         <li>
-	
 	//           <a href="https://github.com/yuche/vue-strap" target="_blank">
-	
 	//             Fork this project on Github
-	
 	//             <svg height="16px" fill="#777" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-	
 	//           </a>
-	
 	//         </li>
-	
 	//       </navbar>
-	
 	//       <div class="form-group">
-	
 	//         <label>Placement</label>
-	
 	//         <v-select :value.sync="placement" clear-button :options="['top','bottom','static']"></v-select>
-	
 	//       </div>
-	
 	//       <div class="form-group">
-	
 	//         <label>Type</label>
-	
 	//         <v-select :value.sync="type" :options="['default','inverse']"></v-select>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <navbar placement="top" type="default">
-	
 	//         <!-- Brand as slot -->
-	
 	//         <a slot="brand" href="/" title="Home" class="navbar-brand">VueStrap</a>
-	
 	//         <!-- You can use dropdown component -->
-	
 	//         <dropdown text="Dropdown">
-	
 	//           <li><a href="link">Option</a></li>
-	
 	//         </dropdown>
-	
 	//         <!-- Or normal bootstrap style -->
-	
 	//         <li class="dropdown">
-	
 	//           <a href="#" class="dropdown-toggle">Dropdown</a>
-	
 	//           <ul class="dropdown-menu">
-	
 	//             <li><a href="link">Option</a></li>
-	
 	//           </ul>
-	
 	//         </li>
-	
 	//         <!-- For right positioning use slot -->
-	
 	//         <li slot="right">
-	
 	//           <a href="https://github.com/yuche/vue-strap" target="_blank">Fork...</a>
-	
 	//         </li>
-	
 	//       </navbar>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>placement</p>
-	
 	//         <p><code>String</code>, one of <code>top</code>, <code>bottom</code>, <code>static</code>, or empty for normal.</p>
-	
 	//         <p><code>''</code></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>type</p>
-	
 	//         <p><code>String</code>, one of <code>inverse</code>, <code>default</code>.</p>
-	
 	//         <p><code>default</code></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
+	//       <div>
+	//         <p>fluid</p>
+	//         <p><code>Boolean</code></p>
+	//         <p><code>default</code></p>
+	//         <p>If true, use <code>container-fluid</code> class. Otherwise, <code>container</code> will be used</p>
+	//       </div>
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -32831,10 +31197,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6b08725b&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6b08725b&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32856,8 +31222,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b08725b&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b08725b&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -32875,7 +31241,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".secret[_v-6b08725b] {\r\n  position: absolute;\r\n  clip: rect(0 0 0 0);\r\n  overflow: hidden;\r\n  margin: -1px;\r\n  height: 1px;\r\n  width: 1px;\r\n  padding: 0;\r\n  border: 0;\r\n}", ""]);
+	exports.push([module.id, ".secret[_v-bd7b294a] {\n  position: absolute;\n  clip: rect(0 0 0 0);\n  overflow: hidden;\n  margin: -1px;\n  height: 1px;\n  width: 1px;\n  padding: 0;\n  border: 0;\n}", ""]);
 	
 	// exports
 
@@ -32899,63 +31265,34 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <li v-if="isLi" v-el:dropdown :class="classes">
-	
 	//     <slot name="button">
-	
 	//       <a class="dropdown-toggle" role="button" :class="{disabled: disabled}" @keyup.esc="show = false">
-	
 	//         {{{ text }}}
-	
 	//         <span class="caret"></span>
-	
 	//       </a>
-	
 	//     </slot>
-	
 	//     <slot name="dropdown-menu">
-	
 	//       <ul v-else class="dropdown-menu">
-	
 	//         <slot></slot>
-	
 	//       </ul>
-	
 	//     </slot>
-	
 	//   </li>
-	
 	//   <div v-else v-el:dropdown :class="classes">
-	
 	//     <slot name="before"></slot>
-	
 	//     <slot name="button">
-	
 	//       <button type="button" class="btn btn-{{type}} dropdown-toggle" @keyup.esc="show = false" :disabled="disabled">
-	
 	//         {{ text }}
-	
 	//         <span class="caret"></span>
-	
 	//       </button>
-	
 	//     </slot>
-	
 	//     <slot name="dropdown-menu">
-	
 	//       <ul class="dropdown-menu">
-	
 	//         <slot></slot>
-	
 	//       </ul>
-	
 	//     </slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  props: {
@@ -33045,36 +31382,24 @@
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// .secret {
-	
 	//   position: absolute;
-	
 	//   clip: rect(0 0 0 0);
-	
 	//   overflow: hidden;
-	
 	//   margin: -1px;
-	
 	//   height: 1px;
-	
 	//   width: 1px;
-	
 	//   padding: 0;
-	
 	//   border: 0;
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 361 */
 /***/ (function(module, exports) {
 
-	module.exports = "<li v-if=\"isLi\" v-el:dropdown=\"\" :class=\"classes\" _v-6b08725b=\"\">\n    <slot name=\"button\" _v-6b08725b=\"\">\n      <a class=\"dropdown-toggle\" role=\"button\" :class=\"{disabled: disabled}\" @keyup.esc=\"show = false\" _v-6b08725b=\"\">\n        {{{ text }}}\n        <span class=\"caret\" _v-6b08725b=\"\"></span>\n      </a>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-6b08725b=\"\">\n      <ul v-else=\"\" class=\"dropdown-menu\" _v-6b08725b=\"\">\n        <slot _v-6b08725b=\"\"></slot>\n      </ul>\n    </slot>\n  </li>\n  <div v-else=\"\" v-el:dropdown=\"\" :class=\"classes\" _v-6b08725b=\"\">\n    <slot name=\"before\" _v-6b08725b=\"\"></slot>\n    <slot name=\"button\" _v-6b08725b=\"\">\n      <button type=\"button\" class=\"btn btn-{{type}} dropdown-toggle\" @keyup.esc=\"show = false\" :disabled=\"disabled\" _v-6b08725b=\"\">\n        {{ text }}\n        <span class=\"caret\" _v-6b08725b=\"\"></span>\n      </button>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-6b08725b=\"\">\n      <ul class=\"dropdown-menu\" _v-6b08725b=\"\">\n        <slot _v-6b08725b=\"\"></slot>\n      </ul>\n    </slot>\n  </div>";
+	module.exports = "<li v-if=\"isLi\" v-el:dropdown=\"\" :class=\"classes\" _v-bd7b294a=\"\">\n    <slot name=\"button\" _v-bd7b294a=\"\">\n      <a class=\"dropdown-toggle\" role=\"button\" :class=\"{disabled: disabled}\" @keyup.esc=\"show = false\" _v-bd7b294a=\"\">\n        {{{ text }}}\n        <span class=\"caret\" _v-bd7b294a=\"\"></span>\n      </a>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-bd7b294a=\"\">\n      <ul v-else=\"\" class=\"dropdown-menu\" _v-bd7b294a=\"\">\n        <slot _v-bd7b294a=\"\"></slot>\n      </ul>\n    </slot>\n  </li>\n  <div v-else=\"\" v-el:dropdown=\"\" :class=\"classes\" _v-bd7b294a=\"\">\n    <slot name=\"before\" _v-bd7b294a=\"\"></slot>\n    <slot name=\"button\" _v-bd7b294a=\"\">\n      <button type=\"button\" class=\"btn btn-{{type}} dropdown-toggle\" @keyup.esc=\"show = false\" :disabled=\"disabled\" _v-bd7b294a=\"\">\n        {{ text }}\n        <span class=\"caret\" _v-bd7b294a=\"\"></span>\n      </button>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-bd7b294a=\"\">\n      <ul class=\"dropdown-menu\" _v-bd7b294a=\"\">\n        <slot _v-bd7b294a=\"\"></slot>\n      </ul>\n    </slot>\n  </div>";
 
 /***/ }),
 /* 362 */
@@ -33092,10 +31417,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-26b8d14c&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-2b07d05a&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-26b8d14c&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-2b07d05a&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -33117,8 +31442,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-26b8d14c&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-26b8d14c&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b07d05a&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b07d05a&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -33136,7 +31461,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@media (max-width: 767px) {\r\n  .navbar-fixed-top .navbar-collapse[_v-26b8d14c] {\r\n    max-height: 80vh !important;\r\n    overflow-x: hidden !important;\r\n    overflow-y: scroll !important;\r\n  }\r\n}", ""]);
+	exports.push([module.id, "@media (max-width: 767px) {\n  .navbar-fixed-top .navbar-collapse[_v-2b07d05a] {\n    max-height: 80vh !important;\n    overflow-x: hidden !important;\n    overflow-y: scroll !important;\n  }\n}", ""]);
 	
 	// exports
 
@@ -33166,6 +31491,10 @@
 	    placement: {
 	      type: String,
 	      default: ''
+	    },
+	    fluid: {
+	      type: Boolean,
+	      default: false
 	    }
 	  },
 	  data: function data() {
@@ -33235,84 +31564,45 @@
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// @media (max-width: 767px) {
-	
 	//   .navbar-fixed-top .navbar-collapse {
-	
 	//     max-height: 80vh !important;
-	
 	//     overflow-x: hidden !important;
-	
 	//     overflow-y: scroll !important;
-	
 	//   }
-	
 	// }
-	
 	// </style>
 	// <template>
-	
 	//   <nav v-el:navbar :class="['navbar',{
-	
 	//     'navbar-inverse':(type == 'inverse'),
-	
 	//     'navbar-default':(type == 'default'),
-	
 	//     'navbar-fixed-top':(placement === 'top'),
-	
 	//     'navbar-fixed-bottom':(placement === 'bottom'),
-	
 	//     'navbar-static-top':(placement === 'static')
-	
 	//   }]">
-	
-	//     <div class="container-fluid">
-	
+	//     <div v-bind:class="fluid ? 'container-fluid' : 'container'">
 	//       <div class="navbar-header">
-	
 	//         <button v-if="!slots.collapse" type="button" class="navbar-toggle collapsed"  aria-expanded="false" @click="toggleCollapse">
-	
 	//           <span class="sr-only">Toggle navigation</span>
-	
 	//           <span class="icon-bar"></span>
-	
 	//           <span class="icon-bar"></span>
-	
 	//           <span class="icon-bar"></span>
-	
 	//         </button>
-	
 	//         <slot name="collapse"></slot>
-	
 	//         <slot name="brand"></slot>
-	
 	//       </div>
-	
 	//       <div :class="['navbar-collapse',{collapse:collapsed}]">
-	
 	//         <ul class="nav navbar-nav">
-	
 	//           <slot></slot>
-	
 	//         </ul>
-	
 	//         <ul v-if="slots.right" class="nav navbar-nav navbar-right">
-	
 	//           <slot name="right"></slot>
-	
 	//         </ul>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </nav>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -33320,13 +31610,13 @@
 /* 366 */
 /***/ (function(module, exports) {
 
-	module.exports = "<nav v-el:navbar=\"\" :class=\"['navbar',{\n    'navbar-inverse':(type == 'inverse'),\n    'navbar-default':(type == 'default'),\n    'navbar-fixed-top':(placement === 'top'),\n    'navbar-fixed-bottom':(placement === 'bottom'),\n    'navbar-static-top':(placement === 'static')\n  }]\" _v-26b8d14c=\"\">\n    <div class=\"container-fluid\" _v-26b8d14c=\"\">\n      <div class=\"navbar-header\" _v-26b8d14c=\"\">\n        <button v-if=\"!slots.collapse\" type=\"button\" class=\"navbar-toggle collapsed\" aria-expanded=\"false\" @click=\"toggleCollapse\" _v-26b8d14c=\"\">\n          <span class=\"sr-only\" _v-26b8d14c=\"\">Toggle navigation</span>\n          <span class=\"icon-bar\" _v-26b8d14c=\"\"></span>\n          <span class=\"icon-bar\" _v-26b8d14c=\"\"></span>\n          <span class=\"icon-bar\" _v-26b8d14c=\"\"></span>\n        </button>\n        <slot name=\"collapse\" _v-26b8d14c=\"\"></slot>\n        <slot name=\"brand\" _v-26b8d14c=\"\"></slot>\n      </div>\n      <div :class=\"['navbar-collapse',{collapse:collapsed}]\" _v-26b8d14c=\"\">\n        <ul class=\"nav navbar-nav\" _v-26b8d14c=\"\">\n          <slot _v-26b8d14c=\"\"></slot>\n        </ul>\n        <ul v-if=\"slots.right\" class=\"nav navbar-nav navbar-right\" _v-26b8d14c=\"\">\n          <slot name=\"right\" _v-26b8d14c=\"\"></slot>\n        </ul>\n      </div>\n    </div>\n  </nav>";
+	module.exports = "<nav v-el:navbar=\"\" :class=\"['navbar',{\n    'navbar-inverse':(type == 'inverse'),\n    'navbar-default':(type == 'default'),\n    'navbar-fixed-top':(placement === 'top'),\n    'navbar-fixed-bottom':(placement === 'bottom'),\n    'navbar-static-top':(placement === 'static')\n  }]\" _v-2b07d05a=\"\">\n    <div v-bind:class=\"fluid ? 'container-fluid' : 'container'\" _v-2b07d05a=\"\">\n      <div class=\"navbar-header\" _v-2b07d05a=\"\">\n        <button v-if=\"!slots.collapse\" type=\"button\" class=\"navbar-toggle collapsed\" aria-expanded=\"false\" @click=\"toggleCollapse\" _v-2b07d05a=\"\">\n          <span class=\"sr-only\" _v-2b07d05a=\"\">Toggle navigation</span>\n          <span class=\"icon-bar\" _v-2b07d05a=\"\"></span>\n          <span class=\"icon-bar\" _v-2b07d05a=\"\"></span>\n          <span class=\"icon-bar\" _v-2b07d05a=\"\"></span>\n        </button>\n        <slot name=\"collapse\" _v-2b07d05a=\"\"></slot>\n        <slot name=\"brand\" _v-2b07d05a=\"\"></slot>\n      </div>\n      <div :class=\"['navbar-collapse',{collapse:collapsed}]\" _v-2b07d05a=\"\">\n        <ul class=\"nav navbar-nav\" _v-2b07d05a=\"\">\n          <slot _v-2b07d05a=\"\"></slot>\n        </ul>\n        <ul v-if=\"slots.right\" class=\"nav navbar-nav navbar-right\" _v-2b07d05a=\"\">\n          <slot name=\"right\" _v-2b07d05a=\"\"></slot>\n        </ul>\n      </div>\n    </div>\n  </nav>";
 
 /***/ }),
 /* 367 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"navbar\" name=\"Navbar\">\r\n    <div class=\"bs-example\">\r\n      <navbar :placement=\"placement\" :type=\"type\">\r\n        <a href=\"/\" title=\"Home\" slot=\"brand\" class=\"navbar-brand\">VueStrap</a>\r\n        <dropdown text=\"Component List\" type=\"primary\">\r\n          <li v-for=\"s in sections\"><a :href=\"'#'+s.id\" v-text=\"s.name\"></a></li>\r\n        </dropdown>\r\n        <li>\r\n          <a href=\"https://github.com/yuche/vue-strap\" target=\"_blank\">\r\n            Fork this project on Github\r\n            <svg height=\"16px\" fill=\"#777\" class=\"octicon octicon-mark-github\" viewBox=\"0 0 16 16\" version=\"1.1\" aria-hidden=\"true\"><path d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z\"></path></svg>\r\n          </a>\r\n        </li>\r\n      </navbar>\r\n      <div class=\"form-group\">\r\n        <label>Placement</label>\r\n        <v-select :value.sync=\"placement\" clear-button :options=\"['top','bottom','static']\"></v-select>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label>Type</label>\r\n        <v-select :value.sync=\"type\" :options=\"['default','inverse']\"></v-select>\r\n      </div>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <navbar placement=\"top\" type=\"default\">\r\n        <!-- Brand as slot -->\r\n        <a slot=\"brand\" href=\"/\" title=\"Home\" class=\"navbar-brand\">VueStrap</a>\r\n        <!-- You can use dropdown component -->\r\n        <dropdown text=\"Dropdown\">\r\n          <li><a href=\"link\">Option</a></li>\r\n        </dropdown>\r\n        <!-- Or normal bootstrap style -->\r\n        <li class=\"dropdown\">\r\n          <a href=\"#\" class=\"dropdown-toggle\">Dropdown</a>\r\n          <ul class=\"dropdown-menu\">\r\n            <li><a href=\"link\">Option</a></li>\r\n          </ul>\r\n        </li>\r\n        <!-- For right positioning use slot -->\r\n        <li slot=\"right\">\r\n          <a href=\"https://github.com/yuche/vue-strap\" target=\"_blank\">Fork...</a>\r\n        </li>\r\n      </navbar>\r\n    </doc-code>\r\n    <doc-table>\r\n      <div>\r\n        <p>placement</p>\r\n        <p><code>String</code>, one of <code>top</code>, <code>bottom</code>, <code>static</code>, or empty for normal.</p>\r\n        <p><code>''</code></p>\r\n        <p></p>\r\n      </div>\r\n      <div>\r\n        <p>type</p>\r\n        <p><code>String</code>, one of <code>inverse</code>, <code>default</code>.</p>\r\n        <p><code>default</code></p>\r\n        <p></p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"navbar\" name=\"Navbar\">\n    <div class=\"bs-example\">\n      <navbar :placement=\"placement\" :type=\"type\">\n        <a href=\"/\" title=\"Home\" slot=\"brand\" class=\"navbar-brand\">VueStrap</a>\n        <dropdown text=\"Component List\" type=\"primary\">\n          <li v-for=\"s in sections\"><a :href=\"'#'+s.id\" v-text=\"s.name\"></a></li>\n        </dropdown>\n        <li>\n          <a href=\"https://github.com/yuche/vue-strap\" target=\"_blank\">\n            Fork this project on Github\n            <svg height=\"16px\" fill=\"#777\" class=\"octicon octicon-mark-github\" viewBox=\"0 0 16 16\" version=\"1.1\" aria-hidden=\"true\"><path d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z\"></path></svg>\n          </a>\n        </li>\n      </navbar>\n      <div class=\"form-group\">\n        <label>Placement</label>\n        <v-select :value.sync=\"placement\" clear-button :options=\"['top','bottom','static']\"></v-select>\n      </div>\n      <div class=\"form-group\">\n        <label>Type</label>\n        <v-select :value.sync=\"type\" :options=\"['default','inverse']\"></v-select>\n      </div>\n    </div>\n    <doc-code language=\"markup\">\n      <navbar placement=\"top\" type=\"default\">\n        <!-- Brand as slot -->\n        <a slot=\"brand\" href=\"/\" title=\"Home\" class=\"navbar-brand\">VueStrap</a>\n        <!-- You can use dropdown component -->\n        <dropdown text=\"Dropdown\">\n          <li><a href=\"link\">Option</a></li>\n        </dropdown>\n        <!-- Or normal bootstrap style -->\n        <li class=\"dropdown\">\n          <a href=\"#\" class=\"dropdown-toggle\">Dropdown</a>\n          <ul class=\"dropdown-menu\">\n            <li><a href=\"link\">Option</a></li>\n          </ul>\n        </li>\n        <!-- For right positioning use slot -->\n        <li slot=\"right\">\n          <a href=\"https://github.com/yuche/vue-strap\" target=\"_blank\">Fork...</a>\n        </li>\n      </navbar>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>placement</p>\n        <p><code>String</code>, one of <code>top</code>, <code>bottom</code>, <code>static</code>, or empty for normal.</p>\n        <p><code>''</code></p>\n        <p></p>\n      </div>\n      <div>\n        <p>type</p>\n        <p><code>String</code>, one of <code>inverse</code>, <code>default</code>.</p>\n        <p><code>default</code></p>\n        <p></p>\n      </div>\n      <div>\n        <p>fluid</p>\n        <p><code>Boolean</code></p>\n        <p><code>default</code></p>\n        <p>If true, use <code>container-fluid</code> class. Otherwise, <code>container</code> will be used</p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 368 */
@@ -33400,221 +31690,116 @@
 	};
 	// </script>
 	// <template>
-	
 	//     <doc-section id="question" name="Question">
-	
 	//         <p>
-	
 	//             Question shows a structure like below, which consists of a question body, hint and answer.
-	
 	//         </p>
-	
 	//         <div class="bs-example">
-	
 	//             <Question>
-	
 	//                 Body
-	
 	//                 <div slot="hint">
-	
 	//                     Hint
-	
 	//                 </div>
-	
 	//                 <div slot="answer">
-	
 	//                     Answer
-	
 	//                 </div>
-	
 	//             </Question>
-	
 	//         </div>
-	
 	//         <p>If no Hint slot is specified, it will not show:</p>
-	
 	//         <div class="bs-example">
-	
 	//             <Question>
-	
 	//                 Body
-	
 	//                 <div slot="answer">
-	
 	//                     Answer
-	
 	//                 </div>
-	
 	//             </Question>
-	
 	//         </div>
-	
 	//         <p>If no Answer slot is specified, it will not show:</p>
-	
 	//         <div class="bs-example">
-	
 	//             <Question>
-	
 	//                 Body
-	
 	//             </Question>
-	
 	//         </div>
-	
 	//         <p>
-	
 	//             Question could be used with Morph component to create a inline question group.<br>
-	
 	//             Could be also stored in a remote file and load it when it is to be shown.
-	
 	//         </p>
-	
 	//         <div class="bs-example">
-	
 	//             <morph title="Review question">
-	
 	//                 <Question>
-	
 	//                     Body
-	
 	//                     <div slot="hint">
-	
 	//                         Hint
-	
 	//                     </div>
-	
 	//                     <div slot="answer">
-	
 	//                         Answer
-	
 	//                     </div>
-	
 	//                 </Question>
-	
 	//             </morph>
-	
 	//             <morph title="Remote question" src="docs/question.html"></morph>
-	
 	//         </div>
-	
 	//         <p>
-	
 	//             Use <code>has-input</code> attribute to add an input box for user to enter their answer.
-	
 	//         </p>
-	
 	//         <div class="bs-example">
-	
 	//             <Question has-input>
-	
 	//                 Body
-	
 	//                 <div slot="hint">
-	
 	//                     Hint
-	
 	//                 </div>
-	
 	//                 <div slot="answer">
-	
 	//                     Answer
-	
 	//                 </div>
-	
 	//             </Question>
-	
 	//         </div>
-	
 	
 	//         <doc-code language="markup">
-	
 	//             Use alone
-	
 	//             <Question>
-	
 	//                 Body
-	
 	//                 <div slot="hint">
-	
 	//                     Hint
-	
 	//                 </div>
-	
 	//                 <div slot="answer">
-	
 	//                     Answer
-	
 	//                 </div>
-	
 	//             </Question>
-	
 	
 	//             If no Hint slot is specified, it will not show:
-	
 	//             <Question>
-	
 	//                 Body
-	
 	//                 <div slot="answer">
-	
 	//                     Answer
-	
 	//                 </div>
-	
 	//             </Question>
-	
 	
 	//             If no Answer slot is specified, it will not show:
-	
 	//             <Question>
-	
 	//                 Body
-	
 	//             </Question>
 	
-	
 	//             Use inline with Morph
-	
 	//             <morph title="Review question">
-	
 	//                 <Question>
-	
 	//                     Body
-	
 	//                     <div slot="hint">
-	
 	//                         Hint
-	
 	//                     </div>
-	
 	//                     <div slot="answer">
-	
 	//                         Answer
-	
 	//                     </div>
-	
 	//                 </Question>
-	
 	//             </morph>
-	
 	
 	//             Use inline with Morph dynamic loading
-	
 	//             <morph title="Remote question" src="docs/question.html">
-	
 	//             </morph>
-	
 	//         </doc-code>
-	
 	//         <doc-table>
 	
-	
 	//         </doc-table>
-	
 	//     </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -33622,7 +31807,7 @@
 /* 370 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"question\" name=\"Question\">\r\n        <p>\r\n            Question shows a structure like below, which consists of a question body, hint and answer.\r\n        </p>\r\n        <div class=\"bs-example\">\r\n            <Question>\r\n                Body\r\n                <div slot=\"hint\">\r\n                    Hint\r\n                </div>\r\n                <div slot=\"answer\">\r\n                    Answer\r\n                </div>\r\n            </Question>\r\n        </div>\r\n        <p>If no Hint slot is specified, it will not show:</p>\r\n        <div class=\"bs-example\">\r\n            <Question>\r\n                Body\r\n                <div slot=\"answer\">\r\n                    Answer\r\n                </div>\r\n            </Question>\r\n        </div>\r\n        <p>If no Answer slot is specified, it will not show:</p>\r\n        <div class=\"bs-example\">\r\n            <Question>\r\n                Body\r\n            </Question>\r\n        </div>\r\n        <p>\r\n            Question could be used with Morph component to create a inline question group.<br>\r\n            Could be also stored in a remote file and load it when it is to be shown.\r\n        </p>\r\n        <div class=\"bs-example\">\r\n            <morph title=\"Review question\">\r\n                <Question>\r\n                    Body\r\n                    <div slot=\"hint\">\r\n                        Hint\r\n                    </div>\r\n                    <div slot=\"answer\">\r\n                        Answer\r\n                    </div>\r\n                </Question>\r\n            </morph>\r\n            <morph title=\"Remote question\" src=\"docs/question.html\"></morph>\r\n        </div>\r\n        <p>\r\n            Use <code>has-input</code> attribute to add an input box for user to enter their answer.\r\n        </p>\r\n        <div class=\"bs-example\">\r\n            <Question has-input>\r\n                Body\r\n                <div slot=\"hint\">\r\n                    Hint\r\n                </div>\r\n                <div slot=\"answer\">\r\n                    Answer\r\n                </div>\r\n            </Question>\r\n        </div>\r\n\r\n        <doc-code language=\"markup\">\r\n            Use alone\r\n            <Question>\r\n                Body\r\n                <div slot=\"hint\">\r\n                    Hint\r\n                </div>\r\n                <div slot=\"answer\">\r\n                    Answer\r\n                </div>\r\n            </Question>\r\n\r\n            If no Hint slot is specified, it will not show:\r\n            <Question>\r\n                Body\r\n                <div slot=\"answer\">\r\n                    Answer\r\n                </div>\r\n            </Question>\r\n\r\n            If no Answer slot is specified, it will not show:\r\n            <Question>\r\n                Body\r\n            </Question>\r\n\r\n            Use inline with Morph\r\n            <morph title=\"Review question\">\r\n                <Question>\r\n                    Body\r\n                    <div slot=\"hint\">\r\n                        Hint\r\n                    </div>\r\n                    <div slot=\"answer\">\r\n                        Answer\r\n                    </div>\r\n                </Question>\r\n            </morph>\r\n\r\n            Use inline with Morph dynamic loading\r\n            <morph title=\"Remote question\" src=\"docs/question.html\">\r\n            </morph>\r\n        </doc-code>\r\n        <doc-table>\r\n\r\n        </doc-table>\r\n    </doc-section>";
+	module.exports = "<doc-section id=\"question\" name=\"Question\">\n        <p>\n            Question shows a structure like below, which consists of a question body, hint and answer.\n        </p>\n        <div class=\"bs-example\">\n            <Question>\n                Body\n                <div slot=\"hint\">\n                    Hint\n                </div>\n                <div slot=\"answer\">\n                    Answer\n                </div>\n            </Question>\n        </div>\n        <p>If no Hint slot is specified, it will not show:</p>\n        <div class=\"bs-example\">\n            <Question>\n                Body\n                <div slot=\"answer\">\n                    Answer\n                </div>\n            </Question>\n        </div>\n        <p>If no Answer slot is specified, it will not show:</p>\n        <div class=\"bs-example\">\n            <Question>\n                Body\n            </Question>\n        </div>\n        <p>\n            Question could be used with Morph component to create a inline question group.<br>\n            Could be also stored in a remote file and load it when it is to be shown.\n        </p>\n        <div class=\"bs-example\">\n            <morph title=\"Review question\">\n                <Question>\n                    Body\n                    <div slot=\"hint\">\n                        Hint\n                    </div>\n                    <div slot=\"answer\">\n                        Answer\n                    </div>\n                </Question>\n            </morph>\n            <morph title=\"Remote question\" src=\"docs/question.html\"></morph>\n        </div>\n        <p>\n            Use <code>has-input</code> attribute to add an input box for user to enter their answer.\n        </p>\n        <div class=\"bs-example\">\n            <Question has-input>\n                Body\n                <div slot=\"hint\">\n                    Hint\n                </div>\n                <div slot=\"answer\">\n                    Answer\n                </div>\n            </Question>\n        </div>\n\n        <doc-code language=\"markup\">\n            Use alone\n            <Question>\n                Body\n                <div slot=\"hint\">\n                    Hint\n                </div>\n                <div slot=\"answer\">\n                    Answer\n                </div>\n            </Question>\n\n            If no Hint slot is specified, it will not show:\n            <Question>\n                Body\n                <div slot=\"answer\">\n                    Answer\n                </div>\n            </Question>\n\n            If no Answer slot is specified, it will not show:\n            <Question>\n                Body\n            </Question>\n\n            Use inline with Morph\n            <morph title=\"Review question\">\n                <Question>\n                    Body\n                    <div slot=\"hint\">\n                        Hint\n                    </div>\n                    <div slot=\"answer\">\n                        Answer\n                    </div>\n                </Question>\n            </morph>\n\n            Use inline with Morph dynamic loading\n            <morph title=\"Remote question\" src=\"docs/question.html\">\n            </morph>\n        </doc-code>\n        <doc-table>\n\n        </doc-table>\n    </doc-section>";
 
 /***/ }),
 /* 371 */
@@ -33698,207 +31883,108 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <doc-section id="popover" name="Popover">
-	
 	//     <div class="bs-example">
-	
 	//       <popover v-for="place in placements" effect="fade" :content="text" :placement="place">
-	
 	//         <button class="btn btn-default">Popover on {{place}}</button>
-	
 	//       </popover>
-	
 	//       <hr>
-	
 	//       <h4>Title</h4>
-	
 	//       <popover v-for="place in placements" effect="fade" header title="Title" :content="text" :placement="place">
-	
 	//         <button class="btn btn-default">Popover on {{place}}</button>
-	
 	//       </popover>
-	
 	//       <hr>
-	
 	//       <h4>Trigger</h4>
-	
 	//       <p>
-	
 	//         <popover effect="scale" title="Title" :content="content" placement="top" trigger="hover">
-	
 	//           <button class="btn btn-default">Mouseenter</button>
-	
 	//         </popover>
-	
 	//         <popover effect="scale" title="Title" :content="text" placement="top" trigger="contextmenu">
-	
 	//           <button class="btn btn-default">Contextmenu (right click)</button>
-	
 	//         </popover>
-	
 	//       </p>
-	
 	//       <popover effect="scale" title="Title" :content="text" placement="bottom" trigger="focus">
-	
 	//         <bs-input type="text" placeholder="Focus"></bs-input>
-	
 	//       </popover>
-	
 	//       <h4>Markdown</h4>
-	
 	//       <p>
-	
 	//         <popover effect="scale" title="**Emoji title** :rocket:" content="++emoji++ content :cat:">
-	
 	//           <button class="btn btn-default">Hover</button>
-	
 	//         </popover>
-	
 	//       </p>
-	
 	//       <h4>Content using slot</h4>
-	
 	//       <popover effect="scale" title="**Emoji title** :rocket:">
-	
 	//         <div slot="content">
-	
 	//           This is a long content...
-	
 	//         </div>
 	
-	
 	//         <button class="btn btn-default">Hover</button>
-	
 	//       </popover>
-	
 	//       <h4>Wrap Text</h4>
-	
 	//       <popover header="false" content="Nice!">What do you say</popover>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <popover effect="fade" placement="bottom" title="Title" content="content">
-	
 	//         <button class="btn btn-default">Popover on bottom</button>
-	
 	//       </popover>
-	
 	
 	//       Markdown
-	
 	//       <popover effect="scale" title="**Emoji title** :rocket:" content="++emoji++ content :cat:">
-	
 	//         <button class="btn btn-default">Hover</button>
-	
 	//       </popover>
-	
 	
 	//       For larger content, use slot="content"
-	
 	//       <popover effect="scale" title="**Emoji title** :rocket:">
-	
 	//         <div slot="content">
-	
 	//           This is a long content...
-	
 	//         </div>
 	
-	
 	//         <button class="btn btn-default">Hover</button>
-	
 	//       </popover>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>trigger</p>
-	
 	//         <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>
-	
 	//         <p><code>hover</code></p>
-	
 	//         <p>How the popover is triggered.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>effect</p>
-	
 	//         <p><code>String</code>, one of <code>scale</code> <code>fade</code></p>
-	
 	//         <p><code>fade</code></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>title</p>
-	
 	//         <p><code>String</code>, or be markdown inline text</p>
-	
 	//         <p></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>content</p>
-	
 	//         <p><code>String</code>, or be markdown inline text</p>
-	
 	//         <p></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>header</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>true</code></p>
-	
 	//         <p>Whether to show the header.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>placement</p>
-	
 	//         <p><code>String</code>, one of <code>top</code>
-	
 	//         <code>left</code>
-	
 	//         <code>right</code>
-	
 	//         <code>bottom</code></p>
-	
 	//         <p>top</p>
-	
 	//         <p>How to position the popover.</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -33943,8 +32029,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3ec2fc4b&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3ec2fc4b&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6634396a&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6634396a&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -33962,7 +32048,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".popover.top,\r\n.popover.left,\r\n.popover.right,\r\n.popover.bottom {\r\n  display: block;\r\n  overflow-wrap: break-word;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .popover.top,\r\n  .popover.left,\r\n  .popover.right,\r\n  .popover.bottom {\r\n    max-width: 600px;\r\n  }\r\n}\r\n.scale-enter {\r\n  -webkit-animation:scale-in 0.15s ease-in;\r\n          animation:scale-in 0.15s ease-in;\r\n}\r\n.scale-leave {\r\n  -webkit-animation:scale-out 0.15s ease-out;\r\n          animation:scale-out 0.15s ease-out;\r\n}\r\n@-webkit-keyframes scale-in {\r\n  0% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes scale-in {\r\n  0% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n}\r\n@-webkit-keyframes scale-out {\r\n  0% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes scale-out {\r\n  0% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n}", ""]);
+	exports.push([module.id, ".popover.top,\n.popover.left,\n.popover.right,\n.popover.bottom {\n  display: block;\n  overflow-wrap: break-word;\n}\n\n@media (min-width: 768px) {\n  .popover.top,\n  .popover.left,\n  .popover.right,\n  .popover.bottom {\n    max-width: 600px;\n  }\n}\n.scale-enter {\n  -webkit-animation:scale-in 0.15s ease-in;\n          animation:scale-in 0.15s ease-in;\n}\n.scale-leave {\n  -webkit-animation:scale-out 0.15s ease-out;\n          animation:scale-out 0.15s ease-out;\n}\n@-webkit-keyframes scale-in {\n  0% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n}\n@keyframes scale-in {\n  0% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n}\n@-webkit-keyframes scale-out {\n  0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n}\n@keyframes scale-out {\n  0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n}", ""]);
 	
 	// exports
 
@@ -34013,115 +32099,61 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	// .popover.top,
-	
 	// .popover.left,
-	
 	// .popover.right,
-	
 	// .popover.bottom {
-	
 	//   display: block;
-	
 	//   overflow-wrap: break-word;
-	
 	// }
-	
 	
 	// @media (min-width: 768px) {
-	
 	//   .popover.top,
-	
 	//   .popover.left,
-	
 	//   .popover.right,
-	
 	//   .popover.bottom {
-	
 	//     max-width: 600px;
-	
 	//   }
-	
 	// }
-	
 	// .scale-enter {
-	
 	//   animation:scale-in 0.15s ease-in;
-	
 	// }
-	
 	// .scale-leave {
-	
 	//   animation:scale-out 0.15s ease-out;
-	
 	// }
-	
 	// @keyframes scale-in {
-	
 	//   0% {
-	
 	//     transform: scale(0);
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	//   100% {
-	
 	//     transform: scale(1);
-	
 	//     opacity: 1;
-	
 	//   }
-	
 	// }
-	
 	// @keyframes scale-out {
-	
 	//   0% {
-	
 	//     transform: scale(1);
-	
 	//     opacity: 1;
-	
 	//   }
-	
 	//   100% {
-	
 	//     transform: scale(0);
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	// }
-	
 	// </style>
 	// <template>
-	
 	//   <span v-el:trigger v-if="hasSlot" v-on:click="void(0)"><slot></slot></span><!--
-	
 	//   --><div v-el:popover v-if="show"
-	
 	//     :class="['popover',placement]"
-	
 	//     :transition="effect"
-	
 	//   >
-	
 	//     <div class="arrow" v-el:arrow></div>
-	
 	//     <h3 class="popover-title" v-if="title" v-on:click="void(0)"><slot name="title">{{{titleRendered}}}</slot></h3>
-	
 	//     <div class="popover-content" v-on:click="void(0)"><slot name="content">{{{contentRendered}}}</slot></div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -34129,7 +32161,7 @@
 /* 377 */
 /***/ (function(module, exports) {
 
-	module.exports = "<span v-el:trigger v-if=\"hasSlot\" v-on:click=\"void(0)\"><slot></slot></span><!--\r\n  --><div v-el:popover v-if=\"show\"\r\n    :class=\"['popover',placement]\"\r\n    :transition=\"effect\"\r\n  >\r\n    <div class=\"arrow\" v-el:arrow></div>\r\n    <h3 class=\"popover-title\" v-if=\"title\" v-on:click=\"void(0)\"><slot name=\"title\">{{{titleRendered}}}</slot></h3>\r\n    <div class=\"popover-content\" v-on:click=\"void(0)\"><slot name=\"content\">{{{contentRendered}}}</slot></div>\r\n  </div>";
+	module.exports = "<span v-el:trigger v-if=\"hasSlot\" v-on:click=\"void(0)\"><slot></slot></span><!--\n  --><div v-el:popover v-if=\"show\"\n    :class=\"['popover',placement]\"\n    :transition=\"effect\"\n  >\n    <div class=\"arrow\" v-el:arrow></div>\n    <h3 class=\"popover-title\" v-if=\"title\" v-on:click=\"void(0)\"><slot name=\"title\">{{{titleRendered}}}</slot></h3>\n    <div class=\"popover-content\" v-on:click=\"void(0)\"><slot name=\"content\">{{{contentRendered}}}</slot></div>\n  </div>";
 
 /***/ }),
 /* 378 */
@@ -34147,10 +32179,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5e5e3320&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-eefce520&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5e5e3320&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-eefce520&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -34172,8 +32204,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5e5e3320&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5e5e3320&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-eefce520&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-eefce520&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -34191,7 +32223,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".form-group[_v-5e5e3320] {\r\n  position: relative;\r\n}\r\nlabel~.close[_v-5e5e3320] {\r\n  top: 25px;\r\n}\r\n.input-group>.icon[_v-5e5e3320] {\r\n  position: relative;\r\n  display: table-cell;\r\n  width:0;\r\n  z-index: 3;\r\n}\r\n.close[_v-5e5e3320] {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 34px;\r\n  height: 34px;\r\n  line-height: 34px;\r\n  text-align: center;\r\n}\r\n.has-feedback .close[_v-5e5e3320] {\r\n  right: 20px;\r\n}", ""]);
+	exports.push([module.id, ".form-group[_v-eefce520] {\n  position: relative;\n}\nlabel~.close[_v-eefce520] {\n  top: 25px;\n}\n.input-group>.icon[_v-eefce520] {\n  position: relative;\n  display: table-cell;\n  width:0;\n  z-index: 3;\n}\n.close[_v-eefce520] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n}\n.has-feedback .close[_v-eefce520] {\n  right: 20px;\n}", ""]);
 	
 	// exports
 
@@ -34215,155 +32247,80 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div class="form-group" :class="{validate:canValidate,'has-feedback':icon,'has-error':canValidate&&valid===false,'has-success':canValidate&&valid}">
-	
 	//     <slot name="label"><label v-if="label" class="control-label" @click="focus">{{label}}</label></slot>
-	
 	//     <div v-if="slots.before||slots.after" class="input-group">
-	
 	//       <slot name="before"></slot>
-	
 	//       <textarea v-if="type=='textarea'" class="form-control" v-el:input v-model="value"
-	
 	//         :cols="cols"
-	
 	//         :rows="rows"
-	
 	//         :name="name"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       ></textarea>
-	
 	//       <input v-else class="form-control" v-el:input v-model="value"
-	
 	//         :name="name"
-	
 	//         :max="attr(max)"
-	
 	//         :min="attr(min)"
-	
 	//         :step="step"
-	
 	//         :type="type"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @keyup.enter="enterSubmit&&submit()"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       />
-	
 	//       <div v-if="showClear && value" :class="{icon:icon}">
-	
 	//         <span class="close" @click="value = ''">&times;</span>
-	
 	//       </div>
-	
 	//       <div v-if="icon" class="icon">
-	
 	//         <span v-if="icon&&valid!==null" :class="['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]" aria-hidden="true"></span>
-	
 	//       </div>
-	
 	//       <slot name="after"></slot>
-	
 	//     </div>
-	
 	//     <template v-else>
-	
 	//       <textarea v-if="type=='textarea'" class="form-control" v-el:input v-model="value"
-	
 	//         :cols="cols"
-	
 	//         :rows="rows"
-	
 	//         :name="name"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       ></textarea>
-	
 	//       <input v-else class="form-control" v-el:input v-model="value"
-	
 	//         :name="name"
-	
 	//         :max="attr(max)"
-	
 	//         :min="attr(min)"
-	
 	//         :step="step"
-	
 	//         :type="type"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @keyup.enter="enterSubmit&&submit()"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       />
-	
 	//       <span v-if="showClear && value" class="close" @click="value = ''">&times;</span>
-	
 	//       <span v-if="icon&&valid!==null" :class="['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]" aria-hidden="true"></span>
-	
 	//     </template>
-	
 	//     <div v-if="showHelp" class="help-block" @click="focus">{{help}}</div>
-	
 	//     <div v-if="showError" class="help-block with-errors" @click="focus">{{errorText}}</div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -34653,74 +32610,46 @@
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// .form-group {
-	
 	//   position: relative;
-	
 	// }
-	
 	// label~.close {
-	
 	//   top: 25px;
-	
 	// }
-	
 	// .input-group>.icon {
-	
 	//   position: relative;
-	
 	//   display: table-cell;
-	
 	//   width:0;
-	
 	//   z-index: 3;
-	
 	// }
-	
 	// .close {
-	
 	//   position: absolute;
-	
 	//   top: 0;
-	
 	//   right: 0;
-	
 	//   z-index: 2;
-	
 	//   display: block;
-	
 	//   width: 34px;
-	
 	//   height: 34px;
-	
 	//   line-height: 34px;
-	
 	//   text-align: center;
-	
 	// }
-	
 	// .has-feedback .close {
-	
 	//   right: 20px;
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 382 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"form-group\" :class=\"{validate:canValidate,'has-feedback':icon,'has-error':canValidate&amp;&amp;valid===false,'has-success':canValidate&amp;&amp;valid}\" _v-5e5e3320=\"\">\n    <slot name=\"label\" _v-5e5e3320=\"\"><label v-if=\"label\" class=\"control-label\" @click=\"focus\" _v-5e5e3320=\"\">{{label}}</label></slot>\n    <div v-if=\"slots.before||slots.after\" class=\"input-group\" _v-5e5e3320=\"\">\n      <slot name=\"before\" _v-5e5e3320=\"\"></slot>\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\">\n      <div v-if=\"showClear &amp;&amp; value\" :class=\"{icon:icon}\" _v-5e5e3320=\"\">\n        <span class=\"close\" @click=\"value = ''\" _v-5e5e3320=\"\">×</span>\n      </div>\n      <div v-if=\"icon\" class=\"icon\" _v-5e5e3320=\"\">\n        <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-5e5e3320=\"\"></span>\n      </div>\n      <slot name=\"after\" _v-5e5e3320=\"\"></slot>\n    </div>\n    <template v-else=\"\" _v-5e5e3320=\"\">\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\">\n      <span v-if=\"showClear &amp;&amp; value\" class=\"close\" @click=\"value = ''\" _v-5e5e3320=\"\">×</span>\n      <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-5e5e3320=\"\"></span>\n    </template>\n    <div v-if=\"showHelp\" class=\"help-block\" @click=\"focus\" _v-5e5e3320=\"\">{{help}}</div>\n    <div v-if=\"showError\" class=\"help-block with-errors\" @click=\"focus\" _v-5e5e3320=\"\">{{errorText}}</div>\n  </div>";
+	module.exports = "<div class=\"form-group\" :class=\"{validate:canValidate,'has-feedback':icon,'has-error':canValidate&amp;&amp;valid===false,'has-success':canValidate&amp;&amp;valid}\" _v-eefce520=\"\">\n    <slot name=\"label\" _v-eefce520=\"\"><label v-if=\"label\" class=\"control-label\" @click=\"focus\" _v-eefce520=\"\">{{label}}</label></slot>\n    <div v-if=\"slots.before||slots.after\" class=\"input-group\" _v-eefce520=\"\">\n      <slot name=\"before\" _v-eefce520=\"\"></slot>\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\">\n      <div v-if=\"showClear &amp;&amp; value\" :class=\"{icon:icon}\" _v-eefce520=\"\">\n        <span class=\"close\" @click=\"value = ''\" _v-eefce520=\"\">×</span>\n      </div>\n      <div v-if=\"icon\" class=\"icon\" _v-eefce520=\"\">\n        <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-eefce520=\"\"></span>\n      </div>\n      <slot name=\"after\" _v-eefce520=\"\"></slot>\n    </div>\n    <template v-else=\"\" _v-eefce520=\"\">\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\">\n      <span v-if=\"showClear &amp;&amp; value\" class=\"close\" @click=\"value = ''\" _v-eefce520=\"\">×</span>\n      <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-eefce520=\"\"></span>\n    </template>\n    <div v-if=\"showHelp\" class=\"help-block\" @click=\"focus\" _v-eefce520=\"\">{{help}}</div>\n    <div v-if=\"showError\" class=\"help-block with-errors\" @click=\"focus\" _v-eefce520=\"\">{{errorText}}</div>\n  </div>";
 
 /***/ }),
 /* 383 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"popover\" name=\"Popover\">\r\n    <div class=\"bs-example\">\r\n      <popover v-for=\"place in placements\" effect=\"fade\" :content=\"text\" :placement=\"place\">\r\n        <button class=\"btn btn-default\">Popover on {{place}}</button>\r\n      </popover>\r\n      <hr>\r\n      <h4>Title</h4>\r\n      <popover v-for=\"place in placements\" effect=\"fade\" header title=\"Title\" :content=\"text\" :placement=\"place\">\r\n        <button class=\"btn btn-default\">Popover on {{place}}</button>\r\n      </popover>\r\n      <hr>\r\n      <h4>Trigger</h4>\r\n      <p>\r\n        <popover effect=\"scale\" title=\"Title\" :content=\"content\" placement=\"top\" trigger=\"hover\">\r\n          <button class=\"btn btn-default\">Mouseenter</button>\r\n        </popover>\r\n        <popover effect=\"scale\" title=\"Title\" :content=\"text\" placement=\"top\" trigger=\"contextmenu\">\r\n          <button class=\"btn btn-default\">Contextmenu (right click)</button>\r\n        </popover>\r\n      </p>\r\n      <popover effect=\"scale\" title=\"Title\" :content=\"text\" placement=\"bottom\" trigger=\"focus\">\r\n        <bs-input type=\"text\" placeholder=\"Focus\"></bs-input>\r\n      </popover>\r\n      <h4>Markdown</h4>\r\n      <p>\r\n        <popover effect=\"scale\" title=\"**Emoji title** :rocket:\" content=\"++emoji++ content :cat:\">\r\n          <button class=\"btn btn-default\">Hover</button>\r\n        </popover>\r\n      </p>\r\n      <h4>Content using slot</h4>\r\n      <popover effect=\"scale\" title=\"**Emoji title** :rocket:\">\r\n        <div slot=\"content\">\r\n          This is a long content...\r\n        </div>\r\n\r\n        <button class=\"btn btn-default\">Hover</button>\r\n      </popover>\r\n      <h4>Wrap Text</h4>\r\n      <popover header=\"false\" content=\"Nice!\">What do you say</popover>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <popover effect=\"fade\" placement=\"bottom\" title=\"Title\" content=\"content\">\r\n        <button class=\"btn btn-default\">Popover on bottom</button>\r\n      </popover>\r\n\r\n      Markdown\r\n      <popover effect=\"scale\" title=\"**Emoji title** :rocket:\" content=\"++emoji++ content :cat:\">\r\n        <button class=\"btn btn-default\">Hover</button>\r\n      </popover>\r\n\r\n      For larger content, use slot=\"content\"\r\n      <popover effect=\"scale\" title=\"**Emoji title** :rocket:\">\r\n        <div slot=\"content\">\r\n          This is a long content...\r\n        </div>\r\n\r\n        <button class=\"btn btn-default\">Hover</button>\r\n      </popover>\r\n    </doc-code>\r\n    <doc-table>\r\n      <div>\r\n        <p>trigger</p>\r\n        <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\r\n        <p><code>hover</code></p>\r\n        <p>How the popover is triggered.</p>\r\n      </div>\r\n      <div>\r\n        <p>effect</p>\r\n        <p><code>String</code>, one of <code>scale</code> <code>fade</code></p>\r\n        <p><code>fade</code></p>\r\n        <p></p>\r\n      </div>\r\n      <div>\r\n        <p>title</p>\r\n        <p><code>String</code>, or be markdown inline text</p>\r\n        <p></p>\r\n        <p></p>\r\n      </div>\r\n      <div>\r\n        <p>content</p>\r\n        <p><code>String</code>, or be markdown inline text</p>\r\n        <p></p>\r\n        <p></p>\r\n      </div>\r\n      <div>\r\n        <p>header</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>true</code></p>\r\n        <p>Whether to show the header.</p>\r\n      </div>\r\n      <div>\r\n        <p>placement</p>\r\n        <p><code>String</code>, one of <code>top</code>\r\n        <code>left</code>\r\n        <code>right</code>\r\n        <code>bottom</code></p>\r\n        <p>top</p>\r\n        <p>How to position the popover.</p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"popover\" name=\"Popover\">\n    <div class=\"bs-example\">\n      <popover v-for=\"place in placements\" effect=\"fade\" :content=\"text\" :placement=\"place\">\n        <button class=\"btn btn-default\">Popover on {{place}}</button>\n      </popover>\n      <hr>\n      <h4>Title</h4>\n      <popover v-for=\"place in placements\" effect=\"fade\" header title=\"Title\" :content=\"text\" :placement=\"place\">\n        <button class=\"btn btn-default\">Popover on {{place}}</button>\n      </popover>\n      <hr>\n      <h4>Trigger</h4>\n      <p>\n        <popover effect=\"scale\" title=\"Title\" :content=\"content\" placement=\"top\" trigger=\"hover\">\n          <button class=\"btn btn-default\">Mouseenter</button>\n        </popover>\n        <popover effect=\"scale\" title=\"Title\" :content=\"text\" placement=\"top\" trigger=\"contextmenu\">\n          <button class=\"btn btn-default\">Contextmenu (right click)</button>\n        </popover>\n      </p>\n      <popover effect=\"scale\" title=\"Title\" :content=\"text\" placement=\"bottom\" trigger=\"focus\">\n        <bs-input type=\"text\" placeholder=\"Focus\"></bs-input>\n      </popover>\n      <h4>Markdown</h4>\n      <p>\n        <popover effect=\"scale\" title=\"**Emoji title** :rocket:\" content=\"++emoji++ content :cat:\">\n          <button class=\"btn btn-default\">Hover</button>\n        </popover>\n      </p>\n      <h4>Content using slot</h4>\n      <popover effect=\"scale\" title=\"**Emoji title** :rocket:\">\n        <div slot=\"content\">\n          This is a long content...\n        </div>\n\n        <button class=\"btn btn-default\">Hover</button>\n      </popover>\n      <h4>Wrap Text</h4>\n      <popover header=\"false\" content=\"Nice!\">What do you say</popover>\n    </div>\n    <doc-code language=\"markup\">\n      <popover effect=\"fade\" placement=\"bottom\" title=\"Title\" content=\"content\">\n        <button class=\"btn btn-default\">Popover on bottom</button>\n      </popover>\n\n      Markdown\n      <popover effect=\"scale\" title=\"**Emoji title** :rocket:\" content=\"++emoji++ content :cat:\">\n        <button class=\"btn btn-default\">Hover</button>\n      </popover>\n\n      For larger content, use slot=\"content\"\n      <popover effect=\"scale\" title=\"**Emoji title** :rocket:\">\n        <div slot=\"content\">\n          This is a long content...\n        </div>\n\n        <button class=\"btn btn-default\">Hover</button>\n      </popover>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>trigger</p>\n        <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\n        <p><code>hover</code></p>\n        <p>How the popover is triggered.</p>\n      </div>\n      <div>\n        <p>effect</p>\n        <p><code>String</code>, one of <code>scale</code> <code>fade</code></p>\n        <p><code>fade</code></p>\n        <p></p>\n      </div>\n      <div>\n        <p>title</p>\n        <p><code>String</code>, or be markdown inline text</p>\n        <p></p>\n        <p></p>\n      </div>\n      <div>\n        <p>content</p>\n        <p><code>String</code>, or be markdown inline text</p>\n        <p></p>\n        <p></p>\n      </div>\n      <div>\n        <p>header</p>\n        <p><code>Boolean</code></p>\n        <p><code>true</code></p>\n        <p>Whether to show the header.</p>\n      </div>\n      <div>\n        <p>placement</p>\n        <p><code>String</code>, one of <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></p>\n        <p>top</p>\n        <p>How to position the popover.</p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 384 */
@@ -34790,34 +32719,20 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <doc-section id="retriever" name="Retriever">
-	
 	//     <div class="bs-example">
-	
 	//       <retriever src="docs/loadContent.html"></retriever>
-	
 	//       <retriever src="docs/loadContent.html#fragment"></retriever>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <retriever src="docs/loadContent.html"></retriever>
-	
 	//       <retriever src="docs/loadContent.html#fragment"></retriever>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
 	
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -34825,7 +32740,7 @@
 /* 386 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"retriever\" name=\"Retriever\">\r\n    <div class=\"bs-example\">\r\n      <retriever src=\"docs/loadContent.html\"></retriever>\r\n      <retriever src=\"docs/loadContent.html#fragment\"></retriever>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <retriever src=\"docs/loadContent.html\"></retriever>\r\n      <retriever src=\"docs/loadContent.html#fragment\"></retriever>\r\n    </doc-code>\r\n    <doc-table>\r\n\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"retriever\" name=\"Retriever\">\n    <div class=\"bs-example\">\n      <retriever src=\"docs/loadContent.html\"></retriever>\n      <retriever src=\"docs/loadContent.html#fragment\"></retriever>\n    </div>\n    <doc-code language=\"markup\">\n      <retriever src=\"docs/loadContent.html\"></retriever>\n      <retriever src=\"docs/loadContent.html#fragment\"></retriever>\n    </doc-code>\n    <doc-table>\n\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 387 */
@@ -34868,8 +32783,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-04c412f0&file=selectDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./selectDocs.vue", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-04c412f0&file=selectDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./selectDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-199adce1&file=selectDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./selectDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-199adce1&file=selectDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./selectDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -34887,7 +32802,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".checkbox>label:not(:first-child) {\r\n  margin-left: 15px;\r\n}", ""]);
+	exports.push([module.id, ".checkbox>label:not(:first-child) {\n  margin-left: 15px;\n}", ""]);
 	
 	// exports
 
@@ -34958,362 +32873,184 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	// .checkbox>label:not(:first-child) {
-	
 	//   margin-left: 15px;
-	
 	// }
-	
 	// </style>
 	// <template>
-	
 	//   <doc-section id="select" name="Select">
-	
 	//     <p>Based in a <a target="_blank" href="https://silviomoreto.github.io/bootstrap-select/">bootstrap-select</a> implementation.</p>
-	
 	//     <div class="bs-example">
-	
 	//       <div class="row">
-	
 	//         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	
 	//           <p><pre>Normal select data: {{select.normal}}</pre></p>
-	
 	//           <form action="./#select" method="get">
-	
 	//             <v-select :options="select.options" options-value="val" :value.sync="select.normal" name="animal" :search="select.search"
-	
 	//               :required="select.required" :clear-button="select.clearButton" :disabled="select.disabled"
-	
 	//             ></v-select>
-	
 	//             <button type="submit" class="btn btn-default">Submit</button>
-	
 	//           </form>
-	
 	//         </div>
-	
 	//         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	
 	//           <p><pre>Multiple select data : {{select.multiple.join(',')}}</pre></p>
-	
 	//           <form action="./#select" method="get">
-	
 	//             <v-select :options="select.options" options-value="val" :value.sync="select.multiple" name="animals[]" :search="select.search"
-	
 	//               multiple :required="select.required" :clear-button="select.clearButton"
-	
 	//               :close-on-select="select.closeOnSelect" :limit="select.limit?3:1024" :disabled="select.disabled"
-	
 	//             ></v-select>
-	
 	//             <button type="submit" class="btn btn-default">Submit</button>
-	
 	//           </form>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//       <br/>
-	
 	//       <button-group type="primary" buttons="false">
-	
 	//         <div class="row">
-	
 	//           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	
 	//             <p><checkbox :checked.sync="select.disabled">Disabled</checkbox></p>
-	
 	//             <p><checkbox :checked.sync="select.search">Search</checkbox></p>
-	
 	//             <p><checkbox :checked.sync="select.clearButton">Clear Button</checkbox></p>
-	
 	//           </div>
-	
 	//           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	
 	//             <p><checkbox :checked.sync="select.required">Required (empty value if noting selected)</checkbox></p>
-	
 	//             <p>
-	
 	//               Multiple:
-	
 	//               <checkbox v-if="select.multiple" :checked.sync="select.limit">Limit (e.g. 3)</checkbox>
-	
 	//               <checkbox v-if="select.multiple" :checked.sync="select.closeOnSelect">Close on Select</checkbox>
-	
 	//             </p>
-	
 	//           </div>
-	
 	//         </div>
-	
 	//       </button-group>
-	
 	//       <doc-code>
-	
 	//         <form action="./#select" method="get">
-	
 	//           <v-select :value.sync="select.value" :options="select.options" options-value="val"
-	
 	//             multiple name="animals[]" limit="3"
-	
 	//             search justified required disabled
-	
 	//             clear-button close-on-select
-	
 	//           ></v-select>
-	
 	//           <button type="submit" class="btn btn-default">Submit form</button>
-	
 	//         </form>
-	
 	//       </doc-code>
-	
 	//       <doc-code language="javascript">
-	
 	//         options: [
-	
 	//           {val: 0, label: 'Cat'},
-	
 	//           {val: 1, label: 'Cow'},
-	
 	//           {val: 2, label: 'Dog'},
-	
 	//           {val: 3, label: 'Elephant'},
-	
 	//           {val: 4, label: 'Fish'},
-	
 	//           {val: 5, label: 'Lion'},
-	
 	//           {val: 6, label: 'Tiger'},
-	
 	//           {val: 7, label: 'Turtle'}
-	
 	//         ]
-	
 	//       </doc-code>
-	
 	//       <h4>Select with option component:</h4>
-	
 	//       <p><pre>Selected data : {{single}}</pre></p>
-	
 	//       <v-select :value.sync="single">
-	
 	//         <v-option value="apple">Apple</v-option>
-	
 	//         <v-option value="banana">Banana</v-option>
-	
 	//         <v-option value="cherry">Cherry</v-option>
-	
 	//         <v-option value="orange">Orange</v-option>
-	
 	//         <v-option value="grape">Grape</v-option>
-	
 	//       </v-select>
-	
 	//       <doc-code>
-	
 	//         <v-select>
-	
 	//           <v-option value="apple">Apple</v-option>
-	
 	//           <v-option value="banana">Banana</v-option>
-	
 	//           <v-option value="cherry">Cherry</v-option>
-	
 	//           <v-option value="orange">Orange</v-option>
-	
 	//           <v-option value="grape">Grape</v-option>
-	
 	//         </v-select>
-	
 	//       </doc-code>
-	
 	//       <hr/>
-	
 	//       <h4>Use button-group (component or <a href="http://getbootstrap.com/components/#btn-groups-justified">bootstrap element</a>) if you want to justify.</h4>
-	
 	//       <button-group justified>
-	
 	//         <v-select multiple clear-button>
-	
 	//           <v-option value="apple">Apple</v-option>
-	
 	//           <v-option value="banana">Banana</v-option>
-	
 	//           <v-option value="cherry">Cherry</v-option>
-	
 	//           <v-option value="cranberry">Cranberry</v-option>
-	
 	//           <v-option value="grape">Grape</v-option>
-	
 	//           <v-option value="orange">Orange</v-option>
-	
 	//           <v-option value="passionfruit">Passionfruit</v-option>
-	
 	//           <v-option value="pineapple">Pineapple</v-option>
-	
 	//           <v-option value="strawberry">Strawberry</v-option>
-	
 	//           <v-option value="a">Apple</v-option>
-	
 	//           <v-option value="b">Banana</v-option>
-	
 	//           <v-option value="c">Cherry</v-option>
-	
 	//           <v-option value="c">Cranberry</v-option>
-	
 	//           <v-option value="g">Grape</v-option>
-	
 	//           <v-option value="o">Orange</v-option>
-	
 	//           <v-option value="p">Passionfruit</v-option>
-	
 	//           <v-option value="p">Pineapple</v-option>
-	
 	//           <v-option value="s">Strawberry</v-option>
-	
 	//         </v-select>
-	
 	//       </button-group>
-	
 	//       <doc-code>
-	
 	//         <button-group justified><select>...</select></button-group>
-	
 	//         // or
-	
 	//         <div class="btn-group btn-group-justified"><select>...</select></div>
-	
 	//       </doc-code>
-	
 	//       <hr/>
-	
 	//       <h4>Ajax data and parent dependency:</h4>
-	
 	//       <p>The second element has inheritance. Enable when the first get some value and the ajax return values.</p>
-	
 	//       <v-select url="docs/data.json" options-label="text" :value.sync="ajax.value" clear-button v-ref:ajax></v-select>
-	
 	//       <v-select url="docs/data.json" options-label="text" multiple :parent="ajax.value"></v-select>
-	
 	//       <doc-code>
-	
 	//         <v-select url="docs/data.json" options-label="text" :value.sync="ajax.value" clear-button></v-select>
-	
 	//         <v-select url="docs/data.json" options-label="text" multiple :parent="ajax.value"></v-select>
-	
 	//       </doc-code>
-	
 	//       <p>Ajax response:</p>
-	
 	//       <pre v-html="$refs.ajax.options|json"></pre>
-	
 	//     </div>
-	
 	//     <doc-table name="Other">
-	
 	//       <div>
-	
 	//         <p>min-search</p>
-	
 	//         <p><code>Number</code></p>
-	
 	//         <p><code>0</code></p>
-	
 	//         <p>If defined, the searchbox is disabled if are less than the minimum value you set.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>lang</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p>Browser language</p>
-	
 	//         <p><abbr title="ISO 639-1 code"><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">Language</a></abbr>. Default <code>en</code> if the translation doesn't exist.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>options-label</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p><code>label</code></p>
-	
 	//         <p>Define the value in the data used as label.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>options-value</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p><code>value</code></p>
-	
 	//         <p>Define the value in the data used as value.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>placeholder</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p>Nothing Selected</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>search-text</p>
-	
 	//         <p><code>String</code></p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//     <doc-table type="Events">
-	
 	//       <div>
-	
 	//         <p>change</p>
-	
 	//         <p>(<code>value</code>)</p>
-	
 	//         <p>Return the selected value(s).</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>selected</p>
-	
 	//         <p>(<code>labels:String</code>)</p>
-	
 	//         <p>Return a string with the label(s) of the selected item(s).</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -35351,7 +33088,6 @@
 	  value: true
 	});
 	// <template><li v-el:v v-if="loading"><slot></slot></li></template>
-	
 	// <script>
 	exports.default = {
 	  props: { value: null },
@@ -35385,7 +33121,7 @@
 /* 394 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"select\" name=\"Select\">\r\n    <p>Based in a <a target=\"_blank\" href=\"https://silviomoreto.github.io/bootstrap-select/\">bootstrap-select</a> implementation.</p>\r\n    <div class=\"bs-example\">\r\n      <div class=\"row\">\r\n        <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\r\n          <p><pre>Normal select data: {{select.normal}}</pre></p>\r\n          <form action=\"./#select\" method=\"get\">\r\n            <v-select :options=\"select.options\" options-value=\"val\" :value.sync=\"select.normal\" name=\"animal\" :search=\"select.search\"\r\n              :required=\"select.required\" :clear-button=\"select.clearButton\" :disabled=\"select.disabled\"\r\n            ></v-select>\r\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n          </form>\r\n        </div>\r\n        <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\r\n          <p><pre>Multiple select data : {{select.multiple.join(',')}}</pre></p>\r\n          <form action=\"./#select\" method=\"get\">\r\n            <v-select :options=\"select.options\" options-value=\"val\" :value.sync=\"select.multiple\" name=\"animals[]\" :search=\"select.search\"\r\n              multiple :required=\"select.required\" :clear-button=\"select.clearButton\"\r\n              :close-on-select=\"select.closeOnSelect\" :limit=\"select.limit?3:1024\" :disabled=\"select.disabled\"\r\n            ></v-select>\r\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n          </form>\r\n        </div>\r\n      </div>\r\n      <br/>\r\n      <button-group type=\"primary\" buttons=\"false\">\r\n        <div class=\"row\">\r\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\r\n            <p><checkbox :checked.sync=\"select.disabled\">Disabled</checkbox></p>\r\n            <p><checkbox :checked.sync=\"select.search\">Search</checkbox></p>\r\n            <p><checkbox :checked.sync=\"select.clearButton\">Clear Button</checkbox></p>\r\n          </div>\r\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\r\n            <p><checkbox :checked.sync=\"select.required\">Required (empty value if noting selected)</checkbox></p>\r\n            <p>\r\n              Multiple:\r\n              <checkbox v-if=\"select.multiple\" :checked.sync=\"select.limit\">Limit (e.g. 3)</checkbox>\r\n              <checkbox v-if=\"select.multiple\" :checked.sync=\"select.closeOnSelect\">Close on Select</checkbox>\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </button-group>\r\n      <doc-code>\r\n        <form action=\"./#select\" method=\"get\">\r\n          <v-select :value.sync=\"select.value\" :options=\"select.options\" options-value=\"val\"\r\n            multiple name=\"animals[]\" limit=\"3\"\r\n            search justified required disabled\r\n            clear-button close-on-select\r\n          ></v-select>\r\n          <button type=\"submit\" class=\"btn btn-default\">Submit form</button>\r\n        </form>\r\n      </doc-code>\r\n      <doc-code language=\"javascript\">\r\n        options: [\r\n          {val: 0, label: 'Cat'},\r\n          {val: 1, label: 'Cow'},\r\n          {val: 2, label: 'Dog'},\r\n          {val: 3, label: 'Elephant'},\r\n          {val: 4, label: 'Fish'},\r\n          {val: 5, label: 'Lion'},\r\n          {val: 6, label: 'Tiger'},\r\n          {val: 7, label: 'Turtle'}\r\n        ]\r\n      </doc-code>\r\n      <h4>Select with option component:</h4>\r\n      <p><pre>Selected data : {{single}}</pre></p>\r\n      <v-select :value.sync=\"single\">\r\n        <v-option value=\"apple\">Apple</v-option>\r\n        <v-option value=\"banana\">Banana</v-option>\r\n        <v-option value=\"cherry\">Cherry</v-option>\r\n        <v-option value=\"orange\">Orange</v-option>\r\n        <v-option value=\"grape\">Grape</v-option>\r\n      </v-select>\r\n      <doc-code>\r\n        <v-select>\r\n          <v-option value=\"apple\">Apple</v-option>\r\n          <v-option value=\"banana\">Banana</v-option>\r\n          <v-option value=\"cherry\">Cherry</v-option>\r\n          <v-option value=\"orange\">Orange</v-option>\r\n          <v-option value=\"grape\">Grape</v-option>\r\n        </v-select>\r\n      </doc-code>\r\n      <hr/>\r\n      <h4>Use button-group (component or <a href=\"http://getbootstrap.com/components/#btn-groups-justified\">bootstrap element</a>) if you want to justify.</h4>\r\n      <button-group justified>\r\n        <v-select multiple clear-button>\r\n          <v-option value=\"apple\">Apple</v-option>\r\n          <v-option value=\"banana\">Banana</v-option>\r\n          <v-option value=\"cherry\">Cherry</v-option>\r\n          <v-option value=\"cranberry\">Cranberry</v-option>\r\n          <v-option value=\"grape\">Grape</v-option>\r\n          <v-option value=\"orange\">Orange</v-option>\r\n          <v-option value=\"passionfruit\">Passionfruit</v-option>\r\n          <v-option value=\"pineapple\">Pineapple</v-option>\r\n          <v-option value=\"strawberry\">Strawberry</v-option>\r\n          <v-option value=\"a\">Apple</v-option>\r\n          <v-option value=\"b\">Banana</v-option>\r\n          <v-option value=\"c\">Cherry</v-option>\r\n          <v-option value=\"c\">Cranberry</v-option>\r\n          <v-option value=\"g\">Grape</v-option>\r\n          <v-option value=\"o\">Orange</v-option>\r\n          <v-option value=\"p\">Passionfruit</v-option>\r\n          <v-option value=\"p\">Pineapple</v-option>\r\n          <v-option value=\"s\">Strawberry</v-option>\r\n        </v-select>\r\n      </button-group>\r\n      <doc-code>\r\n        <button-group justified><select>...</select></button-group>\r\n        // or\r\n        <div class=\"btn-group btn-group-justified\"><select>...</select></div>\r\n      </doc-code>\r\n      <hr/>\r\n      <h4>Ajax data and parent dependency:</h4>\r\n      <p>The second element has inheritance. Enable when the first get some value and the ajax return values.</p>\r\n      <v-select url=\"docs/data.json\" options-label=\"text\" :value.sync=\"ajax.value\" clear-button v-ref:ajax></v-select>\r\n      <v-select url=\"docs/data.json\" options-label=\"text\" multiple :parent=\"ajax.value\"></v-select>\r\n      <doc-code>\r\n        <v-select url=\"docs/data.json\" options-label=\"text\" :value.sync=\"ajax.value\" clear-button></v-select>\r\n        <v-select url=\"docs/data.json\" options-label=\"text\" multiple :parent=\"ajax.value\"></v-select>\r\n      </doc-code>\r\n      <p>Ajax response:</p>\r\n      <pre v-html=\"$refs.ajax.options|json\"></pre>\r\n    </div>\r\n    <doc-table name=\"Other\">\r\n      <div>\r\n        <p>min-search</p>\r\n        <p><code>Number</code></p>\r\n        <p><code>0</code></p>\r\n        <p>If defined, the searchbox is disabled if are less than the minimum value you set.</p>\r\n      </div>\r\n      <div>\r\n        <p>lang</p>\r\n        <p><code>String</code></p>\r\n        <p>Browser language</p>\r\n        <p><abbr title=\"ISO 639-1 code\"><a href=\"https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes\">Language</a></abbr>. Default <code>en</code> if the translation doesn't exist.</p>\r\n      </div>\r\n      <div>\r\n        <p>options-label</p>\r\n        <p><code>String</code></p>\r\n        <p><code>label</code></p>\r\n        <p>Define the value in the data used as label.</p>\r\n      </div>\r\n      <div>\r\n        <p>options-value</p>\r\n        <p><code>String</code></p>\r\n        <p><code>value</code></p>\r\n        <p>Define the value in the data used as value.</p>\r\n      </div>\r\n      <div>\r\n        <p>placeholder</p>\r\n        <p><code>String</code></p>\r\n        <p>Nothing Selected</p>\r\n      </div>\r\n      <div>\r\n        <p>search-text</p>\r\n        <p><code>String</code></p>\r\n      </div>\r\n    </doc-table>\r\n    <doc-table type=\"Events\">\r\n      <div>\r\n        <p>change</p>\r\n        <p>(<code>value</code>)</p>\r\n        <p>Return the selected value(s).</p>\r\n      </div>\r\n      <div>\r\n        <p>selected</p>\r\n        <p>(<code>labels:String</code>)</p>\r\n        <p>Return a string with the label(s) of the selected item(s).</p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"select\" name=\"Select\">\n    <p>Based in a <a target=\"_blank\" href=\"https://silviomoreto.github.io/bootstrap-select/\">bootstrap-select</a> implementation.</p>\n    <div class=\"bs-example\">\n      <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n          <p><pre>Normal select data: {{select.normal}}</pre></p>\n          <form action=\"./#select\" method=\"get\">\n            <v-select :options=\"select.options\" options-value=\"val\" :value.sync=\"select.normal\" name=\"animal\" :search=\"select.search\"\n              :required=\"select.required\" :clear-button=\"select.clearButton\" :disabled=\"select.disabled\"\n            ></v-select>\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n          </form>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n          <p><pre>Multiple select data : {{select.multiple.join(',')}}</pre></p>\n          <form action=\"./#select\" method=\"get\">\n            <v-select :options=\"select.options\" options-value=\"val\" :value.sync=\"select.multiple\" name=\"animals[]\" :search=\"select.search\"\n              multiple :required=\"select.required\" :clear-button=\"select.clearButton\"\n              :close-on-select=\"select.closeOnSelect\" :limit=\"select.limit?3:1024\" :disabled=\"select.disabled\"\n            ></v-select>\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n          </form>\n        </div>\n      </div>\n      <br/>\n      <button-group type=\"primary\" buttons=\"false\">\n        <div class=\"row\">\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n            <p><checkbox :checked.sync=\"select.disabled\">Disabled</checkbox></p>\n            <p><checkbox :checked.sync=\"select.search\">Search</checkbox></p>\n            <p><checkbox :checked.sync=\"select.clearButton\">Clear Button</checkbox></p>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n            <p><checkbox :checked.sync=\"select.required\">Required (empty value if noting selected)</checkbox></p>\n            <p>\n              Multiple:\n              <checkbox v-if=\"select.multiple\" :checked.sync=\"select.limit\">Limit (e.g. 3)</checkbox>\n              <checkbox v-if=\"select.multiple\" :checked.sync=\"select.closeOnSelect\">Close on Select</checkbox>\n            </p>\n          </div>\n        </div>\n      </button-group>\n      <doc-code>\n        <form action=\"./#select\" method=\"get\">\n          <v-select :value.sync=\"select.value\" :options=\"select.options\" options-value=\"val\"\n            multiple name=\"animals[]\" limit=\"3\"\n            search justified required disabled\n            clear-button close-on-select\n          ></v-select>\n          <button type=\"submit\" class=\"btn btn-default\">Submit form</button>\n        </form>\n      </doc-code>\n      <doc-code language=\"javascript\">\n        options: [\n          {val: 0, label: 'Cat'},\n          {val: 1, label: 'Cow'},\n          {val: 2, label: 'Dog'},\n          {val: 3, label: 'Elephant'},\n          {val: 4, label: 'Fish'},\n          {val: 5, label: 'Lion'},\n          {val: 6, label: 'Tiger'},\n          {val: 7, label: 'Turtle'}\n        ]\n      </doc-code>\n      <h4>Select with option component:</h4>\n      <p><pre>Selected data : {{single}}</pre></p>\n      <v-select :value.sync=\"single\">\n        <v-option value=\"apple\">Apple</v-option>\n        <v-option value=\"banana\">Banana</v-option>\n        <v-option value=\"cherry\">Cherry</v-option>\n        <v-option value=\"orange\">Orange</v-option>\n        <v-option value=\"grape\">Grape</v-option>\n      </v-select>\n      <doc-code>\n        <v-select>\n          <v-option value=\"apple\">Apple</v-option>\n          <v-option value=\"banana\">Banana</v-option>\n          <v-option value=\"cherry\">Cherry</v-option>\n          <v-option value=\"orange\">Orange</v-option>\n          <v-option value=\"grape\">Grape</v-option>\n        </v-select>\n      </doc-code>\n      <hr/>\n      <h4>Use button-group (component or <a href=\"http://getbootstrap.com/components/#btn-groups-justified\">bootstrap element</a>) if you want to justify.</h4>\n      <button-group justified>\n        <v-select multiple clear-button>\n          <v-option value=\"apple\">Apple</v-option>\n          <v-option value=\"banana\">Banana</v-option>\n          <v-option value=\"cherry\">Cherry</v-option>\n          <v-option value=\"cranberry\">Cranberry</v-option>\n          <v-option value=\"grape\">Grape</v-option>\n          <v-option value=\"orange\">Orange</v-option>\n          <v-option value=\"passionfruit\">Passionfruit</v-option>\n          <v-option value=\"pineapple\">Pineapple</v-option>\n          <v-option value=\"strawberry\">Strawberry</v-option>\n          <v-option value=\"a\">Apple</v-option>\n          <v-option value=\"b\">Banana</v-option>\n          <v-option value=\"c\">Cherry</v-option>\n          <v-option value=\"c\">Cranberry</v-option>\n          <v-option value=\"g\">Grape</v-option>\n          <v-option value=\"o\">Orange</v-option>\n          <v-option value=\"p\">Passionfruit</v-option>\n          <v-option value=\"p\">Pineapple</v-option>\n          <v-option value=\"s\">Strawberry</v-option>\n        </v-select>\n      </button-group>\n      <doc-code>\n        <button-group justified><select>...</select></button-group>\n        // or\n        <div class=\"btn-group btn-group-justified\"><select>...</select></div>\n      </doc-code>\n      <hr/>\n      <h4>Ajax data and parent dependency:</h4>\n      <p>The second element has inheritance. Enable when the first get some value and the ajax return values.</p>\n      <v-select url=\"docs/data.json\" options-label=\"text\" :value.sync=\"ajax.value\" clear-button v-ref:ajax></v-select>\n      <v-select url=\"docs/data.json\" options-label=\"text\" multiple :parent=\"ajax.value\"></v-select>\n      <doc-code>\n        <v-select url=\"docs/data.json\" options-label=\"text\" :value.sync=\"ajax.value\" clear-button></v-select>\n        <v-select url=\"docs/data.json\" options-label=\"text\" multiple :parent=\"ajax.value\"></v-select>\n      </doc-code>\n      <p>Ajax response:</p>\n      <pre v-html=\"$refs.ajax.options|json\"></pre>\n    </div>\n    <doc-table name=\"Other\">\n      <div>\n        <p>min-search</p>\n        <p><code>Number</code></p>\n        <p><code>0</code></p>\n        <p>If defined, the searchbox is disabled if are less than the minimum value you set.</p>\n      </div>\n      <div>\n        <p>lang</p>\n        <p><code>String</code></p>\n        <p>Browser language</p>\n        <p><abbr title=\"ISO 639-1 code\"><a href=\"https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes\">Language</a></abbr>. Default <code>en</code> if the translation doesn't exist.</p>\n      </div>\n      <div>\n        <p>options-label</p>\n        <p><code>String</code></p>\n        <p><code>label</code></p>\n        <p>Define the value in the data used as label.</p>\n      </div>\n      <div>\n        <p>options-value</p>\n        <p><code>String</code></p>\n        <p><code>value</code></p>\n        <p>Define the value in the data used as value.</p>\n      </div>\n      <div>\n        <p>placeholder</p>\n        <p><code>String</code></p>\n        <p>Nothing Selected</p>\n      </div>\n      <div>\n        <p>search-text</p>\n        <p><code>String</code></p>\n      </div>\n    </doc-table>\n    <doc-table type=\"Events\">\n      <div>\n        <p>change</p>\n        <p>(<code>value</code>)</p>\n        <p>Return the selected value(s).</p>\n      </div>\n      <div>\n        <p>selected</p>\n        <p>(<code>labels:String</code>)</p>\n        <p>Return a string with the label(s) of the selected item(s).</p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 395 */
@@ -35448,209 +33184,107 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <doc-section id="tabs" name="Tabs">
-	
 	//     <div class="bs-example">
-	
 	//       <tabs>
-	
 	//         <tab header="**one**">
-	
 	//           <p>
-	
 	//             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//             consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-	
 	//             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//           </p>
-	
 	//         </tab>
-	
 	//         <tab header="two" disabled>
-	
 	//           ...
-	
 	//         </tab>
-	
 	//         <tab-group header="group1 :cat:">
-	
 	//           <tab header="three :rocket:">
-	
 	//            <p>
-	
 	//               Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-	
 	//            </p>
-	
 	//           </tab>
-	
 	//           <tab header="four" disabled>
-	
 	//             ...
-	
 	//           </tab>
-	
 	//         </tab-group>
-	
 	//         <tab-group header="group2" disabled>
-	
 	//           <tab header="five">
-	
 	//             ...
-	
 	//           </tab>
-	
 	//         </tab-group>
-	
 	//       </tabs>
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <tabs>
-	
 	//         <tab header="one">
-	
 	//           ...
-	
 	//         </tab>
-	
 	//         <tab header="two" disabled>
-	
 	//           ...
-	
 	//         </tab>
-	
 	//         <tab-group header="group1">
-	
 	//           <tab header="three">
-	
 	//             ...
-	
 	//           </tab>
-	
 	//           <tab header="four" disabled>
-	
 	//             ...
-	
 	//           </tab>
-	
 	//         </tab-group>
-	
 	//         <tab-group header="group2">
-	
 	//           <tab header="five">
-	
 	//             ...
-	
 	//           </tab>
-	
 	//         </tab-group>
-	
 	//       </tabs>
-	
 	//     </doc-code>
-	
 	//     <doc-code language="javascript">
-	
 	//       components: {
-	
 	//         tabs: VueStrap.tabset,
-	
 	//         tabGroup: VueStrap.tabGroup,
-	
 	//         tab: VueStrap.tab
-	
 	//       }
-	
 	//     </doc-code>
-	
 	//     <doc-table name="Tabset (container)">
-	
 	//       <div>
-	
 	//         <p>active</p>
-	
 	//         <p><code>Number</code></p>
-	
 	//         <p><code>0</code></p>
-	
 	//         <p>Active tab index (0 based)</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//     <doc-table name="TabGroup (dropdown)">
-	
 	//       <div>
-	
 	//         <p>disabled</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p><code>false</code></p>
-	
 	//         <p>Whether tabgroup is clickable.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>header</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p><code>null</code></p>
-	
 	//         <p>Group Title</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//     <doc-table name="Tab (element)">
-	
 	//       <div>
-	
 	//         <p>header</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p></p>
-	
 	//         <p>Tab Title</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>disabled</p>
-	
 	//         <p><code>Boolean</code></p>
-	
 	//         <p>false</p>
-	
 	//         <p>Whether tab is clickable and can be activated.</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -35682,10 +33316,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-12fe3d77&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-51627677&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-12fe3d77&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-51627677&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35707,8 +33341,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12fe3d77&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12fe3d77&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-51627677&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-51627677&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -35726,7 +33360,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".nav-tabs[_v-12fe3d77] {\r\n  margin-bottom: 15px;\r\n}", ""]);
+	exports.push([module.id, ".nav-tabs[_v-51627677] {\n  margin-bottom: 15px;\n}", ""]);
 	
 	// exports
 
@@ -35750,37 +33384,21 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <!-- Nav tabs -->
-	
 	//   <ul class="nav nav-{{navStyle}}" role="tablist">
-	
 	//     <template v-for="t in headers">
-	
 	//       <li v-if="!t._tabgroup" :class="{active:t.active, disabled:t.disabled}" @click.prevent="select(t)">
-	
 	//         <a href="#"><slot name="header">{{{t.headerRendered}}}</slot></a>
-	
 	//       </li>
-	
 	//       <dropdown v-else :text="t.headerRendered" :class="{active:t.active}" :disabled="t.disabled">
-	
 	//         <li v-for="tab in t.tabs" :class="{disabled:tab.disabled}"><a href="#" @click.prevent="select(tab)">{{{tab.headerRendered}}}</a></li>
-	
 	//       </dropdown>
-	
 	//     </template>
-	
 	//   </ul>
-	
 	//   <div class="tab-content" v-el:tab-content>
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -35832,15 +33450,10 @@
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  // .nav-tabs {
-	
 	  //   margin-bottom: 15px;
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -35849,7 +33462,7 @@
 /* 401 */
 /***/ (function(module, exports) {
 
-	module.exports = "<!-- Nav tabs -->\n  <ul class=\"nav nav-{{navStyle}}\" role=\"tablist\" _v-12fe3d77=\"\">\n    <template v-for=\"t in headers\" _v-12fe3d77=\"\">\n      <li v-if=\"!t._tabgroup\" :class=\"{active:t.active, disabled:t.disabled}\" @click.prevent=\"select(t)\" _v-12fe3d77=\"\">\n        <a href=\"#\" _v-12fe3d77=\"\"><slot name=\"header\" _v-12fe3d77=\"\">{{{t.headerRendered}}}</slot></a>\n      </li>\n      <dropdown v-else=\"\" :text=\"t.headerRendered\" :class=\"{active:t.active}\" :disabled=\"t.disabled\" _v-12fe3d77=\"\">\n        <li v-for=\"tab in t.tabs\" :class=\"{disabled:tab.disabled}\" _v-12fe3d77=\"\"><a href=\"#\" @click.prevent=\"select(tab)\" _v-12fe3d77=\"\">{{{tab.headerRendered}}}</a></li>\n      </dropdown>\n    </template>\n  </ul>\n  <div class=\"tab-content\" v-el:tab-content=\"\" _v-12fe3d77=\"\">\n    <slot _v-12fe3d77=\"\"></slot>\n  </div>";
+	module.exports = "<!-- Nav tabs -->\n  <ul class=\"nav nav-{{navStyle}}\" role=\"tablist\" _v-51627677=\"\">\n    <template v-for=\"t in headers\" _v-51627677=\"\">\n      <li v-if=\"!t._tabgroup\" :class=\"{active:t.active, disabled:t.disabled}\" @click.prevent=\"select(t)\" _v-51627677=\"\">\n        <a href=\"#\" _v-51627677=\"\"><slot name=\"header\" _v-51627677=\"\">{{{t.headerRendered}}}</slot></a>\n      </li>\n      <dropdown v-else=\"\" :text=\"t.headerRendered\" :class=\"{active:t.active}\" :disabled=\"t.disabled\" _v-51627677=\"\">\n        <li v-for=\"tab in t.tabs\" :class=\"{disabled:tab.disabled}\" _v-51627677=\"\"><a href=\"#\" @click.prevent=\"select(tab)\" _v-51627677=\"\">{{{tab.headerRendered}}}</a></li>\n      </dropdown>\n    </template>\n  </ul>\n  <div class=\"tab-content\" v-el:tab-content=\"\" _v-51627677=\"\">\n    <slot _v-51627677=\"\"></slot>\n  </div>";
 
 /***/ }),
 /* 402 */
@@ -35867,10 +33480,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-f1755498&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-85016298&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-f1755498&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-85016298&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35892,8 +33505,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-f1755498&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-f1755498&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-85016298&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-85016298&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -35911,7 +33524,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".nav-tabs[_v-f1755498] {\r\n  margin-bottom: 15px;\r\n}", ""]);
+	exports.push([module.id, ".nav-tabs[_v-85016298] {\n  margin-bottom: 15px;\n}", ""]);
 	
 	// exports
 
@@ -35935,7 +33548,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template><slot></slot></template>
-	
 	
 	// <script>
 	exports.default = {
@@ -35992,15 +33604,10 @@
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  // .nav-tabs {
-	
 	  //   margin-bottom: 15px;
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -36009,7 +33616,7 @@
 /* 406 */
 /***/ (function(module, exports) {
 
-	module.exports = "<slot _v-f1755498=\"\"></slot>";
+	module.exports = "<slot _v-85016298=\"\"></slot>";
 
 /***/ }),
 /* 407 */
@@ -36054,21 +33661,13 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div role="tabpanel" class="tab-pane active" v-show="show"
-	
 	//     :class="{hide:!show}"
-	
 	//     :transition="transition"
-	
 	//   >
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -36139,13 +33738,13 @@
 /* 409 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div role=\"tabpanel\" class=\"tab-pane active\" v-show=\"show\"\r\n    :class=\"{hide:!show}\"\r\n    :transition=\"transition\"\r\n  >\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div role=\"tabpanel\" class=\"tab-pane active\" v-show=\"show\"\n    :class=\"{hide:!show}\"\n    :transition=\"transition\"\n  >\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 410 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"tabs\" name=\"Tabs\">\r\n    <div class=\"bs-example\">\r\n      <tabs>\r\n        <tab header=\"**one**\">\r\n          <p>\r\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n            consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat\r\n            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n          </p>\r\n        </tab>\r\n        <tab header=\"two\" disabled>\r\n          ...\r\n        </tab>\r\n        <tab-group header=\"group1 :cat:\">\r\n          <tab header=\"three :rocket:\">\r\n           <p>\r\n              Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.\r\n           </p>\r\n          </tab>\r\n          <tab header=\"four\" disabled>\r\n            ...\r\n          </tab>\r\n        </tab-group>\r\n        <tab-group header=\"group2\" disabled>\r\n          <tab header=\"five\">\r\n            ...\r\n          </tab>\r\n        </tab-group>\r\n      </tabs>\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <tabs>\r\n        <tab header=\"one\">\r\n          ...\r\n        </tab>\r\n        <tab header=\"two\" disabled>\r\n          ...\r\n        </tab>\r\n        <tab-group header=\"group1\">\r\n          <tab header=\"three\">\r\n            ...\r\n          </tab>\r\n          <tab header=\"four\" disabled>\r\n            ...\r\n          </tab>\r\n        </tab-group>\r\n        <tab-group header=\"group2\">\r\n          <tab header=\"five\">\r\n            ...\r\n          </tab>\r\n        </tab-group>\r\n      </tabs>\r\n    </doc-code>\r\n    <doc-code language=\"javascript\">\r\n      components: {\r\n        tabs: VueStrap.tabset,\r\n        tabGroup: VueStrap.tabGroup,\r\n        tab: VueStrap.tab\r\n      }\r\n    </doc-code>\r\n    <doc-table name=\"Tabset (container)\">\r\n      <div>\r\n        <p>active</p>\r\n        <p><code>Number</code></p>\r\n        <p><code>0</code></p>\r\n        <p>Active tab index (0 based)</p>\r\n      </div>\r\n    </doc-table>\r\n    <doc-table name=\"TabGroup (dropdown)\">\r\n      <div>\r\n        <p>disabled</p>\r\n        <p><code>Boolean</code></p>\r\n        <p><code>false</code></p>\r\n        <p>Whether tabgroup is clickable.</p>\r\n      </div>\r\n      <div>\r\n        <p>header</p>\r\n        <p><code>String</code></p>\r\n        <p><code>null</code></p>\r\n        <p>Group Title</p>\r\n      </div>\r\n    </doc-table>\r\n    <doc-table name=\"Tab (element)\">\r\n      <div>\r\n        <p>header</p>\r\n        <p><code>String</code></p>\r\n        <p></p>\r\n        <p>Tab Title</p>\r\n      </div>\r\n      <div>\r\n        <p>disabled</p>\r\n        <p><code>Boolean</code></p>\r\n        <p>false</p>\r\n        <p>Whether tab is clickable and can be activated.</p>\r\n      </div>\r\n    </doc-table>\r\n  </doc-section>";
+	module.exports = "<doc-section id=\"tabs\" name=\"Tabs\">\n    <div class=\"bs-example\">\n      <tabs>\n        <tab header=\"**one**\">\n          <p>\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n            consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse\n            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat\n            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n          </p>\n        </tab>\n        <tab header=\"two\" disabled>\n          ...\n        </tab>\n        <tab-group header=\"group1 :cat:\">\n          <tab header=\"three :rocket:\">\n           <p>\n              Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.\n           </p>\n          </tab>\n          <tab header=\"four\" disabled>\n            ...\n          </tab>\n        </tab-group>\n        <tab-group header=\"group2\" disabled>\n          <tab header=\"five\">\n            ...\n          </tab>\n        </tab-group>\n      </tabs>\n    </div>\n    <doc-code language=\"markup\">\n      <tabs>\n        <tab header=\"one\">\n          ...\n        </tab>\n        <tab header=\"two\" disabled>\n          ...\n        </tab>\n        <tab-group header=\"group1\">\n          <tab header=\"three\">\n            ...\n          </tab>\n          <tab header=\"four\" disabled>\n            ...\n          </tab>\n        </tab-group>\n        <tab-group header=\"group2\">\n          <tab header=\"five\">\n            ...\n          </tab>\n        </tab-group>\n      </tabs>\n    </doc-code>\n    <doc-code language=\"javascript\">\n      components: {\n        tabs: VueStrap.tabset,\n        tabGroup: VueStrap.tabGroup,\n        tab: VueStrap.tab\n      }\n    </doc-code>\n    <doc-table name=\"Tabset (container)\">\n      <div>\n        <p>active</p>\n        <p><code>Number</code></p>\n        <p><code>0</code></p>\n        <p>Active tab index (0 based)</p>\n      </div>\n    </doc-table>\n    <doc-table name=\"TabGroup (dropdown)\">\n      <div>\n        <p>disabled</p>\n        <p><code>Boolean</code></p>\n        <p><code>false</code></p>\n        <p>Whether tabgroup is clickable.</p>\n      </div>\n      <div>\n        <p>header</p>\n        <p><code>String</code></p>\n        <p><code>null</code></p>\n        <p>Group Title</p>\n      </div>\n    </doc-table>\n    <doc-table name=\"Tab (element)\">\n      <div>\n        <p>header</p>\n        <p><code>String</code></p>\n        <p></p>\n        <p>Tab Title</p>\n      </div>\n      <div>\n        <p>disabled</p>\n        <p><code>Boolean</code></p>\n        <p>false</p>\n        <p>Whether tab is clickable and can be activated.</p>\n      </div>\n    </doc-table>\n  </doc-section>";
 
 /***/ }),
 /* 411 */
@@ -36220,140 +33819,73 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <doc-section id="tooltip" name="Tooltip">
-	
 	//     <div class="bs-example">
-	
 	//       <tooltip v-for="place in ['top','left','right','bottom']" header content="Lorem ipsum dolor sit amet" :placement="place">
-	
 	//         <button class="btn btn-default">Popover on {{place}}</button>
-	
 	//       </tooltip>
-	
 	//       <hr>
-	
 	//       <h4>Trigger</h4>
-	
 	//       <p>
-	
 	//         <tooltip effect="scale" content="Lorem ipsum dolor sit amet" placement="top" trigger="click">
-	
 	//           <button class="btn btn-default">Click</button>
-	
 	//         </tooltip>
-	
 	//         <tooltip effect="scale" content="Lorem ipsum dolor sit amet" placement="top" trigger="contextmenu">
-	
 	//           <button class="btn btn-default">Contextmenu (right click)</button>
-	
 	//         </tooltip>
-	
 	//       </p>
-	
 	//       <tooltip effect="scale" content="Lorem ipsum dolor sit amet" placement="bottom" trigger="focus">
-	
 	//         <bs-input type="text" placeholder="Focus"></bs-input>
-	
 	//       </tooltip>
-	
 	//       <h4>Markdown</h4>
-	
 	//       <tooltip effect="scale" content="*Hello* **World**">
-	
 	//         <a href="">Hover me</a>
-	
 	//       </tooltip>
-	
 	//       <h4>Free Text</h4>
-	
 	//       <tooltip content=" coupling is the degree of interdependence between software modules; a measure of how closely
-	
 	//   connected two routines or modules are; the strength of the relationships between modules.">coupling</tooltip>
 	
-	
 	//     </div>
-	
 	//     <doc-code language="markup">
-	
 	//       <tooltip effect="scale" placement="bottom" content="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod">
-	
 	//         <button class="btn btn-default">tooltip on bottom</button>
-	
 	//       </tooltip>
-	
 	//       <h4>With markdown</h4>
-	
 	//       <tooltip effect="scale" content="*Hello* **World**">
-	
 	//         <a href="">Hover me</a>
-	
 	//       </tooltip>
-	
 	//     </doc-code>
-	
 	//     <doc-table>
-	
 	//       <div>
-	
 	//         <p>trigger</p>
-	
 	//         <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>
-	
 	//         <p><code>hover</code></p>
-	
 	//         <p>How the tooltip is triggered.</p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>effect</p>
-	
 	//         <p><code>String</code>, one of <code>scale</code> <code>fadein</code></p>
-	
 	//         <p><code>scale</code></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>content</p>
-	
 	//         <p><code>String</code></p>
-	
 	//         <p></p>
-	
 	//         <p></p>
-	
 	//       </div>
-	
 	//       <div>
-	
 	//         <p>placement</p>
-	
 	//         <p><code>String</code>, one of <code>top</code>
-	
 	//         <code>left</code>
-	
 	//         <code>right</code>
-	
 	//         <code>bottom</code></p>
-	
 	//         <p></p>
-	
 	//         <p>How to position the tooltip.</p>
-	
 	//       </div>
-	
 	//     </doc-table>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -36361,7 +33893,7 @@
 /* 413 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"tooltip\" name=\"Tooltip\">\r\n    <div class=\"bs-example\">\r\n      <tooltip v-for=\"place in ['top','left','right','bottom']\" header content=\"Lorem ipsum dolor sit amet\" :placement=\"place\">\r\n        <button class=\"btn btn-default\">Popover on {{place}}</button>\r\n      </tooltip>\r\n      <hr>\r\n      <h4>Trigger</h4>\r\n      <p>\r\n        <tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" trigger=\"click\">\r\n          <button class=\"btn btn-default\">Click</button>\r\n        </tooltip>\r\n        <tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" trigger=\"contextmenu\">\r\n          <button class=\"btn btn-default\">Contextmenu (right click)</button>\r\n        </tooltip>\r\n      </p>\r\n      <tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\r\n        <bs-input type=\"text\" placeholder=\"Focus\"></bs-input>\r\n      </tooltip>\r\n      <h4>Markdown</h4>\r\n      <tooltip effect=\"scale\" content=\"*Hello* **World**\">\r\n        <a href=\"\">Hover me</a>\r\n      </tooltip>\r\n      <h4>Free Text</h4>\r\n      <tooltip content=\" coupling is the degree of interdependence between software modules; a measure of how closely\r\n  connected two routines or modules are; the strength of the relationships between modules.\">coupling</tooltip>\r\n\r\n    </div>\r\n    <doc-code language=\"markup\">\r\n      <tooltip effect=\"scale\" placement=\"bottom\" content=\"Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod\">\r\n        <button class=\"btn btn-default\">tooltip on bottom</button>\r\n      </tooltip>\r\n      <h4>With markdown</h4>\r\n      <tooltip effect=\"scale\" content=\"*Hello* **World**\">\r\n        <a href=\"\">Hover me</a>\r\n      </tooltip>\r\n    </doc-code>\r\n    <doc-table>\r\n      <div>\r\n        <p>trigger</p>\r\n        <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\r\n        <p><code>hover</code></p>\r\n        <p>How the tooltip is triggered.</p>\r\n      </div>\r\n      <div>\r\n        <p>effect</p>\r\n        <p><code>String</code>, one of <code>scale</code> <code>fadein</code></p>\r\n        <p><code>scale</code></p>\r\n        <p></p>\r\n      </div>\r\n      <div>\r\n        <p>content</p>\r\n        <p><code>String</code></p>\r\n        <p></p>\r\n        <p></p>\r\n      </div>\r\n      <div>\r\n        <p>placement</p>\r\n        <p><code>String</code>, one of <code>top</code>\r\n        <code>left</code>\r\n        <code>right</code>\r\n        <code>bottom</code></p>\r\n        <p></p>\r\n        <p>How to position the tooltip.</p>\r\n      </div>\r\n    </doc-table>\r\n  </div>\r\n</template>";
+	module.exports = "<doc-section id=\"tooltip\" name=\"Tooltip\">\n    <div class=\"bs-example\">\n      <tooltip v-for=\"place in ['top','left','right','bottom']\" header content=\"Lorem ipsum dolor sit amet\" :placement=\"place\">\n        <button class=\"btn btn-default\">Popover on {{place}}</button>\n      </tooltip>\n      <hr>\n      <h4>Trigger</h4>\n      <p>\n        <tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" trigger=\"click\">\n          <button class=\"btn btn-default\">Click</button>\n        </tooltip>\n        <tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" trigger=\"contextmenu\">\n          <button class=\"btn btn-default\">Contextmenu (right click)</button>\n        </tooltip>\n      </p>\n      <tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n        <bs-input type=\"text\" placeholder=\"Focus\"></bs-input>\n      </tooltip>\n      <h4>Markdown</h4>\n      <tooltip effect=\"scale\" content=\"*Hello* **World**\">\n        <a href=\"\">Hover me</a>\n      </tooltip>\n      <h4>Free Text</h4>\n      <tooltip content=\" coupling is the degree of interdependence between software modules; a measure of how closely\n  connected two routines or modules are; the strength of the relationships between modules.\">coupling</tooltip>\n\n    </div>\n    <doc-code language=\"markup\">\n      <tooltip effect=\"scale\" placement=\"bottom\" content=\"Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod\">\n        <button class=\"btn btn-default\">tooltip on bottom</button>\n      </tooltip>\n      <h4>With markdown</h4>\n      <tooltip effect=\"scale\" content=\"*Hello* **World**\">\n        <a href=\"\">Hover me</a>\n      </tooltip>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>trigger</p>\n        <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\n        <p><code>hover</code></p>\n        <p>How the tooltip is triggered.</p>\n      </div>\n      <div>\n        <p>effect</p>\n        <p><code>String</code>, one of <code>scale</code> <code>fadein</code></p>\n        <p><code>scale</code></p>\n        <p></p>\n      </div>\n      <div>\n        <p>content</p>\n        <p><code>String</code></p>\n        <p></p>\n        <p></p>\n      </div>\n      <div>\n        <p>placement</p>\n        <p><code>String</code>, one of <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></p>\n        <p></p>\n        <p>How to position the tooltip.</p>\n      </div>\n    </doc-table>\n  </div>\n</template>";
 
 /***/ }),
 /* 414 */
@@ -36416,33 +33948,19 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <doc-section id="imageDocs" name="Pic">
-	
 	//         <div class="bs-example">
-	
 	//             <pic src="https://vuejs.org/images/logo.png" alt="Logo">
-	
 	//                 Logo For Vue.js
-	
 	//             </pic>
-	
 	//         </div>
-	
 	//         <doc-code language="markup">
-	
 	//             <pic src="https://vuejs.org/images/logo.png" alt="Logo">
-	
 	//                 Logo For Vue.js
-	
 	//             </pic>
-	
 	//         </doc-code>
-	
 	//     </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -36497,8 +34015,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-445d68a0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-445d68a0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-477fb2b0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-477fb2b0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -36516,7 +34034,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".image-wrapper {\r\n        display: inline-block;\r\n        text-align: center;\r\n        padding: 4px;\r\n    }", ""]);
+	exports.push([module.id, ".image-wrapper {\n        display: inline-block;\n        text-align: center;\n        padding: 4px;\n    }", ""]);
 	
 	// exports
 
@@ -36531,21 +34049,13 @@
 	  value: true
 	});
 	// <template>
-	
 	//     <div class="image-wrapper">
-	
 	//         <img :src="src" :alt="alt" :width="width" :height="height">
-	
 	//         <div class="image-caption">
-	
 	//             <slot></slot>
-	
 	//         </div>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -36565,19 +34075,12 @@
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  //     .image-wrapper {
-	
 	  //         display: inline-block;
-	
 	  //         text-align: center;
-	
 	  //         padding: 4px;
-	
 	  //     }
-	
 	  // </style>
 	
 	};
@@ -36586,13 +34089,13 @@
 /* 420 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"image-wrapper\">\r\n        <img :src=\"src\" :alt=\"alt\" :width=\"width\" :height=\"height\">\r\n        <div class=\"image-caption\">\r\n            <slot></slot>\r\n        </div>\r\n    </div>";
+	module.exports = "<div class=\"image-wrapper\">\n        <img :src=\"src\" :alt=\"alt\" :width=\"width\" :height=\"height\">\n        <div class=\"image-caption\">\n            <slot></slot>\n        </div>\n    </div>";
 
 /***/ }),
 /* 421 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"imageDocs\" name=\"Pic\">\r\n        <div class=\"bs-example\">\r\n            <pic src=\"https://vuejs.org/images/logo.png\" alt=\"Logo\">\r\n                Logo For Vue.js\r\n            </pic>\r\n        </div>\r\n        <doc-code language=\"markup\">\r\n            <pic src=\"https://vuejs.org/images/logo.png\" alt=\"Logo\">\r\n                Logo For Vue.js\r\n            </pic>\r\n        </doc-code>\r\n    </doc-section>";
+	module.exports = "<doc-section id=\"imageDocs\" name=\"Pic\">\n        <div class=\"bs-example\">\n            <pic src=\"https://vuejs.org/images/logo.png\" alt=\"Logo\">\n                Logo For Vue.js\n            </pic>\n        </div>\n        <doc-code language=\"markup\">\n            <pic src=\"https://vuejs.org/images/logo.png\" alt=\"Logo\">\n                Logo For Vue.js\n            </pic>\n        </doc-code>\n    </doc-section>";
 
 /***/ }),
 /* 422 */
@@ -36647,117 +34150,61 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <doc-section id="tipBoxDocs" name="TipBox">
-	
 	//         <div class="bs-example">
-	
 	//             <tip-box>
-	
 	//                 default
-	
 	//             </tip-box>
-	
 	//             <tip-box type="info">
-	
 	//                 info
-	
 	//             </tip-box>
-	
 	//             <tip-box type="warning">
-	
 	//                 warning
-	
 	//             </tip-box>
-	
 	//             <tip-box type="success">
-	
 	//                 success
-	
 	//             </tip-box>
-	
 	//             <tip-box type="important">
-	
 	//                 important
-	
 	//             </tip-box>
-	
 	//             <tip-box type="wrong">
-	
 	//                 wrong
-	
 	//             </tip-box>
-	
 	//             <tip-box type="tip">
-	
 	//                 tip
-	
 	//             </tip-box>
-	
 	//             <tip-box type="definition">
-	
 	//                 definition
-	
 	//             </tip-box>
-	
 	//         </div>
-	
 	//         <doc-code language="markup">
-	
 	//             <tip-box>
-	
 	//                 default
-	
 	//             </tip-box>
-	
 	//             <tip-box type="info">
-	
 	//                 info
-	
 	//             </tip-box>
-	
 	//             <tip-box type="warning">
-	
 	//                 warning
-	
 	//             </tip-box>
-	
 	//             <tip-box type="success">
-	
 	//                 success
-	
 	//             </tip-box>
-	
 	//             <tip-box type="important">
-	
 	//                 important
-	
 	//             </tip-box>
-	
 	//             <tip-box type="wrong">
-	
 	//                 wrong
-	
 	//             </tip-box>
-	
 	//             <tip-box type="tip">
-	
 	//                 tip
-	
 	//             </tip-box>
-	
 	//             <tip-box type="definition">
-	
 	//                 definition
-	
 	//             </tip-box>
-	
 	//         </doc-code>
-	
 	//     </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -36787,10 +34234,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-54a9a67a&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d9e4410c&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-54a9a67a&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d9e4410c&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -36812,8 +34259,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-54a9a67a&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-54a9a67a&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d9e4410c&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d9e4410c&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -36831,7 +34278,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".container[_v-54a9a67a] {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-orient: horizontal;\r\n        -webkit-box-direction: normal;\r\n            -ms-flex-direction: row;\r\n                flex-direction: row;\r\n        width: 100%;\r\n        border-radius: 6px;\r\n    }\r\n\r\n    .icon-wrapper[_v-54a9a67a] {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        margin-right: .5em;\r\n        width: 22px;\r\n        height: 22px;\r\n    }\r\n\r\n    .contents[_v-54a9a67a] {\r\n        padding: 0 6px;\r\n        width: 100%;\r\n    }\r\n\r\n    .alert-default[_v-54a9a67a] {\r\n        color: #24292e;\r\n        background-color: #f6f8fa;\r\n        border-color: #e8ebef;\r\n    }", ""]);
+	exports.push([module.id, ".container[_v-d9e4410c] {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-orient: horizontal;\n        -webkit-box-direction: normal;\n            -ms-flex-direction: row;\n                flex-direction: row;\n        width: 100%;\n        border-radius: 6px;\n    }\n\n    .icon-wrapper[_v-d9e4410c] {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        margin-right: .5em;\n        width: 22px;\n        height: 22px;\n    }\n\n    .contents[_v-d9e4410c] {\n        padding: 0 6px;\n        width: 100%;\n    }\n\n    .alert-default[_v-d9e4410c] {\n        color: #24292e;\n        background-color: #f6f8fa;\n        border-color: #e8ebef;\n    }", ""]);
 	
 	// exports
 
@@ -36903,76 +34350,43 @@
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  //     .container {
-	
 	  //         display: flex;
-	
 	  //         flex-direction: row;
-	
 	  //         width: 100%;
-	
 	  //         border-radius: 6px;
-	
 	  //     }
-	
 	
 	  //     .icon-wrapper {
-	
 	  //         display: flex;
-	
 	  //         margin-right: .5em;
-	
 	  //         width: 22px;
-	
 	  //         height: 22px;
-	
 	  //     }
-	
 	
 	  //     .contents {
-	
 	  //         padding: 0 6px;
-	
 	  //         width: 100%;
-	
 	  //     }
-	
 	
 	  //     .alert-default {
-	
 	  //         color: #24292e;
-	
 	  //         background-color: #f6f8fa;
-	
 	  //         border-color: #e8ebef;
-	
 	  //     }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//     <div class="alert container" :class="[boxStyle]">
-	
 	//         <div class="icon-wrapper" v-if="!isDefault">
-	
 	//             <span>{{{iconType}}}</span>
-	
 	//         </div>
-	
 	//         <div class="contents">
-	
 	//             <slot></slot>
-	
 	//         </div>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -36980,13 +34394,13 @@
 /* 428 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"alert container\" :class=\"[boxStyle]\" _v-54a9a67a=\"\">\n        <div class=\"icon-wrapper\" v-if=\"!isDefault\" _v-54a9a67a=\"\">\n            <span _v-54a9a67a=\"\">{{{iconType}}}</span>\n        </div>\n        <div class=\"contents\" _v-54a9a67a=\"\">\n            <slot _v-54a9a67a=\"\"></slot>\n        </div>\n    </div>";
+	module.exports = "<div class=\"alert container\" :class=\"[boxStyle]\" _v-d9e4410c=\"\">\n        <div class=\"icon-wrapper\" v-if=\"!isDefault\" _v-d9e4410c=\"\">\n            <span _v-d9e4410c=\"\">{{{iconType}}}</span>\n        </div>\n        <div class=\"contents\" _v-d9e4410c=\"\">\n            <slot _v-d9e4410c=\"\"></slot>\n        </div>\n    </div>";
 
 /***/ }),
 /* 429 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"tipBoxDocs\" name=\"TipBox\">\r\n        <div class=\"bs-example\">\r\n            <tip-box>\r\n                default\r\n            </tip-box>\r\n            <tip-box type=\"info\">\r\n                info\r\n            </tip-box>\r\n            <tip-box type=\"warning\">\r\n                warning\r\n            </tip-box>\r\n            <tip-box type=\"success\">\r\n                success\r\n            </tip-box>\r\n            <tip-box type=\"important\">\r\n                important\r\n            </tip-box>\r\n            <tip-box type=\"wrong\">\r\n                wrong\r\n            </tip-box>\r\n            <tip-box type=\"tip\">\r\n                tip\r\n            </tip-box>\r\n            <tip-box type=\"definition\">\r\n                definition\r\n            </tip-box>\r\n        </div>\r\n        <doc-code language=\"markup\">\r\n            <tip-box>\r\n                default\r\n            </tip-box>\r\n            <tip-box type=\"info\">\r\n                info\r\n            </tip-box>\r\n            <tip-box type=\"warning\">\r\n                warning\r\n            </tip-box>\r\n            <tip-box type=\"success\">\r\n                success\r\n            </tip-box>\r\n            <tip-box type=\"important\">\r\n                important\r\n            </tip-box>\r\n            <tip-box type=\"wrong\">\r\n                wrong\r\n            </tip-box>\r\n            <tip-box type=\"tip\">\r\n                tip\r\n            </tip-box>\r\n            <tip-box type=\"definition\">\r\n                definition\r\n            </tip-box>\r\n        </doc-code>\r\n    </doc-section>";
+	module.exports = "<doc-section id=\"tipBoxDocs\" name=\"TipBox\">\n        <div class=\"bs-example\">\n            <tip-box>\n                default\n            </tip-box>\n            <tip-box type=\"info\">\n                info\n            </tip-box>\n            <tip-box type=\"warning\">\n                warning\n            </tip-box>\n            <tip-box type=\"success\">\n                success\n            </tip-box>\n            <tip-box type=\"important\">\n                important\n            </tip-box>\n            <tip-box type=\"wrong\">\n                wrong\n            </tip-box>\n            <tip-box type=\"tip\">\n                tip\n            </tip-box>\n            <tip-box type=\"definition\">\n                definition\n            </tip-box>\n        </div>\n        <doc-code language=\"markup\">\n            <tip-box>\n                default\n            </tip-box>\n            <tip-box type=\"info\">\n                info\n            </tip-box>\n            <tip-box type=\"warning\">\n                warning\n            </tip-box>\n            <tip-box type=\"success\">\n                success\n            </tip-box>\n            <tip-box type=\"important\">\n                important\n            </tip-box>\n            <tip-box type=\"wrong\">\n                wrong\n            </tip-box>\n            <tip-box type=\"tip\">\n                tip\n            </tip-box>\n            <tip-box type=\"definition\">\n                definition\n            </tip-box>\n        </doc-code>\n    </doc-section>";
 
 /***/ }),
 /* 430 */
@@ -37056,144 +34470,75 @@
 	};
 	// </script>
 	// <template>
-	
 	//     <doc-section id="triggerDocs" name="Trigger">
-	
 	//         <p>
-	
 	//             <code>Trigger</code> provides more flexibility for triggering contextual overlay such as popover, tooltip, modal.<br/>
-	
 	//             You could embed an trigger within the text, and define the Tooltip or Popover at a separate location, which brings a cleaner authoring flow. <br>
-	
 	//             Specify the <code>id</code> attribute on the popover, tooltip or modal component, and use the same id for the <code>for</code> attribute of the trigger
-	
 	//             to allow trigger to invoke the specific overlay elements. <br>
-	
 	//         </p>
-	
 	//         <p>
-	
 	//             Multiple <code>trigger</code> could share the same overlay by providing them the same id.
-	
 	//         </p>
-	
 	
 	//         <h4>Using trigger for Tooltip</h4>
-	
 	//         <div class="bs-example">
-	
 	//             More about <trigger for="tt:trigger">trigger</trigger>
-	
 	//             <tooltip id="tt:trigger" content="This tooltip triggered by a trigger"></tooltip>
-	
 	//             <br>
-	
 	//             This is the same <trigger for="tt:trigger">trigger</trigger> as last one.
-	
 	//         </div>
-	
 	//         <doc-code language="markup">
-	
 	//             More about <trigger for="tt:trigger">trigger</trigger>
-	
 	//             <tooltip id="tt:trigger_id" content="This tooltip triggered by a trigger"></tooltip>
-	
 	//         </doc-code>
-	
 	//         <h4>Using trigger for Popover</h4>
-	
 	//         <div class="bs-example">
-	
 	//             More about <trigger for="pop:trigger">trigger</trigger>
-	
 	//             <popover id="pop:trigger" content="This popover is triggered by a trigger"></popover>
-	
 	//             <br>
-	
 	//             This is the same <trigger for="pop:trigger">trigger</trigger> as last one.
-	
 	//         </div>
-	
 	//         <doc-code language="markup">
-	
 	//             More about <trigger for="pop:trigger_id">trigger</trigger>
-	
 	//             <popover id="pop:trigger_id" content="This popover is triggered by a trigger"></popover>
-	
 	//         </doc-code>
-	
 	//         <h4>Using trigger for Modal</h4>
-	
 	//         <div class="bs-example">
-	
 	//             More about <trigger trigger="click" for="modal:trigger">trigger</trigger>
-	
 	//             <modal title="**Modal title** :rocket:" id="modal:trigger">
-	
 	//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	
 	//                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	
 	//                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	
 	//                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	
 	//                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	
 	//               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	
 	//             </modal>
-	
 	//             <br>
-	
 	//             This is the same <trigger for="modal:trigger">trigger</trigger> as last one.
-	
 	//         </div>
-	
 	//         <doc-code language="markup">
-	
 	//             More about <trigger for="modal:trigger" trigger="click">trigger</trigger>
-	
 	//             <modal title="**Modal title** :rocket:" id="modal:trigger">
-	
 	//                 ...
-	
 	//             </modal>
-	
 	//         </doc-code>
-	
 	//         <doc-table>
-	
 	//             <div>
-	
 	//                 <p>trigger</p>
-	
 	//                 <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>
-	
 	//                 <p><code>hover</code></p>
-	
 	//                 <p>How trigger triggers its overflow view.</p>
-	
 	//             </div>
-	
 	//             <div>
-	
 	//                 <p>for</p>
-	
 	//                 <p><code>String</code>, the id for the overlay view to be shown</p>
-	
 	//                 <p></p>
-	
 	//                 <p></p>
-	
 	//             </div>
-	
 	//         </doc-table>
-	
 	//     </doc-section>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -37238,8 +34583,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b53aec04&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b53aec04&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-338570fe&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-338570fe&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -37272,11 +34617,8 @@
 	  value: true
 	});
 	// <template>
-	
 	//     <span v-el:trigger><slot></slot></span>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -37317,9 +34659,7 @@
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	
 	  // </style>
 	
@@ -37336,13 +34676,13 @@
 /* 437 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"triggerDocs\" name=\"Trigger\">\r\n        <p>\r\n            <code>Trigger</code> provides more flexibility for triggering contextual overlay such as popover, tooltip, modal.<br/>\r\n            You could embed an trigger within the text, and define the Tooltip or Popover at a separate location, which brings a cleaner authoring flow. <br>\r\n            Specify the <code>id</code> attribute on the popover, tooltip or modal component, and use the same id for the <code>for</code> attribute of the trigger\r\n            to allow trigger to invoke the specific overlay elements. <br>\r\n        </p>\r\n        <p>\r\n            Multiple <code>trigger</code> could share the same overlay by providing them the same id.\r\n        </p>\r\n\r\n        <h4>Using trigger for Tooltip</h4>\r\n        <div class=\"bs-example\">\r\n            More about <trigger for=\"tt:trigger\">trigger</trigger>\r\n            <tooltip id=\"tt:trigger\" content=\"This tooltip triggered by a trigger\"></tooltip>\r\n            <br>\r\n            This is the same <trigger for=\"tt:trigger\">trigger</trigger> as last one.\r\n        </div>\r\n        <doc-code language=\"markup\">\r\n            More about <trigger for=\"tt:trigger\">trigger</trigger>\r\n            <tooltip id=\"tt:trigger_id\" content=\"This tooltip triggered by a trigger\"></tooltip>\r\n        </doc-code>\r\n        <h4>Using trigger for Popover</h4>\r\n        <div class=\"bs-example\">\r\n            More about <trigger for=\"pop:trigger\">trigger</trigger>\r\n            <popover id=\"pop:trigger\" content=\"This popover is triggered by a trigger\"></popover>\r\n            <br>\r\n            This is the same <trigger for=\"pop:trigger\">trigger</trigger> as last one.\r\n        </div>\r\n        <doc-code language=\"markup\">\r\n            More about <trigger for=\"pop:trigger_id\">trigger</trigger>\r\n            <popover id=\"pop:trigger_id\" content=\"This popover is triggered by a trigger\"></popover>\r\n        </doc-code>\r\n        <h4>Using trigger for Modal</h4>\r\n        <div class=\"bs-example\">\r\n            More about <trigger trigger=\"click\" for=\"modal:trigger\">trigger</trigger>\r\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n            </modal>\r\n            <br>\r\n            This is the same <trigger for=\"modal:trigger\">trigger</trigger> as last one.\r\n        </div>\r\n        <doc-code language=\"markup\">\r\n            More about <trigger for=\"modal:trigger\" trigger=\"click\">trigger</trigger>\r\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\r\n                ...\r\n            </modal>\r\n        </doc-code>\r\n        <doc-table>\r\n            <div>\r\n                <p>trigger</p>\r\n                <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\r\n                <p><code>hover</code></p>\r\n                <p>How trigger triggers its overflow view.</p>\r\n            </div>\r\n            <div>\r\n                <p>for</p>\r\n                <p><code>String</code>, the id for the overlay view to be shown</p>\r\n                <p></p>\r\n                <p></p>\r\n            </div>\r\n        </doc-table>\r\n    </doc-section>";
+	module.exports = "<doc-section id=\"triggerDocs\" name=\"Trigger\">\n        <p>\n            <code>Trigger</code> provides more flexibility for triggering contextual overlay such as popover, tooltip, modal.<br/>\n            You could embed an trigger within the text, and define the Tooltip or Popover at a separate location, which brings a cleaner authoring flow. <br>\n            Specify the <code>id</code> attribute on the popover, tooltip or modal component, and use the same id for the <code>for</code> attribute of the trigger\n            to allow trigger to invoke the specific overlay elements. <br>\n        </p>\n        <p>\n            Multiple <code>trigger</code> could share the same overlay by providing them the same id.\n        </p>\n\n        <h4>Using trigger for Tooltip</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"tt:trigger\">trigger</trigger>\n            <tooltip id=\"tt:trigger\" content=\"This tooltip triggered by a trigger\"></tooltip>\n            <br>\n            This is the same <trigger for=\"tt:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"tt:trigger\">trigger</trigger>\n            <tooltip id=\"tt:trigger_id\" content=\"This tooltip triggered by a trigger\"></tooltip>\n        </doc-code>\n        <h4>Using trigger for Popover</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"pop:trigger\">trigger</trigger>\n            <popover id=\"pop:trigger\" content=\"This popover is triggered by a trigger\"></popover>\n            <br>\n            This is the same <trigger for=\"pop:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"pop:trigger_id\">trigger</trigger>\n            <popover id=\"pop:trigger_id\" content=\"This popover is triggered by a trigger\"></popover>\n        </doc-code>\n        <h4>Using trigger for Modal</h4>\n        <div class=\"bs-example\">\n            More about <trigger trigger=\"click\" for=\"modal:trigger\">trigger</trigger>\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            </modal>\n            <br>\n            This is the same <trigger for=\"modal:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"modal:trigger\" trigger=\"click\">trigger</trigger>\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\n                ...\n            </modal>\n        </doc-code>\n        <doc-table>\n            <div>\n                <p>trigger</p>\n                <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\n                <p><code>hover</code></p>\n                <p>How trigger triggers its overflow view.</p>\n            </div>\n            <div>\n                <p>for</p>\n                <p><code>String</code>, the id for the overlay view to be shown</p>\n                <p></p>\n                <p></p>\n            </div>\n        </doc-table>\n    </doc-section>";
 
 /***/ }),
 /* 438 */
 /***/ (function(module, exports) {
 
-	module.exports = "<link v-if=\"local\" rel=\"stylesheet\" type=\"text/css\" href=\"node_modules/bootstrap/dist/css/bootstrap.css\">\r\n  <link v-else href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==\" crossorigin=\"anonymous\">\r\n  <div id=\"wrapper\">\r\n    <div class=\"bs-docs-header\">\r\n      <div class=\"container\">\r\n        <h1>VueStrap - MarkBind</h1>\r\n        <p>Bootstrap components built with <a target=\"_blank\" href=\"http://vuejs.org/\">Vue.js</a>.</p>\r\n        <p>No jQuery, bootstrap.js, or any 3rd party plugins required.</p>\r\n        <p>Modified for supported compoennts in MarkBind.</p>\r\n        <br>\r\n        <p><a class=\"btn btn-outline-inverse btn-lg\" href=\"https://github.com/MarkBind/vue-strap\">Code on GitHub</a></p>\r\n      </div>\r\n    </div>\r\n    <container>\r\n      <div v-el:sections class=\"col-md-9\">\r\n        <getting-started></getting-started>\r\n        <accordion-docs></accordion-docs>\r\n        <affix-docs></affix-docs>\r\n        <aside-docs></aside-docs>\r\n        <dynamic-panel-docs></dynamic-panel-docs>\r\n        <image-docs></image-docs>\r\n        <modal-docs></modal-docs>\r\n        <morph-docs></morph-docs>\r\n        <navbar-docs></navbar-docs>\r\n        <question-docs></question-docs>\r\n        <retriever-docs></retriever-docs>\r\n        <tabs-docs></tabs-docs>\r\n        <tip-box-docs></tip-box-docs>\r\n        <tooltip-docs></tooltip-docs>\r\n        <popover-docs></popover-docs>\r\n        <trigger-docs></trigger-docs>\r\n      </div>\r\n      <div class=\"col-md-3\">\r\n        <affix-sidebar></affix-sidebar>\r\n      </div>\r\n    </container>\r\n  </div>\r\n  <footer class=\"bs-docs-footer\">\r\n    <div class=\"container\">\r\n      <p>Designed and built by <a href=\"https://github.com/yuche/\">yuche</a>.</p>\r\n      <p>\r\n        Using <a href=\"http://twitter.github.com/bootstrap\" target=\"_blank\">Twitter Bootstrap</a>\r\n        and the <a href=\"css/docs.css\" target=\"_blank\">Bootstrap's docs styles</a> designed and built by <a href=\"http://twitter.com/mdo\" target=\"_blank\">@mdo</a>\r\n        and <a href=\"http://twitter.com/fat\" target=\"_blank\">@fat</a>.\r\n      </p>\r\n      <p>\r\n        Code licensed under <a href=\"//github.com/mgcrea/angular-strap/blob/master/LICENSE.md\" target=\"_blank\">The MIT License</a>,\r\n        documentation under <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC BY 3.0</a>.\r\n      </p>\r\n    </div>\r\n  </footer>";
+	module.exports = "<link v-if=\"local\" rel=\"stylesheet\" type=\"text/css\" href=\"node_modules/bootstrap/dist/css/bootstrap.css\">\n  <link v-else href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==\" crossorigin=\"anonymous\">\n  <div id=\"wrapper\">\n    <div class=\"bs-docs-header\">\n      <div class=\"container\">\n        <h1>VueStrap - MarkBind</h1>\n        <p>Bootstrap components built with <a target=\"_blank\" href=\"http://vuejs.org/\">Vue.js</a>.</p>\n        <p>No jQuery, bootstrap.js, or any 3rd party plugins required.</p>\n        <p>Modified for supported compoennts in MarkBind.</p>\n        <br>\n        <p><a class=\"btn btn-outline-inverse btn-lg\" href=\"https://github.com/MarkBind/vue-strap\">Code on GitHub</a></p>\n      </div>\n    </div>\n    <container>\n      <div v-el:sections class=\"col-md-9\">\n        <getting-started></getting-started>\n        <accordion-docs></accordion-docs>\n        <affix-docs></affix-docs>\n        <aside-docs></aside-docs>\n        <dynamic-panel-docs></dynamic-panel-docs>\n        <image-docs></image-docs>\n        <modal-docs></modal-docs>\n        <morph-docs></morph-docs>\n        <navbar-docs></navbar-docs>\n        <question-docs></question-docs>\n        <retriever-docs></retriever-docs>\n        <tabs-docs></tabs-docs>\n        <tip-box-docs></tip-box-docs>\n        <tooltip-docs></tooltip-docs>\n        <popover-docs></popover-docs>\n        <trigger-docs></trigger-docs>\n      </div>\n      <div class=\"col-md-3\">\n        <affix-sidebar></affix-sidebar>\n      </div>\n    </container>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <div class=\"container\">\n      <p>Designed and built by <a href=\"https://github.com/yuche/\">yuche</a>.</p>\n      <p>\n        Using <a href=\"http://twitter.github.com/bootstrap\" target=\"_blank\">Twitter Bootstrap</a>\n        and the <a href=\"css/docs.css\" target=\"_blank\">Bootstrap's docs styles</a> designed and built by <a href=\"http://twitter.com/mdo\" target=\"_blank\">@mdo</a>\n        and <a href=\"http://twitter.com/fat\" target=\"_blank\">@fat</a>.\n      </p>\n      <p>\n        Code licensed under <a href=\"//github.com/mgcrea/angular-strap/blob/master/LICENSE.md\" target=\"_blank\">The MIT License</a>,\n        documentation under <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC BY 3.0</a>.\n      </p>\n    </div>\n  </footer>";
 
 /***/ }),
 /* 439 */
@@ -37595,8 +34935,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13e7ff02&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13e7ff02&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68ceb3fc&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68ceb3fc&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -37614,7 +34954,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".fade-transition {\r\n  transition: opacity .3s ease;\r\n}\r\n.fade-enter,\r\n.fade-leave {\r\n  height: 0;\r\n  opacity: 0;\r\n}\r\n.alert.top {\r\n  position: fixed;\r\n  top: 30px;\r\n  margin: 0 auto;\r\n  left: 0;\r\n  right: 0;\r\n  z-index: 1050;\r\n}\r\n.alert.top-right {\r\n  position: fixed;\r\n  top: 30px;\r\n  right: 50px;\r\n  z-index: 1050;\r\n}", ""]);
+	exports.push([module.id, ".fade-transition {\n  transition: opacity .3s ease;\n}\n.fade-enter,\n.fade-leave {\n  height: 0;\n  opacity: 0;\n}\n.alert.top {\n  position: fixed;\n  top: 30px;\n  margin: 0 auto;\n  left: 0;\n  right: 0;\n  z-index: 1050;\n}\n.alert.top-right {\n  position: fixed;\n  top: 30px;\n  right: 50px;\n  z-index: 1050;\n}", ""]);
 	
 	// exports
 
@@ -37673,99 +35013,53 @@
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  // .fade-transition {
-	
 	  //   transition: opacity .3s ease;
-	
 	  // }
-	
 	  // .fade-enter,
-	
 	  // .fade-leave {
-	
 	  //   height: 0;
-	
 	  //   opacity: 0;
-	
 	  // }
-	
 	  // .alert.top {
-	
 	  //   position: fixed;
-	
 	  //   top: 30px;
-	
 	  //   margin: 0 auto;
-	
 	  //   left: 0;
-	
 	  //   right: 0;
-	
 	  //   z-index: 1050;
-	
 	  // }
-	
 	  // .alert.top-right {
-	
 	  //   position: fixed;
-	
 	  //   top: 30px;
-	
 	  //   right: 50px;
-	
 	  //   z-index: 1050;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <div
-	
 	//     v-show="show"
-	
 	//     v-bind:class="{
-	
 	//       'alert':		true,
-	
 	//       'alert-success':(type == 'success'),
-	
 	//       'alert-warning':(type == 'warning'),
-	
 	//       'alert-info':	(type == 'info'),
-	
 	//       'alert-danger':	(type == 'danger'),
-	
 	//       'top': 			(placement === 'top'),
-	
 	//       'top-right': 	(placement === 'top-right')
-	
 	//     }"
-	
 	//     transition="fade"
-	
 	//     v-bind:style="{width:width}"
-	
 	//     role="alert">
-	
 	//     <button v-show="dismissable" type="button" class="close"
-	
 	//       @click="show = false">
-	
 	//       <span>&times;</span>
-	
 	//     </button>
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -37773,7 +35067,7 @@
 /* 447 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div\r\n    v-show=\"show\"\r\n    v-bind:class=\"{\r\n      'alert':\t\ttrue,\r\n      'alert-success':(type == 'success'),\r\n      'alert-warning':(type == 'warning'),\r\n      'alert-info':\t(type == 'info'),\r\n      'alert-danger':\t(type == 'danger'),\r\n      'top': \t\t\t(placement === 'top'),\r\n      'top-right': \t(placement === 'top-right')\r\n    }\"\r\n    transition=\"fade\"\r\n    v-bind:style=\"{width:width}\"\r\n    role=\"alert\">\r\n    <button v-show=\"dismissable\" type=\"button\" class=\"close\"\r\n      @click=\"show = false\">\r\n      <span>&times;</span>\r\n    </button>\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div\n    v-show=\"show\"\n    v-bind:class=\"{\n      'alert':\t\ttrue,\n      'alert-success':(type == 'success'),\n      'alert-warning':(type == 'warning'),\n      'alert-info':\t(type == 'info'),\n      'alert-danger':\t(type == 'danger'),\n      'top': \t\t\t(placement === 'top'),\n      'top-right': \t(placement === 'top-right')\n    }\"\n    transition=\"fade\"\n    v-bind:style=\"{width:width}\"\n    role=\"alert\">\n    <button v-show=\"dismissable\" type=\"button\" class=\"close\"\n      @click=\"show = false\">\n      <span>&times;</span>\n    </button>\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 448 */
@@ -37791,10 +35085,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6378502a&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6378502a&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37816,8 +35110,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6378502a&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6378502a&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -37835,7 +35129,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".carousel-control[_v-6378502a] {\r\n  cursor: pointer;\r\n}", ""]);
+	exports.push([module.id, ".carousel-control[_v-cc9b6dac] {\n  cursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -37859,47 +35153,26 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div class="carousel slide" data-ride="carousel">
-	
 	//   <!-- Indicators -->
-	
 	//   <ol class="carousel-indicators" v-show="indicators">
-	
 	//     <li v-for="i in indicator" @click="indicatorClick($index)" v-bind:class="{active:$index === index}"><span></span></li>
-	
 	//   </ol>
-	
 	//   <!-- Wrapper for slides -->
-	
 	//   <div class="carousel-inner" role="listbox">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	//   <!-- Controls -->
-	
 	//   <div v-show="controls" class="carousel-controls hidden-xs">
-	
 	//     <a class="left carousel-control" role="button" @click="prev">
-	
 	//       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	
 	//     </a>
-	
 	//     <a class="right carousel-control" role="button" @click="next">
-	
 	//       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	
 	//     </a>
-	
 	//   </div>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -38003,22 +35276,17 @@
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// .carousel-control {
-	
 	//   cursor: pointer;
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 452 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"carousel slide\" data-ride=\"carousel\" _v-6378502a=\"\">\n  <!-- Indicators -->\n  <ol class=\"carousel-indicators\" v-show=\"indicators\" _v-6378502a=\"\">\n    <li v-for=\"i in indicator\" @click=\"indicatorClick($index)\" v-bind:class=\"{active:$index === index}\" _v-6378502a=\"\"><span _v-6378502a=\"\"></span></li>\n  </ol>\n  <!-- Wrapper for slides -->\n  <div class=\"carousel-inner\" role=\"listbox\" _v-6378502a=\"\">\n    <slot _v-6378502a=\"\"></slot>\n  </div>\n  <!-- Controls -->\n  <div v-show=\"controls\" class=\"carousel-controls hidden-xs\" _v-6378502a=\"\">\n    <a class=\"left carousel-control\" role=\"button\" @click=\"prev\" _v-6378502a=\"\">\n      <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\" _v-6378502a=\"\"></span>\n    </a>\n    <a class=\"right carousel-control\" role=\"button\" @click=\"next\" _v-6378502a=\"\">\n      <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\" _v-6378502a=\"\"></span>\n    </a>\n  </div>\n</div>";
+	module.exports = "<div class=\"carousel slide\" data-ride=\"carousel\" _v-cc9b6dac=\"\">\n  <!-- Indicators -->\n  <ol class=\"carousel-indicators\" v-show=\"indicators\" _v-cc9b6dac=\"\">\n    <li v-for=\"i in indicator\" @click=\"indicatorClick($index)\" v-bind:class=\"{active:$index === index}\" _v-cc9b6dac=\"\"><span _v-cc9b6dac=\"\"></span></li>\n  </ol>\n  <!-- Wrapper for slides -->\n  <div class=\"carousel-inner\" role=\"listbox\" _v-cc9b6dac=\"\">\n    <slot _v-cc9b6dac=\"\"></slot>\n  </div>\n  <!-- Controls -->\n  <div v-show=\"controls\" class=\"carousel-controls hidden-xs\" _v-cc9b6dac=\"\">\n    <a class=\"left carousel-control\" role=\"button\" @click=\"prev\" _v-cc9b6dac=\"\">\n      <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\" _v-cc9b6dac=\"\"></span>\n    </a>\n    <a class=\"right carousel-control\" role=\"button\" @click=\"next\" _v-cc9b6dac=\"\">\n      <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\" _v-cc9b6dac=\"\"></span>\n    </a>\n  </div>\n</div>";
 
 /***/ }),
 /* 453 */
@@ -38127,7 +35395,7 @@
 	
 	
 	// module
-	exports.push([module.id, "/*!\r\n * Bootstrap Docs (http://getbootstrap.com)\r\n * Copyright 2011-2014 Twitter, Inc.\r\n * Licensed under the Creative Commons Attribution 3.0 Unported License. For\r\n * details, see http://creativecommons.org/licenses/by/3.0/.\r\n */\r\n\r\n\r\n/*\r\n * Bootstrap Documentation\r\n * Special styles for presenting Bootstrap's documentation and code examples.\r\n *\r\n * Table of contents:\r\n *\r\n * Scaffolding\r\n * Main navigation\r\n * Footer\r\n * Social buttons\r\n * Homepage\r\n * Page headers\r\n * Old docs callout\r\n * Ads\r\n * Side navigation\r\n * Docs sections\r\n * Callouts\r\n * Grid styles\r\n * Examples\r\n * Code snippets (highlight)\r\n * Responsive tests\r\n * Glyphicons\r\n * Customizer\r\n * MenuItem\r\n * Miscellaneous\r\n */\r\n\r\n\r\n/*\r\n * Scaffolding\r\n *\r\n * Update the basics of our documents to prep for docs content.\r\n */\r\n\r\nbody {\r\n  position: relative; /* For scrollspy */\r\n}\r\n\r\n/* Keep code small in tables on account of limited space */\r\n.table code {\r\n  font-size: 13px;\r\n  font-weight: normal;\r\n}\r\n\r\n/* Outline button for use within the docs */\r\n.btn-outline {\r\n  color: #563d7c;\r\n  background-color: transparent;\r\n  border-color: #563d7c;\r\n}\r\n.btn-outline:hover,\r\n.btn-outline:focus,\r\n.btn-outline:active {\r\n  color: #fff;\r\n  background-color: #563d7c;\r\n  border-color: #563d7c;\r\n}\r\n\r\n/* Inverted outline button (white on dark) */\r\n.btn-outline-inverse {\r\n  color: #fff;\r\n  background-color: transparent;\r\n  border-color: #cdbfe3;\r\n}\r\n.btn-outline-inverse:hover,\r\n.btn-outline-inverse:focus,\r\n.btn-outline-inverse:active {\r\n  color: #563d7c;\r\n  text-shadow: none;\r\n  background-color: #fff;\r\n  border-color: #fff;\r\n}\r\n\r\n/* Bootstrap \"B\" icon */\r\n.bs-docs-booticon {\r\n  display: block;\r\n  font-weight: 500;\r\n  color: #fff;\r\n  text-align: center;\r\n  cursor: default;\r\n  background-color: #563d7c;\r\n  border-radius: 15%;\r\n}\r\n.bs-docs-booticon-sm {\r\n  width: 30px;\r\n  height: 30px;\r\n  font-size: 20px;\r\n  line-height: 28px;\r\n}\r\n.bs-docs-booticon-lg {\r\n  width: 144px;\r\n  height: 144px;\r\n  font-size: 108px;\r\n  line-height: 140px;\r\n}\r\n.bs-docs-booticon-inverse {\r\n  color: #563d7c;\r\n  background-color: #fff;\r\n}\r\n.bs-docs-booticon-outline {\r\n  background-color: transparent;\r\n  border: 1px solid #cdbfe3;\r\n}\r\n\r\n\r\n/*\r\n * Main navigation\r\n *\r\n * Turn the `.navbar` at the top of the docs purple.\r\n */\r\n\r\n.bs-docs-nav {\r\n  margin-bottom: 0;\r\n  background-color: #fff;\r\n  border-bottom: 0;\r\n}\r\n.bs-home-nav .bs-nav-b {\r\n  display: none;\r\n}\r\n.bs-docs-nav .navbar-brand,\r\n.bs-docs-nav .navbar-nav > li > a {\r\n  font-weight: 500;\r\n  color: #563d7c;\r\n}\r\n.bs-docs-nav .navbar-nav > li > a:hover,\r\n.bs-docs-nav .navbar-nav > .active > a,\r\n.bs-docs-nav .navbar-nav > .active > a:hover {\r\n  color: #463265;\r\n  background-color: #f9f9f9;\r\n}\r\n.bs-docs-nav .navbar-toggle .icon-bar {\r\n  background-color: #563d7c;\r\n}\r\n.bs-docs-nav .navbar-header .navbar-toggle {\r\n  border-color: #fff;\r\n}\r\n.bs-docs-nav .navbar-header .navbar-toggle:hover,\r\n.bs-docs-nav .navbar-header .navbar-toggle:focus {\r\n  background-color: #f9f9f9;\r\n  border-color: #f9f9f9;\r\n}\r\n\r\n\r\n/*\r\n * Footer\r\n *\r\n * Separated section of content at the bottom of all pages, save the homepage.\r\n */\r\n\r\n.bs-docs-footer {\r\n  padding-top: 40px;\r\n  padding-bottom: 40px;\r\n  margin-top: 100px;\r\n  color: #777;\r\n  text-align: center;\r\n  border-top: 1px solid #e5e5e5;\r\n}\r\n.bs-docs-footer-links {\r\n  padding-left: 0;\r\n  margin-top: 20px;\r\n  color: #999;\r\n}\r\n.bs-docs-footer-links li {\r\n  display: inline;\r\n  padding: 0 2px;\r\n}\r\n.bs-docs-footer-links li:first-child {\r\n  padding-left: 0;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .bs-docs-footer p {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Social buttons\r\n *\r\n * Twitter and GitHub social action buttons (for homepage and footer).\r\n */\r\n\r\n.bs-docs-social {\r\n  margin-bottom: 20px;\r\n  text-align: center;\r\n}\r\n.bs-docs-social-buttons {\r\n  display: inline-block;\r\n  padding-left: 0;\r\n  margin-bottom: 0;\r\n  list-style: none;\r\n}\r\n.bs-docs-social-buttons li {\r\n  display: inline-block;\r\n  padding: 5px 8px;\r\n  line-height: 1;\r\n}\r\n.bs-docs-social-buttons .twitter-follow-button {\r\n  width: 225px !important;\r\n}\r\n.bs-docs-social-buttons .twitter-share-button {\r\n  width: 98px !important;\r\n}\r\n/* Style the GitHub buttons via CSS instead of inline attributes */\r\n.github-btn {\r\n  overflow: hidden;\r\n  border: 0;\r\n}\r\n\r\n\r\n/*\r\n * Homepage\r\n *\r\n * Tweaks to the custom homepage and the masthead (main jumbotron).\r\n */\r\n\r\n/* Share masthead with page headers */\r\n.bs-docs-masthead,\r\n.bs-docs-header {\r\n  position: relative;\r\n  padding: 30px 15px;\r\n  color: #cdbfe3;\r\n  text-align: center;\r\n  text-shadow: 0 1px 0 rgba(0,0,0,.1);\r\n  background-color: #6f5499;\r\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));\r\n  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);\r\n  background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);\r\n  background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);\r\n  background-repeat: repeat-x;\r\n}\r\n\r\n/* Masthead (headings and download button) */\r\n.bs-docs-masthead .bs-docs-booticon {\r\n  margin: 0 auto 30px;\r\n}\r\n.bs-docs-masthead h1 {\r\n  font-weight: 300;\r\n  line-height: 1;\r\n  color: #fff;\r\n}\r\n.bs-docs-masthead .lead {\r\n  margin: 0 auto 30px;\r\n  font-size: 20px;\r\n  color: #fff;\r\n}\r\n.bs-docs-masthead .version {\r\n  margin-top: -15px;\r\n  margin-bottom: 30px;\r\n  color: #9783b9;\r\n}\r\n.bs-docs-masthead .btn {\r\n  width: 100%;\r\n  padding: 15px 30px;\r\n  font-size: 20px;\r\n}\r\n\r\n@media (min-width: 480px) {\r\n  .bs-docs-masthead .btn {\r\n    width: auto;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .bs-docs-masthead h1 {\r\n    font-size: 60px;\r\n  }\r\n  .bs-docs-masthead .lead {\r\n    font-size: 24px;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .bs-docs-masthead .lead {\r\n    width: 80%;\r\n    font-size: 30px;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Page headers\r\n *\r\n * Jumbotron-esque headers at the top of every page that's not the homepage.\r\n */\r\n\r\n/* Page headers */\r\n.bs-docs-header {\r\n  margin-bottom: 40px;\r\n  font-size: 20px;\r\n}\r\n.bs-docs-header h1 {\r\n  margin-top: 0;\r\n  color: #fff;\r\n}\r\n.bs-docs-header p {\r\n  margin-bottom: 0;\r\n  font-weight: 300;\r\n  line-height: 1.4;\r\n}\r\n.bs-docs-header .container {\r\n  position: relative;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .bs-docs-header {\r\n    padding-top: 60px;\r\n    padding-bottom: 60px;\r\n    font-size: 24px;\r\n    text-align: left;\r\n  }\r\n  .bs-docs-header h1 {\r\n    font-size: 60px;\r\n    line-height: 1;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .bs-docs-header h1,\r\n  .bs-docs-header p {\r\n    margin-right: 380px;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Carbon ads\r\n *\r\n * Single display ad that shows on all pages (except homepage) in page headers.\r\n * The hella `!important` is required for any pre-set property.\r\n */\r\n\r\n.carbonad {\r\n  width: auto !important;\r\n  height: auto !important;\r\n  padding: 20px !important;\r\n  margin: 30px -30px -31px !important;\r\n  overflow: hidden; /* clearfix */\r\n  font-size: 13px !important;\r\n  line-height: 16px !important;\r\n  text-align: left;\r\n  background: transparent !important;\r\n  border: solid #866ab3 !important;\r\n  border-width: 1px 0 !important;\r\n}\r\n.carbonad-img {\r\n  margin: 0 !important;\r\n}\r\n.carbonad-text,\r\n.carbonad-tag {\r\n  display: block !important;\r\n  float: none !important;\r\n  width: auto !important;\r\n  height: auto !important;\r\n  margin-left: 145px !important;\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\r\n}\r\n.carbonad-text {\r\n  padding-top: 0 !important;\r\n}\r\n.carbonad-tag {\r\n  color: inherit !important;\r\n  text-align: left !important;\r\n}\r\n.carbonad-text a,\r\n.carbonad-tag a {\r\n  color: #fff !important;\r\n}\r\n.carbonad #azcarbon > img {\r\n  display: none; /* hide what I assume are tracking images */\r\n}\r\n\r\n@media (min-width: 480px) {\r\n  .carbonad {\r\n    width: 330px !important;\r\n    margin: 20px auto !important;\r\n    border-width: 1px !important;\r\n    border-radius: 4px;\r\n  }\r\n  .bs-docs-masthead .carbonad {\r\n    margin: 50px auto 0 !important;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .carbonad {\r\n    margin-right: 0 !important;\r\n    margin-left: 0 !important;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .carbonad {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 15px; /* 15px instead of 0 since box-sizing */\r\n    width: 330px !important;\r\n    padding: 15px !important;\r\n    margin: 0 !important;\r\n  }\r\n  .bs-docs-masthead .carbonad {\r\n    position: static;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Homepage featurettes\r\n *\r\n * Reasons to use Bootstrap, entries from the Expo, and more.\r\n */\r\n\r\n.bs-docs-featurette {\r\n  padding-top: 40px;\r\n  padding-bottom: 40px;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: #555;\r\n  text-align: center;\r\n  background-color: #fff;\r\n  border-bottom: 1px solid #e5e5e5;\r\n}\r\n.bs-docs-featurette + .bs-docs-footer {\r\n  margin-top: 0;\r\n  border-top: 0;\r\n}\r\n\r\n.bs-docs-featurette-title {\r\n  margin-bottom: 5px;\r\n  font-size: 30px;\r\n  font-weight: normal;\r\n  color: #333;\r\n}\r\n.half-rule {\r\n  width: 100px;\r\n  margin: 40px auto;\r\n}\r\n.bs-docs-featurette h3 {\r\n  margin-bottom: 5px;\r\n  font-weight: normal;\r\n  color: #333;\r\n}\r\n.bs-docs-featurette-img {\r\n  display: block;\r\n  margin-bottom: 20px;\r\n  color: #333;\r\n}\r\n.bs-docs-featurette-img:hover {\r\n  color: #428bca;\r\n  text-decoration: none;\r\n}\r\n.bs-docs-featurette-img img {\r\n  display: block;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n@media (min-width: 480px) {\r\n  .bs-docs-featurette .img-responsive {\r\n    margin-top: 30px;\r\n  }\r\n}\r\n@media (min-width: 768px) {\r\n  .bs-docs-featurette {\r\n    padding-top: 100px;\r\n    padding-bottom: 100px;\r\n  }\r\n  .bs-docs-featurette-title {\r\n    font-size: 40px;\r\n  }\r\n  .bs-docs-featurette .lead {\r\n    max-width: 80%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n  }\r\n  .bs-docs-featured-sites .col-sm-3:first-child img {\r\n    border-top-left-radius: 4px;\r\n    border-bottom-left-radius: 4px;\r\n  }\r\n  .bs-docs-featured-sites .col-sm-3:last-child img {\r\n    border-top-right-radius: 4px;\r\n    border-bottom-right-radius: 4px;\r\n  }\r\n\r\n  .bs-docs-featurette .img-responsive {\r\n    margin-top: 0;\r\n  }\r\n}\r\n\r\n/* Featured sites */\r\n.bs-docs-featured-sites {\r\n  margin-right: -1px;\r\n  margin-left: -1px;\r\n}\r\n.bs-docs-featured-sites .col-sm-3 {\r\n  padding-right: 1px;\r\n  padding-left: 1px;\r\n}\r\n.bs-docs-featured-sites .img-responsive {\r\n  margin-bottom: 15px;\r\n}\r\n@media (min-width: 480px) {\r\n  .bs-docs-featured-sites .img-responsive {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n/* Example thumbnails */\r\n@media (max-width: 480px) {\r\n  .bs-examples {\r\n    margin-right: -10px;\r\n    margin-left: -10px;\r\n  }\r\n  .bs-examples > [class^=\"col-\"] {\r\n    padding-right: 10px;\r\n    padding-left: 10px;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Side navigation\r\n *\r\n * Scrollspy and affixed enhanced navigation to highlight sections and secondary\r\n * sections of docs content.\r\n */\r\n\r\n/* By default it's not affixed in mobile views, so undo that */\r\n.bs-docs-sidebar.affix {\r\n  position: static;\r\n}\r\n@media (min-width: 768px) {\r\n  .bs-docs-sidebar {\r\n    padding-left: 20px;\r\n  }\r\n}\r\n\r\n/* First level of nav */\r\n.bs-docs-sidenav {\r\n  margin-top: 20px;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n/* All levels of nav */\r\n.bs-docs-sidebar .nav > li > a {\r\n  display: block;\r\n  padding: 4px 20px;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  color: #999;\r\n}\r\n.bs-docs-sidebar .nav > li > a:hover,\r\n.bs-docs-sidebar .nav > li > a:focus {\r\n  padding-left: 19px;\r\n  color: #1D976C;\r\n  text-decoration: none;\r\n  background-color: transparent;\r\n  border-left: 1px solid #1D976C;\r\n}\r\n.bs-docs-sidebar .nav > .active > a,\r\n.bs-docs-sidebar .nav > .active:hover > a,\r\n.bs-docs-sidebar .nav > .active:focus > a {\r\n  padding-left: 18px;\r\n  font-weight: bold;\r\n  color: #1D976C;\r\n  background-color: transparent;\r\n  border-left: 2px solid #1D976C;\r\n}\r\n\r\n/* Nav: second level (shown on .active) */\r\n.bs-docs-sidebar .nav .nav {\r\n  display: none; /* Hide by default, but at >768px, show it */\r\n  padding-bottom: 10px;\r\n}\r\n.bs-docs-sidebar .nav .nav > li > a {\r\n  padding-top: 1px;\r\n  padding-bottom: 1px;\r\n  padding-left: 30px;\r\n  font-size: 12px;\r\n  font-weight: normal;\r\n}\r\n.bs-docs-sidebar .nav .nav > li > a:hover,\r\n.bs-docs-sidebar .nav .nav > li > a:focus {\r\n  padding-left: 29px;\r\n}\r\n.bs-docs-sidebar .nav .nav > .active > a,\r\n.bs-docs-sidebar .nav .nav > .active:hover > a,\r\n.bs-docs-sidebar .nav .nav > .active:focus > a {\r\n  padding-left: 28px;\r\n  font-weight: 500;\r\n}\r\n\r\n/* Back to top (hidden on mobile) */\r\n.back-to-top,\r\n.bs-docs-theme-toggle {\r\n  display: none;\r\n  padding: 4px 10px;\r\n  margin-top: 10px;\r\n  margin-left: 10px;\r\n  font-size: 12px;\r\n  font-weight: 500;\r\n  color: #999;\r\n}\r\n.back-to-top:hover,\r\n.bs-docs-theme-toggle:hover {\r\n  color: #563d7c;\r\n  text-decoration: none;\r\n}\r\n.bs-docs-theme-toggle {\r\n  margin-top: 0;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .back-to-top,\r\n  .bs-docs-theme-toggle {\r\n    display: block;\r\n  }\r\n}\r\n\r\n/* Show and affix the side nav when space allows it */\r\n@media (min-width: 992px) {\r\n  .bs-docs-sidebar .nav > .active > ul {\r\n    display: block;\r\n  }\r\n  /* Widen the fixed sidebar */\r\n  .bs-docs-sidebar.affix,\r\n  .bs-docs-sidebar.affix-bottom {\r\n    width: 213px;\r\n  }\r\n  .bs-docs-sidebar.affix {\r\n    position: fixed; /* Undo the static from mobile first approach */\r\n    top: 20px;\r\n  }\r\n  .bs-docs-sidebar.affix-bottom {\r\n    position: absolute; /* Undo the static from mobile first approach */\r\n  }\r\n  .bs-docs-sidebar.affix-bottom .bs-docs-sidenav,\r\n  .bs-docs-sidebar.affix .bs-docs-sidenav {\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n@media (min-width: 1200px) {\r\n  /* Widen the fixed sidebar again */\r\n  .bs-docs-sidebar.affix-bottom,\r\n  .bs-docs-sidebar.affix {\r\n    width: 263px;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Docs sections\r\n *\r\n * Content blocks for each component or feature.\r\n */\r\n\r\n/* Space things out */\r\n.bs-docs-section {\r\n  margin-bottom: 60px;\r\n}\r\n.bs-docs-section:last-child {\r\n  margin-bottom: 0;\r\n}\r\n\r\nh1[id] {\r\n  padding-top: 20px;\r\n  margin-top: 0;\r\n}\r\n\r\n\r\n/*\r\n * Callouts\r\n *\r\n * Not quite alerts, but custom and helpful notes for folks reading the docs.\r\n * Requires a base and modifier class.\r\n */\r\n\r\n/* Common styles for all types */\r\n.bs-callout {\r\n  padding: 20px;\r\n  margin: 20px 0;\r\n  border: 1px solid #eee;\r\n  border-left-width: 5px;\r\n  border-radius: 3px;\r\n}\r\n.bs-callout h4 {\r\n  margin-top: 0;\r\n  margin-bottom: 5px;\r\n}\r\n.bs-callout p:last-child {\r\n  margin-bottom: 0;\r\n}\r\n.bs-callout code {\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Tighten up space between multiple callouts */\r\n.bs-callout + .bs-callout {\r\n  margin-top: -5px;\r\n}\r\n\r\n/* Variations */\r\n.bs-callout-danger {\r\n  border-left-color: #d9534f;\r\n}\r\n.bs-callout-danger h4 {\r\n  color: #d9534f;\r\n}\r\n.bs-callout-warning {\r\n  border-left-color: #f0ad4e;\r\n}\r\n.bs-callout-warning h4 {\r\n  color: #f0ad4e;\r\n}\r\n.bs-callout-info {\r\n  border-left-color: #5bc0de;\r\n}\r\n.bs-callout-info h4 {\r\n  color: #5bc0de;\r\n}\r\n\r\n\r\n/*\r\n * Color swatches\r\n *\r\n * Color swatches and associated values for our grayscale and brand colors.\r\n */\r\n\r\n.color-swatches {\r\n  margin: 0 -5px;\r\n  overflow: hidden; /* clearfix */\r\n}\r\n.color-swatch {\r\n  float: left;\r\n  width: 60px;\r\n  height: 60px;\r\n  margin: 0 5px;\r\n  border-radius: 3px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .color-swatch {\r\n    width: 100px;\r\n    height: 100px;\r\n  }\r\n}\r\n\r\n/* Framework colors */\r\n.color-swatches .gray-darker {\r\n  background-color: #222;\r\n}\r\n.color-swatches .gray-dark {\r\n  background-color: #333;\r\n}\r\n.color-swatches .gray {\r\n  background-color: #555;\r\n}\r\n.color-swatches .gray-light {\r\n  background-color: #999;\r\n}\r\n.color-swatches .gray-lighter {\r\n  background-color: #eee;\r\n}\r\n.color-swatches .brand-primary {\r\n  background-color: #428bca;\r\n}\r\n.color-swatches .brand-success {\r\n  background-color: #5cb85c;\r\n}\r\n.color-swatches .brand-warning {\r\n  background-color: #f0ad4e;\r\n}\r\n.color-swatches .brand-danger {\r\n  background-color: #d9534f;\r\n}\r\n.color-swatches .brand-info {\r\n  background-color: #5bc0de;\r\n}\r\n\r\n/* Docs colors */\r\n.color-swatches .bs-purple {\r\n  background-color: #563d7c;\r\n}\r\n.color-swatches .bs-purple-light {\r\n  background-color: #c7bfd3;\r\n}\r\n.color-swatches .bs-purple-lighter {\r\n  background-color: #e5e1ea;\r\n}\r\n.color-swatches .bs-gray {\r\n  background-color: #f9f9f9;\r\n}\r\n\r\n\r\n/*\r\n * Team members\r\n *\r\n * Avatars, names, and usernames for core team.\r\n */\r\n\r\n.bs-team .team-member {\r\n  line-height: 32px;\r\n  color: #555;\r\n}\r\n.bs-team .team-member:hover {\r\n  color: #333;\r\n  text-decoration: none;\r\n}\r\n.bs-team .github-btn {\r\n  float: right;\r\n  width: 180px;\r\n  height: 20px;\r\n  margin-top: 6px;\r\n}\r\n.bs-team img {\r\n  float: left;\r\n  width: 32px;\r\n  margin-right: 10px;\r\n  border-radius: 4px;\r\n}\r\n\r\n\r\n/*\r\n * Grid examples\r\n *\r\n * Highlight the grid columns within the docs so folks can see their padding,\r\n * alignment, sizing, etc.\r\n */\r\n\r\n.show-grid {\r\n  margin-bottom: 15px;\r\n}\r\n.show-grid [class^=\"col-\"] {\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\r\n  background-color: #eee;\r\n  background-color: rgba(86,61,124,.15);\r\n  border: 1px solid #ddd;\r\n  border: 1px solid rgba(86,61,124,.2);\r\n}\r\n\r\n\r\n/*\r\n * Examples\r\n *\r\n * Isolated sections of example content for each component or feature. Usually\r\n * followed by a code snippet.\r\n */\r\n\r\n.bs-example {\r\n  position: relative;\r\n  padding: 45px 15px 15px;\r\n  margin: 0 -15px 15px;\r\n  border-color: #e5e5e5 #eee #eee;\r\n  border-style: solid;\r\n  border-width: 1px 0;\r\n  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);\r\n          box-shadow: inset 0 3px 6px rgba(0,0,0,.05);\r\n}\r\n/* Echo out a label for the example */\r\n.bs-example:after {\r\n  position: absolute;\r\n  top: 15px;\r\n  left: 15px;\r\n  font-size: 12px;\r\n  font-weight: bold;\r\n  color: #959595;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  content: \"Example\";\r\n}\r\n\r\n/* Tweak display of the code snippets when following an example */\r\n.bs-example + .highlight {\r\n  margin: -15px -15px 15px;\r\n  border-width: 0 0 1px;\r\n  border-radius: 0;\r\n}\r\n\r\n/* Make the examples and snippets not full-width */\r\n@media (min-width: 768px) {\r\n  .bs-example {\r\n    margin-right: 0;\r\n    margin-left: 0;\r\n    background-color: #fff;\r\n    border-color: #ddd;\r\n    border-width: 1px;\r\n    border-radius: 4px 4px 0 0;\r\n    -webkit-box-shadow: none;\r\n            box-shadow: none;\r\n  }\r\n  .bs-example + .highlight {\r\n    margin-top: -16px;\r\n    margin-right: 0;\r\n    margin-left: 0;\r\n    border-width: 1px;\r\n    border-bottom-right-radius: 4px;\r\n    border-bottom-left-radius: 4px;\r\n  }\r\n}\r\n\r\n/* Undo width of container */\r\n.bs-example .container {\r\n  width: auto;\r\n}\r\n\r\n/* Tweak content of examples for optimum awesome */\r\n.bs-example > p:last-child,\r\n.bs-example > ul:last-child,\r\n.bs-example > ol:last-child,\r\n.bs-example > blockquote:last-child,\r\n.bs-example > .form-control:last-child,\r\n.bs-example > .table:last-child,\r\n.bs-example > .navbar:last-child,\r\n.bs-example > .jumbotron:last-child,\r\n.bs-example > .alert:last-child,\r\n.bs-example > .panel:last-child,\r\n.bs-example > .list-group:last-child,\r\n.bs-example > .well:last-child,\r\n.bs-example > .progress:last-child,\r\n.bs-example > .table-responsive:last-child > .table {\r\n  margin-bottom: 0;\r\n}\r\n.bs-example > p > .close {\r\n  float: none;\r\n}\r\n\r\n/* Typography */\r\n.bs-example-type .table .type-info {\r\n  color: #999;\r\n  vertical-align: middle;\r\n}\r\n.bs-example-type .table td {\r\n  padding: 15px 0;\r\n  border-color: #eee;\r\n}\r\n.bs-example-type .table tr:first-child td {\r\n  border-top: 0;\r\n}\r\n.bs-example-type h1,\r\n.bs-example-type h2,\r\n.bs-example-type h3,\r\n.bs-example-type h4,\r\n.bs-example-type h5,\r\n.bs-example-type h6 {\r\n  margin: 0;\r\n}\r\n\r\n/* Contextual background colors */\r\n.bs-example-bg-classes p {\r\n  padding: 15px;\r\n}\r\n\r\n/* Images */\r\n.bs-example > .img-circle,\r\n.bs-example > .img-rounded,\r\n.bs-example > .img-thumbnail {\r\n  margin: 5px;\r\n}\r\n\r\n/* Tables */\r\n.bs-example > .table-responsive > .table {\r\n  background-color: #fff;\r\n}\r\n\r\n/* Buttons */\r\n.bs-example > .btn,\r\n.bs-example > .btn-group {\r\n  margin-top: 5px;\r\n  margin-bottom: 5px;\r\n}\r\n.bs-example > .btn-toolbar + .btn-toolbar {\r\n  margin-top: 10px;\r\n}\r\n\r\n/* Forms */\r\n.bs-example-control-sizing select,\r\n.bs-example-control-sizing input[type=\"text\"] + input[type=\"text\"] {\r\n  margin-top: 10px;\r\n}\r\n.bs-example-form .input-group {\r\n  margin-bottom: 10px;\r\n}\r\n.bs-example > textarea.form-control {\r\n  resize: vertical;\r\n}\r\n\r\n/* List groups */\r\n.bs-example > .list-group {\r\n  max-width: 400px;\r\n}\r\n\r\n/* Navbars */\r\n.bs-example .navbar:last-child {\r\n  margin-bottom: 0;\r\n}\r\n.bs-navbar-top-example,\r\n.bs-navbar-bottom-example {\r\n  z-index: 1;\r\n  padding: 0;\r\n  overflow: hidden; /* cut the drop shadows off */\r\n}\r\n.bs-navbar-top-example .navbar-header,\r\n.bs-navbar-bottom-example .navbar-header {\r\n  margin-left: 0;\r\n}\r\n.bs-navbar-top-example .navbar-fixed-top,\r\n.bs-navbar-bottom-example .navbar-fixed-bottom {\r\n  position: relative;\r\n  margin-right: 0;\r\n  margin-left: 0;\r\n}\r\n.bs-navbar-top-example {\r\n  padding-bottom: 45px;\r\n}\r\n.bs-navbar-top-example:after {\r\n  top: auto;\r\n  bottom: 15px;\r\n}\r\n.bs-navbar-top-example .navbar-fixed-top {\r\n  top: -1px;\r\n}\r\n.bs-navbar-bottom-example {\r\n  padding-top: 45px;\r\n}\r\n.bs-navbar-bottom-example .navbar-fixed-bottom {\r\n  bottom: -1px;\r\n}\r\n.bs-navbar-bottom-example .navbar {\r\n  margin-bottom: 0;\r\n}\r\n@media (min-width: 768px) {\r\n  .bs-navbar-top-example .navbar-fixed-top,\r\n  .bs-navbar-bottom-example .navbar-fixed-bottom {\r\n    position: absolute;\r\n  }\r\n}\r\n\r\n/* Pagination */\r\n.bs-example .pagination {\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n/* Pager */\r\n.bs-example > .pager {\r\n  margin-top: 0;\r\n}\r\n\r\n/* Example modals */\r\n.bs-example-modal {\r\n  background-color: #f5f5f5;\r\n}\r\n.bs-example-modal .modal {\r\n  position: relative;\r\n  top: auto;\r\n  right: auto;\r\n  bottom: auto;\r\n  left: auto;\r\n  z-index: 1;\r\n  display: block;\r\n}\r\n.bs-example-modal .modal-dialog {\r\n  left: auto;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n.custom-modal {\r\n  width: 90%;\r\n}\r\n\r\n/* Example dropdowns */\r\n.bs-example > .dropdown > .dropdown-toggle {\r\n  float: left;\r\n}\r\n.bs-example > .dropdown > .dropdown-menu {\r\n  position: static;\r\n  display: block;\r\n  margin-bottom: 5px;\r\n  clear: left;\r\n}\r\n\r\n/* Example tabbable tabs */\r\n.bs-example-tabs .nav-tabs {\r\n  margin-bottom: 15px;\r\n}\r\n\r\n/* Tooltips */\r\n.bs-example-tooltips {\r\n  text-align: center;\r\n}\r\n.bs-example-tooltips > .btn {\r\n  margin-top: 5px;\r\n  margin-bottom: 5px;\r\n}\r\n\r\n/* Popovers */\r\n.bs-example-popover {\r\n  padding-bottom: 24px;\r\n  background-color: #f9f9f9;\r\n}\r\n.bs-example-popover .popover {\r\n  position: relative;\r\n  display: block;\r\n  float: left;\r\n  width: 260px;\r\n  margin: 20px;\r\n}\r\n\r\n/* Scrollspy demo on fixed height div */\r\n.scrollspy-example {\r\n  position: relative;\r\n  height: 200px;\r\n  margin-top: 10px;\r\n  overflow: auto;\r\n}\r\n\r\n/* MenuItem */\r\n.bs-example .dropdown-menu.open {\r\n  position: static;\r\n  display: block;\r\n  margin-bottom: 5px;\r\n  clear: left;\r\n}\r\n\r\n\r\n/*\r\n * Code snippets\r\n *\r\n * Generated via Pygments and Jekyll, these are snippets of HTML, CSS, and JS.\r\n */\r\n\r\n.highlight {\r\n  padding: 9px 14px;\r\n  margin-bottom: 14px;\r\n  background-color: #f7f7f9;\r\n  border: 1px solid #e1e1e8;\r\n  border-radius: 4px;\r\n}\r\n.highlight pre {\r\n  padding: 0;\r\n  margin-top: 0;\r\n  margin-bottom: 0;\r\n  word-break: normal;\r\n  word-wrap: nowrap;\r\n  white-space: nowrap;\r\n  background-color: transparent;\r\n  border: 0;\r\n}\r\n.highlight pre code {\r\n  font-size: inherit;\r\n  color: #333; /* Effectively the base text color */\r\n}\r\n.highlight pre code:first-child {\r\n  display: inline-block;\r\n  padding-right: 45px;\r\n}\r\n\r\n\r\n/*\r\n * Responsive tests\r\n *\r\n * Generate a set of tests to show the responsive utilities in action.\r\n */\r\n\r\n/* Responsive (scrollable) doc tables */\r\n.table-responsive .highlight pre {\r\n  white-space: normal;\r\n}\r\n\r\n/* Utility classes table  */\r\n.bs-table th small,\r\n.responsive-utilities th small {\r\n  display: block;\r\n  font-weight: normal;\r\n  color: #999;\r\n}\r\n.responsive-utilities tbody th {\r\n  font-weight: normal;\r\n}\r\n.responsive-utilities td {\r\n  text-align: center;\r\n}\r\n.responsive-utilities td.is-visible {\r\n  color: #468847;\r\n  background-color: #dff0d8 !important;\r\n}\r\n.responsive-utilities td.is-hidden {\r\n  color: #ccc;\r\n  background-color: #f9f9f9 !important;\r\n}\r\n\r\n/* Responsive tests */\r\n.responsive-utilities-test {\r\n  margin-top: 5px;\r\n}\r\n.responsive-utilities-test .col-xs-6 {\r\n  margin-bottom: 10px;\r\n}\r\n.responsive-utilities-test span {\r\n  display: block;\r\n  padding: 15px 10px;\r\n  font-size: 14px;\r\n  font-weight: bold;\r\n  line-height: 1.1;\r\n  text-align: center;\r\n  border-radius: 4px;\r\n}\r\n.visible-on .col-xs-6 .hidden-xs,\r\n.visible-on .col-xs-6 .hidden-sm,\r\n.visible-on .col-xs-6 .hidden-md,\r\n.visible-on .col-xs-6 .hidden-lg,\r\n.hidden-on .col-xs-6 .hidden-xs,\r\n.hidden-on .col-xs-6 .hidden-sm,\r\n.hidden-on .col-xs-6 .hidden-md,\r\n.hidden-on .col-xs-6 .hidden-lg {\r\n  color: #999;\r\n  border: 1px solid #ddd;\r\n}\r\n.visible-on .col-xs-6 .visible-xs-block,\r\n.visible-on .col-xs-6 .visible-sm-block,\r\n.visible-on .col-xs-6 .visible-md-block,\r\n.visible-on .col-xs-6 .visible-lg-block,\r\n.hidden-on .col-xs-6 .visible-xs-block,\r\n.hidden-on .col-xs-6 .visible-sm-block,\r\n.hidden-on .col-xs-6 .visible-md-block,\r\n.hidden-on .col-xs-6 .visible-lg-block {\r\n  color: #468847;\r\n  background-color: #dff0d8;\r\n  border: 1px solid #d6e9c6;\r\n}\r\n\r\n\r\n/*\r\n * Glyphicons\r\n *\r\n * Special styles for displaying the icons and their classes in the docs.\r\n */\r\n\r\n.bs-glyphicons {\r\n  margin: 0 -10px 20px;\r\n  overflow: hidden;\r\n}\r\n.bs-glyphicons-list {\r\n  padding-left: 0;\r\n  list-style: none;\r\n}\r\n.bs-glyphicons li {\r\n  float: left;\r\n  width: 25%;\r\n  height: 115px;\r\n  padding: 10px;\r\n  font-size: 10px;\r\n  line-height: 1.4;\r\n  text-align: center;\r\n  background-color: #f9f9f9;\r\n  border: 1px solid #fff;\r\n}\r\n.bs-glyphicons .glyphicon {\r\n  margin-top: 5px;\r\n  margin-bottom: 10px;\r\n  font-size: 24px;\r\n}\r\n.bs-glyphicons .glyphicon-class {\r\n  display: block;\r\n  text-align: center;\r\n  word-wrap: break-word; /* Help out IE10+ with class names */\r\n}\r\n.bs-glyphicons li:hover {\r\n  color: #fff;\r\n  background-color: #563d7c;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .bs-glyphicons {\r\n    margin-right: 0;\r\n    margin-left: 0;\r\n  }\r\n  .bs-glyphicons li {\r\n    width: 12.5%;\r\n    font-size: 12px;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Customizer\r\n *\r\n * Since this is so form control heavy, we have quite a few styles to customize\r\n * the display of inputs, headings, and more. Also included are all the download\r\n * buttons and actions.\r\n */\r\n\r\n.bs-customizer .toggle {\r\n  float: right;\r\n  margin-top: 25px;\r\n}\r\n\r\n/* Headings and form contrls */\r\n.bs-customizer label {\r\n  margin-top: 10px;\r\n  font-weight: 500;\r\n  color: #555;\r\n}\r\n.bs-customizer h2 {\r\n  padding-top: 30px;\r\n  margin-top: 0;\r\n  margin-bottom: 5px;\r\n}\r\n.bs-customizer h3 {\r\n  margin-bottom: 0;\r\n}\r\n.bs-customizer h4 {\r\n  margin-top: 15px;\r\n  margin-bottom: 0;\r\n}\r\n.bs-customizer .bs-callout h4 {\r\n  margin-top: 0; /* lame, but due to specificity we have to duplicate */\r\n  margin-bottom: 5px;\r\n}\r\n.bs-customizer input[type=\"text\"] {\r\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\r\n  background-color: #fafafa;\r\n}\r\n.bs-customizer .help-block {\r\n  margin-bottom: 5px;\r\n  font-size: 12px;\r\n}\r\n\r\n/* For the variables, use regular weight */\r\n#less-section label {\r\n  font-weight: normal;\r\n}\r\n\r\n.bs-customizer-input {\r\n  float: left;\r\n  width: 33.333333%;\r\n  padding-right: 15px;\r\n  padding-left: 15px;\r\n}\r\n\r\n/* Downloads */\r\n.bs-customize-download .btn-outline {\r\n  padding: 20px;\r\n}\r\n\r\n/* Error handling */\r\n.bs-customizer-alert {\r\n  position: fixed;\r\n  top: 0;\r\n  right: 0;\r\n  left: 0;\r\n  z-index: 1030;\r\n  padding: 15px 0;\r\n  color: #fff;\r\n  background-color: #d9534f;\r\n  border-bottom: 1px solid #b94441;\r\n  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25);\r\n          box-shadow: inset 0 1px 0 rgba(255,255,255,.25);\r\n}\r\n.bs-customizer-alert .close {\r\n  margin-top: -4px;\r\n  font-size: 24px;\r\n}\r\n.bs-customizer-alert p {\r\n  margin-bottom: 0;\r\n}\r\n.bs-customizer-alert .glyphicon {\r\n  margin-right: 5px;\r\n}\r\n.bs-customizer-alert pre {\r\n  margin: 10px 0 0;\r\n  color: #fff;\r\n  background-color: #a83c3a;\r\n  border-color: #973634;\r\n  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);\r\n          box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);\r\n}\r\n\r\n\r\n/*\r\n * Brand guidelines\r\n *\r\n * Extra styles for displaying wordmarks, logos, etc.\r\n */\r\n\r\n/* Logo series wrapper */\r\n.bs-brand-logos {\r\n  display: table;\r\n  width: 100%;\r\n  margin-bottom: 15px;\r\n  overflow: hidden;\r\n  color: #563d7c;\r\n  background-color: #f9f9f9;\r\n  border-radius: 4px;\r\n}\r\n\r\n/* Individual items */\r\n.bs-brand-item {\r\n  padding: 60px 0;\r\n  text-align: center;\r\n}\r\n.bs-brand-item + .bs-brand-item {\r\n  border-top: 1px solid #fff;\r\n}\r\n.bs-brand-logos .inverse {\r\n  color: #fff;\r\n  background-color: #563d7c;\r\n}\r\n.bs-brand-item .svg {\r\n  width: 144px;\r\n  height: 144px;\r\n}\r\n\r\n/* Heading content within */\r\n.bs-brand-item h1,\r\n.bs-brand-item h3 {\r\n  margin-top: 0;\r\n  margin-bottom: 0;\r\n}\r\n.bs-brand-item .bs-docs-booticon {\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n\r\n/* Make the icons stand out on what is/isn't okay */\r\n.bs-brand-item .glyphicon {\r\n  width: 30px;\r\n  height: 30px;\r\n  margin: 10px auto -10px;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  border-radius: 50%;\r\n}\r\n.bs-brand-item .glyphicon-ok {\r\n  background-color: #5cb85c;\r\n}\r\n.bs-brand-item .glyphicon-remove {\r\n  background-color: #d9534f;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .bs-brand-item {\r\n    display: table-cell;\r\n    width: 1%;\r\n  }\r\n  .bs-brand-item + .bs-brand-item {\r\n    border-top: 0;\r\n    border-left: 1px solid #fff;\r\n  }\r\n  .bs-brand-item h1 {\r\n    font-size: 60px;\r\n  }\r\n}\r\n\r\n\r\n/*\r\n * Miscellaneous\r\n *\r\n * Odds and ends for optimum docs display.\r\n */\r\n\r\n/* Examples gallery: space out content better */\r\n.bs-examples .thumbnail {\r\n  margin-bottom: 10px;\r\n}\r\n.bs-examples h4 {\r\n  margin-bottom: 5px;\r\n}\r\n.bs-examples p {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n/* Pseudo :focus state for showing how it looks in the docs */\r\n#focusedInput {\r\n  border-color: rgb(204,204,204); /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback*/\r\n  border-color: rgba(82,168,236,.8);\r\n  outline: 0;\r\n  outline: thin dotted \\9; /* IE6-9 */\r\n  -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);\r\n          box-shadow: 0 0 8px rgba(82,168,236,.6);\r\n}\r\n\r\n\r\n/*\r\n * ZeroClipboard styles\r\n */\r\n\r\n.zero-clipboard {\r\n  position: relative;\r\n  display: none;\r\n}\r\n.btn-clipboard {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  z-index: 10;\r\n  display: block;\r\n  padding: 5px 8px;\r\n  font-size: 12px;\r\n  color: #777;\r\n  cursor: pointer;\r\n  background-color: #fff;\r\n  border: 1px solid #e1e1e8;\r\n  border-radius: 0 4px 0 4px;\r\n}\r\n.btn-clipboard-hover {\r\n  color: #fff;\r\n  background-color: #563d7c;\r\n  border-color: #563d7c;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .zero-clipboard {\r\n    display: block;\r\n  }\r\n}\r\n", ""]);
+	exports.push([module.id, "/*!\n * Bootstrap Docs (http://getbootstrap.com)\n * Copyright 2011-2014 Twitter, Inc.\n * Licensed under the Creative Commons Attribution 3.0 Unported License. For\n * details, see http://creativecommons.org/licenses/by/3.0/.\n */\n\n\n/*\n * Bootstrap Documentation\n * Special styles for presenting Bootstrap's documentation and code examples.\n *\n * Table of contents:\n *\n * Scaffolding\n * Main navigation\n * Footer\n * Social buttons\n * Homepage\n * Page headers\n * Old docs callout\n * Ads\n * Side navigation\n * Docs sections\n * Callouts\n * Grid styles\n * Examples\n * Code snippets (highlight)\n * Responsive tests\n * Glyphicons\n * Customizer\n * MenuItem\n * Miscellaneous\n */\n\n\n/*\n * Scaffolding\n *\n * Update the basics of our documents to prep for docs content.\n */\n\nbody {\n  position: relative; /* For scrollspy */\n}\n\n/* Keep code small in tables on account of limited space */\n.table code {\n  font-size: 13px;\n  font-weight: normal;\n}\n\n/* Outline button for use within the docs */\n.btn-outline {\n  color: #563d7c;\n  background-color: transparent;\n  border-color: #563d7c;\n}\n.btn-outline:hover,\n.btn-outline:focus,\n.btn-outline:active {\n  color: #fff;\n  background-color: #563d7c;\n  border-color: #563d7c;\n}\n\n/* Inverted outline button (white on dark) */\n.btn-outline-inverse {\n  color: #fff;\n  background-color: transparent;\n  border-color: #cdbfe3;\n}\n.btn-outline-inverse:hover,\n.btn-outline-inverse:focus,\n.btn-outline-inverse:active {\n  color: #563d7c;\n  text-shadow: none;\n  background-color: #fff;\n  border-color: #fff;\n}\n\n/* Bootstrap \"B\" icon */\n.bs-docs-booticon {\n  display: block;\n  font-weight: 500;\n  color: #fff;\n  text-align: center;\n  cursor: default;\n  background-color: #563d7c;\n  border-radius: 15%;\n}\n.bs-docs-booticon-sm {\n  width: 30px;\n  height: 30px;\n  font-size: 20px;\n  line-height: 28px;\n}\n.bs-docs-booticon-lg {\n  width: 144px;\n  height: 144px;\n  font-size: 108px;\n  line-height: 140px;\n}\n.bs-docs-booticon-inverse {\n  color: #563d7c;\n  background-color: #fff;\n}\n.bs-docs-booticon-outline {\n  background-color: transparent;\n  border: 1px solid #cdbfe3;\n}\n\n\n/*\n * Main navigation\n *\n * Turn the `.navbar` at the top of the docs purple.\n */\n\n.bs-docs-nav {\n  margin-bottom: 0;\n  background-color: #fff;\n  border-bottom: 0;\n}\n.bs-home-nav .bs-nav-b {\n  display: none;\n}\n.bs-docs-nav .navbar-brand,\n.bs-docs-nav .navbar-nav > li > a {\n  font-weight: 500;\n  color: #563d7c;\n}\n.bs-docs-nav .navbar-nav > li > a:hover,\n.bs-docs-nav .navbar-nav > .active > a,\n.bs-docs-nav .navbar-nav > .active > a:hover {\n  color: #463265;\n  background-color: #f9f9f9;\n}\n.bs-docs-nav .navbar-toggle .icon-bar {\n  background-color: #563d7c;\n}\n.bs-docs-nav .navbar-header .navbar-toggle {\n  border-color: #fff;\n}\n.bs-docs-nav .navbar-header .navbar-toggle:hover,\n.bs-docs-nav .navbar-header .navbar-toggle:focus {\n  background-color: #f9f9f9;\n  border-color: #f9f9f9;\n}\n\n\n/*\n * Footer\n *\n * Separated section of content at the bottom of all pages, save the homepage.\n */\n\n.bs-docs-footer {\n  padding-top: 40px;\n  padding-bottom: 40px;\n  margin-top: 100px;\n  color: #777;\n  text-align: center;\n  border-top: 1px solid #e5e5e5;\n}\n.bs-docs-footer-links {\n  padding-left: 0;\n  margin-top: 20px;\n  color: #999;\n}\n.bs-docs-footer-links li {\n  display: inline;\n  padding: 0 2px;\n}\n.bs-docs-footer-links li:first-child {\n  padding-left: 0;\n}\n\n@media (min-width: 768px) {\n  .bs-docs-footer p {\n    margin-bottom: 0;\n  }\n}\n\n\n/*\n * Social buttons\n *\n * Twitter and GitHub social action buttons (for homepage and footer).\n */\n\n.bs-docs-social {\n  margin-bottom: 20px;\n  text-align: center;\n}\n.bs-docs-social-buttons {\n  display: inline-block;\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n}\n.bs-docs-social-buttons li {\n  display: inline-block;\n  padding: 5px 8px;\n  line-height: 1;\n}\n.bs-docs-social-buttons .twitter-follow-button {\n  width: 225px !important;\n}\n.bs-docs-social-buttons .twitter-share-button {\n  width: 98px !important;\n}\n/* Style the GitHub buttons via CSS instead of inline attributes */\n.github-btn {\n  overflow: hidden;\n  border: 0;\n}\n\n\n/*\n * Homepage\n *\n * Tweaks to the custom homepage and the masthead (main jumbotron).\n */\n\n/* Share masthead with page headers */\n.bs-docs-masthead,\n.bs-docs-header {\n  position: relative;\n  padding: 30px 15px;\n  color: #cdbfe3;\n  text-align: center;\n  text-shadow: 0 1px 0 rgba(0,0,0,.1);\n  background-color: #6f5499;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));\n  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);\n  background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);\n  background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);\n  background-repeat: repeat-x;\n}\n\n/* Masthead (headings and download button) */\n.bs-docs-masthead .bs-docs-booticon {\n  margin: 0 auto 30px;\n}\n.bs-docs-masthead h1 {\n  font-weight: 300;\n  line-height: 1;\n  color: #fff;\n}\n.bs-docs-masthead .lead {\n  margin: 0 auto 30px;\n  font-size: 20px;\n  color: #fff;\n}\n.bs-docs-masthead .version {\n  margin-top: -15px;\n  margin-bottom: 30px;\n  color: #9783b9;\n}\n.bs-docs-masthead .btn {\n  width: 100%;\n  padding: 15px 30px;\n  font-size: 20px;\n}\n\n@media (min-width: 480px) {\n  .bs-docs-masthead .btn {\n    width: auto;\n  }\n}\n\n@media (min-width: 768px) {\n  .bs-docs-masthead h1 {\n    font-size: 60px;\n  }\n  .bs-docs-masthead .lead {\n    font-size: 24px;\n  }\n}\n\n@media (min-width: 992px) {\n  .bs-docs-masthead .lead {\n    width: 80%;\n    font-size: 30px;\n  }\n}\n\n\n/*\n * Page headers\n *\n * Jumbotron-esque headers at the top of every page that's not the homepage.\n */\n\n/* Page headers */\n.bs-docs-header {\n  margin-bottom: 40px;\n  font-size: 20px;\n}\n.bs-docs-header h1 {\n  margin-top: 0;\n  color: #fff;\n}\n.bs-docs-header p {\n  margin-bottom: 0;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.bs-docs-header .container {\n  position: relative;\n}\n\n@media (min-width: 768px) {\n  .bs-docs-header {\n    padding-top: 60px;\n    padding-bottom: 60px;\n    font-size: 24px;\n    text-align: left;\n  }\n  .bs-docs-header h1 {\n    font-size: 60px;\n    line-height: 1;\n  }\n}\n\n@media (min-width: 992px) {\n  .bs-docs-header h1,\n  .bs-docs-header p {\n    margin-right: 380px;\n  }\n}\n\n\n/*\n * Carbon ads\n *\n * Single display ad that shows on all pages (except homepage) in page headers.\n * The hella `!important` is required for any pre-set property.\n */\n\n.carbonad {\n  width: auto !important;\n  height: auto !important;\n  padding: 20px !important;\n  margin: 30px -30px -31px !important;\n  overflow: hidden; /* clearfix */\n  font-size: 13px !important;\n  line-height: 16px !important;\n  text-align: left;\n  background: transparent !important;\n  border: solid #866ab3 !important;\n  border-width: 1px 0 !important;\n}\n.carbonad-img {\n  margin: 0 !important;\n}\n.carbonad-text,\n.carbonad-tag {\n  display: block !important;\n  float: none !important;\n  width: auto !important;\n  height: auto !important;\n  margin-left: 145px !important;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\n}\n.carbonad-text {\n  padding-top: 0 !important;\n}\n.carbonad-tag {\n  color: inherit !important;\n  text-align: left !important;\n}\n.carbonad-text a,\n.carbonad-tag a {\n  color: #fff !important;\n}\n.carbonad #azcarbon > img {\n  display: none; /* hide what I assume are tracking images */\n}\n\n@media (min-width: 480px) {\n  .carbonad {\n    width: 330px !important;\n    margin: 20px auto !important;\n    border-width: 1px !important;\n    border-radius: 4px;\n  }\n  .bs-docs-masthead .carbonad {\n    margin: 50px auto 0 !important;\n  }\n}\n\n@media (min-width: 768px) {\n  .carbonad {\n    margin-right: 0 !important;\n    margin-left: 0 !important;\n  }\n}\n\n@media (min-width: 992px) {\n  .carbonad {\n    position: absolute;\n    top: 0;\n    right: 15px; /* 15px instead of 0 since box-sizing */\n    width: 330px !important;\n    padding: 15px !important;\n    margin: 0 !important;\n  }\n  .bs-docs-masthead .carbonad {\n    position: static;\n  }\n}\n\n\n/*\n * Homepage featurettes\n *\n * Reasons to use Bootstrap, entries from the Expo, and more.\n */\n\n.bs-docs-featurette {\n  padding-top: 40px;\n  padding-bottom: 40px;\n  font-size: 16px;\n  line-height: 1.5;\n  color: #555;\n  text-align: center;\n  background-color: #fff;\n  border-bottom: 1px solid #e5e5e5;\n}\n.bs-docs-featurette + .bs-docs-footer {\n  margin-top: 0;\n  border-top: 0;\n}\n\n.bs-docs-featurette-title {\n  margin-bottom: 5px;\n  font-size: 30px;\n  font-weight: normal;\n  color: #333;\n}\n.half-rule {\n  width: 100px;\n  margin: 40px auto;\n}\n.bs-docs-featurette h3 {\n  margin-bottom: 5px;\n  font-weight: normal;\n  color: #333;\n}\n.bs-docs-featurette-img {\n  display: block;\n  margin-bottom: 20px;\n  color: #333;\n}\n.bs-docs-featurette-img:hover {\n  color: #428bca;\n  text-decoration: none;\n}\n.bs-docs-featurette-img img {\n  display: block;\n  margin-bottom: 15px;\n}\n\n@media (min-width: 480px) {\n  .bs-docs-featurette .img-responsive {\n    margin-top: 30px;\n  }\n}\n@media (min-width: 768px) {\n  .bs-docs-featurette {\n    padding-top: 100px;\n    padding-bottom: 100px;\n  }\n  .bs-docs-featurette-title {\n    font-size: 40px;\n  }\n  .bs-docs-featurette .lead {\n    max-width: 80%;\n    margin-right: auto;\n    margin-left: auto;\n  }\n  .bs-docs-featured-sites .col-sm-3:first-child img {\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  .bs-docs-featured-sites .col-sm-3:last-child img {\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n  }\n\n  .bs-docs-featurette .img-responsive {\n    margin-top: 0;\n  }\n}\n\n/* Featured sites */\n.bs-docs-featured-sites {\n  margin-right: -1px;\n  margin-left: -1px;\n}\n.bs-docs-featured-sites .col-sm-3 {\n  padding-right: 1px;\n  padding-left: 1px;\n}\n.bs-docs-featured-sites .img-responsive {\n  margin-bottom: 15px;\n}\n@media (min-width: 480px) {\n  .bs-docs-featured-sites .img-responsive {\n    margin-bottom: 0;\n  }\n}\n\n/* Example thumbnails */\n@media (max-width: 480px) {\n  .bs-examples {\n    margin-right: -10px;\n    margin-left: -10px;\n  }\n  .bs-examples > [class^=\"col-\"] {\n    padding-right: 10px;\n    padding-left: 10px;\n  }\n}\n\n\n/*\n * Side navigation\n *\n * Scrollspy and affixed enhanced navigation to highlight sections and secondary\n * sections of docs content.\n */\n\n/* By default it's not affixed in mobile views, so undo that */\n.bs-docs-sidebar.affix {\n  position: static;\n}\n@media (min-width: 768px) {\n  .bs-docs-sidebar {\n    padding-left: 20px;\n  }\n}\n\n/* First level of nav */\n.bs-docs-sidenav {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n/* All levels of nav */\n.bs-docs-sidebar .nav > li > a {\n  display: block;\n  padding: 4px 20px;\n  font-size: 13px;\n  font-weight: 500;\n  color: #999;\n}\n.bs-docs-sidebar .nav > li > a:hover,\n.bs-docs-sidebar .nav > li > a:focus {\n  padding-left: 19px;\n  color: #1D976C;\n  text-decoration: none;\n  background-color: transparent;\n  border-left: 1px solid #1D976C;\n}\n.bs-docs-sidebar .nav > .active > a,\n.bs-docs-sidebar .nav > .active:hover > a,\n.bs-docs-sidebar .nav > .active:focus > a {\n  padding-left: 18px;\n  font-weight: bold;\n  color: #1D976C;\n  background-color: transparent;\n  border-left: 2px solid #1D976C;\n}\n\n/* Nav: second level (shown on .active) */\n.bs-docs-sidebar .nav .nav {\n  display: none; /* Hide by default, but at >768px, show it */\n  padding-bottom: 10px;\n}\n.bs-docs-sidebar .nav .nav > li > a {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 30px;\n  font-size: 12px;\n  font-weight: normal;\n}\n.bs-docs-sidebar .nav .nav > li > a:hover,\n.bs-docs-sidebar .nav .nav > li > a:focus {\n  padding-left: 29px;\n}\n.bs-docs-sidebar .nav .nav > .active > a,\n.bs-docs-sidebar .nav .nav > .active:hover > a,\n.bs-docs-sidebar .nav .nav > .active:focus > a {\n  padding-left: 28px;\n  font-weight: 500;\n}\n\n/* Back to top (hidden on mobile) */\n.back-to-top,\n.bs-docs-theme-toggle {\n  display: none;\n  padding: 4px 10px;\n  margin-top: 10px;\n  margin-left: 10px;\n  font-size: 12px;\n  font-weight: 500;\n  color: #999;\n}\n.back-to-top:hover,\n.bs-docs-theme-toggle:hover {\n  color: #563d7c;\n  text-decoration: none;\n}\n.bs-docs-theme-toggle {\n  margin-top: 0;\n}\n\n@media (min-width: 768px) {\n  .back-to-top,\n  .bs-docs-theme-toggle {\n    display: block;\n  }\n}\n\n/* Show and affix the side nav when space allows it */\n@media (min-width: 992px) {\n  .bs-docs-sidebar .nav > .active > ul {\n    display: block;\n  }\n  /* Widen the fixed sidebar */\n  .bs-docs-sidebar.affix,\n  .bs-docs-sidebar.affix-bottom {\n    width: 213px;\n  }\n  .bs-docs-sidebar.affix {\n    position: fixed; /* Undo the static from mobile first approach */\n    top: 20px;\n  }\n  .bs-docs-sidebar.affix-bottom {\n    position: absolute; /* Undo the static from mobile first approach */\n  }\n  .bs-docs-sidebar.affix-bottom .bs-docs-sidenav,\n  .bs-docs-sidebar.affix .bs-docs-sidenav {\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n}\n@media (min-width: 1200px) {\n  /* Widen the fixed sidebar again */\n  .bs-docs-sidebar.affix-bottom,\n  .bs-docs-sidebar.affix {\n    width: 263px;\n  }\n}\n\n\n/*\n * Docs sections\n *\n * Content blocks for each component or feature.\n */\n\n/* Space things out */\n.bs-docs-section {\n  margin-bottom: 60px;\n}\n.bs-docs-section:last-child {\n  margin-bottom: 0;\n}\n\nh1[id] {\n  padding-top: 20px;\n  margin-top: 0;\n}\n\n\n/*\n * Callouts\n *\n * Not quite alerts, but custom and helpful notes for folks reading the docs.\n * Requires a base and modifier class.\n */\n\n/* Common styles for all types */\n.bs-callout {\n  padding: 20px;\n  margin: 20px 0;\n  border: 1px solid #eee;\n  border-left-width: 5px;\n  border-radius: 3px;\n}\n.bs-callout h4 {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.bs-callout p:last-child {\n  margin-bottom: 0;\n}\n.bs-callout code {\n  border-radius: 3px;\n}\n\n/* Tighten up space between multiple callouts */\n.bs-callout + .bs-callout {\n  margin-top: -5px;\n}\n\n/* Variations */\n.bs-callout-danger {\n  border-left-color: #d9534f;\n}\n.bs-callout-danger h4 {\n  color: #d9534f;\n}\n.bs-callout-warning {\n  border-left-color: #f0ad4e;\n}\n.bs-callout-warning h4 {\n  color: #f0ad4e;\n}\n.bs-callout-info {\n  border-left-color: #5bc0de;\n}\n.bs-callout-info h4 {\n  color: #5bc0de;\n}\n\n\n/*\n * Color swatches\n *\n * Color swatches and associated values for our grayscale and brand colors.\n */\n\n.color-swatches {\n  margin: 0 -5px;\n  overflow: hidden; /* clearfix */\n}\n.color-swatch {\n  float: left;\n  width: 60px;\n  height: 60px;\n  margin: 0 5px;\n  border-radius: 3px;\n}\n\n@media (min-width: 768px) {\n  .color-swatch {\n    width: 100px;\n    height: 100px;\n  }\n}\n\n/* Framework colors */\n.color-swatches .gray-darker {\n  background-color: #222;\n}\n.color-swatches .gray-dark {\n  background-color: #333;\n}\n.color-swatches .gray {\n  background-color: #555;\n}\n.color-swatches .gray-light {\n  background-color: #999;\n}\n.color-swatches .gray-lighter {\n  background-color: #eee;\n}\n.color-swatches .brand-primary {\n  background-color: #428bca;\n}\n.color-swatches .brand-success {\n  background-color: #5cb85c;\n}\n.color-swatches .brand-warning {\n  background-color: #f0ad4e;\n}\n.color-swatches .brand-danger {\n  background-color: #d9534f;\n}\n.color-swatches .brand-info {\n  background-color: #5bc0de;\n}\n\n/* Docs colors */\n.color-swatches .bs-purple {\n  background-color: #563d7c;\n}\n.color-swatches .bs-purple-light {\n  background-color: #c7bfd3;\n}\n.color-swatches .bs-purple-lighter {\n  background-color: #e5e1ea;\n}\n.color-swatches .bs-gray {\n  background-color: #f9f9f9;\n}\n\n\n/*\n * Team members\n *\n * Avatars, names, and usernames for core team.\n */\n\n.bs-team .team-member {\n  line-height: 32px;\n  color: #555;\n}\n.bs-team .team-member:hover {\n  color: #333;\n  text-decoration: none;\n}\n.bs-team .github-btn {\n  float: right;\n  width: 180px;\n  height: 20px;\n  margin-top: 6px;\n}\n.bs-team img {\n  float: left;\n  width: 32px;\n  margin-right: 10px;\n  border-radius: 4px;\n}\n\n\n/*\n * Grid examples\n *\n * Highlight the grid columns within the docs so folks can see their padding,\n * alignment, sizing, etc.\n */\n\n.show-grid {\n  margin-bottom: 15px;\n}\n.show-grid [class^=\"col-\"] {\n  padding-top: 10px;\n  padding-bottom: 10px;\n  background-color: #eee;\n  background-color: rgba(86,61,124,.15);\n  border: 1px solid #ddd;\n  border: 1px solid rgba(86,61,124,.2);\n}\n\n\n/*\n * Examples\n *\n * Isolated sections of example content for each component or feature. Usually\n * followed by a code snippet.\n */\n\n.bs-example {\n  position: relative;\n  padding: 45px 15px 15px;\n  margin: 0 -15px 15px;\n  border-color: #e5e5e5 #eee #eee;\n  border-style: solid;\n  border-width: 1px 0;\n  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);\n          box-shadow: inset 0 3px 6px rgba(0,0,0,.05);\n}\n/* Echo out a label for the example */\n.bs-example:after {\n  position: absolute;\n  top: 15px;\n  left: 15px;\n  font-size: 12px;\n  font-weight: bold;\n  color: #959595;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  content: \"Example\";\n}\n\n/* Tweak display of the code snippets when following an example */\n.bs-example + .highlight {\n  margin: -15px -15px 15px;\n  border-width: 0 0 1px;\n  border-radius: 0;\n}\n\n/* Make the examples and snippets not full-width */\n@media (min-width: 768px) {\n  .bs-example {\n    margin-right: 0;\n    margin-left: 0;\n    background-color: #fff;\n    border-color: #ddd;\n    border-width: 1px;\n    border-radius: 4px 4px 0 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n  .bs-example + .highlight {\n    margin-top: -16px;\n    margin-right: 0;\n    margin-left: 0;\n    border-width: 1px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n}\n\n/* Undo width of container */\n.bs-example .container {\n  width: auto;\n}\n\n/* Tweak content of examples for optimum awesome */\n.bs-example > p:last-child,\n.bs-example > ul:last-child,\n.bs-example > ol:last-child,\n.bs-example > blockquote:last-child,\n.bs-example > .form-control:last-child,\n.bs-example > .table:last-child,\n.bs-example > .navbar:last-child,\n.bs-example > .jumbotron:last-child,\n.bs-example > .alert:last-child,\n.bs-example > .panel:last-child,\n.bs-example > .list-group:last-child,\n.bs-example > .well:last-child,\n.bs-example > .progress:last-child,\n.bs-example > .table-responsive:last-child > .table {\n  margin-bottom: 0;\n}\n.bs-example > p > .close {\n  float: none;\n}\n\n/* Typography */\n.bs-example-type .table .type-info {\n  color: #999;\n  vertical-align: middle;\n}\n.bs-example-type .table td {\n  padding: 15px 0;\n  border-color: #eee;\n}\n.bs-example-type .table tr:first-child td {\n  border-top: 0;\n}\n.bs-example-type h1,\n.bs-example-type h2,\n.bs-example-type h3,\n.bs-example-type h4,\n.bs-example-type h5,\n.bs-example-type h6 {\n  margin: 0;\n}\n\n/* Contextual background colors */\n.bs-example-bg-classes p {\n  padding: 15px;\n}\n\n/* Images */\n.bs-example > .img-circle,\n.bs-example > .img-rounded,\n.bs-example > .img-thumbnail {\n  margin: 5px;\n}\n\n/* Tables */\n.bs-example > .table-responsive > .table {\n  background-color: #fff;\n}\n\n/* Buttons */\n.bs-example > .btn,\n.bs-example > .btn-group {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n.bs-example > .btn-toolbar + .btn-toolbar {\n  margin-top: 10px;\n}\n\n/* Forms */\n.bs-example-control-sizing select,\n.bs-example-control-sizing input[type=\"text\"] + input[type=\"text\"] {\n  margin-top: 10px;\n}\n.bs-example-form .input-group {\n  margin-bottom: 10px;\n}\n.bs-example > textarea.form-control {\n  resize: vertical;\n}\n\n/* List groups */\n.bs-example > .list-group {\n  max-width: 400px;\n}\n\n/* Navbars */\n.bs-example .navbar:last-child {\n  margin-bottom: 0;\n}\n.bs-navbar-top-example,\n.bs-navbar-bottom-example {\n  z-index: 1;\n  padding: 0;\n  overflow: hidden; /* cut the drop shadows off */\n}\n.bs-navbar-top-example .navbar-header,\n.bs-navbar-bottom-example .navbar-header {\n  margin-left: 0;\n}\n.bs-navbar-top-example .navbar-fixed-top,\n.bs-navbar-bottom-example .navbar-fixed-bottom {\n  position: relative;\n  margin-right: 0;\n  margin-left: 0;\n}\n.bs-navbar-top-example {\n  padding-bottom: 45px;\n}\n.bs-navbar-top-example:after {\n  top: auto;\n  bottom: 15px;\n}\n.bs-navbar-top-example .navbar-fixed-top {\n  top: -1px;\n}\n.bs-navbar-bottom-example {\n  padding-top: 45px;\n}\n.bs-navbar-bottom-example .navbar-fixed-bottom {\n  bottom: -1px;\n}\n.bs-navbar-bottom-example .navbar {\n  margin-bottom: 0;\n}\n@media (min-width: 768px) {\n  .bs-navbar-top-example .navbar-fixed-top,\n  .bs-navbar-bottom-example .navbar-fixed-bottom {\n    position: absolute;\n  }\n}\n\n/* Pagination */\n.bs-example .pagination {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n/* Pager */\n.bs-example > .pager {\n  margin-top: 0;\n}\n\n/* Example modals */\n.bs-example-modal {\n  background-color: #f5f5f5;\n}\n.bs-example-modal .modal {\n  position: relative;\n  top: auto;\n  right: auto;\n  bottom: auto;\n  left: auto;\n  z-index: 1;\n  display: block;\n}\n.bs-example-modal .modal-dialog {\n  left: auto;\n  margin-right: auto;\n  margin-left: auto;\n}\n.custom-modal {\n  width: 90%;\n}\n\n/* Example dropdowns */\n.bs-example > .dropdown > .dropdown-toggle {\n  float: left;\n}\n.bs-example > .dropdown > .dropdown-menu {\n  position: static;\n  display: block;\n  margin-bottom: 5px;\n  clear: left;\n}\n\n/* Example tabbable tabs */\n.bs-example-tabs .nav-tabs {\n  margin-bottom: 15px;\n}\n\n/* Tooltips */\n.bs-example-tooltips {\n  text-align: center;\n}\n.bs-example-tooltips > .btn {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n\n/* Popovers */\n.bs-example-popover {\n  padding-bottom: 24px;\n  background-color: #f9f9f9;\n}\n.bs-example-popover .popover {\n  position: relative;\n  display: block;\n  float: left;\n  width: 260px;\n  margin: 20px;\n}\n\n/* Scrollspy demo on fixed height div */\n.scrollspy-example {\n  position: relative;\n  height: 200px;\n  margin-top: 10px;\n  overflow: auto;\n}\n\n/* MenuItem */\n.bs-example .dropdown-menu.open {\n  position: static;\n  display: block;\n  margin-bottom: 5px;\n  clear: left;\n}\n\n\n/*\n * Code snippets\n *\n * Generated via Pygments and Jekyll, these are snippets of HTML, CSS, and JS.\n */\n\n.highlight {\n  padding: 9px 14px;\n  margin-bottom: 14px;\n  background-color: #f7f7f9;\n  border: 1px solid #e1e1e8;\n  border-radius: 4px;\n}\n.highlight pre {\n  padding: 0;\n  margin-top: 0;\n  margin-bottom: 0;\n  word-break: normal;\n  word-wrap: nowrap;\n  white-space: nowrap;\n  background-color: transparent;\n  border: 0;\n}\n.highlight pre code {\n  font-size: inherit;\n  color: #333; /* Effectively the base text color */\n}\n.highlight pre code:first-child {\n  display: inline-block;\n  padding-right: 45px;\n}\n\n\n/*\n * Responsive tests\n *\n * Generate a set of tests to show the responsive utilities in action.\n */\n\n/* Responsive (scrollable) doc tables */\n.table-responsive .highlight pre {\n  white-space: normal;\n}\n\n/* Utility classes table  */\n.bs-table th small,\n.responsive-utilities th small {\n  display: block;\n  font-weight: normal;\n  color: #999;\n}\n.responsive-utilities tbody th {\n  font-weight: normal;\n}\n.responsive-utilities td {\n  text-align: center;\n}\n.responsive-utilities td.is-visible {\n  color: #468847;\n  background-color: #dff0d8 !important;\n}\n.responsive-utilities td.is-hidden {\n  color: #ccc;\n  background-color: #f9f9f9 !important;\n}\n\n/* Responsive tests */\n.responsive-utilities-test {\n  margin-top: 5px;\n}\n.responsive-utilities-test .col-xs-6 {\n  margin-bottom: 10px;\n}\n.responsive-utilities-test span {\n  display: block;\n  padding: 15px 10px;\n  font-size: 14px;\n  font-weight: bold;\n  line-height: 1.1;\n  text-align: center;\n  border-radius: 4px;\n}\n.visible-on .col-xs-6 .hidden-xs,\n.visible-on .col-xs-6 .hidden-sm,\n.visible-on .col-xs-6 .hidden-md,\n.visible-on .col-xs-6 .hidden-lg,\n.hidden-on .col-xs-6 .hidden-xs,\n.hidden-on .col-xs-6 .hidden-sm,\n.hidden-on .col-xs-6 .hidden-md,\n.hidden-on .col-xs-6 .hidden-lg {\n  color: #999;\n  border: 1px solid #ddd;\n}\n.visible-on .col-xs-6 .visible-xs-block,\n.visible-on .col-xs-6 .visible-sm-block,\n.visible-on .col-xs-6 .visible-md-block,\n.visible-on .col-xs-6 .visible-lg-block,\n.hidden-on .col-xs-6 .visible-xs-block,\n.hidden-on .col-xs-6 .visible-sm-block,\n.hidden-on .col-xs-6 .visible-md-block,\n.hidden-on .col-xs-6 .visible-lg-block {\n  color: #468847;\n  background-color: #dff0d8;\n  border: 1px solid #d6e9c6;\n}\n\n\n/*\n * Glyphicons\n *\n * Special styles for displaying the icons and their classes in the docs.\n */\n\n.bs-glyphicons {\n  margin: 0 -10px 20px;\n  overflow: hidden;\n}\n.bs-glyphicons-list {\n  padding-left: 0;\n  list-style: none;\n}\n.bs-glyphicons li {\n  float: left;\n  width: 25%;\n  height: 115px;\n  padding: 10px;\n  font-size: 10px;\n  line-height: 1.4;\n  text-align: center;\n  background-color: #f9f9f9;\n  border: 1px solid #fff;\n}\n.bs-glyphicons .glyphicon {\n  margin-top: 5px;\n  margin-bottom: 10px;\n  font-size: 24px;\n}\n.bs-glyphicons .glyphicon-class {\n  display: block;\n  text-align: center;\n  word-wrap: break-word; /* Help out IE10+ with class names */\n}\n.bs-glyphicons li:hover {\n  color: #fff;\n  background-color: #563d7c;\n}\n\n@media (min-width: 768px) {\n  .bs-glyphicons {\n    margin-right: 0;\n    margin-left: 0;\n  }\n  .bs-glyphicons li {\n    width: 12.5%;\n    font-size: 12px;\n  }\n}\n\n\n/*\n * Customizer\n *\n * Since this is so form control heavy, we have quite a few styles to customize\n * the display of inputs, headings, and more. Also included are all the download\n * buttons and actions.\n */\n\n.bs-customizer .toggle {\n  float: right;\n  margin-top: 25px;\n}\n\n/* Headings and form contrls */\n.bs-customizer label {\n  margin-top: 10px;\n  font-weight: 500;\n  color: #555;\n}\n.bs-customizer h2 {\n  padding-top: 30px;\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.bs-customizer h3 {\n  margin-bottom: 0;\n}\n.bs-customizer h4 {\n  margin-top: 15px;\n  margin-bottom: 0;\n}\n.bs-customizer .bs-callout h4 {\n  margin-top: 0; /* lame, but due to specificity we have to duplicate */\n  margin-bottom: 5px;\n}\n.bs-customizer input[type=\"text\"] {\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n  background-color: #fafafa;\n}\n.bs-customizer .help-block {\n  margin-bottom: 5px;\n  font-size: 12px;\n}\n\n/* For the variables, use regular weight */\n#less-section label {\n  font-weight: normal;\n}\n\n.bs-customizer-input {\n  float: left;\n  width: 33.333333%;\n  padding-right: 15px;\n  padding-left: 15px;\n}\n\n/* Downloads */\n.bs-customize-download .btn-outline {\n  padding: 20px;\n}\n\n/* Error handling */\n.bs-customizer-alert {\n  position: fixed;\n  top: 0;\n  right: 0;\n  left: 0;\n  z-index: 1030;\n  padding: 15px 0;\n  color: #fff;\n  background-color: #d9534f;\n  border-bottom: 1px solid #b94441;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25);\n          box-shadow: inset 0 1px 0 rgba(255,255,255,.25);\n}\n.bs-customizer-alert .close {\n  margin-top: -4px;\n  font-size: 24px;\n}\n.bs-customizer-alert p {\n  margin-bottom: 0;\n}\n.bs-customizer-alert .glyphicon {\n  margin-right: 5px;\n}\n.bs-customizer-alert pre {\n  margin: 10px 0 0;\n  color: #fff;\n  background-color: #a83c3a;\n  border-color: #973634;\n  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);\n          box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);\n}\n\n\n/*\n * Brand guidelines\n *\n * Extra styles for displaying wordmarks, logos, etc.\n */\n\n/* Logo series wrapper */\n.bs-brand-logos {\n  display: table;\n  width: 100%;\n  margin-bottom: 15px;\n  overflow: hidden;\n  color: #563d7c;\n  background-color: #f9f9f9;\n  border-radius: 4px;\n}\n\n/* Individual items */\n.bs-brand-item {\n  padding: 60px 0;\n  text-align: center;\n}\n.bs-brand-item + .bs-brand-item {\n  border-top: 1px solid #fff;\n}\n.bs-brand-logos .inverse {\n  color: #fff;\n  background-color: #563d7c;\n}\n.bs-brand-item .svg {\n  width: 144px;\n  height: 144px;\n}\n\n/* Heading content within */\n.bs-brand-item h1,\n.bs-brand-item h3 {\n  margin-top: 0;\n  margin-bottom: 0;\n}\n.bs-brand-item .bs-docs-booticon {\n  margin-right: auto;\n  margin-left: auto;\n}\n\n/* Make the icons stand out on what is/isn't okay */\n.bs-brand-item .glyphicon {\n  width: 30px;\n  height: 30px;\n  margin: 10px auto -10px;\n  line-height: 30px;\n  color: #fff;\n  border-radius: 50%;\n}\n.bs-brand-item .glyphicon-ok {\n  background-color: #5cb85c;\n}\n.bs-brand-item .glyphicon-remove {\n  background-color: #d9534f;\n}\n\n@media (min-width: 768px) {\n  .bs-brand-item {\n    display: table-cell;\n    width: 1%;\n  }\n  .bs-brand-item + .bs-brand-item {\n    border-top: 0;\n    border-left: 1px solid #fff;\n  }\n  .bs-brand-item h1 {\n    font-size: 60px;\n  }\n}\n\n\n/*\n * Miscellaneous\n *\n * Odds and ends for optimum docs display.\n */\n\n/* Examples gallery: space out content better */\n.bs-examples .thumbnail {\n  margin-bottom: 10px;\n}\n.bs-examples h4 {\n  margin-bottom: 5px;\n}\n.bs-examples p {\n  margin-bottom: 20px;\n}\n\n/* Pseudo :focus state for showing how it looks in the docs */\n#focusedInput {\n  border-color: rgb(204,204,204); /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback*/\n  border-color: rgba(82,168,236,.8);\n  outline: 0;\n  outline: thin dotted \\9; /* IE6-9 */\n  -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);\n          box-shadow: 0 0 8px rgba(82,168,236,.6);\n}\n\n\n/*\n * ZeroClipboard styles\n */\n\n.zero-clipboard {\n  position: relative;\n  display: none;\n}\n.btn-clipboard {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 10;\n  display: block;\n  padding: 5px 8px;\n  font-size: 12px;\n  color: #777;\n  cursor: pointer;\n  background-color: #fff;\n  border: 1px solid #e1e1e8;\n  border-radius: 0 4px 0 4px;\n}\n.btn-clipboard-hover {\n  color: #fff;\n  background-color: #563d7c;\n  border-color: #563d7c;\n}\n\n@media (min-width: 768px) {\n  .zero-clipboard {\n    display: block;\n  }\n}\n", ""]);
 	
 	// exports
 
@@ -38167,7 +35435,7 @@
 	
 	
 	// module
-	exports.push([module.id, "/*\r\n * React-Bootstrap Documentation\r\n * Special styles for presenting react-bootstrap's documentation and code examples.\r\n * Based on the Bootstrap Documentation styles and overridden as necessary.\r\n */\r\n\r\nbody {\r\n  font-family: 'Source Sans Pro', 'helvetica neue', 'Avenir Next', 'Avenir',Arial, sans-serif;\r\n}\r\n\r\n.bs-docs-section h1 {\r\n  font-size: 42px\r\n}\r\n\r\n.bs-docs-nav .navbar-nav > li > a {\r\n  color: #333;\r\n}\r\n.bs-docs-footer {\r\n  padding-top: 20px;\r\n  text-align: left;\r\n}\r\n.bs-docs-nav .navbar-collapse {\r\n  overflow: hidden;\r\n}\r\n.bs-docs-nav {\r\n    box-shadow: 0 3px 3px rgba(0,0,0,0.175);\r\n}\r\n\r\n.bs-docs-header p {\r\n  font-weight: lighter;\r\n}\r\n\r\n\r\n.bs-docs-header a {\r\n  color: white;\r\n  font-weight: normal;\r\n}\r\n.btn-outline-inverse {\r\n  border-color: white;\r\n  transition: color .15s ease;\r\n}\r\n.bs-docs-header a:hover,\r\n.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active,\r\n.bs-docs-nav .navbar-brand {\r\n  color: #1D976C;\r\n}\r\n\r\n.bs-docs-masthead, .bs-docs-header {\r\n  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* W3C */\r\n\r\n  filter: none;\r\n  color: #e9e9e9;\r\n}\r\n\r\n.bs-docs-masthead {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.bs-docs-header h1 {\r\n  color: #ffffff;\r\n}\r\n\r\n.bs-docs-header p {\r\n  color: #ffffff;\r\n}\r\n\r\na.back-to-top {\r\n  font-size: 13px;\r\n  margin-top: 0;\r\n}\r\n\r\n.bs-docs-sidebar .nav>li>a {\r\n  color: #767676;\r\n  font-size: 14px;\r\n}\r\n\r\n.bs-docs-sidebar .nav>li>a:hover, .bs-docs-sidebar .nav>li>a:focus {\r\n  color: #42b983;\r\n  border-left: 1px solid #42b983;\r\n}\r\n\r\n.back-to-top:hover {\r\n  color: #42b983;\r\n}\r\n\r\n\r\n.CodeMirror, .CodeMirror-scroll {\r\n  height: auto;\r\n}\r\n\r\n.bs-example .btn-toolbar + .btn-toolbar {\r\n  margin-top: 10px;\r\n}\r\n\r\n.bs-example .static-modal .modal {\r\n  position: relative;\r\n  top: auto;\r\n  right: auto;\r\n  left: auto;\r\n  bottom: auto;\r\n  z-index: 1;\r\n  display: block;\r\n}\r\n\r\n.bs-docs-booticon {\r\n  background-size: contain;\r\n  border: 0;\r\n  width: 200px;\r\n  height: 200px;\r\n}\r\n\r\n.bs-example-popover-contained {\r\n  height: 200px;\r\n}\r\n\r\n.bs-example-popover-contained > div {\r\n  position: relative;\r\n}\r\n\r\n.bs-example-popover-scroll {\r\n  overflow: scroll;\r\n  height: 200px;\r\n}\r\n\r\n.bs-example-popover-scroll > div {\r\n  position: relative;\r\n  padding: 100px 0;\r\n}\r\n\r\n.playground {\r\n  margin-bottom: 36px;\r\n}\r\n\r\n.bs-example {\r\n  margin-bottom: 0;\r\n}\r\n\r\n.bs-example + .highlight {\r\n  margin-top: 0;\r\n  margin-bottom: 0;\r\n  border-top: none;\r\n  border-bottom-right-radius: 0;\r\n}\r\n\r\n.code-toggle {\r\n  float: right;\r\n  display: inline-block;\r\n  position: relative;\r\n  top: -1px;\r\n  background: #fafafa;\r\n  border-bottom-left-radius: 4px;\r\n  border-bottom-right-radius: 4px;\r\n  border: 1px solid #e1e1e8;\r\n  border-top: none;\r\n  padding: 4px 8px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .code-toggle {\r\n    background: #fff;\r\n  }\r\n}\r\n\r\n.code-toggle.open {\r\n  background: #f8f5ec;\r\n}\r\n\r\n/* Minimal CSS Needed for contained modals */\r\n.modal-container {\r\n  position: relative;\r\n}\r\n.modal-container .modal, .modal-container .modal-backdrop {\r\n  position: absolute;\r\n}\r\n\r\n.prop-table {\r\n  background-color: white;\r\n}\r\n\r\n.bs-example.tooltip-static .tooltip {\r\n  position: relative;\r\n  display: inline-block;\r\n  margin: 5px 10px;\r\n\r\n}\r\n\r\n.bs-example .super-colors {\r\n  background: -moz-linear-gradient( top ,\r\n      rgba(255, 0, 0, 1) 0%,\r\n      rgba(255, 255, 0, 1) 15%,\r\n      rgba(0, 255, 0, 1) 30%,\r\n      rgba(0, 255, 255, 1) 50%,\r\n      rgba(0, 0, 255, 1) 65%,\r\n      rgba(255, 0, 255, 1) 80%,\r\n      rgba(255, 0, 0, 1) 100%);\r\n  background: -webkit-gradient(linear,  left top,  left bottom,\r\n      color-stop(0%, rgba(255, 0, 0, 1)),\r\n      color-stop(15%, rgba(255, 255, 0, 1)),\r\n      color-stop(30%, rgba(0, 255, 0, 1)),\r\n      color-stop(50%, rgba(0, 255, 255, 1)),\r\n      color-stop(65%, rgba(0, 0, 255, 1)),\r\n      color-stop(80%, rgba(255, 0, 255, 1)),\r\n      color-stop(100%, rgba(255, 0, 0, 1)));\r\n}\r\n\r\n/*.bs-example .custom-menu > ul > li {\r\n    padding: 0 20px;\r\n}*/\r\n\r\n.anchor,\r\n.anchor:hover,\r\n.anchor:active,\r\n.anchor:focus {\r\n  color: black;\r\n  text-decoration: none;\r\n  position: relative;\r\n}\r\n.anchor-icon {\r\n  font-size: 90%;\r\n  padding-top: 0.1em;\r\n  position: absolute;\r\n  left: -0.8em;\r\n  opacity: 0;\r\n}\r\n\r\nh1:hover .anchor-icon,\r\nh1 a:focus .anchor-icon,\r\nh2:hover .anchor-icon,\r\nh2 a:focus .anchor-icon,\r\nh3:hover .anchor-icon,\r\nh3 a:focus .anchor-icon,\r\nh4:hover .anchor-icon,\r\nh4 a:focus .anchor-icon {\r\n  opacity: 0.5;\r\n}\r\n\r\n.prop-desc pre {\r\n  border-radius: 0;\r\n  border-width: 0;\r\n  border-left-width: 3px;\r\n}\r\n\r\n.prop-desc-heading {\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.bs-callout {\r\n    padding: 20px;\r\n    margin: 20px 0;\r\n    border: 1px solid #eee;\r\n    border-left-width: 5px;\r\n    border-radius: 3px;\r\n}\r\n.bs-callout h4 {\r\n    margin-top: 0;\r\n    margin-bottom: 5px;\r\n}\r\n.bs-callout p:last-child {\r\n    margin-bottom: 0;\r\n}\r\n.bs-callout code {\r\n    border-radius: 3px;\r\n}\r\n.bs-callout+.bs-callout {\r\n    margin-top: -5px;\r\n}\r\n.bs-callout-default {\r\n    border-left-color: #777;\r\n}\r\n.bs-callout-default h4 {\r\n    color: #777;\r\n}\r\n.bs-callout-primary {\r\n    border-left-color: #428bca;\r\n}\r\n.bs-callout-primary h4 {\r\n    color: #428bca;\r\n}\r\n.bs-callout-success {\r\n    border-left-color: #42b983;\r\n}\r\n.bs-callout-success h4 {\r\n    color: #42b983;\r\n}\r\n.bs-callout-danger {\r\n    border-left-color: #d9534f;\r\n}\r\n.bs-callout-danger h4 {\r\n    color: #d9534f;\r\n}\r\n.bs-callout-warning {\r\n    border-left-color: #f0ad4e;\r\n}\r\n.bs-callout-warning h4 {\r\n    color: #f0ad4e;\r\n}\r\n.bs-callout-info {\r\n    border-left-color: #5bc0de;\r\n}\r\n.bs-callout-info h4 {\r\n    color: #5bc0de;\r\n}\r\n", ""]);
+	exports.push([module.id, "/*\n * React-Bootstrap Documentation\n * Special styles for presenting react-bootstrap's documentation and code examples.\n * Based on the Bootstrap Documentation styles and overridden as necessary.\n */\n\nbody {\n  font-family: 'Source Sans Pro', 'helvetica neue', 'Avenir Next', 'Avenir',Arial, sans-serif;\n}\n\n.bs-docs-section h1 {\n  font-size: 42px\n}\n\n.bs-docs-nav .navbar-nav > li > a {\n  color: #333;\n}\n.bs-docs-footer {\n  padding-top: 20px;\n  text-align: left;\n}\n.bs-docs-nav .navbar-collapse {\n  overflow: hidden;\n}\n.bs-docs-nav {\n    box-shadow: 0 3px 3px rgba(0,0,0,0.175);\n}\n\n.bs-docs-header p {\n  font-weight: lighter;\n}\n\n\n.bs-docs-header a {\n  color: white;\n  font-weight: normal;\n}\n.btn-outline-inverse {\n  border-color: white;\n  transition: color .15s ease;\n}\n.bs-docs-header a:hover,\n.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active,\n.bs-docs-nav .navbar-brand {\n  color: #1D976C;\n}\n\n.bs-docs-masthead, .bs-docs-header {\n  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* W3C */\n\n  filter: none;\n  color: #e9e9e9;\n}\n\n.bs-docs-masthead {\n  margin-bottom: 20px;\n}\n\n.bs-docs-header h1 {\n  color: #ffffff;\n}\n\n.bs-docs-header p {\n  color: #ffffff;\n}\n\na.back-to-top {\n  font-size: 13px;\n  margin-top: 0;\n}\n\n.bs-docs-sidebar .nav>li>a {\n  color: #767676;\n  font-size: 14px;\n}\n\n.bs-docs-sidebar .nav>li>a:hover, .bs-docs-sidebar .nav>li>a:focus {\n  color: #42b983;\n  border-left: 1px solid #42b983;\n}\n\n.back-to-top:hover {\n  color: #42b983;\n}\n\n\n.CodeMirror, .CodeMirror-scroll {\n  height: auto;\n}\n\n.bs-example .btn-toolbar + .btn-toolbar {\n  margin-top: 10px;\n}\n\n.bs-example .static-modal .modal {\n  position: relative;\n  top: auto;\n  right: auto;\n  left: auto;\n  bottom: auto;\n  z-index: 1;\n  display: block;\n}\n\n.bs-docs-booticon {\n  background-size: contain;\n  border: 0;\n  width: 200px;\n  height: 200px;\n}\n\n.bs-example-popover-contained {\n  height: 200px;\n}\n\n.bs-example-popover-contained > div {\n  position: relative;\n}\n\n.bs-example-popover-scroll {\n  overflow: scroll;\n  height: 200px;\n}\n\n.bs-example-popover-scroll > div {\n  position: relative;\n  padding: 100px 0;\n}\n\n.playground {\n  margin-bottom: 36px;\n}\n\n.bs-example {\n  margin-bottom: 0;\n}\n\n.bs-example + .highlight {\n  margin-top: 0;\n  margin-bottom: 0;\n  border-top: none;\n  border-bottom-right-radius: 0;\n}\n\n.code-toggle {\n  float: right;\n  display: inline-block;\n  position: relative;\n  top: -1px;\n  background: #fafafa;\n  border-bottom-left-radius: 4px;\n  border-bottom-right-radius: 4px;\n  border: 1px solid #e1e1e8;\n  border-top: none;\n  padding: 4px 8px;\n}\n\n@media (min-width: 768px) {\n  .code-toggle {\n    background: #fff;\n  }\n}\n\n.code-toggle.open {\n  background: #f8f5ec;\n}\n\n/* Minimal CSS Needed for contained modals */\n.modal-container {\n  position: relative;\n}\n.modal-container .modal, .modal-container .modal-backdrop {\n  position: absolute;\n}\n\n.prop-table {\n  background-color: white;\n}\n\n.bs-example.tooltip-static .tooltip {\n  position: relative;\n  display: inline-block;\n  margin: 5px 10px;\n\n}\n\n.bs-example .super-colors {\n  background: -moz-linear-gradient( top ,\n      rgba(255, 0, 0, 1) 0%,\n      rgba(255, 255, 0, 1) 15%,\n      rgba(0, 255, 0, 1) 30%,\n      rgba(0, 255, 255, 1) 50%,\n      rgba(0, 0, 255, 1) 65%,\n      rgba(255, 0, 255, 1) 80%,\n      rgba(255, 0, 0, 1) 100%);\n  background: -webkit-gradient(linear,  left top,  left bottom,\n      color-stop(0%, rgba(255, 0, 0, 1)),\n      color-stop(15%, rgba(255, 255, 0, 1)),\n      color-stop(30%, rgba(0, 255, 0, 1)),\n      color-stop(50%, rgba(0, 255, 255, 1)),\n      color-stop(65%, rgba(0, 0, 255, 1)),\n      color-stop(80%, rgba(255, 0, 255, 1)),\n      color-stop(100%, rgba(255, 0, 0, 1)));\n}\n\n/*.bs-example .custom-menu > ul > li {\n    padding: 0 20px;\n}*/\n\n.anchor,\n.anchor:hover,\n.anchor:active,\n.anchor:focus {\n  color: black;\n  text-decoration: none;\n  position: relative;\n}\n.anchor-icon {\n  font-size: 90%;\n  padding-top: 0.1em;\n  position: absolute;\n  left: -0.8em;\n  opacity: 0;\n}\n\nh1:hover .anchor-icon,\nh1 a:focus .anchor-icon,\nh2:hover .anchor-icon,\nh2 a:focus .anchor-icon,\nh3:hover .anchor-icon,\nh3 a:focus .anchor-icon,\nh4:hover .anchor-icon,\nh4 a:focus .anchor-icon {\n  opacity: 0.5;\n}\n\n.prop-desc pre {\n  border-radius: 0;\n  border-width: 0;\n  border-left-width: 3px;\n}\n\n.prop-desc-heading {\n  margin-bottom: 10px;\n}\n\n.bs-callout {\n    padding: 20px;\n    margin: 20px 0;\n    border: 1px solid #eee;\n    border-left-width: 5px;\n    border-radius: 3px;\n}\n.bs-callout h4 {\n    margin-top: 0;\n    margin-bottom: 5px;\n}\n.bs-callout p:last-child {\n    margin-bottom: 0;\n}\n.bs-callout code {\n    border-radius: 3px;\n}\n.bs-callout+.bs-callout {\n    margin-top: -5px;\n}\n.bs-callout-default {\n    border-left-color: #777;\n}\n.bs-callout-default h4 {\n    color: #777;\n}\n.bs-callout-primary {\n    border-left-color: #428bca;\n}\n.bs-callout-primary h4 {\n    color: #428bca;\n}\n.bs-callout-success {\n    border-left-color: #42b983;\n}\n.bs-callout-success h4 {\n    color: #42b983;\n}\n.bs-callout-danger {\n    border-left-color: #d9534f;\n}\n.bs-callout-danger h4 {\n    color: #d9534f;\n}\n.bs-callout-warning {\n    border-left-color: #f0ad4e;\n}\n.bs-callout-warning h4 {\n    color: #f0ad4e;\n}\n.bs-callout-info {\n    border-left-color: #5bc0de;\n}\n.bs-callout-info h4 {\n    color: #5bc0de;\n}\n", ""]);
 	
 	// exports
 
