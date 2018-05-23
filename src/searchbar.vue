@@ -6,28 +6,25 @@
         primitiveData() {
           if (this.data) {
             var matches = []
-            var words
-            this.data.map(value => {
-              var query = new RegExp(this.value, 'i')
-              var hasHeadingMatch = false
-              var title = value.title
-              var keywords = value.keywords ? value.keywords : ''
-              var headings = value.headings
-              var src = value.src
+            this.data.map((value) => {
+              const query = new RegExp(this.value, 'i')
+              let hasMatchingHeading = false
+              const { title, headings, src } = value
+              const keywords = value.keywords || ''
               if (Object.keys(headings).length !== 0) {
-                for (var key in headings) {
-                  var heading = headings[key]
+                for (const key in headings) {
+                  const heading = headings[key]
                   if (heading.search(query) !== -1) {
-                    hasHeadingMatch = true
-                    matches.push({'title': title,
-                                  'keywords': keywords,
-                                  'src': src,
-                                  'heading': {'id': key, 'value': headings[key]}
+                    hasMatchingHeading = true
+                    matches.push({title: title,
+                                  keywords: keywords,
+                                  src: src,
+                                  heading: {id: key, value: headings[key]}
                                  })
                   }
                 }
-                if (!hasHeadingMatch) {
-                  words = keywords ? keywords + title : title
+                if (!hasMatchingHeading) {
+                  const words = keywords ? keywords + title : title
                   if (words.search(query) !== -1) {
                     matches.push(value)
                   }
