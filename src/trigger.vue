@@ -26,10 +26,13 @@
         this._triggerBy && this._triggerBy.toggle(e)
       })
 
-      this.$els.trigger.style['border-bottom'] = (this.trigger === 'click') ? '1px dashed #333' : '1px dotted #333'
-      this.$els.trigger.style['padding-bottom'] = '2px'
       if (this.trigger === 'click') {
         this.$els.trigger.style['cursor'] = 'pointer'
+        this.$els.trigger.style['-webkit-text-decoration'] = 'underline dashed';
+        this.$els.trigger.style['text-decoration'] = 'underline dashed';
+      } else {
+        this.$els.trigger.style['-webkit-text-decoration'] = 'underline dotted';
+        this.$els.trigger.style['text-decoration'] = 'underline dotted'
       }
     },
     methods: {

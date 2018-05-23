@@ -28705,7 +28705,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".body-wrapper {\n        padding-bottom: 10px;\n    }\n    .textarea-container {\n        margin: 8px 0;\n    }\n    .textarea-container > textarea {\n        margin: 4px 0;\n    }", ""]);
+	exports.push([module.id, ".body-wrapper {\n        padding-bottom: 10px;\n    }\n    .question-wrapper > .panel-group > .panel-container + .panel-container {\n        display: block;\n        margin-top: 5px;\n    }\n    .textarea-container {\n        margin: 8px 0;\n    }\n    .textarea-container > textarea {\n        margin: 4px 0;\n    }", ""]);
 	
 	// exports
 
@@ -28746,13 +28746,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	//             </div>
 	//         </div>
 	//         <accordion>
-	//             <div v-show="hasHintSlot">
-	//                 <panel header="Hint" expandable no-close>
-	//                     <slot name="hint">
-	//                         No hint is available for this question.
-	//                     </slot>
-	//                 </panel>
-	//             </div>
+	//             <panel v-show="hasHintSlot" header="Hint" expandable no-close>
+	//                 <slot name="hint">
+	//                     No hint is available for this question.
+	//                 </slot>
+	//             </panel>
 	//             <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
 	//                 <slot name="answer"></slot>
 	//             </panel>
@@ -28793,6 +28791,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	//     .body-wrapper {
 	//         padding-bottom: 10px;
 	//     }
+	//     .question-wrapper > .panel-group > .panel-container + .panel-container {
+	//         display: block;
+	//         margin-top: 5px;
+	//     }
 	//     .textarea-container {
 	//         margin: 8px 0;
 	//     }
@@ -28805,7 +28807,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 277 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"question-wrapper\">\n        <div class=\"body-wrapper\">\n            <!-- Default slot is question body -->\n            <slot></slot>\n            <div v-if=\"hasInput\" class=\"textarea-container\">\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\n            </div>\n        </div>\n        <accordion>\n            <div v-show=\"hasHintSlot\">\n                <panel header=\"Hint\" expandable no-close>\n                    <slot name=\"hint\">\n                        No hint is available for this question.\n                    </slot>\n                </panel>\n            </div>\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\n                <slot name=\"answer\"></slot>\n            </panel>\n        </accordion>\n    </div>";
+	module.exports = "<div class=\"question-wrapper\">\n        <div class=\"body-wrapper\">\n            <!-- Default slot is question body -->\n            <slot></slot>\n            <div v-if=\"hasInput\" class=\"textarea-container\">\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\n            </div>\n        </div>\n        <accordion>\n            <panel v-show=\"hasHintSlot\" header=\"Hint\" expandable no-close>\n                <slot name=\"hint\">\n                    No hint is available for this question.\n                </slot>\n            </panel>\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\n                <slot name=\"answer\"></slot>\n            </panel>\n        </accordion>\n    </div>";
 
 /***/ }),
 /* 278 */
@@ -31350,10 +31352,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	      _this._triggerBy && _this._triggerBy.toggle(e);
 	    });
 	
-	    this.$els.trigger.style['border-bottom'] = this.trigger === 'click' ? '1px dashed #333' : '1px dotted #333';
-	    this.$els.trigger.style['padding-bottom'] = '2px';
 	    if (this.trigger === 'click') {
 	      this.$els.trigger.style['cursor'] = 'pointer';
+	      this.$els.trigger.style['-webkit-text-decoration'] = 'underline dashed';
+	      this.$els.trigger.style['text-decoration'] = 'underline dashed';
+	    } else {
+	      this.$els.trigger.style['-webkit-text-decoration'] = 'underline dotted';
+	      this.$els.trigger.style['text-decoration'] = 'underline dotted';
 	    }
 	  },
 	

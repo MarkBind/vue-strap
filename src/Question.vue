@@ -8,13 +8,11 @@
             </div>
         </div>
         <accordion>
-            <div v-show="hasHintSlot">
-                <panel header="Hint" expandable no-close>
-                    <slot name="hint">
-                        No hint is available for this question.
-                    </slot>
-                </panel>
-            </div>
+            <panel v-show="hasHintSlot" header="Hint" expandable no-close>
+                <slot name="hint">
+                    No hint is available for this question.
+                </slot>
+            </panel>
             <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
                 <slot name="answer"></slot>
             </panel>
@@ -59,6 +57,10 @@
 <style>
     .body-wrapper {
         padding-bottom: 10px;
+    }
+    .question-wrapper > .panel-group > .panel-container + .panel-container {
+        display: block;
+        margin-top: 5px;
     }
     .textarea-container {
         margin: 8px 0;

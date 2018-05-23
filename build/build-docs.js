@@ -28347,7 +28347,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".body-wrapper {\n        padding-bottom: 10px;\n    }\n    .textarea-container {\n        margin: 8px 0;\n    }\n    .textarea-container > textarea {\n        margin: 4px 0;\n    }", ""]);
+	exports.push([module.id, ".body-wrapper {\n        padding-bottom: 10px;\n    }\n    .question-wrapper > .panel-group > .panel-container + .panel-container {\n        display: block;\n        margin-top: 5px;\n    }\n    .textarea-container {\n        margin: 8px 0;\n    }\n    .textarea-container > textarea {\n        margin: 4px 0;\n    }", ""]);
 	
 	// exports
 
@@ -28388,13 +28388,11 @@
 	//             </div>
 	//         </div>
 	//         <accordion>
-	//             <div v-show="hasHintSlot">
-	//                 <panel header="Hint" expandable no-close>
-	//                     <slot name="hint">
-	//                         No hint is available for this question.
-	//                     </slot>
-	//                 </panel>
-	//             </div>
+	//             <panel v-show="hasHintSlot" header="Hint" expandable no-close>
+	//                 <slot name="hint">
+	//                     No hint is available for this question.
+	//                 </slot>
+	//             </panel>
 	//             <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
 	//                 <slot name="answer"></slot>
 	//             </panel>
@@ -28434,6 +28432,10 @@
 	// <style>
 	//     .body-wrapper {
 	//         padding-bottom: 10px;
+	//     }
+	//     .question-wrapper > .panel-group > .panel-container + .panel-container {
+	//         display: block;
+	//         margin-top: 5px;
 	//     }
 	//     .textarea-container {
 	//         margin: 8px 0;
@@ -28751,7 +28753,7 @@
 /* 300 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"question-wrapper\">\n        <div class=\"body-wrapper\">\n            <!-- Default slot is question body -->\n            <slot></slot>\n            <div v-if=\"hasInput\" class=\"textarea-container\">\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\n            </div>\n        </div>\n        <accordion>\n            <div v-show=\"hasHintSlot\">\n                <panel header=\"Hint\" expandable no-close>\n                    <slot name=\"hint\">\n                        No hint is available for this question.\n                    </slot>\n                </panel>\n            </div>\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\n                <slot name=\"answer\"></slot>\n            </panel>\n        </accordion>\n    </div>";
+	module.exports = "<div class=\"question-wrapper\">\n        <div class=\"body-wrapper\">\n            <!-- Default slot is question body -->\n            <slot></slot>\n            <div v-if=\"hasInput\" class=\"textarea-container\">\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\n            </div>\n        </div>\n        <accordion>\n            <panel v-show=\"hasHintSlot\" header=\"Hint\" expandable no-close>\n                <slot name=\"hint\">\n                    No hint is available for this question.\n                </slot>\n            </panel>\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\n                <slot name=\"answer\"></slot>\n            </panel>\n        </accordion>\n    </div>";
 
 /***/ }),
 /* 301 */
@@ -34643,40 +34645,47 @@
 	// <template>
 	//     <doc-section id="triggerDocs" name="Trigger">
 	//         <p>
-	//             <code>Trigger</code> provides more flexibility for triggering contextual overlay such as popover, tooltip, modal.<br/>
-	//             You could embed an trigger within the text, and define the Tooltip or Popover at a separate location, which brings a cleaner authoring flow. <br>
-	//             Specify the <code>id</code> attribute on the popover, tooltip or modal component, and use the same id for the <code>for</code> attribute of the trigger
-	//             to allow trigger to invoke the specific overlay elements. <br>
+	//             Trigger provides more flexibility in triggering contextual overlay via Tooltip, Popover or Modal.
 	//         </p>
 	//         <p>
-	//             Multiple <code>trigger</code> could share the same overlay by providing them the same id.
+	//             You could embed a Trigger within the text, and define the Tooltip, Popover or Modal at a separate location, which allows for a cleaner authoring flow.
 	//         </p>
-	
+	//             Specify the <code>id</code> attribute on the Tooltip, Popover or Modal component, and use the same <code>id</code> in the <code>for</code> attribute of the Trigger
+	//             to allow the Trigger to invoke the specific overlay elements.
+	//         </p>
+	//         <p>
+	//             Additionally, multiple Triggers could share the same overlay by providing them with the same <code>id</code>.
+	//         </p>
+	//         <br>
 	//         <h4>Using trigger for Tooltip</h4>
 	//         <div class="bs-example">
-	//             More about <trigger for="tt:trigger">trigger</trigger>
+	//             More about <trigger for="tt:trigger">trigger</trigger>.
 	//             <tooltip id="tt:trigger" content="This tooltip triggered by a trigger"></tooltip>
 	//             <br>
 	//             This is the same <trigger for="tt:trigger">trigger</trigger> as last one.
 	//         </div>
 	//         <doc-code language="markup">
-	//             More about <trigger for="tt:trigger">trigger</trigger>
+	//             More about <trigger for="tt:trigger_id">trigger</trigger>.
 	//             <tooltip id="tt:trigger_id" content="This tooltip triggered by a trigger"></tooltip>
+	//             <br>
+	//             This is the same <trigger for="tt:trigger_id">trigger</trigger> as last one.
 	//         </doc-code>
 	//         <h4>Using trigger for Popover</h4>
 	//         <div class="bs-example">
-	//             More about <trigger for="pop:trigger">trigger</trigger>
+	//             More about <trigger for="pop:trigger">trigger</trigger>.
 	//             <popover id="pop:trigger" content="This popover is triggered by a trigger"></popover>
 	//             <br>
 	//             This is the same <trigger for="pop:trigger">trigger</trigger> as last one.
 	//         </div>
 	//         <doc-code language="markup">
-	//             More about <trigger for="pop:trigger_id">trigger</trigger>
+	//             More about <trigger for="pop:trigger_id">trigger</trigger>.
 	//             <popover id="pop:trigger_id" content="This popover is triggered by a trigger"></popover>
+	//             <br>
+	//             This is the same <trigger for="pop:trigger_id">trigger</trigger> as last one.
 	//         </doc-code>
 	//         <h4>Using trigger for Modal</h4>
 	//         <div class="bs-example">
-	//             More about <trigger trigger="click" for="modal:trigger">trigger</trigger>
+	//             More about <trigger for="modal:trigger">trigger</trigger>.
 	//             <modal title="**Modal title** :rocket:" id="modal:trigger">
 	//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	//                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -34689,17 +34698,43 @@
 	//             This is the same <trigger for="modal:trigger">trigger</trigger> as last one.
 	//         </div>
 	//         <doc-code language="markup">
-	//             More about <trigger for="modal:trigger" trigger="click">trigger</trigger>
-	//             <modal title="**Modal title** :rocket:" id="modal:trigger">
+	//             More about <trigger for="modal:trigger_id">trigger</trigger>.
+	//             <modal title="**Modal title** :rocket:" id="modal:trigger_id">
 	//                 ...
 	//             </modal>
+	//             <br>
+	//             This is the same <trigger for="modal:trigger_id">trigger</trigger> as last one.
+	//         </doc-code>
+	//         <br>
+	//         <h4>Trigger's <code>trigger</code> attribute (which defaults to <code>hover</code>) is independent of the target's.</h4>
+	//         <div class="bs-example">
+	//             This is a hover <trigger for="pop:xp-user-stories">trigger</trigger>.
+	//             <br>
+	//             This is a click
+	//             <popover id="pop:xp-user-stories" trigger="click">
+	//               popover
+	//               <div slot="content">
+	//                 User stories...
+	//               </div>
+	//             </popover>.
+	//         </div>
+	//         <doc-code language="markup">
+	//             This is a hover <trigger for="pop:xp-user-stories">trigger</trigger>.
+	//             <br>
+	//             This is a click
+	//             <popover id="pop:xp-user-stories" trigger="click">
+	//               popover
+	//               <div slot="content">
+	//                 User stories...
+	//               </div>
+	//             </popover>.
 	//         </doc-code>
 	//         <doc-table>
 	//             <div>
 	//                 <p>trigger</p>
 	//                 <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>
 	//                 <p><code>hover</code></p>
-	//                 <p>How trigger triggers its overflow view.</p>
+	//                 <p>How its overlay view is triggered.</p>
 	//             </div>
 	//             <div>
 	//                 <p>for</p>
@@ -34817,10 +34852,13 @@
 	      _this._triggerBy && _this._triggerBy.toggle(e);
 	    });
 	
-	    this.$els.trigger.style['border-bottom'] = this.trigger === 'click' ? '1px dashed #333' : '1px dotted #333';
-	    this.$els.trigger.style['padding-bottom'] = '2px';
 	    if (this.trigger === 'click') {
 	      this.$els.trigger.style['cursor'] = 'pointer';
+	      this.$els.trigger.style['-webkit-text-decoration'] = 'underline dashed';
+	      this.$els.trigger.style['text-decoration'] = 'underline dashed';
+	    } else {
+	      this.$els.trigger.style['-webkit-text-decoration'] = 'underline dotted';
+	      this.$els.trigger.style['text-decoration'] = 'underline dotted';
 	    }
 	  },
 	
@@ -34848,7 +34886,7 @@
 /* 440 */
 /***/ (function(module, exports) {
 
-	module.exports = "<doc-section id=\"triggerDocs\" name=\"Trigger\">\n        <p>\n            <code>Trigger</code> provides more flexibility for triggering contextual overlay such as popover, tooltip, modal.<br/>\n            You could embed an trigger within the text, and define the Tooltip or Popover at a separate location, which brings a cleaner authoring flow. <br>\n            Specify the <code>id</code> attribute on the popover, tooltip or modal component, and use the same id for the <code>for</code> attribute of the trigger\n            to allow trigger to invoke the specific overlay elements. <br>\n        </p>\n        <p>\n            Multiple <code>trigger</code> could share the same overlay by providing them the same id.\n        </p>\n\n        <h4>Using trigger for Tooltip</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"tt:trigger\">trigger</trigger>\n            <tooltip id=\"tt:trigger\" content=\"This tooltip triggered by a trigger\"></tooltip>\n            <br>\n            This is the same <trigger for=\"tt:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"tt:trigger\">trigger</trigger>\n            <tooltip id=\"tt:trigger_id\" content=\"This tooltip triggered by a trigger\"></tooltip>\n        </doc-code>\n        <h4>Using trigger for Popover</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"pop:trigger\">trigger</trigger>\n            <popover id=\"pop:trigger\" content=\"This popover is triggered by a trigger\"></popover>\n            <br>\n            This is the same <trigger for=\"pop:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"pop:trigger_id\">trigger</trigger>\n            <popover id=\"pop:trigger_id\" content=\"This popover is triggered by a trigger\"></popover>\n        </doc-code>\n        <h4>Using trigger for Modal</h4>\n        <div class=\"bs-example\">\n            More about <trigger trigger=\"click\" for=\"modal:trigger\">trigger</trigger>\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            </modal>\n            <br>\n            This is the same <trigger for=\"modal:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"modal:trigger\" trigger=\"click\">trigger</trigger>\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\n                ...\n            </modal>\n        </doc-code>\n        <doc-table>\n            <div>\n                <p>trigger</p>\n                <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\n                <p><code>hover</code></p>\n                <p>How trigger triggers its overflow view.</p>\n            </div>\n            <div>\n                <p>for</p>\n                <p><code>String</code>, the id for the overlay view to be shown</p>\n                <p></p>\n                <p></p>\n            </div>\n        </doc-table>\n    </doc-section>";
+	module.exports = "<doc-section id=\"triggerDocs\" name=\"Trigger\">\n        <p>\n            Trigger provides more flexibility in triggering contextual overlay via Tooltip, Popover or Modal.\n        </p>\n        <p>\n            You could embed a Trigger within the text, and define the Tooltip, Popover or Modal at a separate location, which allows for a cleaner authoring flow.\n        </p>\n            Specify the <code>id</code> attribute on the Tooltip, Popover or Modal component, and use the same <code>id</code> in the <code>for</code> attribute of the Trigger\n            to allow the Trigger to invoke the specific overlay elements.\n        </p>\n        <p>\n            Additionally, multiple Triggers could share the same overlay by providing them with the same <code>id</code>.\n        </p>\n        <br>\n        <h4>Using trigger for Tooltip</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"tt:trigger\">trigger</trigger>.\n            <tooltip id=\"tt:trigger\" content=\"This tooltip triggered by a trigger\"></tooltip>\n            <br>\n            This is the same <trigger for=\"tt:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"tt:trigger_id\">trigger</trigger>.\n            <tooltip id=\"tt:trigger_id\" content=\"This tooltip triggered by a trigger\"></tooltip>\n            <br>\n            This is the same <trigger for=\"tt:trigger_id\">trigger</trigger> as last one.\n        </doc-code>\n        <h4>Using trigger for Popover</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"pop:trigger\">trigger</trigger>.\n            <popover id=\"pop:trigger\" content=\"This popover is triggered by a trigger\"></popover>\n            <br>\n            This is the same <trigger for=\"pop:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"pop:trigger_id\">trigger</trigger>.\n            <popover id=\"pop:trigger_id\" content=\"This popover is triggered by a trigger\"></popover>\n            <br>\n            This is the same <trigger for=\"pop:trigger_id\">trigger</trigger> as last one.\n        </doc-code>\n        <h4>Using trigger for Modal</h4>\n        <div class=\"bs-example\">\n            More about <trigger for=\"modal:trigger\">trigger</trigger>.\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            </modal>\n            <br>\n            This is the same <trigger for=\"modal:trigger\">trigger</trigger> as last one.\n        </div>\n        <doc-code language=\"markup\">\n            More about <trigger for=\"modal:trigger_id\">trigger</trigger>.\n            <modal title=\"**Modal title** :rocket:\" id=\"modal:trigger_id\">\n                ...\n            </modal>\n            <br>\n            This is the same <trigger for=\"modal:trigger_id\">trigger</trigger> as last one.\n        </doc-code>\n        <br>\n        <h4>Trigger's <code>trigger</code> attribute (which defaults to <code>hover</code>) is independent of the target's.</h4>\n        <div class=\"bs-example\">\n            This is a hover <trigger for=\"pop:xp-user-stories\">trigger</trigger>.\n            <br>\n            This is a click\n            <popover id=\"pop:xp-user-stories\" trigger=\"click\">\n              popover\n              <div slot=\"content\">\n                User stories...\n              </div>\n            </popover>.\n        </div>\n        <doc-code language=\"markup\">\n            This is a hover <trigger for=\"pop:xp-user-stories\">trigger</trigger>.\n            <br>\n            This is a click\n            <popover id=\"pop:xp-user-stories\" trigger=\"click\">\n              popover\n              <div slot=\"content\">\n                User stories...\n              </div>\n            </popover>.\n        </doc-code>\n        <doc-table>\n            <div>\n                <p>trigger</p>\n                <p><code>String</code>, one of <code>click</code> <code>focus</code> <code>hover</code> <code>contextmenu</code></p>\n                <p><code>hover</code></p>\n                <p>How its overlay view is triggered.</p>\n            </div>\n            <div>\n                <p>for</p>\n                <p><code>String</code>, the id for the overlay view to be shown</p>\n                <p></p>\n                <p></p>\n            </div>\n        </doc-table>\n    </doc-section>";
 
 /***/ }),
 /* 441 */

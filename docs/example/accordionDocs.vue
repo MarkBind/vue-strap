@@ -90,10 +90,10 @@
     <br>
     <h4>If <code>src</code> attribute is provided, the panel content is loaded dynamically from src.</h4>
     <div class="bs-example">
-      <panel header="Dynamic Loading" src="/docs/loadContent.html#fragment" minimized></panel>
+      <panel header="Dynamic Loading" src="docs/loadContent.html#fragment" minimized></panel>
     </div>
     <doc-code language="markup">
-      <panel header="Dynamic Loading" src="/docs/loadContent.html#fragment" minimized></panel>
+      <panel header="Dynamic Loading" src="docs/loadContent.html#fragment" minimized></panel>
     </doc-code>
 
     <h4>Accordion could group panels together to provide better control</h4>
