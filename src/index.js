@@ -22,10 +22,10 @@ import tooltip from './Tooltip.vue'
 import closeable from './directives/Closeable'
 import showModal from './directives/ShowModal'
 import pic from './Pic.vue'
+import searchbar from './Searchbar.vue'
 import tipBox from './TipBox.vue'
 import trigger from './trigger.vue'
 import typeahead from './Typeahead.vue'
-import searchbar from './Searchbar.vue'
 
 const components = {
   accordion,
@@ -48,9 +48,9 @@ const components = {
   tipBox,
   tooltip,
   pic,
-  trigger,
+	searchbar,
+	trigger,
   typeahead,
-  searchbar
 }
 
 const directives = {
