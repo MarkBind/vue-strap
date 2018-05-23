@@ -155,7 +155,7 @@ export default {
   },
   filters: {
     highlight (value, phrase) {
-        return value.replace(new RegExp('(' + phrase + ')', 'gi'), '<mark>$1</mark>')
+      return value.replace(new RegExp('(' + phrase + ')', 'gi'), '<mark>$1</mark>')
     }
   }
 }
