@@ -4,7 +4,7 @@
             Question component consists of a question body, a hint and an answer.
         </h4>
         <div class="bs-example">
-            <Question>
+            <question>
                 Body
                 <div slot="hint">
                     Hint
@@ -12,10 +12,10 @@
                 <div slot="answer">
                     Answer
                 </div>
-            </Question>
+            </question>
         </div>
         <doc-code language="markup">
-            <Question>
+            <question>
                 Body
                 <div slot="hint">
                     Hint
@@ -23,83 +23,44 @@
                 <div slot="answer">
                     Answer
                 </div>
-            </Question>
+            </question>
         </doc-code>
         <br>
         <h4>If no Hint slot is specified, it will not show:</h4>
         <div class="bs-example">
-            <Question>
+            <question>
                 Body
                 <div slot="answer">
                     Answer
                 </div>
-            </Question>
+            </question>
         </div>
         <h4>If no Answer slot is specified, it will not show:</h4>
         <div class="bs-example">
-            <Question>
+            <question>
                 Body
-            </Question>
+            </question>
         </div>
         <doc-code language="markup">
             If no Hint slot is specified, it will not show:
-            <Question>
+            <question>
                 Body
                 <div slot="answer">
                     Answer
                 </div>
-            </Question>
+            </question>
 
             If no Answer slot is specified, it will not show:
-            <Question>
+            <question>
                 Body
-            </Question>
-        </doc-code>
-        <br>
-        <h4>
-            Question component can be used with Morph component to create an inline question group.
-        </h4>
-        <p>
-            It can also be stored in a remote file and loaded when it is to be shown.
-        </p>
-        <div class="bs-example">
-            <morph title="Review question">
-                <Question>
-                    Body
-                    <div slot="hint">
-                        Hint
-                    </div>
-                    <div slot="answer">
-                        Answer
-                    </div>
-                </Question>
-            </morph>
-            <morph title="Remote question" src="docs/question.html"></morph>
-        </div>
-        <doc-code language="markup">
-            Use inline with Morph
-            <morph title="Review question">
-                <Question>
-                    Body
-                    <div slot="hint">
-                        Hint
-                    </div>
-                    <div slot="answer">
-                        Answer
-                    </div>
-                </Question>
-            </morph>
-
-            Use inline with Morph dynamic loading
-            <morph title="Remote question" src="docs/question.html">
-            </morph>
+            </question>
         </doc-code>
         <br>
         <h4>
             Use <code>has-input</code> attribute to add an input box for users to enter their answer.
         </h4>
         <div class="bs-example">
-            <Question has-input>
+            <question has-input>
                 Body
                 <div slot="hint">
                     Hint
@@ -107,10 +68,10 @@
                 <div slot="answer">
                     Answer
                 </div>
-            </Question>
+            </question>
         </div>
         <doc-code language="markup">
-            <Question has-input>
+            <question has-input>
                 Body
                 <div slot="hint">
                     Hint
@@ -118,7 +79,46 @@
                 <div slot="answer">
                     Answer
                 </div>
-            </Question>
+            </question>
+        </doc-code>
+        <br>
+        <h4>
+            Question component can be used with Panel component to create an inline question group.
+        </h4>
+        <p>
+            It can also be stored in a remote file and loaded when it is to be shown.
+        </p>
+        <div class="bs-example">
+            <panel header="Review question" minimized>
+                <question>
+                    Body
+                    <div slot="hint">
+                        Hint
+                    </div>
+                    <div slot="answer">
+                        Answer
+                    </div>
+                </question>
+            </panel>
+            <panel header="Remote question" src="docs/question.html" minimized></panel>
+        </div>
+        <doc-code language="markup">
+            Use inline with Panel
+            <panel header="Review question" minimized>
+                <question>
+                    Body
+                    <div slot="hint">
+                        Hint
+                    </div>
+                    <div slot="answer">
+                        Answer
+                    </div>
+                </question>
+            </panel>
+
+            Use inline with Panel dynamic loading
+            <panel header="Remote question" src="docs/question.html" minimized>
+            </panel>
         </doc-code>
         <doc-table>
         </doc-table>
@@ -130,7 +130,7 @@
   import docTable from './docTable.vue'
   import docCode from './docCode.vue'
   import question from 'src/Question.vue'
-  import morph from 'src/Morph.vue'
+  import panel from 'src/Panel.vue'
 
   export default {
     components: {
@@ -138,7 +138,7 @@
       docTable,
       docCode,
       question,
-      morph
+      panel
     },
     created() {
       this.$on('retriever:fetched', function (el) {
