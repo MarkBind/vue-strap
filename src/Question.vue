@@ -3,53 +3,70 @@
         <div class="body-wrapper">
             <!-- Default slot is question body -->
             <slot></slot>
-            <div v-if="hasInput" class="textarea-container">
+            <div v-if="hasInputBool" class="textarea-container">
                 <textarea class="form-control question-input" rows="3" placeholder="write your answer here..."></textarea>
             </div>
         </div>
-        <accordion>
-            <panel v-show="hasHintSlot" header="Hint" expandable no-close>
-                <slot name="hint">
-                    No hint is available for this question.
-                </slot>
-            </panel>
-            <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
-                <slot name="answer"></slot>
-            </panel>
-        </accordion>
+        <panel v-show="hasHintSlot" header="Hint" expandable no-close>
+            <template v-if="isEmptyHint">
+                No hint is available for this question.
+            </template>
+            <template v-else>
+                <div ref="hintWrapper">
+                    <slot name="hint"></slot>
+                </div>
+            </template>
+        </panel>
+        <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
+            <template v-if="isEmptyAnswer">
+                No answer is provided for this question.
+            </template>
+            <template v-else>
+                <div ref="answerWrapper">
+                    <slot name="answer"></slot>
+                </div>
+            </template>
+        </panel>
     </div>
 </template>
 
 <script>
-  import {coerce} from './utils/utils.js'
-  import morph from './Morph.vue'
-  import accordion from './Accordion.vue'
+  import {toBoolean} from './utils/utils.js'
   import panel from './Panel.vue'
 
   export default {
     components: {
       panel,
-      morph,
-      accordion
     },
     props: {
       hasInput: {
         type: Boolean,
-        coerce: coerce.boolean,
         default: false
       }
+    },
+    computed: {
+      // Vue 2.0 coerce migration
+      hasInputBool () {
+        return toBoolean(this.hasInput);
+      }
+      // Vue 2.0 coerce migration end
     },
     data () {
       return {
         hasAnswerSlot: true,
-        hasHintSlot: true
+        hasHintSlot: true,
+        isEmptyAnswer: false,
+        isEmptyHint: false
       }
     },
-    attached() {
-      let hasAnswerSlot = !!this.$el.querySelector('[slot="answer"]');
-      this.hasAnswerSlot = hasAnswerSlot
-      let hasHintSlot = !!this.$el.querySelector('[slot="hint"]');
-      this.hasHintSlot = hasHintSlot
+    mounted() {
+      this.$nextTick(function() {
+        const emptyDiv = '<div></div>';
+        this.hasAnswerSlot = !!this.$slots.answer;
+        this.hasHintSlot = !!this.$slots.hint;
+        this.isEmptyAnswer = this.$refs.answerWrapper.innerHTML === emptyDiv;
+        this.isEmptyHint = this.$refs.hintWrapper.innerHTML === emptyDiv;
+      })
     }
   }
 </script>
