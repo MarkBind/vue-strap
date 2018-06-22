@@ -135,6 +135,7 @@ export default {
       if (id === this.id) {
         el.setTriggerBy(this)
       }
+      return true;
     }
   },
   methods: {
