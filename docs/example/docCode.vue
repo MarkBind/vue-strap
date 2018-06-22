@@ -1,9 +1,9 @@
 <template>
   <div>
-    <pre v-if="!language" v-el:container></pre>
+    <pre v-if="!language" ref="container"></pre>
     <template v-else>
-      <pre v-if="language=='markup'"><code class="language-markup"><script v-el:container type="language-mark-up"></script></code></pre>
-      <pre v-else><code :class="getLanguageClass">&lt;script v-el:container :type="getLanguageClass">&lt;/script></code></pre>
+      <pre v-if="language=='markup'"><code class="language-markup"><script ref="container" type="language-mark-up"></script></code></pre>
+      <pre v-else><code :class="getLanguageClass">&lt;script ref="container" :type="getLanguageClass">&lt;/script></code></pre>
     </template>
   </div>
 </template>
@@ -23,9 +23,9 @@ export default {
       return `language-${language}`;
     },
   },
-  compiled () {
+  mounted () {
     let content = ''
-    $(this._slotContents.default.childNodes).each((el) => {
+    $(this.$slots.default.childNodes).each((el) => {
       content += el.outerHTML || el.nodeValue
     })
     if (~['html','markup'].indexOf(this.language)) content = content.replace(/(\w+)=""/g, '$1')
@@ -37,7 +37,7 @@ export default {
         return nr + s.substr(min)
       })
     }
-    this.$els.container.innerHTML = content.replace(/^\s+|\s+$/g,'')
+    this.$refs.container.innerHTML = content.replace(/^\s+|\s+$/g,'')
   }
 }
 </script>

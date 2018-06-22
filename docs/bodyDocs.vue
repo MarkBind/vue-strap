@@ -8,31 +8,14 @@
           <h1>VueStrap - MarkBind</h1>
           <p>Bootstrap components built with <a target="_blank" href="http://vuejs.org/">Vue.js</a>.</p>
           <p>No jQuery, bootstrap.js, or any 3rd party plugins required.</p>
-          <p>Modified for supported compoennts in MarkBind.</p>
+          <p>Modified for supported components in MarkBind.</p>
           <br>
           <p><a class="btn btn-outline-inverse btn-lg" href="https://github.com/MarkBind/vue-strap">Code on GitHub</a></p>
         </div>
       </div>
       <container>
-        <div v-el:sections class="col-md-9">
-          <getting-started></getting-started>
-          <accordion-docs></accordion-docs>
-          <affix-docs></affix-docs>
-          <aside-docs></aside-docs>
-          <image-docs></image-docs>
-          <modal-docs></modal-docs>
-          <navbar-docs></navbar-docs>
+        <div ref="sections" class="col-md-9">
           <question-docs></question-docs>
-          <retriever-docs></retriever-docs>
-          <tabs-docs></tabs-docs>
-          <tip-box-docs></tip-box-docs>
-          <tooltip-docs></tooltip-docs>
-          <popover-docs></popover-docs>
-          <trigger-docs></trigger-docs>
-          <searchbar-docs></searchbar-docs>
-        </div>
-        <div class="col-md-3">
-          <affix-sidebar></affix-sidebar>
         </div>
       </container>
     </div>
@@ -54,49 +37,13 @@
 </template>
 
 <script>
-import affixSidebar from './affixSidebar.vue'
-import gettingStarted from './example/gettingStarted.vue'
-import accordionDocs from './example/accordionDocs.vue'
-import affixDocs from './example/affixDocs.vue'
-import asideDocs from './example/asideDocs.vue'
-import buttonGroupDocs  from './example/buttonGroupDocs.vue'
-import dynamicPanelDocs from './example/dynamicPanelDocs.vue'
 import container from './example/container.vue'
-import modalDocs from './example/modalDocs.vue'
-import morphDocs from './example/morphDocs.vue'
-import navbarDocs from './example/navbarDocs.vue'
 import questionDocs from './example/questionDocs.vue'
-import popoverDocs from './example/popoverDocs.vue'
-import retrieverDocs from './example/retrieverDocs.vue'
-import selectDocs from './example/selectDocs.vue'
-import tabsDocs from './example/tabsDocs.vue'
-import tooltipDocs from './example/tooltipDocs.vue'
-import imageDocs from './example/imageDocs.vue'
-import searchbarDocs from './example/searchbarDocs.vue'
-import tipBoxDocs from './example/tipBoxDocs.vue'
-import triggerDocs from './example/triggerDocs.vue'
 
 export default {
   components: {
-    affixSidebar,
-    gettingStarted,
-    accordionDocs,
-    affixDocs,
-    asideDocs,
-    buttonGroupDocs,
     container,
-    modalDocs,
-    navbarDocs,
     questionDocs,
-    popoverDocs,
-    retrieverDocs,
-    searchbarDocs,
-    selectDocs,
-    tabsDocs,
-    tooltipDocs,
-    imageDocs,
-    tipBoxDocs,
-    triggerDocs
   },
   computed: {
     local () { return location.hostname === 'localhost' }

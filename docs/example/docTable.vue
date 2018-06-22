@@ -9,8 +9,8 @@
             </tr>
         </thead>
         <tbody>
-          <tr v-for="option in options">
-            <td v-for="h in setHeaders" v-html="option[$index]"></td>
+          <tr v-for="(option, index) in options">
+            <td v-for="h in setHeaders" v-html="option[index]"></td>
           </tr>
         </tbody>
       </table>
@@ -60,7 +60,7 @@ export default {
       this.name = this.$parent.name
     }
   },
-  ready () {
+  mounted () {
     const container = this._slotContents.default
     if (container) {
       $(container.children).each(option => {
