@@ -3,7 +3,8 @@ const markdownIt = require('markdown-it')({
   linkify: true
 });
 
-markdownIt.use(require('markdown-it-mark'))
+markdownIt.use(require('markdown-it-anchor'))
+  .use(require('markdown-it-mark'))
   .use(require('markdown-it-ins'))
   .use(require('markdown-it-sub'))
   .use(require('markdown-it-sup'))
