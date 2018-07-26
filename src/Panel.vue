@@ -365,13 +365,12 @@
 
     .header-wrapper {
         display: inline-block;
-        width: 72%;
+        width: calc(100% - 32px);
     }
 
     .button-wrapper {
         float: right;
         display: inline-block;
-        width: 28%;
     }
 
     .header-toggle {
