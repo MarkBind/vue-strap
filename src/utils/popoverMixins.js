@@ -73,70 +73,68 @@ export default {
       }
       setTimeout(() => {
         const popover = this.$refs.popover
+
         this.isPopover = Array.some(popover.classList, classname => classname === 'popover');
-        trigger.offsetParent.style.position = 'relative';
-        popover.style.position = 'absolute';
-        this.calculateOffset(trigger, popover)
-        this.updateOffsetForMargins(popover)
-        popover.style.top = this.position.top + 'px'
-        popover.style.left = this.position.left + 'px'
+        let finalPosition = this.calculateOffset(trigger, popover)
         if (this.$refs.arrow) {
-          let actualWidth  = popover.offsetWidth
-          let actualHeight = popover.offsetHeight
-          this.calculateOffset(trigger, popover) // Update for CSS adjustment
-          this.updateOffsetForMargins(popover)
-          let delta = this.getViewportAdjustedDelta(this.position, actualWidth, actualHeight)
-          if (delta.left) this.position.left += delta.left
-          else this.position.top += delta.top
-          popover.style.top = this.position.top + 'px'
-          popover.style.left = this.position.left + 'px'
+          let delta = this.getViewportAdjustedDelta(finalPosition);
+          if (delta.left) finalPosition.left += delta.left
+          else finalPosition.top += delta.top
           let isVertical = /top|bottom/.test(this.placement)
           let arrowDelta = isVertical ? delta.left * 2 : delta.top * 2;
           let arrowOffsetPosition = isVertical ? popover.offsetWidth : popover.offsetHeight
           this.adjustArrow(arrowDelta, arrowOffsetPosition, isVertical)
         }
+        popover.style.top = finalPosition.top + 'px';
+        popover.style.left = finalPosition.left + 'px';
       }, 20)
     },
+    getBoundingBoxRelativeToDocument(element) {
+      const boundingClientRect = element.getBoundingClientRect();
+      const boundingBox = {
+        left: boundingClientRect.left + (window.pageXOffset || document.documentElement.scrollLeft),
+        top: boundingClientRect.top + (window.pageYOffset || document.documentElement.scrollTop),
+        width: boundingClientRect.width,
+        height: boundingClientRect.height
+      };
+      return boundingBox;
+    },
     calculateOffset (trigger, popover) {
+      const finalPosition = {
+        top: 0, left: 0, width: popover.offsetWidth, height: popover.offsetHeight
+      };
+      const triggerBoundingBox = this.getBoundingBoxRelativeToDocument(trigger);
+
       switch (this.placement) {
         case 'top' :
-          this.position.left = trigger.offsetLeft - popover.offsetWidth / 2 + trigger.offsetWidth / 2
-          this.position.top = trigger.offsetTop - popover.offsetHeight
+          finalPosition.left = triggerBoundingBox.left + (triggerBoundingBox.width - popover.offsetWidth) / 2;
+          finalPosition.top = triggerBoundingBox.top - popover.offsetHeight;
           if (this.isPopover) {
-            this.position.top -= this.$refs.arrow.offsetHeight;
+            finalPosition.top -= this.$refs.arrow.offsetHeight;
           }
-          break
+          break;
         case 'left':
-          this.position.left = trigger.offsetLeft - popover.offsetWidth
-          this.position.top = trigger.offsetTop + trigger.offsetHeight / 2 - popover.offsetHeight / 2
+          finalPosition.left = triggerBoundingBox.left - popover.offsetWidth;
+          finalPosition.top = triggerBoundingBox.top + (triggerBoundingBox.height - popover.offsetHeight) / 2;
           if (this.isPopover) {
-            this.position.left -= this.$refs.arrow.offsetWidth;
+            finalPosition.left -= this.$refs.arrow.offsetWidth;
           }
-          break
+          break;
         case 'right':
-          this.position.left = trigger.offsetLeft + trigger.offsetWidth
-          this.position.top = trigger.offsetTop + trigger.offsetHeight / 2 - popover.offsetHeight / 2
-          break
+          finalPosition.left = triggerBoundingBox.left + triggerBoundingBox.width;
+          finalPosition.top = triggerBoundingBox.top + (triggerBoundingBox.height - popover.offsetHeight) / 2;
+          break;
         case 'bottom':
-          this.position.left = trigger.offsetLeft - popover.offsetWidth / 2 + trigger.offsetWidth / 2
-          this.position.top = trigger.offsetTop + trigger.offsetHeight
-          break
+          finalPosition.left = triggerBoundingBox.left + (triggerBoundingBox.width - popover.offsetWidth) / 2;
+          finalPosition.top = triggerBoundingBox.top + triggerBoundingBox.height;
+          break;
         default:
-          console.warn('Wrong placement prop')
+          console.warn('Wrong placement prop');
       }
+
+      return finalPosition;
     },
-    updateOffsetForMargins (popover) {
-      const rect = popover.getBoundingClientRect()
-      if (rect.left < 0) {
-        this.position.left -= rect.left
-        const marginLeft = parseInt(jQuery(popover).css('margin-left'), 10)
-        if (marginLeft < 0) {
-          this.position.left += marginLeft
-          popover.style.marginLeft = 0
-        }
-      }
-    },
-    getViewportAdjustedDelta (pos, actualWidth, actualHeight) {
+    getViewportAdjustedDelta (pos) {
       var delta = { top: 0, left: 0 };
       let vpRect = this._viewport.getBoundingClientRect();
       let vpOffset = { top: 0, left: 0 };
@@ -146,7 +144,7 @@ export default {
 
       if (/right|left/.test(this.placement)) {
         var topEdgeOffset    = pos.top - scroll
-        var bottomEdgeOffset = pos.top - scroll + actualHeight
+        var bottomEdgeOffset = pos.top - scroll + pos.height;
         if (topEdgeOffset < viewportDimensions.top) { // top overflow
           delta.top = viewportDimensions.top - topEdgeOffset
         } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
@@ -154,7 +152,7 @@ export default {
         }
       } else {
         var leftEdgeOffset  = pos.left
-        var rightEdgeOffset = pos.left + actualWidth
+        var rightEdgeOffset = pos.left + pos.width;
         if (leftEdgeOffset < viewportDimensions.left) { // left overflow
           delta.left = viewportDimensions.left - leftEdgeOffset
         } else if (rightEdgeOffset > viewportDimensions.right) { // right overflow
