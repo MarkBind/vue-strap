@@ -18,6 +18,7 @@ export default {
       const matches = [];
       const regexes = this.value.split(' ')
         .filter(searchKeyword => searchKeyword !== '')
+        .map(searchKeyword => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
         .map(searchKeyword => new RegExp(searchKeyword, 'i'));
       this.data.forEach((entry) => {
         const { headings, src, title } = entry;
@@ -88,7 +89,9 @@ export default {
       methods: {
         highlight(value, phrase) {
           function getMatchIntervals() {
-            const keywords = phrase.split(' ').filter(keyword => keyword !== '');
+            const keywords = phrase.split(' ')
+              .filter(keyword => keyword !== '')
+              .map(searchKeyword => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
             const matchIntervals = [];
             keywords.forEach((keyword) => {
               const regex = new RegExp(`(${keyword})`, 'gi');
