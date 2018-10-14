@@ -89,12 +89,12 @@ export default {
       methods: {
         highlight(value, phrase) {
           function getMatchIntervals() {
-            const keywords = phrase.split(' ')
+            const regexes = phrase.split(' ')
               .filter(keyword => keyword !== '')
-              .map(searchKeyword => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+              .map(searchKeyword => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+              .map(searchKeyword => new RegExp(`(${searchKeyword})`, 'gi'));
             const matchIntervals = [];
-            keywords.forEach((keyword) => {
-              const regex = new RegExp(`(${keyword})`, 'gi');
+            regexes.forEach((regex) => {
               let match = regex.exec(value);
               while (match !== null) {
                 if (match.index === regex.lastIndex) {
