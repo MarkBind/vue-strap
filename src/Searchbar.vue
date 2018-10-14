@@ -97,6 +97,9 @@ export default {
               const regex = new RegExp(`(${keyword})`, 'gi');
               let match = regex.exec(value);
               while (match !== null) {
+                if (match.index === regex.lastIndex) {
+                  break;
+                }
                 matchIntervals.push({ start: match.index, end: regex.lastIndex });
                 match = regex.exec(value);
               }
