@@ -90,7 +90,7 @@ export default {
         highlight(value, phrase) {
           function getMatchIntervals() {
             const regexes = phrase.split(' ')
-              .filter(keyword => keyword !== '')
+              .filter(searchKeyword => searchKeyword !== '')
               .map(searchKeyword => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
               .map(searchKeyword => new RegExp(`(${searchKeyword})`, 'gi'));
             const matchIntervals = [];
