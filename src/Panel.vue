@@ -299,7 +299,7 @@
       if (this.headerContent) {
         const panelHeaderText = jQuery(this.headerContent).wrap('<div></div>').parent().find(':header').text();
         if (panelHeaderText) {
-          this.$refs.cardContainer.setAttribute('id', slugify(panelHeaderText));
+          this.$refs.cardContainer.setAttribute('id', slugify(panelHeaderText, { decamelize: false }));
         }
       } else if (this.$refs.headerWrapper.innerHTML) {
         const header = jQuery(this.$refs.headerWrapper.innerHTML).wrap('<div></div>').parent().find(':header');
