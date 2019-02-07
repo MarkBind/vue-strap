@@ -9,9 +9,10 @@ markdownIt.use(require('markdown-it-mark'))
   .use(require('markdown-it-sup'))
   .use(require('markdown-it-mark'))
   .use(require('./markdown-it-dimmed'))
+  .use(require('./markdown-it-icons'))
   .use(require('markdown-it-imsize'), {
     autofill: false
-  })
+  });
 
 // fix emoji numbers
 const emojiData = require('markdown-it-emoji/lib/data/full.json');
