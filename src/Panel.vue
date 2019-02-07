@@ -83,7 +83,7 @@
   import retriever from './Retriever.vue'
 
   const slugify = require('@sindresorhus/slugify');
-  
+
   export default {
     components: {
       panelSwitch,
@@ -177,7 +177,7 @@
         return this.expandableBool;
       },
       showCaret () {
-        return this.isSeamless;
+        return this.isSeamless && this.expandableBool;
       },
       isSeamless () {
         return this.type === 'seamless';
