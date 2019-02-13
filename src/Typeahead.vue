@@ -1,6 +1,7 @@
 <template>
   <div style="position: relative">
     <input type="text" class="form-control"
+      :id="inputId"
       :placeholder="placeholder"
       autocomplete="off"
       v-model="value"
@@ -67,7 +68,12 @@ export default {
     menuAlignRight: {
       type: Boolean,
       default: false
+    },
+    algolia: {
+      type: Boolean,
+      default: false
     }
+
   },
   data () {
     return {
@@ -78,6 +84,9 @@ export default {
     }
   },
   computed: {
+    inputId () {
+      return this.algolia ? "algolia-search-input" : null;
+    },
     primitiveData () {
       if (this.data) {
         return this.data.filter(value => {
