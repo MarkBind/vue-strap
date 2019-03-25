@@ -4,9 +4,7 @@
     'navbar-dark':(type === 'inverse'),
     'navbar-light':(type === 'default'),
     'bg-dark':(type === 'inverse'),
-    'bg-light':(type === 'default'),
-    'fixed-top':(placement === 'top'),
-    'fixed-bottom':(placement === 'bottom')
+    'bg-light':(type === 'default')
   }, addClass]">
     <div class="container-fluid">
       <div class="navbar-brand"><slot name="brand"></slot></div>
@@ -35,10 +33,6 @@ export default {
     type: {
       type: String,
       default: 'default'
-    },
-    placement: {
-      type: String,
-      default: ''
     },
     addClass: {
       type: String,
@@ -87,14 +81,6 @@ export default {
     }).onBlur(e => {
       if (!this.$el.contains(e.target)) { this.collapsed = true }
     })
-    let height = this.$el.offsetHeight
-    if (this.placement === 'top') {
-      document.body.style.paddingTop = height + 'px'
-      $(window).on('hashchange', () => scrollBy(0, -height))
-    }
-    if (this.placement === 'bottom') {
-      document.body.style.paddingBottom = height + 'px'
-    }
     if (this.slots.collapse) $('[data-toggle="collapse"]',this.$el).on('click', (e) => this.toggleCollapse(e))
   },
   beforeDestroy () {
@@ -106,7 +92,7 @@ export default {
 
 <style scoped>
 @media (max-width: 767px) {
-  .navbar-fixed-top .navbar-collapse {
+  .navbar-collapse {
     max-height: 80vh !important;
     overflow-x: hidden !important;
     overflow-y: scroll !important;
