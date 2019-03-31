@@ -1,11 +1,5 @@
 <template>
-  <nav ref="navbar" :class="['navbar', 'navbar-expand-md',
-  {
-    'navbar-dark':(type === 'inverse'),
-    'navbar-light':(type === 'default'),
-    'bg-dark':(type === 'inverse'),
-    'bg-light':(type === 'default')
-  }, addClass]">
+  <nav ref="navbar" :class="['navbar', 'navbar-expand-md', themeOptions, addClass]">
     <div class="container-fluid">
       <div class="navbar-brand"><slot name="brand"></slot></div>
       <button v-if="!slots.collapse" class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" @click="toggleCollapse">
@@ -32,7 +26,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'default'
+      default: 'primary'
     },
     addClass: {
       type: String,
@@ -49,6 +43,28 @@ export default {
   computed: {
     slots () {
       return this.$slots
+    },
+    themeOptions () {
+      // If the value of `type` is not primary | dark | light | none,
+      // then explicitly set isNavbarDark and isBgPrimary to true.
+      const isNavbarDark = (this.type === 'primary' || this.type === 'dark')
+        ? true
+        : (this.type === 'light' || this.type === 'none')
+          ? false
+          : true
+      const isBgPrimary = (this.type === 'primary')
+        ? true
+        : (this.type === 'dark' || this.type === 'light' || this.type === 'none')
+          ? false
+          : true
+
+      return {
+        'navbar-dark': isNavbarDark,
+        'navbar-light': (this.type === 'light'),
+        'bg-primary': isBgPrimary,
+        'bg-dark': (this.type === 'dark'),
+        'bg-light': (this.type === 'light')
+      }
     }
   },
   methods: {
