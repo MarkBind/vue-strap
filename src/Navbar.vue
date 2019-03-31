@@ -45,23 +45,19 @@ export default {
       return this.$slots
     },
     themeOptions () {
-      // If the value of `type` is not primary | dark | light | none,
-      // then explicitly set isNavbarDark and isBgPrimary to true.
-      const isNavbarDark = (this.type === 'primary' || this.type === 'dark')
-        ? true
-        : (this.type === 'light' || this.type === 'none')
-          ? false
-          : true
-      const isBgPrimary = (this.type === 'primary')
-        ? true
-        : (this.type === 'dark' || this.type === 'light' || this.type === 'none')
-          ? false
-          : true
+      if (this.type === 'none') {
+        return {}
+      }
+
+      const allowedTypes = ['primary', 'dark', 'light']
+      if (!allowedTypes.includes(this.type)) {
+        this.type = 'primary'
+      }
 
       return {
-        'navbar-dark': isNavbarDark,
+        'navbar-dark': (this.type === 'primary' || this.type === 'dark'),
         'navbar-light': (this.type === 'light'),
-        'bg-primary': isBgPrimary,
+        'bg-primary': (this.type === 'primary'),
         'bg-dark': (this.type === 'dark'),
         'bg-light': (this.type === 'light')
       }
