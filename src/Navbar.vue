@@ -45,21 +45,16 @@ export default {
       return this.$slots
     },
     themeOptions () {
-      if (this.type === 'none') {
-        return {}
-      }
-
-      const allowedTypes = ['primary', 'dark', 'light']
-      if (!allowedTypes.includes(this.type)) {
-        this.type = 'primary'
-      }
-
-      return {
-        'navbar-dark': (this.type === 'primary' || this.type === 'dark'),
-        'navbar-light': (this.type === 'light'),
-        'bg-primary': (this.type === 'primary'),
-        'bg-dark': (this.type === 'dark'),
-        'bg-light': (this.type === 'light')
+      switch (this.type) {
+        case 'none':
+          return ''
+        case 'light':
+          return 'navbar-light bg-light'
+        case 'dark':
+          return 'navbar-dark bg-dark'
+        case 'primary':
+        default:
+          return 'navbar-dark bg-primary'
       }
     }
   },
