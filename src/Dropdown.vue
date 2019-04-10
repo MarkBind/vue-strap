@@ -65,7 +65,7 @@ export default {
       return [{disabled: this.disabledBool}, this.class, this.isLi ? 'dropdown' : 'btn-group', this.addClass]
     },
     menuClasses() {
-      return ['page-front', {show: this.showBool}, {'dropdown-menu-right': this.menuAlignRight}];
+      return [{show: this.showBool}, {'dropdown-menu-right': this.menuAlignRight}];
     },
     disabledBool() {
       return toBoolean(this.disabled);
@@ -141,10 +141,6 @@ export default {
 </script>
 
 <style scoped>
-.page-front {
-  z-index: 1030;
-}
-
 .secret {
   position: absolute;
   clip: rect(0 0 0 0);

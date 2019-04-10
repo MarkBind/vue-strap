@@ -100,7 +100,7 @@ export default {
       return 'typeaheadTemplate';
     },
     dropdownMenuClasses () {
-      return ['dropdown-menu', 'page-front', 'search-dropdown-menu', {show: this.showDropdown},
+      return ['dropdown-menu', 'search-dropdown-menu', {show: this.showDropdown},
         {'dropdown-menu-right': this.menuAlignRight}];
     }
   },
@@ -161,9 +161,6 @@ export default {
 </script>
 
 <style>
-.page-front {
-  z-index: 1030;
-}
 .dropdown-menu > li > a {
   cursor: pointer;
 }
