@@ -12,6 +12,7 @@ import searchbar from './Searchbar.vue'
 import tab from './Tab.vue'
 import tabGroup from './TabGroup.vue'
 import tabset from './Tabset.vue'
+import thumbnail from './Thumbnail.vue'
 import tipBox from './TipBox.vue'
 import tooltip from './Tooltip.vue'
 import trigger from './trigger.vue'
@@ -32,6 +33,7 @@ const components = {
   tab,
   tabGroup,
   tabs: tabset,
+  thumbnail,
   tipBox,
   tooltip,
   trigger,

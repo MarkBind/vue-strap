@@ -34,6 +34,7 @@ src/Spinner.vue
 src/Tab.vue
 src/TabGroup.vue
 src/Tabset.vue
+src/Thumbnail.vue
 src/Tooltip.vue
 src/Typeahead.vue
 
