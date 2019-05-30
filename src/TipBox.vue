@@ -1,11 +1,14 @@
 <template>
-    <div class="alert container" :class="[boxStyle, addClass]" :style="customStyle">
+    <div class="alert container" :class="[boxStyle, addClass, {'alert-dismissible': dismissible}]" :style="customStyle">
         <div class="icon-wrapper" v-if="!isDefault">
             <span v-html="iconType"></span>
         </div>
         <div class="contents">
             <slot></slot>
         </div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" v-if="dismissible">
+          <span aria-hidden="true">&times;</span>
+        </button>
     </div>
 </template>
 
@@ -13,6 +16,10 @@
   import md from './utils/markdown.js'
   export default {
     props: {
+      dismissible: {
+        type: Boolean,
+        default: false
+      },
       backgroundColor: {
         type: String,
         default: null
