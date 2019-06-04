@@ -1,8 +1,7 @@
 <template>
   <span :class="[addClass]">
     <span ref="trigger" v-on:click="false"><slot></slot></span><!--
-    -->
-    <transition :name="effect">
+    --><transition :name="effect">
       <div ref="popover" v-if="show" style="display:block;"
         :class="['tooltip', tooltipPlacementClass, 'show']"
       >
@@ -11,8 +10,8 @@
           <span name="content" v-html="contentRendered"></span>
        </div>
       </div>
-    </transition>
-  </span>
+    </transition><!--
+  --></span>
 </template>
 
 <script>
