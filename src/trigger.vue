@@ -1,5 +1,5 @@
 <template>
-    <span ref="trigger" :class="[addClass || (this.trigger === 'click' ? 'click-trigger' : 'other-trigger')]"><slot></slot></span>
+    <span ref="trigger" :class="[addClass]"><slot></slot></span>
 </template>
 
 <script>
@@ -31,6 +31,15 @@
         }
         this._triggerBy && this._triggerBy.toggle(e)
       })
+
+      if (this.trigger === 'click') {
+        this.$refs.trigger.style['cursor'] = 'pointer'
+        this.$refs.trigger.style['-webkit-text-decoration'] = 'underline dashed';
+        this.$refs.trigger.style['text-decoration'] = 'underline dashed';
+      } else {
+        this.$refs.trigger.style['-webkit-text-decoration'] = 'underline dotted';
+        this.$refs.trigger.style['text-decoration'] = 'underline dotted'
+      }
     },
     methods: {
       setTriggerBy (vm) {
@@ -41,11 +50,5 @@
 </script>
 
 <style>
-    .click-trigger {
-        cursor: pointer;
-        text-decoration: underline dashed;
-    }
-    .other-trigger {
-        text-decoration: underline dotted;
-    }
+
 </style>
