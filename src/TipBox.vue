@@ -1,9 +1,9 @@
 <template>
-    <div class="alert container" :class="[boxStyle, addClass]" :style="customStyle">
+    <div class="alert container" :class="[boxStyle, addClass, lightStyle]" :style="customStyle">
         <div v-if="!isDefault" class="icon-wrapper">
             <span v-html="iconType"></span>
         </div>
-        <div class="contents">
+        <div class="contents" :class="fontBlack">
             <h6 v-if="heading" class="heading">{{ heading }}</h6>
             <button v-if="dismissible" type="button" class="close dismiss-button" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -16,6 +16,7 @@
 
 <script>
   import md from './utils/markdown.js'
+
   export default {
     props: {
       dismissible: {
@@ -53,6 +54,10 @@
       heading: {
         type: String,
         default: null,
+      }, 
+      light: {
+        type: Boolean,
+        default: false,
       }
     },
     computed: {
@@ -76,6 +81,26 @@
             return 'alert-default'
         }
       },
+      lightStyle() {
+        if (this.light) {
+            switch (this.type) {
+            case 'warning':
+                return 'border-warning text-warning alert-border-left';
+            case 'info':
+            case 'definition':
+                return 'border-info text-info alert-border-left';
+            case 'success':
+            case 'tip':
+                return 'border-sucess text-success alert-border-left';
+            case 'important':
+            case 'wrong':
+                return 'border-danger text-danger alert-border-left';
+            default:
+                return '';
+            }
+        }
+        return '';
+      },
       customStyle() {
         var style = {};
         if (this.backgroundColor) {
@@ -92,6 +117,12 @@
           style.color = this.color;
         }
         return style;
+      },
+      fontBlack() {
+        if (this.light) {
+          return 'font-black';
+        }
+        return '';
       },
       iconType() {
         if (this.icon) {
@@ -167,5 +198,15 @@
         color: #24292e;
         background-color: #f6f8fa;
         border-color: #e8ebef;
+    }
+    
+    .alert-border-left {
+        background-color: #f9f8f8;
+        border-left: solid;
+        border-width: 0px 0px 0px 5px;
+    }
+        
+    .font-black {
+        color: #24292e;
     }
 </style>
