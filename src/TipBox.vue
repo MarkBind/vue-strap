@@ -40,6 +40,22 @@
         type: String,
         default: null
       },
+      icon: {
+        type: String,
+        default: null
+      },
+      isExtraLarge: {
+        type: Boolean,
+        default: false
+      },
+      iconLarge: {
+        type: Boolean,
+        default: false
+      },
+      iconMedium: {
+        type: Boolean,
+        default: false
+      },
       type: {
         type: String,
         default: 'none'
@@ -186,11 +202,11 @@
     .icon-wrapper {
         display: flex;
         margin-right: .5em;
-        width: 22px;
-        height: 22px;
     }
 
     .contents {
+        display: flex;
+        align-items: center;
         padding: 0 6px;
         width: 100%;
     }
@@ -209,5 +225,17 @@
         
     .font-black {
         color: #24292e;
+    }
+
+    .icon-extra-large {
+      font-size: 4em;
+    }
+
+    .icon-large {
+      font-size: 3em;
+    }
+
+    .icon-medium {
+      font-size: 2em;
     }
 </style>
