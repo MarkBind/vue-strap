@@ -44,18 +44,6 @@
         type: String,
         default: null
       },
-      isExtraLarge: {
-        type: Boolean,
-        default: false
-      },
-      iconLarge: {
-        type: Boolean,
-        default: false
-      },
-      iconMedium: {
-        type: Boolean,
-        default: false
-      },
       type: {
         type: String,
         default: 'none'
@@ -206,7 +194,10 @@
 
     .contents {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        font-size: medium;
         padding: 0 6px;
         width: 100%;
     }
