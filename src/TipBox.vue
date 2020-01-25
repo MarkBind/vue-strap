@@ -197,7 +197,6 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        font-size: medium;
         padding: 0 6px;
         width: 100%;
     }
