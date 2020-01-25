@@ -217,16 +217,4 @@
     .font-black {
         color: #24292e;
     }
-
-    .icon-extra-large {
-      font-size: 4em;
-    }
-
-    .icon-large {
-      font-size: 3em;
-    }
-
-    .icon-medium {
-      font-size: 2em;
-    }
 </style>
