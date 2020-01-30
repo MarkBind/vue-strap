@@ -12,7 +12,6 @@
             </button>
             <slot></slot>
         </div>
-
     </div>
 </template>
 
@@ -29,6 +28,10 @@
         default: null
       },
       borderColor: {
+        type: String,
+        default: null
+      },
+      iconSize: {
         type: String,
         default: null
       },
@@ -193,10 +196,6 @@
     }
 
     .contents {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
         padding: 0 6px;
         width: 100%;
     }
