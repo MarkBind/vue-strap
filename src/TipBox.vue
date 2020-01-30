@@ -31,10 +31,6 @@
         type: String,
         default: null
       },
-      iconSize: {
-        type: String,
-        default: null
-      },
       borderLeftColor: {
         type: String,
         default: null
@@ -44,6 +40,10 @@
         default: null
       },
       icon: {
+        type: String,
+        default: null
+      },
+      iconSize: {
         type: String,
         default: null
       },
