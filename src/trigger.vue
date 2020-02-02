@@ -34,11 +34,9 @@
 
       if (this.trigger === 'click') {
         this.$refs.trigger.style['cursor'] = 'pointer'
-        this.$refs.trigger.style['-webkit-text-decoration'] = 'underline dashed';
-        this.$refs.trigger.style['text-decoration'] = 'underline dashed';
+        this.$refs.trigger.style['border-bottom'] = '1px dashed currentColor';
       } else {
-        this.$refs.trigger.style['-webkit-text-decoration'] = 'underline dotted';
-        this.$refs.trigger.style['text-decoration'] = 'underline dotted'
+        this.$refs.trigger.style['border-bottom'] = '1px dashed currentColor'
       }
     },
     methods: {
