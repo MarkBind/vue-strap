@@ -158,9 +158,10 @@
       iconStyle() {
         if (this.iconSize) {
           return `fa-${this.iconSize}`;
+        }
+        return '';
       }
     }
-  }
   }
 </script>
 
