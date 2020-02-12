@@ -1,7 +1,7 @@
 <template>
-    <div class="alert box-container" :class="[boxStyle, addClass, lightStyle, seamlessStyle]" :style="customStyle">
+    <div class="alert box-container" :class="[boxStyle, addClass, lightStyle, seamlessStyle, , noBackgroundStyle, noBorderStyle]" :style="customStyle">
         <div v-if="headerBool" :class="['box-header-wrapper', { 'alert-dismissible': dismissible }]">
-            <div v-show="!isDefault" class="icon-wrapper" :class="[iconStyle]">
+            <div v-show="hasIcon" class="icon-wrapper" :class="[iconStyle]">
                 <slot name="_icon">
                     <span v-html="iconType"></span>
                 </slot>
@@ -79,11 +79,20 @@
         type: Boolean,
         default: false,
       },
+      noIcon: {
+        type: Boolean,
+        default: false,
+      },
+      noBackground: {
+        type: Boolean,
+        default: false,
+      },
+      noBorder: {
+        type: Boolean,
+        default: false,
+      }
     },
     computed: {
-      isDefault() {
-        return this.type === 'none'
-      },
       isSeamless() {
         return !this.light && this.seamless;
       },
@@ -140,7 +149,7 @@
           style.borderColor = this.backgroundColor;
         }
         if (this.borderColor) {
-          style.borderColor = this.borderColor;
+          style.border = `1px solid ${this.borderColor}`;
         }
         if (this.borderLeftColor) {
           style.borderLeft = `5px solid ${this.borderLeftColor}`;
@@ -162,6 +171,11 @@
         }
         return '';
       },
+      hasIcon() {
+        // this.$slots._icon is either undefined or an object
+        const isIconSlotFilled = !!this.$slots._icon;
+        return !this.noIcon || isIconSlotFilled;
+      },
       iconType() {
         switch (this.type) {
           case 'wrong':
@@ -179,12 +193,24 @@
           case 'definition':
             return '<i class="fas fa-atlas"></i>';
           default:
-            return '<i class="fas fa-exclamation"></i>';
+            return '';
         }
       },
       iconStyle() {
         if (this.iconSize) {
           return `fa-${this.iconSize}`;
+        }
+        return '';
+      },
+      noBackgroundStyle() {
+        if (this.noBackground) {
+          return 'no-background';
+        }
+        return '';
+      },
+      noBorderStyle() {
+        if (this.noBorder) {
+          return 'no-border';
         }
         return '';
       }
@@ -297,6 +323,14 @@
         width: calc(100% - 2.5rem);
         height: 3px;
     }
+
+    .no-background {
+      background: none;
+    }
+
+    .no-border {
+      border: none;
+    }
 </style>
 
 <!-- TODO move this once we upgrade vue-loader version for scoped deep selectors -->
@@ -305,3 +339,4 @@
         margin-bottom: 0;
     }
 </style>
+
