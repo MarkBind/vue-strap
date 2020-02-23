@@ -219,7 +219,9 @@
 
     .icon-wrapper {
         display: flex;
+        justify-content: center;
         margin-right: .5em;
+        width: 1em;
     }
 
     .contents {
