@@ -15,7 +15,7 @@
         </div>
         <div v-if="horizontalDividerBool" class="horizontal-divider" :class="boxStyle" aria-hidden="true"></div>
         <div :class="['box-body-wrapper', { 'alert-dismissible': dismissible && !headerBool, 'box-body-wrapper-with-heading': headerBool }]">
-            <div v-show="!isDefault && !headerBool" class="icon-wrapper" :class="[iconStyle]">
+            <div v-show="hasIcon && !headerBool" class="icon-wrapper" :class="[iconStyle]">
                 <slot name="_icon">
                     <span v-html="iconType"></span>
                 </slot>
