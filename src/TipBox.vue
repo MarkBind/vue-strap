@@ -1,5 +1,5 @@
 <template>
-    <div class="alert box-container" :class="[boxStyle, addClass, lightStyle, seamlessStyle, , noBackgroundStyle, noBorderStyle]" :style="customStyle">
+    <div class="alert box-container" :class="[boxStyle, addClass, lightStyle, seamlessStyle, noBackgroundStyle, noBorderStyle]" :style="customStyle">
         <div v-if="headerBool" :class="['box-header-wrapper', { 'alert-dismissible': dismissible }]">
             <div v-show="hasIcon" class="icon-wrapper" :class="[iconStyle]">
                 <slot name="_icon">
