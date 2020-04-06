@@ -279,7 +279,7 @@
         display: flex;
         justify-content: center;
         margin-right: .5em;
-        width: 1em;
+        min-width: 1em;
     }
 
     .close-with-heading {
