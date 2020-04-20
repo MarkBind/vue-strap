@@ -1,6 +1,8 @@
 <template>
   <div v-if="item.heading" class="heading">
-    <div class="heading-text">{{ item.heading.text }}</div>
+    <div class="heading-text">
+      {{ item.heading.text }}
+    </div>
     <div class="heading-text-items">
       <small v-html="highlight(item.heading.text, value)"></small>
       <br />
@@ -34,9 +36,9 @@ export default {
     highlight(value, phrase) {
       function getMatchIntervals() {
         const regexes = phrase.split(' ')
-          .filter(searchKeyword => searchKeyword !== '')
-          .map(searchKeyword => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-          .map(searchKeyword => new RegExp(`(${searchKeyword})`, 'gi'));
+          .filter((searchKeyword) => searchKeyword !== '')
+          .map((searchKeyword) => searchKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .map((searchKeyword) => new RegExp(`(${searchKeyword})`, 'gi'));
         const matchIntervals = [];
         regexes.forEach((regex) => {
           let match = regex.exec(value);

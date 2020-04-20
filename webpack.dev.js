@@ -1,9 +1,9 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const config = require('./webpack.common.js');
 
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = merge(config, {
   mode: 'development',

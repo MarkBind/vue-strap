@@ -1,10 +1,10 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 
-const config = require('./webpack.common.js');
 
 const TerserPlugin = require('terser-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const config = require('./webpack.common.js');
 
 module.exports = merge(config, {
   mode: 'production',
