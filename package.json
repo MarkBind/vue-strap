@@ -38,7 +38,12 @@
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/runtime": "^7.9.2",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/vue": "^5.3.18",
     "babel-loader": "^8.1.0",
+    "babel-preset-vue": "^2.0.2",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -80,7 +85,9 @@
     "lintwin": "./node_modules/.bin/eslint . --ext .js,.vue",
     "lintfix": "./node_modules/.bin/eslint . --fix --ext .js,.vue",
     "postversion": "git push && git push --tags",
-    "version": "npm run build && git add -A dist"
+    "version": "npm run build && git add -A dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "yuche",
   "license": "MIT"
